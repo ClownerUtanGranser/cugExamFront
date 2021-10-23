@@ -1,0 +1,17 @@
+<div class="container">
+    
+    <div class="yellow_circle big column-just-center">
+        <h1>{{ pageTemplate.headline }}</h1> 
+        <p>{{ pageTemplate.secondHedline }}</p>
+    </div>
+    <div 
+        *ngFor="let text of pageTemplate?.texts"
+        class="text">
+        <p>
+            {{ text }}  
+        </p>
+    </div>
+    <a [routerLink]="'./' + question ">
+        <button>Start</button>
+    </a>
+</div>
