@@ -1,0 +1,50 @@
+@import "../../scss/variables.scss";
+
+h1, h2, h3, h4{
+    color: $black;
+}
+
+nav{   
+    font-family: Marguerite Grotesk;
+    display: flex;
+    justify-content: space-between ;
+    color:$black;
+
+    height: 3rem;
+    
+}
+
+
+.glob{
+    width: 1.5rem;
+    margin-right: 1rem;
+}
+
+.loggo{
+    min-width: 17rem;
+    padding: 0.5rem;
+    //border:solid black 1px;
+}
+
+.loggin
+{
+    display: flex;
+    padding: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+
+    h3{
+        align-self: flex-end;
+        margin-right: 0.5rem;
+
+        &:hover{
+        color:$yellow;
+        }
+    }
+
+    h2{
+        &:hover{
+            color:$yellow;
+        }
+    }   
+}
