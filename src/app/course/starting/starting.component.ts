@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { StartingPageModel } from 'src/app/model/startingPageModel';
 import { StateService } from 'src/app/service/state.service';
 
@@ -13,13 +14,13 @@ export class StartingComponent implements OnInit {
 
   question:string = 'question'
 
-  constructor(private state:StateService) { }
+  constructor(private state:StateService, private router:Router) { }
 
   ngOnInit(): void {
 
+    if(this.router.url == '/course') this.question = 'material';
+
     this.state.examStart.subscribe((page)=>{
-      console.log("Page: ", page);
-      console.log("Page: ", this.pageTemplate);
       this.pageTemplate = page;
     })
   }
