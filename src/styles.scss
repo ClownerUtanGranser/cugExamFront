@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+
+//Reset
+@import url("./app/scss/reset.scss");
+
+//Typography
+@import url("./app/scss/typography.scss");
+
+//Colors
+@import "./app/scss/variables.scss";
+
+h1, h2, h3{
+    color: $white;
+    font-weight: bolder;
+    
+}
+
+h1{
+    font-size: 3rem;
+    letter-spacing: 5px;
+}
+
+h2{
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+}
+
+h3
+{
+    
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+
+}
+
+.small{
+    height: 2rem;
+    width: 2rem;
+
+    margin: 1rem;
+    padding: 1rem;
+    @include column-center;
+    color:$white;
+}
+
+.big{
+
+    height: 25rem;
+    width: 25rem;
+    margin-top: 2rem;
+    padding: 2rem;
+
+}
+
+.column-just-center{
+    @include column-just-center()
+}
