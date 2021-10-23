@@ -1,0 +1,22 @@
+.test-nav{
+    border:solid black 1px;
+    position: fixed;
+    bottom: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.selected{
+    border: 2px solid white;
+}
+
+.red_circle{
+    &:hover, .selected{
+        border: 2px solid white;
+    }
+
+
+}

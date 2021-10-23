@@ -1,0 +1,23 @@
+<div class="questionbox">
+    <div 
+        *ngFor="let question of questions;let i = index;"
+        class="border">
+        <!-- {{ question | json }} -->
+        <!-- {{ i }} -->
+    </div>
+    <app-quiz
+            [question]="questions[showQuestionIndex]"
+            (answerEmit) = answeredQuestion($event)
+        >
+    </app-quiz>
+    <nav class="test-nav">
+        <div
+            *ngFor="let question of questions;let i = index;" 
+            (click)="showQuestion(i)"
+            class="red_circle small "
+            [ngClass]="selectedClass(i, question)"
+            >
+                {{ i+1 }}
+        </div>
+    </nav>
+</div>

@@ -1,0 +1,30 @@
+@import "../../scss/variables.scss";
+
+.container
+{
+    background-color: $purple;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    min-height: calc(100vh - 3rem);
+}
+
+.alternative{
+    color:red;
+    margin: 2rem 2rem 2rem 15rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+
+    span{
+        margin-right: 5px;
+    }
+
+    &:hover, &.selected{
+        color: $light-yellow;
+        font-size: 1.5rem;
+    }
+}
+
