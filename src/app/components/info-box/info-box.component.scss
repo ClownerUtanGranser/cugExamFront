@@ -1,0 +1,18 @@
+@import '../../scss/variables.scss';
+
+.infobox{
+    margin-top: 3rem ;
+    display: flex;
+    color: $white;
+    height: calc(100vh - 3rem);
+    .red_info{
+        width: 40%;
+        padding: 1rem;
+    }
+
+    .purple_info{
+        width: 60%;
+        padding: 1rem;
+    }
+}
+
