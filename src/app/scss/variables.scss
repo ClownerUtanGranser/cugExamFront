@@ -1,0 +1,73 @@
+//Base colors
+  $red: #FF5068;
+  $yellow: #FFD400;
+  $pink: #FF59BD;
+  $white: #FFFFFF;
+  $black: #000000;
+  $beige: #FAF4EF;
+  $grey: #ECEDEC;
+  $green: #3DB96D;
+  $purple: #B8BCFE;
+  $light-yellow: #FFF7E0;
+  $light-pink: #FFEDF9;
+  $light-green: #CFE7CD;
+  $light-purple: #EBEBFE;
+
+@mixin column-just-center()
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin column-align-center()
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin column-center()
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+[class*='red_']{
+    background-color: $red;
+}
+
+
+
+[class*='purple_']{
+  background-color: $purple;
+}
+
+[class*='green_']{
+  background-color: $green;
+}
+
+[class*='yellow_']{
+  background-color: $yellow;
+}
+
+[class*='_circle']{
+  border-radius: 50%;
+  text-align: center;
+}
+
+[class*='_headline']{
+  border-bottom-right-radius: 10rem;
+  border-top-right-radius: 10rem;
+  text-align: center;
+  margin: 2rem 2rem 2rem 0rem;
+  width: 70%;
+
+  padding: 3rem;
+}
+
+[class*='_wide']{
+  width: 90%;
+}
