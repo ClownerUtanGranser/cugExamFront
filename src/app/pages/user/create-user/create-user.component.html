@@ -1,1 +1,40 @@
-<p>create-user works!</p>
+<div class="container">
+  <section [class]="'showRegister'" class="sendpassword">
+
+        <h2>Register an account </h2>
+        <h3>To take the exam</h3>
+        <form [formGroup]="registerForm">
+            <div class="input text">
+                
+                <input id="firstNameNew" name="firstNameNew" type="text" formControlName="firstNameNew" placeholder="Name">
+            </div>
+            <div class="input text">
+                
+                <input id="lastNameNew" name="lastNameNew" type="text" formControlName="lastNameNew" placeholder="Country">
+            </div>
+            <div class="input text">
+                
+                <input id="EmailNew" name="EmailNew" type="text" formControlName="EmailNew" placeholder="E-mail">
+            </div>
+            <div class="input password">
+                
+                <input id="passwordNew" name="passwordNew" type="password" formControlName="passwordNew" placeholder="Password">
+            </div>
+            <div class="input password">
+                
+                <input id="repasswordNew" name="repasswordNew" type="password" formControlName="rePasswordNew" placeholder="Confirm password">
+            </div>
+        </form>
+        <!--
+            (click)="createNewCustomer()"
+        -->
+        <button  class="btn-sign-in">SIGNUP</button>
+        <div class="forgot-password">
+            <a [routerLink]="'/login'" >
+                already registered? Sign in!
+            </a>            
+        </div>
+        <!-- {{ registerForm.value | json }} -->
+        <!-- {{ customer$ | json }} -->
+    </section>
+</div>

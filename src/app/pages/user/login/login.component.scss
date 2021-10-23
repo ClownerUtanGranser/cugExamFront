@@ -1,0 +1,95 @@
+@import "../../../scss/variables.scss";
+
+.container
+{
+    min-height: calc(100vh - 3rem);
+    width: 100%;
+    background-repeat:no-repeat; 
+    background: $yellow;
+    @include column-just-center();
+
+
+    h2{
+        
+        color:$yellow;
+    }
+
+}
+
+.sendpassword{
+
+    padding:2rem 10% 1rem 10%;
+    width: 70%;
+
+    background-color: $red;
+    border-top-right-radius: 15rem;
+    border-bottom-right-radius: 15rem;
+
+
+    .btn-sign-in
+    {
+        width: 100%;
+        margin:2rem 0 1rem 0;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 5px; 
+        background-color: $yellow;
+
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: $red;
+    }
+
+}
+
+.input
+{
+    margin-top: 1rem;
+
+    border:none;
+    border-bottom: solid 2px $yellow;
+    
+
+    input::-webkit-input-placeholder {
+        color: $yellow;
+        background-color: $red;
+        background: $red;
+    }
+
+    input[type=text], input[type=password], input[type=placeholder] {
+        border: none;
+        outline: none;
+        height: 2rem;
+        font-size: 1.2rem;
+        color:$yellow;
+        background-color: $red;
+
+        &:focus{
+             border-bottom: solid 1px $yellow;
+            color:$yellow;
+            
+        }
+    }
+
+    
+
+    
+}
+
+.forgot-password
+    {
+        @include column-align-center;
+        a{
+            cursor: pointer; 
+            font-size: 1rem;
+            letter-spacing: 1px;
+            padding: 0  0 1rem 0;
+            font-weight: bold;
+            color: $yellow;
+            transition: color 1s;
+
+            &:hover{
+                color: $light-green;
+            }
+        }
+    }

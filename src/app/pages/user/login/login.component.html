@@ -1,1 +1,23 @@
-<p>login works!</p>
+<div class="container">
+    <section class="sendpassword">
+        <h2>Login</h2>
+        <form [formGroup]="loginForm">
+            <div class="input text">
+                <label for="Email"></label>
+                <input id="Email" name="Email" type="text" formControlName="Email" placeholder="Email">
+            </div>
+            <div class="input password">
+                <label for="password"></label>
+                <input id="password" name="password" type="password" formControlName="password" placeholder="Password">
+            </div>
+        </form>
+        <!--
+            (click)="loginHttp()"
+        -->
+        <button  class="btn-sign-in">send</button>
+        <div class="forgot-password">
+                <a>Forgot password</a>
+                <a [routerLink]="['/register']" >Not registered user? Sign up!</a>
+            </div>
+    </section>
+</div>
