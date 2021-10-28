@@ -4,17 +4,16 @@
         <form [formGroup]="loginForm">
             <div class="input text">
                 <label for="Email"></label>
-                <input id="Email" name="Email" type="text" formControlName="Email" placeholder="Email">
+                <input id="Email" name="Email" type="text" formControlName="Email" placeholder="Email" autocomplete="off" >
             </div>
             <div class="input password">
                 <label for="password"></label>
                 <input id="password" name="password" type="password" formControlName="password" placeholder="Password">
             </div>
         </form>
-        <!--
-            (click)="loginHttp()"
-        -->
-        <button  class="btn-sign-in">send</button>
+       <app-loader *ngIf="loading" ></app-loader>
+       <div *ngIf="showError" class="error">Email or password is not correct</div>
+        <button (click)="login()" class="btn-sign-in">send</button>
         <div class="forgot-password">
                 <a>Forgot password</a>
                 <a [routerLink]="['/register']" >Not registered user? Sign up!</a>

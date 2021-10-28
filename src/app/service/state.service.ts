@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
+import { ExamUser } from '../model/examUser';
 import { Question } from '../model/question';
 import { StartingPageModel } from '../model/startingPageModel';
 
@@ -10,6 +11,8 @@ export class StateService {
 
   private _examStart:BehaviorSubject<StartingPageModel> = new BehaviorSubject<StartingPageModel>(null);
   private _questions:BehaviorSubject<Question[]> = new BehaviorSubject<Question[]>([]);
+
+  private _examUser:BehaviorSubject<ExamUser> = new BehaviorSubject<ExamUser>(null)
 
   constructor() { }
 
@@ -79,5 +82,16 @@ export class StateService {
     this.setQuestions(questions);
   }
 
+  //Exam user
+
+  get examUser():Observable<ExamUser>
+  {
+    return this._examUser;
+  }
+
+  setExamUser(examUser:ExamUser)
+  {
+    this._examUser.next(examUser);
+  }
 
 }

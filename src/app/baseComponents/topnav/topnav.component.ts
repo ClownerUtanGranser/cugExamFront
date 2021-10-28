@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ExamUser } from 'src/app/model/examUser';
+import { StateService } from 'src/app/service/state.service';
 
 @Component({
   selector: 'app-topnav',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopnavComponent implements OnInit {
 
-  constructor() { }
+  examUser:ExamUser | undefined;
+
+  constructor(private state:StateService) { }
 
   ngOnInit(): void {
+    this.state.examUser.subscribe((user)=>{
+      this.examUser = user;
+    })
+  }
+
+  logout()
+  {
+    this.state.setExamUser(null);
   }
 
 }

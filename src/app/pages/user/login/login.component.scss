@@ -4,14 +4,19 @@
 {
     min-height: calc(100vh - 3rem);
     width: 100%;
-    background-repeat:no-repeat; 
-    background: $yellow;
+     
+    // background:  url("../../../../assets/img/miniature_grekland_henrik_kindgren.jpg");
+    background: linear-gradient(rgba($light-green,.0), rgba($light-green,0.8)),
+    url("../../../../assets/img/miniature_grekland_henrik_kindgren.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    //background: rgba($light-green, 1) ;
     @include column-just-center();
 
 
     h2{
         
-        color:$yellow;
+        color:$light-green;
     }
 
 }
@@ -33,7 +38,7 @@
         padding: 0.5rem;
         border: none;
         border-radius: 5px; 
-        background-color: $yellow;
+        background-color: $light-green;
 
         font-weight: bold;
         font-size: 1.2rem;
@@ -47,11 +52,11 @@
     margin-top: 1rem;
 
     border:none;
-    border-bottom: solid 2px $yellow;
+    border-bottom: solid 2px $light-green;
     
 
     input::-webkit-input-placeholder {
-        color: $yellow;
+        color: $light-green;
         background-color: $red;
         background: $red;
     }
@@ -61,19 +66,22 @@
         outline: none;
         height: 2rem;
         font-size: 1.2rem;
-        color:$yellow;
+        color:$light-green;
         background-color: $red;
 
         &:focus{
-             border-bottom: solid 1px $yellow;
-            color:$yellow;
+             border-bottom: solid 1px $light-green;
+             width: 100%;
+            color:$light-green;
             
         }
-    }
+    }   
+}
 
-    
-
-    
+.error{
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
 }
 
 .forgot-password
@@ -85,7 +93,7 @@
             letter-spacing: 1px;
             padding: 0  0 1rem 0;
             font-weight: bold;
-            color: $yellow;
+            color: $light-green;
             transition: color 1s;
 
             &:hover{
