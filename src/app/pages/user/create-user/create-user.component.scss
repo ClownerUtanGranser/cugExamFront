@@ -4,8 +4,13 @@
 {
     min-height: calc(100vh - 3rem);
     width: 100%;
-    background-repeat:no-repeat; 
-    background: $yellow;
+    background: linear-gradient(rgba($yellow,.4), rgba($yellow,0.7)),
+    url("../../../../assets/img/miniature_grekland_henrik_kindgren.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-repeat:no-repeat; 
+
+    // background: $yellow;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -23,7 +28,7 @@
     max-width: 30rem;
     min-height: calc(100vh - 5rem) ;
 
-    background-color: $red;
+    background-color: $green;
     border-top-left-radius: 15rem;
     border-top-right-radius: 15rem;
 
@@ -38,7 +43,7 @@
 
         font-weight: bold;
         font-size: 1.2rem;
-        color: $red;
+        color: $green;
     }
 
     .input
@@ -53,8 +58,8 @@
 
     input::-webkit-input-placeholder {
         color: $yellow;
-        background-color: $red;
-        background: $red;
+        background-color: $green;
+        background: $green;
     }
 
     input[type=text], input[type=password]{
@@ -63,7 +68,7 @@
         height: 2rem;
         font-size: 1.2rem;
         color: $yellow;
-        background-color: $red;
+        background-color: $green;
 
         &:focus{
             border-bottom: solid 1px $yellow;

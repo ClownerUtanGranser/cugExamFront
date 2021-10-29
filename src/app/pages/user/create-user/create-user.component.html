@@ -3,38 +3,35 @@
 
         <h2>Register an account </h2>
         <h3>To take the exam</h3>
-        <form [formGroup]="registerForm">
+        <form [formGroup]="registerForm" >
             <div class="input text">
                 
-                <input id="firstNameNew" name="firstNameNew" type="text" formControlName="firstNameNew" placeholder="Name">
+                <input id="name" name="name" type="text" formControlName="name" placeholder="Name" autocomplete="off">
             </div>
             <div class="input text">
                 
-                <input id="lastNameNew" name="lastNameNew" type="text" formControlName="lastNameNew" placeholder="Country">
+                <input id="country" name="country" type="text" formControlName="country" placeholder="Country" autocomplete="off">
             </div>
             <div class="input text">
                 
-                <input id="EmailNew" name="EmailNew" type="text" formControlName="EmailNew" placeholder="E-mail">
+                <input id="email" name="email" type="text" formControlName="email" placeholder="E-mail" >
             </div>
             <div class="input password">
                 
-                <input id="passwordNew" name="passwordNew" type="password" formControlName="passwordNew" placeholder="Password">
+                <input id="password" name="password" type="password" formControlName="password" placeholder="Password">
             </div>
             <div class="input password">
                 
-                <input id="repasswordNew" name="repasswordNew" type="password" formControlName="rePasswordNew" placeholder="Confirm password">
+                <input id="repassword" name="repassword" type="password" formControlName="rePassword" placeholder="Confirm password">
             </div>
         </form>
-        <!--
-            (click)="createNewCustomer()"
-        -->
-        <button  class="btn-sign-in">SIGNUP</button>
+        <app-loader *ngIf="loading" ></app-loader>
+        <button (click)="createUser()" class="btn-sign-in">SIGNUP</button>
         <div class="forgot-password">
             <a [routerLink]="'/login'" >
                 already registered? Sign in!
-            </a>            
+            </a>  
+              {{ registerForm.value | json }}        
         </div>
-        <!-- {{ registerForm.value | json }} -->
-        <!-- {{ customer$ | json }} -->
-    </section>
+    </section>   
 </div>
