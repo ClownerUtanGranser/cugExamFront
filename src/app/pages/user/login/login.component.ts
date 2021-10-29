@@ -37,11 +37,10 @@ export class LoginComponent implements OnInit {
 
     authLogin.userEmail = this.loginForm.value.Email;
     authLogin.password = this.loginForm.value.password;
-    console.log("auth: ", authLogin);
+    
     this.loginService.httpLogin(authLogin).subscribe((jwt)=>{
-      console.log("RES: ", jwt);
       this.loginService.httpGetUserAndSetState(authLogin.userEmail, jwt.jwt);
-      this.router.navigate(['home']);
+      this.router.navigate(['exam']);
       this.loading = false;
     },
     (error)=>{

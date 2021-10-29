@@ -50,7 +50,7 @@
 .input
 {
     margin-top: 1rem;
-
+    
     border:none;
     border-bottom: solid 2px $light-green;
     
@@ -59,6 +59,8 @@
         color: $light-green;
         background-color: $red;
         background: $red;
+        
+        
     }
 
     input[type=text], input[type=password], input[type=placeholder] {
@@ -68,6 +70,7 @@
         font-size: 1.2rem;
         color:$light-green;
         background-color: $red;
+        width: 100%;
 
         &:focus{
              border-bottom: solid 1px $light-green;

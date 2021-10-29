@@ -31,4 +31,9 @@ export class LoginService {
         this.state.setExamUser(user);
       });
   }
+
+  createUser(examUser:ExamUser):Observable<{cugExamUser:ExamUser, jwt:string}>
+  {
+    return this.http.post<{cugExamUser:ExamUser, jwt:string}>(`${this.baseUrlUser}/create`, examUser);
+  }
 }
