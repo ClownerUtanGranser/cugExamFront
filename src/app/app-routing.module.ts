@@ -8,14 +8,15 @@ import { QuizFrameComponent } from './pages/quiz-frame/quiz-frame.component';
 import { CreateUserComponent } from './pages/user/create-user/create-user.component';
 import { HomeUserComponent } from './pages/user/home-user/home-user.component';
 import { LoginComponent } from './pages/user/login/login.component';
+import { GaurdGuard } from './service/auth/gaurd.guard';
 
 const routes: Routes = [
   {path:'', component: LandingComponent},
   {path:'course', component: StartingComponent},
-  {path:'course/material', component: CourseInfoComponent },
+  {path:'course/:material', component: CourseInfoComponent },
   {path:'info', component: InfoBoxComponent},
-  {path:'exam', component: StartingComponent},
-  {path:'exam/question', component: QuizFrameComponent},
+  {path:'exam', component: StartingComponent, canActivate: [GaurdGuard]},
+  {path:'exam/question', component: QuizFrameComponent, canActivate: [GaurdGuard]},
   {path:'login', component: LoginComponent},
   {path:'register', component: CreateUserComponent},
   {path:'home', component: HomeUserComponent}

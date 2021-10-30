@@ -10,15 +10,26 @@ import { StartingPageModel } from '../model/startingPageModel';
 export class StateService {
 
   private _examStart:BehaviorSubject<StartingPageModel> = new BehaviorSubject<StartingPageModel>(null);
+  private _courseStart:BehaviorSubject<StartingPageModel> = new BehaviorSubject<StartingPageModel>(null);
   private _questions:BehaviorSubject<Question[]> = new BehaviorSubject<Question[]>([]);
 
   private _examUser:BehaviorSubject<ExamUser> = new BehaviorSubject<ExamUser>(null)
 
   constructor() { }
 
-  get examStart():BehaviorSubject<StartingPageModel>
+  get courseStart():Observable<StartingPageModel>
   {
-    return this._examStart;
+    return this._courseStart.asObservable();
+  }
+
+  setCourseStart(startingPage:StartingPageModel)
+  {
+    this._courseStart.next(startingPage);
+  }
+
+  get examStart():Observable<StartingPageModel>
+  {
+    return this._examStart.asObservable();
   }
 
   setExamStart(startingPage:StartingPageModel)
@@ -37,7 +48,7 @@ export class StateService {
   }
   //Starting values
 
-  setExamStartBasealuesEng()
+  setExamStartBaseValuesEng()
   {
     let start:StartingPageModel = {
       headline : "Welcome",
@@ -49,7 +60,16 @@ export class StateService {
     
     }
 
-     this.setExamStart(start);
+    let startExam:StartingPageModel = {
+      headline : "FINAL TEST",
+      secondHedline: '',
+      texts: [
+        "The final test consists of 13 questions. In order to pass, you must get a minimum of 9 questions correct.", "Make sure you can sit in a place where you can focus undisturbed for at least 30 minutes."
+      ]
+    
+    }
+    this.setExamStart(startExam)
+    this.setCourseStart(start);
   }
 
   setExamQuestionsBasealue()

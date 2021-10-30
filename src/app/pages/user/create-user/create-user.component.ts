@@ -47,6 +47,7 @@ export class CreateUserComponent implements OnInit {
       let newUser:ExamUser = user.cugExamUser;
       newUser.jwt = user.jwt;
       this.state.setExamUser(newUser);
+      this.loginService.setToSessionStorage(user.jwt);
       this.loading = false;
       this.router.navigate(['exam']);
     },

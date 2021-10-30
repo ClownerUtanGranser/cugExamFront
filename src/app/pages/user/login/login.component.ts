@@ -40,7 +40,6 @@ export class LoginComponent implements OnInit {
     
     this.loginService.httpLogin(authLogin).subscribe((jwt)=>{
       this.loginService.httpGetUserAndSetState(authLogin.userEmail, jwt.jwt);
-      this.router.navigate(['exam']);
       this.loading = false;
     },
     (error)=>{

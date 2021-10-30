@@ -18,11 +18,20 @@ export class StartingComponent implements OnInit {
 
   ngOnInit(): void {
 
-    if(this.router.url == '/course') this.question = 'material';
-
-    this.state.examStart.subscribe((page)=>{
+    if(this.router.url == '/course')
+    {
+      this.question = 'material';
+      this.state.courseStart.subscribe((page)=>{
       this.pageTemplate = page;
-    })
+      })
+    }
+    else{
+      this.state.examStart.subscribe((page)=>{
+        this.pageTemplate = page;
+        })
+    } 
+
+    
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService } from './service/auth/login.service';
 import { BaseInfoService } from './service/base-info.service';
 import { StateService } from './service/state.service';
 
@@ -9,12 +10,14 @@ import { StateService } from './service/state.service';
 })
 export class AppComponent implements OnInit{
 
-  constructor(private state:StateService, private baseInfoService:BaseInfoService){}
+  constructor(private state:StateService, private baseInfoService:BaseInfoService, private loginService:LoginService){}
 
   ngOnInit(): void {
-    this.state.setExamStartBasealuesEng();
+    this.loginService.readJwt();
+    this.state.setExamStartBaseValuesEng();
     this.state.setExamQuestionsBasealue();
     this.baseInfoService.startingServer();
+    
   }
   
 }
