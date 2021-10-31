@@ -14,8 +14,7 @@ export class SectionComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params.subscribe((param)=>{
-      this.url = param.material
-      console.log(typeof param.material)
+      this.url = param.material;
     } )
   }
 

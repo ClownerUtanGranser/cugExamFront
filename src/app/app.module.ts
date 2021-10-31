@@ -22,6 +22,7 @@ import { LoginComponent } from './pages/user/login/login.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { FilmComponent } from './course/film/film.component';
 import { SectionComponent } from './course/section/section.component';
+import { DosAndDontsComponent } from './course/dos-and-donts/dos-and-donts.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { SectionComponent } from './course/section/section.component';
     HomeAdminComponent,
     LoaderComponent,
     FilmComponent,
-    SectionComponent
+    SectionComponent,
+    DosAndDontsComponent,
   ],
   imports: [
     BrowserModule,

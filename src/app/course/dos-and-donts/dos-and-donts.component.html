@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="heading">
+        <h2>{{ dosAndDonts.headline }}</h2>
+        <p>{{ dosAndDonts.headlineText }} </p>
+    </div>
+    <div class="do-dont">
+        <div class="do">
+            <p>Do</p>
+            <ul>
+                <li *ngFor="let do of dosAndDonts.dos">{{ do }}</li>
+            </ul>
+        </div>
+        <div class="dont">
+            <p>Dont</p>
+            <ul>
+                <li *ngFor="let dont of dosAndDonts.donts">{{ dont }}</li>
+            </ul>
+        </div>
+    </div>
+</div>
