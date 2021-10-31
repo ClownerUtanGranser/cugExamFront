@@ -1,0 +1,20 @@
+<div class="container">
+    <h2>{{movieObj.headline}}</h2>
+    <p *ngFor="let movieText of movieObj.movieText">
+        {{ movieText }}
+    </p>
+    <div class="movie">
+        <div class="iframe">
+            <iframe [src]="movieObj.movieUrl" frameborder="0" allow="accelerometer;
+                autoplay;
+                encrypted-media; 
+                gyroscope; 
+                picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</div>
+<!--
+     
+    src="https://www.youtube.com/embed/5gqYeSMuYDs"
+-->

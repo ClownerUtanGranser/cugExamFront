@@ -1,0 +1,61 @@
+@import '../../scss/variables.scss';
+
+.container
+{
+    margin-top:1.5rem;
+    padding-top: 3rem;
+    min-height: calc(100vh - 4.5rem);
+    width: 100%;
+    color: $yellow; 
+    background: $green;
+    @include column-align-center();
+
+    h2{
+        margin-bottom: 2rem;
+        color: $yellow; 
+    }
+
+    p{
+        // color:$white;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0rem 1rem 0rem 1rem;
+        
+    }
+}
+
+
+
+.movie{
+    margin-top:2rem;
+    width: 50%;
+}
+
+.iframe{
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    
+}
+
+.iframe iframe{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .movie{
+        margin-top:2rem;
+        width: 80%;
+    }
+    
+  }
