@@ -12,6 +12,6 @@ export class BaseInfoService {
 
   startingServer()
   {
-    this.http.get(`${this.baseUrl}/wakeup`).subscribe((res)=> console.log(res));
+    this.http.get(`${this.baseUrl}/wakeup`).subscribe((res)=> res);
   }
 }
