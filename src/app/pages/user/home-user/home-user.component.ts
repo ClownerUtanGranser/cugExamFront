@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { ExamUser } from 'src/app/model/examUser';
+import { StateService } from 'src/app/service/state.service';
 
 @Component({
   selector: 'app-home-user',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeUserComponent implements OnInit {
 
-  constructor() { }
+  examUser:ExamUser | undefined; 
+
+  seatForm = this.fb.group({
+    seatNumber: []
+  })
+
+  constructor(private state:StateService,
+              private fb:FormBuilder) { }
 
   ngOnInit(): void {
+
+    this.state.examUser.subscribe((user)=>{
+      this.examUser = user;
+    })
   }
 
 }
