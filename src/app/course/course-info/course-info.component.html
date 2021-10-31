@@ -1,6 +1,15 @@
-<div class="container">
-    <h1>Library</h1>
-        <div class="point">
+<div 
+    class="container"
+    >
+     <h1>{{ chapters.headline }}</h1>
+     <ul>
+         <li *ngFor="let chapter of chapters.chapters; let i = index">
+             <a [routerLink]="'.//'+ i.toString()"><span class="strong">SECTION {{ i + 1 }}</span><span class="headline-text">{{ chapter }}</span>
+            </a>
+        </li>
+     </ul>
+    
+    <!--    <div class="point">
             <ul>
                 <li>Code of conduct</li>
                 <li> Risk analysis</li> 
@@ -14,6 +23,9 @@
 
     <div class="courseinfo">
         <app-info-box></app-info-box>
-    </div>
+    </div> -->
 </div>
-
+ <app-film
+    *ngIf="url=='introduction'"
+>
+</app-film>

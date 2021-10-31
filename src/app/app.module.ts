@@ -20,6 +20,8 @@ import { HomeUserComponent } from './pages/user/home-user/home-user.component';
 import { HomeAdminComponent } from './pages/user/home-admin/home-admin.component';
 import { LoginComponent } from './pages/user/login/login.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { FilmComponent } from './course/film/film.component';
+import { SectionComponent } from './course/section/section.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { LoaderComponent } from './components/loader/loader.component';
     CreateUserComponent,
     HomeUserComponent,
     HomeAdminComponent,
-    LoaderComponent
+    LoaderComponent,
+    FilmComponent,
+    SectionComponent
   ],
   imports: [
     BrowserModule,
