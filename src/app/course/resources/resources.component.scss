@@ -1,0 +1,51 @@
+@import "../../scss/variables.scss";
+
+.container
+{
+    padding-top: 3rem;
+    min-height: calc(100vh - 3rem);
+    width: 100%;
+    color: $white; 
+    background: $purple;
+    @include column-align-center();
+
+    
+}
+
+.heading{
+    width: 100%;
+    padding:2rem;
+    @include column-align-center();
+
+
+    &.right{
+        margin-top:1rem;
+        background-color: $red;
+        border-top-right-radius: 15rem;
+        border-bottom-right-radius: 15rem;
+        ul{
+            margin-left: 2rem
+        }
+        li{
+            margin: 0.5rem;
+            font-size: 1.2rem;
+        }
+        
+    }
+}
+
+.btn-start
+{
+    width: 100%;
+    margin:2rem 0 1rem 0;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px; 
+    background-color: $red;
+
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: $white;
+    cursor: pointer;
+}
+

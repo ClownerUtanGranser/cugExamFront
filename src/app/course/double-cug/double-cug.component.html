@@ -1,0 +1,17 @@
+<div class="container">
+
+    
+
+    <h2>{{introductionObj.headline }}</h2>
+    <div class="heading left">
+        <h2>{{introductionObj.paragraph[0].subTitle}}</h2>
+        <p *ngFor="let text of introductionObj.paragraph[0].text" >{{ text }}</p>
+    </div>
+    <div class="heading right">
+        <h2>{{introductionObj.paragraph[1].subTitle}}</h2>
+        <p *ngFor="let text of introductionObj.paragraph[1].text" >{{ text }}</p>
+    </div>
+
+    
+    
+</div>

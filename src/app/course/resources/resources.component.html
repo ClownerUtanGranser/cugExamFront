@@ -1,0 +1,18 @@
+<div class="container">
+                
+    <div class="heading right"> 
+        <h1> {{ resource.headline }} </h1>
+        <ul>
+            <li *ngFor="let point of resource.points" >
+                {{ point }}
+            </li>
+        </ul>
+    </div>
+    <a>   
+        <button 
+            class="btn-start"
+            >
+                {{  resource.links.linkText }}
+        </button>
+    </a>
+</div>

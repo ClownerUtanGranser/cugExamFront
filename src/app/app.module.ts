@@ -23,6 +23,8 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { FilmComponent } from './course/film/film.component';
 import { SectionComponent } from './course/section/section.component';
 import { DosAndDontsComponent } from './course/dos-and-donts/dos-and-donts.component';
+import { DoubleCugComponent } from './course/double-cug/double-cug.component';
+import { ResourcesComponent } from './course/resources/resources.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +47,8 @@ import { DosAndDontsComponent } from './course/dos-and-donts/dos-and-donts.compo
     FilmComponent,
     SectionComponent,
     DosAndDontsComponent,
+    DoubleCugComponent,
+    ResourcesComponent
   ],
   imports: [
     BrowserModule,

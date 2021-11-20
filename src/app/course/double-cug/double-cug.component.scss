@@ -1,0 +1,50 @@
+@import '../../scss/variables.scss';
+
+.container
+{
+    position: relative;
+    padding-top: 3rem;
+    min-height: calc(100vh - 3rem);
+    width: 100%;
+    color: $yellow; 
+    background: $green;
+    @include column-align-center();
+
+    h2{
+        margin-bottom: 2rem;
+        color: $yellow; 
+    }
+
+    p{
+        // color:$white;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0rem 1rem 0.5rem 1rem;
+        
+    }
+}
+
+.heading{
+    width: 100%;
+    padding:2rem;
+    text-align: center;
+
+    &.left{
+        background-color: $red;
+        border-top-left-radius: 15rem;
+        border-bottom-left-radius: 15rem;
+    }
+
+    &.right{
+        margin-top:1rem;
+        background-color: $purple;
+        border-top-right-radius: 15rem;
+        border-bottom-right-radius: 15rem;
+        
+        h2, p{
+            color:$red;
+        }
+        
+    }
+}
+
