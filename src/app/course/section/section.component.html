@@ -1,9 +1,29 @@
 <div class="section">
+
+    <div class="nav top">
+        <p (click)="previousPage()"><</p>
+        <p (click)="nextPage()">></p>
+    </div>
+    <div class="nav bottom">
+        <p (click)="previousPage()"><</p>
+        <p (click)="nextPage()">></p>
+    </div>
+    <app-double-cug
+        *ngIf="page == '1' && url == 'introduction'"
+    ></app-double-cug>
+    <app-resources
+    *ngIf="page == '2' && url == 'introduction'"
+    >
+    </app-resources>
     <app-film
-        *ngIf="url == '1'"
+        *ngIf="page == '3' && url == 'introduction'"
     ></app-film>
     <app-dos-and-donts
-        *ngIf="url == '0'"
+        *ngIf="page == '4' && url == 'introduction'"
     >
     </app-dos-and-donts>
+    
+
+    
+
 </div>

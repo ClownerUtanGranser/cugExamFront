@@ -1,0 +1,30 @@
+@import '../../scss/variables.scss';
+
+.section{
+    position: relative;
+}
+
+.nav{
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: $yellow;
+    z-index: 2;
+
+    p{
+        font-size: 2rem;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    &.top{
+        top: 1rem;
+        
+    }
+
+    &.bottom{
+        bottom: 1rem;
+    }
+}
