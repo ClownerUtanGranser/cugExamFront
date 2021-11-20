@@ -16,6 +16,7 @@ const routes: Routes = [
   {path:'course', component: StartingComponent},
   {path:'course/material', component: CourseInfoComponent },
   {path:'course/material/:material', component: SectionComponent },
+  {path:'course/material/:material/:page', component: SectionComponent },
   {path:'info', component: InfoBoxComponent},
   {path:'exam', component: StartingComponent, canActivate: [GaurdGuard]},
   {path:'exam/question', component: QuizFrameComponent, canActivate: [GaurdGuard]},
