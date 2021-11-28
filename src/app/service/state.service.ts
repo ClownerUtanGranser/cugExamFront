@@ -78,34 +78,9 @@ export class StateService {
     this.setCourseStart(start);
   }
 
-  setExamQuestionsBasealue()
+  setExamQuestionsBasealue(questions:Question[])
   {
-
-    let question1:Question = new Question();
-    question1.questionText = "1. If you suspect a case of violence against children, you should?";
-    question1.answres.push("Discuss with a colleague on what is the next step to take");
-    question1.answres.push("Call or email the Secretary - General and explain what happened");
-    question1.answres.push("Follow the Action Plan in case of suspicious crime (Listen to the child, let the child speak freely, fill in the incident report, assure the child, explain the child that you fill a report and what the next steps will be)");
-
-
-
-    let question2:Question = new Question();
-
-    question2.questionText = "2. Välj rätt!";
-    question2.answres.push("Rätt");
-    question2.answres.push("FEL");
-    question2.answres.push("FEL");
-
-    let question3:Question = new Question();
-
-    question3.questionText = "3. Välj rätt!";
-    question3.answres.push("E");
-    question3.answres.push("EL");
-    question3.answres.push("FEL");
-
-    let questions:Question[] = [question1, question2, question3];
-
-    this.setQuestions(questions);
+    this._questions.next(questions);
   }
 
   //Exam user
