@@ -17,6 +17,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     display: flex;
+    transition: color .3s, font-size .3s;
 
     span{
         margin-right: 5px;
@@ -25,6 +26,7 @@
     &:hover, &.selected{
         color: $light-yellow;
         font-size: 1.5rem;
+        
     }
 }
 

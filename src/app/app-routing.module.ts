@@ -20,6 +20,7 @@ const routes: Routes = [
   {path:'info', component: InfoBoxComponent},
   {path:'exam', component: StartingComponent, canActivate: [GaurdGuard]},
   {path:'exam/question', component: QuizFrameComponent, canActivate: [GaurdGuard]},
+  {path:'exam/question/:questionNumber', component: QuizFrameComponent, canActivate: [GaurdGuard]},
   {path:'login', component: LoginComponent},
   {path:'register', component: CreateUserComponent},
   {path:'home', component: HomeUserComponent}

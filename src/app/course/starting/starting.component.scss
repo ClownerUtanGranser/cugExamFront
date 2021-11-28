@@ -41,4 +41,9 @@
     font-weight: bold;
     font-size: 1.2rem;
     color: $white;
+
+    &:hover{
+        border: solid $yellow 4px;
+        transition: border .5s;
+    }
 }

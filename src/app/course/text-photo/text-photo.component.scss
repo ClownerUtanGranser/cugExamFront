@@ -7,7 +7,7 @@
     min-height: calc(100vh - 3rem);
     width: 100%;
     color: $red; 
-    background: $purple;
+    background: linear-gradient(to left, $light-green 42%, $light-pink 67%, $light-green 0%, $light-pink 0%);
     display: flex;
 
     .text{
@@ -22,7 +22,7 @@
         background: //linear-gradient(rgba($light-green,.0), rgba($light-green,0.8)),
         url("../../../assets/img/miniature_grekland_henrik_kindgren.jpg");
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
 
     h2{
@@ -33,7 +33,7 @@
 
     p{
         // color:$white;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         
         margin: 0rem 2rem 2rem 1rem;
         

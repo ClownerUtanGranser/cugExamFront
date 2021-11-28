@@ -12,7 +12,7 @@ export class StartingComponent implements OnInit {
 
   pageTemplate:StartingPageModel | undefined;
 
-  question:string = 'question'
+  question:string = 'question/1'
 
   constructor(private state:StateService, private router:Router) { }
 

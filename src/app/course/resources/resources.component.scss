@@ -47,5 +47,10 @@
     font-size: 1.2rem;
     color: $white;
     cursor: pointer;
+
+    &:hover{
+        border: solid $yellow 4px;
+        transition: border .5s;
+    }
 }
 
