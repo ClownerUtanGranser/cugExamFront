@@ -1,0 +1,65 @@
+@import '../../scss/variables.scss';
+
+.container
+{
+    
+    padding: 3rem 1rem 1rem 1rem; 
+    min-height: calc(100vh - 3rem);
+    width: 100%;
+    color: $red; 
+    background: $purple;
+    display: flex;
+
+    .text{
+        width: 50%;
+    }
+
+    .img{
+        width: 50%;
+        height: 75vh;
+        
+        align-self: center;
+        background: //linear-gradient(rgba($light-green,.0), rgba($light-green,0.8)),
+        url("../../../assets/img/miniature_grekland_henrik_kindgren.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    h2{
+        margin-bottom: 1rem;
+        color: $red; 
+        margin-left: 1rem;
+    }
+
+    p{
+        // color:$white;
+        font-size: 1.5rem;
+        
+        margin: 0rem 2rem 2rem 1rem;
+        
+    }
+}
+
+.heading{
+    
+    width:100%;
+}
+
+.do-dont{
+
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.do, .dont{
+
+    padding:1rem;
+    font-size: 1.5rem;
+    
+    li{
+        margin: 1rem;
+    }
+    
+}

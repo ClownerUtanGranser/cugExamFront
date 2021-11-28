@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="text">
+        <h2>{{photoText.headline}}</h2>
+        <h3 *ngIf="photoText?.headlineText">{{photoText?.headlineText}}</h3>
+        <p 
+            class="sectionText"
+            *ngFor="let text of photoText.sectionText"
+        >
+            {{text}}
+        </p>
+        <p 
+            class="points"
+            *ngFor="let point of photoText.points"
+            >
+            {{point}}
+        </p>
+
+    </div>
+    <div class="img">
+
+    </div>
+</div>

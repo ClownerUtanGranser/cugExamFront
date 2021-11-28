@@ -2,7 +2,9 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { ExamUser } from '../model/examUser';
 import { Question } from '../model/question';
-import { StartingPageModel } from '../model/startingPageModel';
+import { StartingPageModel } from '../model/pageModel/startingPageModel';
+import { dosAndDonts } from '../model/pageModel/dos-and-donts';
+import { PhotoText } from '../model/pageModel/photoText';
 
 @Injectable({
   providedIn: 'root'
@@ -14,6 +16,10 @@ export class StateService {
   private _questions:BehaviorSubject<Question[]> = new BehaviorSubject<Question[]>([]);
 
   private _examUser:BehaviorSubject<ExamUser> = new BehaviorSubject<ExamUser>(null)
+
+  //Pages
+  private _doesAndDonts:BehaviorSubject<dosAndDonts> = new BehaviorSubject<dosAndDonts>(null)
+  private _photoText:BehaviorSubject<PhotoText> = new BehaviorSubject<PhotoText>(null)
 
   constructor() { }
 
@@ -112,6 +118,28 @@ export class StateService {
   setExamUser(examUser:ExamUser)
   {
     this._examUser.next(examUser);
+  }
+
+  //Course pages 
+
+  getDoesAndDonts():Observable<dosAndDonts>
+  {
+    return this._doesAndDonts.asObservable();
+  }
+
+  setDoesAndDonts(page:dosAndDonts)
+  {
+    this._doesAndDonts.next(page);
+  }
+
+  getPhotoText():Observable<PhotoText>
+  {
+    return this._photoText.asObservable();
+  }
+
+  setPhotoText(page:PhotoText)
+  {
+    this._photoText.next(page);
   }
 
 }

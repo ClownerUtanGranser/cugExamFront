@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { dosAndDontdText } from './model/pageModel/dos-and-donts';
+import { PhotoTextObj } from './model/pageModel/photoText';
 import { LoginService } from './service/auth/login.service';
 import { BaseInfoService } from './service/base-info.service';
 import { StateService } from './service/state.service';
@@ -10,6 +12,9 @@ import { StateService } from './service/state.service';
 })
 export class AppComponent implements OnInit{
 
+  pages = new dosAndDontdText();
+  pages2 = new PhotoTextObj();
+
   constructor(private state:StateService, private baseInfoService:BaseInfoService, private loginService:LoginService){}
 
   ngOnInit(): void {
@@ -17,6 +22,8 @@ export class AppComponent implements OnInit{
     this.state.setExamStartBaseValuesEng();
     this.state.setExamQuestionsBasealue();
     this.baseInfoService.startingServer();
+    this.state.setDoesAndDonts(this.pages.page3);
+    this.state.setPhotoText(this.pages2.page2);
     
   }
   

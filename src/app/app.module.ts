@@ -25,6 +25,7 @@ import { SectionComponent } from './course/section/section.component';
 import { DosAndDontsComponent } from './course/dos-and-donts/dos-and-donts.component';
 import { DoubleCugComponent } from './course/double-cug/double-cug.component';
 import { ResourcesComponent } from './course/resources/resources.component';
+import { TextPhotoComponent } from './course/text-photo/text-photo.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { ResourcesComponent } from './course/resources/resources.component';
     SectionComponent,
     DosAndDontsComponent,
     DoubleCugComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    TextPhotoComponent
   ],
   imports: [
     BrowserModule,

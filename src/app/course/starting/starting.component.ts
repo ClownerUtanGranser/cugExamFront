@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { StartingPageModel } from 'src/app/model/startingPageModel';
+import { StartingPageModel } from 'src/app/model/pageModel/startingPageModel';
 import { StateService } from 'src/app/service/state.service';
 
 @Component({
