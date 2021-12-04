@@ -3,15 +3,18 @@
         <h2>{{ dosAndDonts.headline }}</h2>
         <p>{{ dosAndDonts.headlineText }} </p>
     </div>
+    
     <div class="do-dont">
         <div class="do">
-            <p>Do</p>
+            <p>{{dosAndDonts.doHeadline}}</p>
+            <p *ngFor="let do of dosAndDonts.dosText"> {{do}} </p>
             <ul>
                 <li *ngFor="let do of dosAndDonts.dos">{{ do }}</li>
             </ul>
         </div>
         <div class="dont">
-            <p>Dont</p>
+            <p>{{dosAndDonts.dontHeadline}}</p>
+            <p *ngFor="let dont of dosAndDonts.dontsText"> {{dont}} </p>
             <ul>
                 <li *ngFor="let dont of dosAndDonts.donts">{{ dont }}</li>
             </ul>

@@ -16,6 +16,11 @@ export class SectionComponent implements OnInit {
 
   page2:PhotoText;
   page4:dosAndDonts;
+  preventionAndReactionToProtectChildrenEnsureSafetyOfChildren:dosAndDonts;
+  cwbSwedenChildProtectionPolicy:PhotoText;
+  
+  //working with children
+  safetyGuidelinesForLargeCrowds:PhotoText;
 
   constructor(private route: ActivatedRoute,
               private router: Router,
@@ -30,12 +35,17 @@ export class SectionComponent implements OnInit {
 
     this.state.getDoesAndDonts().subscribe((page) => this.page4 = page);
     this.state.getPhotoText().subscribe((page) => this.page2 = page)
+    this.state.getSafetyGuidelinesForLargeCrowds().subscribe((page) => this.safetyGuidelinesForLargeCrowds = page);
+    this.state.getPreventionAndReactionToProtectChildrenEnsureSafetyOfChildren().subscribe((page) =>{
+      this.preventionAndReactionToProtectChildrenEnsureSafetyOfChildren = page;
+    })
+    this.state.getCwbSwedenChildProtectionPolicy().subscribe((page)=> this.cwbSwedenChildProtectionPolicy = page);
   }
 
   nextPage()
   {
     console.log("Router: ", this.route.params);
-    if(parseInt(this.page) > 0 )
+    if(parseInt(this.page) > 0 && parseInt(this.page)<4)
     {
       this.router.navigate(['/course/material/',this.url, parseInt(this.page)  +1])
     }

@@ -15,6 +15,8 @@ export class AppComponent implements OnInit{
 
   pages = new dosAndDontdText();
   pages2 = new PhotoTextObj();
+  
+
 
   questionList:QuestionList = new QuestionList();
 
@@ -27,6 +29,9 @@ export class AppComponent implements OnInit{
     this.baseInfoService.startingServer();
     this.state.setDoesAndDonts(this.pages.page3);
     this.state.setPhotoText(this.pages2.page2);
+    this.state.setSafetyGuidelinesForLargerowds(this.pages2.Safety_guidelines_for_large_crowds);
+    this.state.setPreventionAndReactionToProtectChildrenEnsureSafetyOfChildren(this.pages.prevention_and_reaction_to_protect_children_ensure_safety_of_children);
+    this.state.setCwbSwedenChildProtectionPolicy(this.pages2.cwbSwedenChildProtectionPolicy);
     
   }
   

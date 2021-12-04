@@ -29,15 +29,27 @@
     
     
     
-    <!-- <app-dos-and-donts
-        *ngIf="page == '4' && url == 'introduction'"
-        [dosAndDonts] = 'page4'
-    >
-    </app-dos-and-donts> -->
+    
 
     <!--Page 2-->
-    <app-dos-and-donts
+    <app-text-photo
         *ngIf="page == '1' && url == 'working with children'"
+        [photoText]='safetyGuidelinesForLargeCrowds'
+    >
+
+    </app-text-photo>
+    <app-dos-and-donts
+        *ngIf="page == '2' && url == 'working with children'"
+        [dosAndDonts] = 'preventionAndReactionToProtectChildrenEnsureSafetyOfChildren'
+    >
+    </app-dos-and-donts>
+    <app-text-photo
+        *ngIf="page == '3' && url == 'working with children'"
+        [photoText]='cwbSwedenChildProtectionPolicy'
+    >
+    </app-text-photo>
+    <app-dos-and-donts
+        *ngIf="page == '4' && url == 'working with children'"
         [dosAndDonts] = 'page4'
     >
     </app-dos-and-donts>

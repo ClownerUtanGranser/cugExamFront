@@ -19,7 +19,10 @@ export class StateService {
 
   //Pages
   private _doesAndDonts:BehaviorSubject<dosAndDonts> = new BehaviorSubject<dosAndDonts>(null)
-  private _photoText:BehaviorSubject<PhotoText> = new BehaviorSubject<PhotoText>(null)
+  private _photoText:BehaviorSubject<PhotoText> = new BehaviorSubject<PhotoText>(null);
+  private _Safety_guidelines_for_large_crowds:BehaviorSubject<PhotoText> = new BehaviorSubject<PhotoText>(null);
+  private _preventionAndReactionToProtectChildrenEnsureSafetyOfChildren:BehaviorSubject<dosAndDonts> = new BehaviorSubject<dosAndDonts>(null)
+  private _cwbSwedenChildProtectionPolicy:BehaviorSubject<PhotoText> = new BehaviorSubject<PhotoText>(null);
 
   constructor() { }
 
@@ -116,5 +119,36 @@ export class StateService {
   {
     this._photoText.next(page);
   }
+
+  getSafetyGuidelinesForLargeCrowds()
+  {
+    return this._Safety_guidelines_for_large_crowds.asObservable();
+  }
+
+  setSafetyGuidelinesForLargerowds(page:PhotoText)
+  {
+    this._Safety_guidelines_for_large_crowds.next(page);
+  }
+
+  getPreventionAndReactionToProtectChildrenEnsureSafetyOfChildren():Observable<dosAndDonts>
+  {
+    return this._preventionAndReactionToProtectChildrenEnsureSafetyOfChildren.asObservable()
+  }
+
+  setPreventionAndReactionToProtectChildrenEnsureSafetyOfChildren(page:dosAndDonts)
+  {
+    this._preventionAndReactionToProtectChildrenEnsureSafetyOfChildren.next(page);
+  }
+
+  getCwbSwedenChildProtectionPolicy()
+  {
+    return this._cwbSwedenChildProtectionPolicy.asObservable();
+  }
+
+  setCwbSwedenChildProtectionPolicy(page:PhotoText)
+  {
+    this._cwbSwedenChildProtectionPolicy.next(page);
+  }
+
 
 }

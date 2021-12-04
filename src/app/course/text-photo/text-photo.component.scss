@@ -2,7 +2,8 @@
 
 .container
 {
-    
+    position: relative;
+    z-index: -1;
     padding: 3rem 1rem 1rem 1rem; 
     min-height: calc(100vh - 3rem);
     width: 100%;
@@ -17,15 +18,36 @@
     .img{
         width: 50%;
         height: 75vh;
-        
+        position: relative;
         align-self: center;
         background: //linear-gradient(rgba($light-green,.0), rgba($light-green,0.8)),
         url("../../../assets/img/miniature_grekland_henrik_kindgren.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+
+        .red_circle{
+            position: absolute;
+            bottom: -3rem;
+            left: 15rem;
+            right: -2rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 3rem;
+            min-height: 25rem;
+            min-width: 20rem;
+            background-color: rgba($green, .8);
+            color: $white;
+            line-height: 1.7rem;
+            font-size: 1.5rem;
+            letter-spacing: 0.4 rem;
+            
+        }
     }
 
-    h2{
+    h2, h3{
         margin-bottom: 1rem;
         color: $red; 
         margin-left: 1rem;
@@ -33,10 +55,13 @@
 
     p{
         // color:$white;
-        font-size: 1.2rem;
-        
+        font-size: 1.4rem;    
         margin: 0rem 2rem 2rem 1rem;
         
+    }
+
+    .points{
+        margin-bottom: 0.5rem;
     }
 }
 

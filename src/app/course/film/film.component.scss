@@ -2,8 +2,10 @@
 
 .container
 {
-    margin-top:1.5rem;
-    padding-top: 3rem;
+    position: relative;
+    z-index: -1;
+    margin-top:0rem;
+    padding-top: 0rem;
     min-height: calc(100vh - 4.5rem);
     width: 100%;
     color: $yellow; 
