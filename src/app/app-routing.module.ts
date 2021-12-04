@@ -7,6 +7,7 @@ import { StartingComponent } from './course/starting/starting.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { QuizFrameComponent } from './pages/quiz-frame/quiz-frame.component';
 import { CreateUserComponent } from './pages/user/create-user/create-user.component';
+import { HomeAdminComponent } from './pages/user/home-admin/home-admin.component';
 import { HomeUserComponent } from './pages/user/home-user/home-user.component';
 import { LoginComponent } from './pages/user/login/login.component';
 import { GaurdGuard } from './service/auth/gaurd.guard';
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path:'exam/question', component: QuizFrameComponent, canActivate: [GaurdGuard]},
   {path:'exam/question/:questionNumber', component: QuizFrameComponent, canActivate: [GaurdGuard]},
   {path:'login', component: LoginComponent},
+  {path: 'admin', component: HomeAdminComponent , canActivate: [GaurdGuard]},
   {path:'register', component: CreateUserComponent},
   {path:'home', component: HomeUserComponent}
 ];

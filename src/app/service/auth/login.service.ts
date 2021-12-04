@@ -32,7 +32,7 @@ export class LoginService {
         user.jwt = jwt;
         this.state.setExamUser(user);
         this.setToSessionStorage(jwt);
-        this.router.navigate(['exam']);
+        user.roles != 'ADMIN'? this.router.navigate(['exam']): this.router.navigate(['admin']);
       });
   }
 
@@ -51,12 +51,11 @@ export class LoginService {
       let jwt:string = sessionStorage.getItem('cugExam');
       if(jwt?.length>3)
       {
-      console.log( JSON.parse(atob(jwt.split('.')[1]) ).sub )
-      this.http.get(`${this.baseUrlUser}/jwt/${JSON.parse(atob(jwt.split('.')[1]) ).sub}`, new HttpHeader(jwt).getHeader())
-        .subscribe((user:{cugExamUser:ExamUser, jwt:string})=>{
-          user.cugExamUser.jwt = user.jwt;
-          this.state.setExamUser(user.cugExamUser);
-          this.setToSessionStorage(jwt);
+        this.http.get(`${this.baseUrlUser}/jwt/${JSON.parse(atob(jwt.split('.')[1]) ).sub}`, new HttpHeader(jwt).getHeader())
+          .subscribe((user:{cugExamUser:ExamUser, jwt:string})=>{
+            user.cugExamUser.jwt = user.jwt;
+            this.state.setExamUser(user.cugExamUser);
+            this.setToSessionStorage(jwt);
           
         },
         (error)=>

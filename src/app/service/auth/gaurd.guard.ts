@@ -23,9 +23,13 @@ export class GaurdGuard implements CanActivate {
       this.tokenStr = sessionStorage.getItem('cugExam');
       if(this.tokenStr) this.tokenObj = JSON.parse(atob(this.tokenStr.split('.')[1]));
 
-      if( Math.floor(new Date().getTime()/1000) > this.tokenObj?.exp || !this.tokenObj )
+      if( (Math.floor(new Date().getTime()/1000) > this.tokenObj?.exp || !this.tokenObj) && this.user?.roles != 'ADMIN' )
       {
         return route.routeConfig.path == 'exam'? this.router.navigate(['/login']): this.router.navigate(['']);
+      }
+      else if((Math.floor(new Date().getTime()/1000) > this.tokenObj?.exp || !this.tokenObj) && this.user?.roles == 'ADMIN')
+      {
+        return route.routeConfig.path == 'admin'? this.router.navigate(['/login']): this.router.navigate(['']);
       }
       else
       {
