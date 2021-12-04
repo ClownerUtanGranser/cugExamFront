@@ -1,0 +1,50 @@
+@import '../../../../scss/variables.scss';
+
+.test-nav{
+    
+    position: fixed;
+    bottom: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.selected{
+    border: 2px solid white;
+}
+
+.red_circle{
+    cursor: pointer;
+    &:hover, .selected{
+        border: 2px solid white;
+        transition: border .5s;
+    }
+}
+
+.nav{
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    color: $yellow;
+    z-index: 2;
+
+    p{
+        font-size: 2rem;
+        font-weight: bolder;
+        cursor: pointer;
+    }
+
+    &.top{
+        top: 5rem;
+        
+    }
+}
+
+.dont-show{
+    color:transparent;
+    cursor: none;
+}

@@ -1,0 +1,20 @@
+<div class="container">
+    <form [formGroup]="questionForm">
+        <div class="green_headline">
+            <label for="questionText"></label>
+            <input id="questionText" name="text" type="text" formControlName="questionText" placeholder="headline" autocomplete="off" >
+        </div>
+        <p 
+            *ngFor="let answre of question.answres; let i = index;"
+            [ngClass]="question.selectedAnswre == i? 'selected': ''"
+            (click)="select(i)"
+            class="alternative">
+            
+            <span>{{ i + 1 }}. </span> {{ answre }}
+            <!-- A. 	Discuss with a colleague on what is the next step to take -->
+        </p>
+    </form>
+</div>
+
+    
+
