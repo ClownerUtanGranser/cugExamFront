@@ -19,8 +19,6 @@ export class QuizComponent implements OnInit {
 
   select(index:number)
   {
-    console.log("Index ", index);
-  //  this.question.selectedAnswre = index;
     this.answerEmit.emit(index);
   }
 

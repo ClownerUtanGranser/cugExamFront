@@ -17,7 +17,7 @@ import { QuizComponent } from './exam/quiz/quiz.component';
 import { QuizFrameComponent } from './pages/quiz-frame/quiz-frame.component';
 import { CreateUserComponent } from './pages/user/create-user/create-user.component';
 import { HomeUserComponent } from './pages/user/home-user/home-user.component';
-import { HomeAdminComponent } from './pages/user/home-admin/home-admin.component';
+import { HomeAdminComponent } from './pages/user/admin/home-admin/home-admin.component';
 import { LoginComponent } from './pages/user/login/login.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { FilmComponent } from './course/film/film.component';
@@ -26,6 +26,8 @@ import { DosAndDontsComponent } from './course/dos-and-donts/dos-and-donts.compo
 import { DoubleCugComponent } from './course/double-cug/double-cug.component';
 import { ResourcesComponent } from './course/resources/resources.component';
 import { TextPhotoComponent } from './course/text-photo/text-photo.component';
+import { QuizAdminComponent } from './pages/user/admin/quiz-admin/quiz-admin.component';
+import { QuizQuestionAdminComponent } from './pages/user/admin/quiz-question-admin/quiz-question-admin.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +52,9 @@ import { TextPhotoComponent } from './course/text-photo/text-photo.component';
     DosAndDontsComponent,
     DoubleCugComponent,
     ResourcesComponent,
-    TextPhotoComponent
+    TextPhotoComponent,
+    QuizAdminComponent,
+    QuizQuestionAdminComponent
   ],
   imports: [
     BrowserModule,

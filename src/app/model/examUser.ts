@@ -6,5 +6,8 @@ export class ExamUser {
     name:string = ""
     roles:string = ""
     jwt:string = ''
+    exp?:number
+    iat?:number
 
+    constructor(name?:string, country?:string, email?:string, roles?:string, jwt?:string){}
 }

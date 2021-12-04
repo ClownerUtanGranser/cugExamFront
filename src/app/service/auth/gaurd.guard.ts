@@ -19,26 +19,84 @@ export class GaurdGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
-      this.state.examUser.subscribe((user)=> this.user = user);
-      this.tokenStr = sessionStorage.getItem('cugExam');
+      this.tokenStr = sessionStorage.getItem('cugExamJwt');
+      this.user = JSON.parse(sessionStorage.getItem('cugExam'))
       if(this.tokenStr) this.tokenObj = JSON.parse(atob(this.tokenStr.split('.')[1]));
 
-      if( (Math.floor(new Date().getTime()/1000) > this.tokenObj?.exp || !this.tokenObj) && this.user?.roles != 'ADMIN' )
+    
+
+
+      if(route.routeConfig.path.includes('exam'))
       {
-        return route.routeConfig.path == 'exam'? this.router.navigate(['/login']): this.router.navigate(['']);
+        if((Math.floor(new Date().getTime()/1000) > this.tokenObj?.exp || !this.tokenObj))
+        {
+          return this.router.navigate(['/login']);
+        }
+        else if(this.user?.roles.includes('USER'))  //Math.floor(new Date().getTime()/1000) > this.tokenObj?.exp( !this.tokenObj)
+        {
+          return true;
+        }
+        else if(this.user?.roles.includes('ADMIN'))
+        {
+          return true;
+        }
+        else
+        {
+          return this.router.navigate(['/login'])
+        }
       }
-      else if((Math.floor(new Date().getTime()/1000) > this.tokenObj?.exp || !this.tokenObj) && this.user?.roles == 'ADMIN')
+      else if(route.routeConfig.path.includes('login'))
       {
-        return route.routeConfig.path == 'admin'? this.router.navigate(['/login']): this.router.navigate(['']);
+        if(this.user?.roles.includes('USER') || this.user?.roles.includes('ADMIN'))
+        {
+          console.log("login")
+          return this.router.navigate(['/exam']);
+        }
+        else
+        {
+          return true;
+        }
+      }
+      else if(route.routeConfig.path.includes('admin'))
+      {
+        if((Math.floor(new Date().getTime()/1000) > this.tokenObj?.exp || !!this.tokenObj) && this.user?.roles.includes('USER'))
+        {
+          return this.router.navigate(['/exam'])
+        }
+        else if((Math.floor(new Date().getTime()/1000) > this.tokenObj?.exp || !!this.tokenObj) && this.user?.roles.includes('ADMIN'))
+        {
+          return true;
+        }
+        else
+        {
+          return this.router.navigate(['/login'])
+        }
       }
       else
       {
-        return true;
+        return this.router.navigate(['/login']);
       }
+
+      // if( (Math.floor(new Date().getTime()/1000) > this.tokenObj?.exp || !this.tokenObj) && this.user?.roles != 'ADMIN' )
+      // {
+      //   return route.routeConfig.path == 'exam'? this.router.navigate(['/login']): this.router.navigate(['']);
+      // }
+      // else if((Math.floor(new Date().getTime()/1000) > this.tokenObj?.exp || !this.tokenObj) && this.user?.roles != 'ADMIN')
+      // {
+      //   return route.routeConfig.path.includes('ADMIN') ? this.router.navigate(['/login']): this.router.navigate(['']);
+      // }
+      // else if((Math.floor(new Date().getTime()/1000) > this.tokenObj?.exp || !this.tokenObj) && this.user?.roles == 'ADMIN')
+      // {
+      //   return route.routeConfig.path.includes('ADMIN') ? this.router.navigate(['/login']): this.router.navigate(['']);
+      // }
+      // else
+      // {
+      //   return true;
+      // }
 
     
   }
 
-  constructor(private state:StateService, private router:Router){}
+  constructor( private router:Router){}
   
 }
