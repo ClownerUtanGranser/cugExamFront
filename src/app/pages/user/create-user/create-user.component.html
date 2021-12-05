@@ -31,7 +31,9 @@
             <a [routerLink]="'/login'" >
                 already registered? Sign in!
             </a>  
-              {{ registerForm.value | json }}        
+              <div *ngIf="showError" class="red_ text">
+                  Email already exsist
+              </div>      
         </div>
     </section>   
 </div>

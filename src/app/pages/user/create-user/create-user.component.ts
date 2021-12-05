@@ -13,6 +13,8 @@ import { StateService } from 'src/app/service/state.service';
 })
 export class CreateUserComponent implements OnInit {
 
+  showError:boolean = false;
+
   registerForm = this.fb.group({
 
     name:[''],
@@ -47,13 +49,14 @@ export class CreateUserComponent implements OnInit {
       let newUser:ExamUser = user.cugExamUser;
       newUser.jwt = user.jwt;
       this.state.setExamUser(newUser);
-      this.loginService.setToSessionStorage(user.jwt);
+      this.loginService.setToSessionStorage(user.jwt, JSON.stringify(user.cugExamUser));
       this.loading = false;
       this.router.navigate(['exam']);
     },
     (error)=>{
       console.log(error);
       this.loading = false;
+      this.showError = true;
     })
   }
 
