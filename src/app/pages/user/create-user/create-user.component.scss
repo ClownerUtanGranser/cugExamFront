@@ -62,7 +62,7 @@
         background: $green;
     }
 
-    input[type=text], input[type=password]{
+    input[type=text], input[type=email], input[type=password]{
         border: none;
         outline: none;
         height: 2rem;
@@ -70,7 +70,7 @@
         color: $yellow;
         background-color: $green;
 
-        &:focus{
+        &:focus{ 
             border-bottom: solid 1px $yellow;
             color:$yellow;
         }

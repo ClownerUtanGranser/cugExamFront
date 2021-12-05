@@ -1,19 +1,29 @@
 <div class="container">
     <form [formGroup]="questionForm">
         <div class="green_headline">
-            <label for="questionText"></label>
-            <input id="questionText" name="text" type="text" formControlName="questionText" placeholder="headline" autocomplete="off" >
+            <div class="answres">
+                <label for="questionText">Question</label>
+                <input id="questionText" name="text" type="text" formControlName="questionText" placeholder="headline" autocomplete="off" >
+            </div>
+            <div class="answres">
+                <label for="lang">Language</label>
+                <input id="lang" name="text" type="text" formControlName="lang" placeholder="headline" autocomplete="off" >
+            </div>
         </div>
-        <p 
-            *ngFor="let answre of question.answres; let i = index;"
-            [ngClass]="question.selectedAnswre == i? 'selected': ''"
-            (click)="select(i)"
-            class="alternative">
-            
-            <span>{{ i + 1 }}. </span> {{ answre }}
-            <!-- A. 	Discuss with a colleague on what is the next step to take -->
-        </p>
+        <div class="answres">
+            <label for="answres1">answres 1</label>
+            <input id="answres1" name="text" type="text" formControlName="answres1" placeholder="headline" autocomplete="off" >
+        </div>
+        <div class="answres">
+            <label for="answres2">answres 2 </label>
+            <input id="answres2" name="text" type="text" formControlName="answres2" placeholder="headline" autocomplete="off" >
+        </div>
+        <div class="answres">
+            <label for="answres3">answres 3</label>
+            <input id="answres3" name="text" type="text" formControlName="answres3" placeholder="headline" autocomplete="off" >
+        </div>
     </form>
+    <button (click)="update()" class="btn-update">update</button>
 </div>
 
     

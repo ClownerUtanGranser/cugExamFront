@@ -11,6 +11,64 @@
     min-height: calc(100vh - 3rem);
 }
 
+form{
+    width: 90%;
+}
+.green_headline{
+    width:100%;
+    .answres{
+        input[type=text], input[type=placeholder] {
+            background-color: $green;
+        }
+        input::-webkit-input-placeholder {
+            color: $light-green;
+            background-color: $green;
+            background: $green;
+            
+            
+        }
+    }
+}
+
+.answres{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem;
+
+    margin-top: 1rem;
+    
+    border:none;
+    border-bottom: solid 2px $light-green;
+    
+
+    input::-webkit-input-placeholder {
+        color: $light-green;
+        background-color: $red;
+        background: $red;
+        
+        
+    }
+
+    input[type=text], input[type=password], input[type=placeholder] {
+        border: none;
+        outline: none;
+        height: 2rem;
+        font-size: 1.2rem;
+        color:$black;
+        background-color: $purple;
+        width: 100%;
+
+        &:focus{
+            border: solid 2px $light-green;
+            width: 100%;
+            height: 3rem;
+            color:$black;
+            
+        }
+    }   
+}
+
 .alternative{
     color:red;
     margin: 2rem 2rem 2rem 15rem;
@@ -27,6 +85,26 @@
         color: $light-yellow;
         font-size: 1.5rem;
         
+    }
+}
+
+.btn-update{
+    align-self: flex-end;
+    width: 50%;
+    margin:0rem 10% 1rem 10rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px; 
+    background-color: $green;
+
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: $white;
+
+    transition: border .5s ease-in-out;
+
+    &:hover{
+        border: solid 2px $white;
     }
 }
 

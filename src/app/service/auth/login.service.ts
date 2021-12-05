@@ -6,7 +6,6 @@ import { HttpHeader } from 'src/app/model/header';
 import { StateService } from '../state.service';
 import { ExamUser } from 'src/app/model/examUser';
 import { Router } from '@angular/router';
-import { stringify } from 'querystring';
 
 @Injectable({
   providedIn: 'root'
@@ -42,7 +41,7 @@ export class LoginService {
 
         this.state.setExamUser(user);
         this.setToSessionStorage( user.jwt, JSON.stringify(examUser));
-        user.roles != 'ADMIN'? this.router.navigate(['exam']): this.router.navigate(['admin']);
+        user.roles != 'ADMIN'? this.router.navigate(['exam']): this.router.navigate(['admin/question']);
       });
   }
 

@@ -32,11 +32,10 @@ export class QuizAdminComponent implements OnInit {
     })
   }
 
-  answeredQuestion(answerIndex:number)
+  updateQuestion( question:Question)
   {
   
-    this.questions[this.showQuestionIndex -1].selectedAnswre = answerIndex;
-    this.state.setQuestions(this.questions);
+    console.log(question);
   }
 
   selectedClass(index:number, question):string

@@ -17,6 +17,7 @@ export class QuizQuestionAdminComponent implements OnInit {
   questionForm = this.fb.group({
 
     questionText:[''],
+    lang:['eng'],
     answres1: [''],
     answres2: [''],
     answres3: ['']
@@ -32,14 +33,17 @@ export class QuizQuestionAdminComponent implements OnInit {
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    console.log(changes)
+    
     this.questionForm.controls['questionText'].setValue(this.question.questionText);
+    this.questionForm.controls['answres1'].setValue(this.question.answres[0]);
+    this.questionForm.controls['answres2'].setValue(this.question.answres[1]);
+    this.questionForm.controls['answres3'].setValue(this.question.answres[2]);
 
   }
 
-  select(index:number)
+  update()
   {
-    this.answerEmit.emit(index);
+    this.answerEmit.emit(this.questionForm.value);
   }
 
 

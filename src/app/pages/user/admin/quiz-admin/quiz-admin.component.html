@@ -4,7 +4,6 @@
             <p 
                 [ngClass]="{'dont-show' : showQuestionBack()}"
                 (click)="previousQuestion()">
-                <
             </p>
             <p 
                 [ngClass]="{'dont-show' : showQuestionForward()}"
@@ -17,7 +16,7 @@
         </div>
             <app-quiz-question-admin
                 [question]="questions[showQuestionIndex - 1]" 
-                (answerEmit) = answeredQuestion($event)
+                (answerEmit) = updateQuestion($event)
             >
             </app-quiz-question-admin>
         <nav class="test-nav">
@@ -27,7 +26,7 @@
                 class="red_circle small "
                 [ngClass]="selectedClass(i+1, questions[i])"
                 >
-                    {{ i +1 }}
+                    {{ i + 1 }}
             </div>
         </nav>
     </div>

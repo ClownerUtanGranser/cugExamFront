@@ -73,7 +73,7 @@ export class StateService {
       headline : "FINAL TEST",
       secondHedline: '',
       texts: [
-        "The final test consists of 13 questions. In order to pass, you must get a minimum of 9 questions correct.", "Make sure you can sit in a place where you can focus undisturbed for at least 30 minutes."
+        "The final test consists of 12 questions. In order to pass, you must get a minimum of 8 questions correct.", "Make sure you can sit in a place where you can focus undisturbed for at least 30 minutes."
       ]
     
     }
