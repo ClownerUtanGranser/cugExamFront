@@ -1,0 +1,48 @@
+@import "../../../../scss/variables.scss";
+
+.container
+{
+    padding-top: 3rem;
+    min-height: calc(100vh - 3rem);
+    width: 100%;
+    color: $yellow; 
+    background: $green;
+    @include column-align-center();
+
+    ul{
+        margin-top: 2rem;
+        list-style: none; 
+           
+
+        li{
+           
+            margin-top: 2rem;
+            font-size: 1.4rem;
+            
+            
+            
+
+            a:hover > .strong, a:hover > .headline-text{
+                color: $white;
+                transition: .5s color;
+            }
+            
+        }
+
+        .headline-text, .strong{
+            color: $yellow;
+            
+            
+        }
+
+        .strong{
+            font-weight: bold;
+            padding-right: 2rem;
+        }
+    }
+}
+
+
+h1{
+    color: $yellow;
+}
