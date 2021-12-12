@@ -1,0 +1,69 @@
+@import '../../scss/variables.scss';
+
+.container-overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 10;
+
+    background-color: rgba( 0, 0, 0, .95);
+
+    min-height: 110vh;
+    width: 100%;
+
+    @include column-align-center();
+
+    transition: transform 1s ease-in;
+    transform: translate(0, -100%);
+
+    &.open{
+        transform: translate(0, 0%);
+    }
+}
+
+.result{
+    @include column-center();
+}
+
+ul{
+    min-width: 25rem;
+    li{
+        display: flex;
+        text-align: start;
+        h3{
+            padding-top:1rem;
+        }
+    }
+}
+
+.btn-box{
+    display: flex;
+    justify-content: start;
+    min-width:20rem
+}
+
+.btn-update{
+    
+    width: 50%;
+    margin:0rem 0% 0rem 0rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px; 
+    background-color: $green;
+
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: $white;
+
+    transition: border .5s ease-in-out;
+
+    &.left{
+        margin-right: 0.5rem;
+    }
+
+    &:hover{
+        border: solid 2px $white;
+    }
+}

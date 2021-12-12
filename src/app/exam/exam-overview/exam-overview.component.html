@@ -1,0 +1,26 @@
+<div class="container-overlay" [class]="openOverLay ? 'open' : ''">
+    <div *ngIf="correctResponses<9" class="red_circle big result">
+        <h3>Number of questions: {{ numberOfQuestions }}</h3>
+        <h3>Correct responses: {{ correctResponses }}</h3> 
+    </div>
+    <div *ngIf="correctResponses>=9" class="green_circle big result">
+        <h3>Number of questions: {{ numberOfQuestions }}</h3>
+        <h3>Correct responses: {{ correctResponses }}</h3> 
+    </div>
+    <ul>
+        <li *ngFor="let question of questions">
+            <div *ngIf="translateCorrectresponse(question.correctResponse) == question.selectedAnswre" class="green_circle small">
+                {{ question.questionNumber }}
+            </div>
+            <div *ngIf="translateCorrectresponse(question.correctResponse) != question.selectedAnswre" class="red_circle small">
+                {{ question.questionNumber }}
+            </div>
+            <h3 *ngIf="question?.answres[question.selectedAnswre]"> {{ question.answres[question.selectedAnswre] }}  </h3>
+            <h3 *ngIf="!question?.answres[question.selectedAnswre]" class="_red" > Not answered </h3>
+        </li>
+    </ul>
+    <div class="btn-box">
+        <button (click)="closeOverlay()" class="btn-update left">BACK</button>
+        <button class="btn-update right">Submit exam</button>
+    </div>
+</div>

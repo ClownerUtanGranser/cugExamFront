@@ -9,6 +9,7 @@ import { Question } from 'src/app/model/question';
 export class QuizComponent implements OnInit {
   @Input() question:Question;
   @Output() answerEmit = new EventEmitter();
+  @Output() submitExamEmit = new EventEmitter();
 
   selectedAnswer:number = null;
 
@@ -20,6 +21,11 @@ export class QuizComponent implements OnInit {
   select(index:number)
   {
     this.answerEmit.emit(index);
+  }
+
+  submitExam()
+  {
+    this.submitExamEmit.emit();
   }
 
 }

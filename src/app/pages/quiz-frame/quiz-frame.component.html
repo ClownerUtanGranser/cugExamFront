@@ -1,4 +1,12 @@
+
 <div class="questionbox">
+    <app-exam-overview
+        [openOverLay]="openOverLay"
+        (openOverLayEmit)="closeOverlay()"
+        [questions] = "questions"
+    >
+    
+    </app-exam-overview>
     <div class="nav top">
         <p 
             [ngClass]="{'dont-show' : showQuestionBack()}"
@@ -16,7 +24,9 @@
     </div>
         <app-quiz
             [question]="questions[showQuestionIndex - 1]" 
-            (answerEmit) = answeredQuestion($event)
+            (answerEmit) = "answeredQuestion($event)"
+            (submitExamEmit) = "submitExam($event)"
+            
         >
         </app-quiz>
     <nav class="test-nav">
@@ -26,7 +36,7 @@
             class="red_circle small "
             [ngClass]="selectedClass(i+1, questions[i])"
             >
-                {{ i +1 }}
+                {{ i + 1 }}
         </div>
     </nav>
 </div>

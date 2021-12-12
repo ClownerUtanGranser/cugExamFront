@@ -13,6 +13,8 @@ export class QuizFrameComponent implements OnInit {
   questions:Question[] = [];
   showQuestionIndex:number = 0;
 
+  openOverLay:boolean = false;
+
   constructor(private route: ActivatedRoute,
               private router: Router,
               private state:StateService) { }
@@ -33,7 +35,7 @@ export class QuizFrameComponent implements OnInit {
 
   answeredQuestion(answerIndex:number)
   {
-  
+    
     this.questions[this.showQuestionIndex -1].selectedAnswre = answerIndex;
     this.state.setQuestions(this.questions);
   }
@@ -99,6 +101,17 @@ export class QuizFrameComponent implements OnInit {
   showQuestionForward():boolean
   {
     return this.showQuestionIndex > this.questions.length - 1; 
+  }
+
+  submitExam(theEvent)
+  {
+    console.log("this.questions: ", this.questions);
+    this.openOverLay = true;
+    
+  }
+
+  closeOverlay(){
+    this.openOverLay = false;
   }
 
 }
