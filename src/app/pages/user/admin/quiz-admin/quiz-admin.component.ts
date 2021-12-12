@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Question } from 'src/app/model/question';
+import { QuestionBackendModel } from 'src/app/model/questionsBackendModel';
+import { ExamService } from 'src/app/service/exam.service';
 import { StateService } from 'src/app/service/state.service';
 
 @Component({
@@ -15,11 +17,13 @@ export class QuizAdminComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,
               private router: Router,
-              private state:StateService) { }
+              private state:StateService,
+              private examService:ExamService) { }
 
   ngOnInit(): void {
 
     this.state.questions.subscribe((questions)=>{
+      console.log(questions);
       this.questions = questions;
     })
     
@@ -32,10 +36,9 @@ export class QuizAdminComponent implements OnInit {
     })
   }
 
-  updateQuestion( question:Question)
+  updateQuestion( question:QuestionBackendModel)
   {
-  
-    console.log(question);
+    this.examService.uppdateQuestion(question);
   }
 
   selectedClass(index:number, question):string

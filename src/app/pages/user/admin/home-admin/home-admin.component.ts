@@ -36,7 +36,7 @@ export class HomeAdminComponent implements OnInit {
   {
   
     this.questions[this.showQuestionIndex -1].selectedAnswre = answerIndex;
-    this.state.setQuestions(this.questions);
+    //this.state.setQuestions(this.questions);
   }
 
   selectedClass(index:number, question):string

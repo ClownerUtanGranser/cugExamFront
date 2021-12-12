@@ -16,13 +16,19 @@ export class QuizQuestionAdminComponent implements OnInit {
 
   questionForm = this.fb.group({
 
-    questionText:[''],
-    lang:['eng'],
-    answres1: [''],
-    answres2: [''],
-    answres3: ['']
+    questionId:[''],
+    questionNumber:[''],
+    question:[''],
+    correctResponse: [""],
+    lang:[''],
+    response1: [''],
+    response2: [''],
+    response3: ['']
 
   })
+
+  // Text variables
+  language:string = "Language";
 
   constructor(private fb:FormBuilder) { }
 
@@ -34,10 +40,17 @@ export class QuizQuestionAdminComponent implements OnInit {
 
   ngOnChanges(changes: SimpleChanges) {
     
-    this.questionForm.controls['questionText'].setValue(this.question.questionText);
-    this.questionForm.controls['answres1'].setValue(this.question.answres[0]);
-    this.questionForm.controls['answres2'].setValue(this.question.answres[1]);
-    this.questionForm.controls['answres3'].setValue(this.question.answres[2]);
+    if(this.question?.questionText)
+    {
+      this.questionForm.controls['question'].setValue(this.question.questionText);
+      this.questionForm.controls['response1'].setValue(this.question.answres[0]);
+      this.questionForm.controls['response2'].setValue(this.question.answres[1]);
+      this.questionForm.controls['response3'].setValue(this.question.answres[2]);
+      this.questionForm.controls['correctResponse'].setValue(this.question.correctResponse);
+      this.questionForm.controls['lang'].setValue(this.question.lang);
+      this.questionForm.controls['questionNumber'].setValue(this.question.questionNumber);
+      this.questionForm.controls['questionId'].setValue(this.question.id);
+    }
 
   }
 

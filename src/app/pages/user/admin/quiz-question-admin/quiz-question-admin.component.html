@@ -3,24 +3,40 @@
         <div class="green_headline">
             <div class="answres">
                 <label for="questionText">Question</label>
-                <input id="questionText" name="text" type="text" formControlName="questionText" placeholder="headline" autocomplete="off" >
+                <input id="questionText" name="text" type="text" formControlName="question" placeholder="headline" autocomplete="off" >
             </div>
-            <div class="answres">
-                <label for="lang">Language</label>
-                <input id="lang" name="text" type="text" formControlName="lang" placeholder="headline" autocomplete="off" >
+            <div class="answres no-border">
+                <!-- <input id="lang" name="text" type="text" formControlName="lang" placeholder="headline" autocomplete="off" > -->
+                <select id="lang" formControlName="lang">
+                    <option value="SV">Svenska</option>
+                    <option value="ENG">English</option>
+                    <option value="AR">عربي</option>
+                  </select>
             </div>
         </div>
         <div class="answres">
-            <label for="answres1">answres 1</label>
-            <input id="answres1" name="text" type="text" formControlName="answres1" placeholder="headline" autocomplete="off" >
+            <label for="response1">answres 1</label>
+            <input id="response1" name="text" type="text" formControlName="response1" placeholder="headline" autocomplete="off" >
+            <div>
+                <input type="radio" name="correctResponse" id="correctResponse" value="response1" formControlName="correctResponse" />
+                <label for="correctResponse"> Correct</label>
+            </div>
         </div>
         <div class="answres">
-            <label for="answres2">answres 2 </label>
-            <input id="answres2" name="text" type="text" formControlName="answres2" placeholder="headline" autocomplete="off" >
+            <label for="response2">answres 2 </label>
+            <input id="response2" name="text" type="text" formControlName="response2" placeholder="headline" autocomplete="off" >
+            <div>
+                <input type="radio" name="correctResponse" id="correctResponse" value="response2" formControlName="correctResponse" />
+                <label for="correctResponse"> Correct</label>
+            </div>
         </div>
         <div class="answres">
             <label for="answres3">answres 3</label>
-            <input id="answres3" name="text" type="text" formControlName="answres3" placeholder="headline" autocomplete="off" >
+            <input id="answres3" name="text" type="text" formControlName="response3" placeholder="headline" autocomplete="off" >
+            <div>
+                <input type="radio" name="correctResponse" id="correctResponse" value="response3" formControlName="correctResponse" />
+                <label for="correctResponse"> Correct</label>
+            </div>
         </div>
     </form>
     <button (click)="update()" class="btn-update">update</button>
