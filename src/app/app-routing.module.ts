@@ -7,11 +7,12 @@ import { StartingComponent } from './course/starting/starting.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { QuizFrameComponent } from './pages/quiz-frame/quiz-frame.component';
 import { CreateUserComponent } from './pages/user/create-user/create-user.component';
-import { HomeAdminComponent } from './pages/user/admin/home-admin/home-admin.component';
 import { HomeUserComponent } from './pages/user/home-user/home-user.component';
 import { LoginComponent } from './pages/user/login/login.component';
 import { GaurdGuard } from './service/auth/gaurd.guard';
 import { QuizAdminComponent } from './pages/user/admin/quiz-admin/quiz-admin.component';
+import { AdminNavComponent } from './pages/user/admin/admin-nav/admin-nav.component';
+import { AdminUsersComponent } from './pages/user/admin/admin-users/admin-users.component';
 
 const routes: Routes = [
   {path:'', component: LandingComponent},
@@ -24,9 +25,10 @@ const routes: Routes = [
   {path:'exam/question', component: QuizFrameComponent, canActivate: [GaurdGuard]},
   {path:'exam/question/:questionNumber', component: QuizFrameComponent, canActivate: [GaurdGuard]},
   {path:'login', component: LoginComponent, canActivate: [GaurdGuard]},
-  {path:'admin', component: HomeAdminComponent , canActivate: [GaurdGuard]},
+  {path:'admin', component: AdminNavComponent , canActivate: [GaurdGuard]},
   {path:'admin/question', component: QuizAdminComponent , canActivate: [GaurdGuard]},
   {path:'admin/question/:questionNumber', component: QuizAdminComponent , canActivate: [GaurdGuard]},
+  {path:'admin/users', component: AdminUsersComponent , canActivate: [GaurdGuard]},
   {path:'register', component: CreateUserComponent},
   {path:'home', component: HomeUserComponent}
 ];

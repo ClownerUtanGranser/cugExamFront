@@ -28,6 +28,10 @@ import { ResourcesComponent } from './course/resources/resources.component';
 import { TextPhotoComponent } from './course/text-photo/text-photo.component';
 import { QuizAdminComponent } from './pages/user/admin/quiz-admin/quiz-admin.component';
 import { QuizQuestionAdminComponent } from './pages/user/admin/quiz-question-admin/quiz-question-admin.component';
+import { AdminNavComponent } from './pages/user/admin/admin-nav/admin-nav.component';
+import { ClownsLogoEngComponent } from './components/clowns-logo-eng/clowns-logo-eng.component';
+import { AdminUsersComponent } from './pages/user/admin/admin-users/admin-users.component';
+import { ExamOverviewComponent } from './exam/exam-overview/exam-overview.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +58,11 @@ import { QuizQuestionAdminComponent } from './pages/user/admin/quiz-question-adm
     ResourcesComponent,
     TextPhotoComponent,
     QuizAdminComponent,
-    QuizQuestionAdminComponent
+    QuizQuestionAdminComponent,
+    AdminNavComponent,
+    ClownsLogoEngComponent,
+    AdminUsersComponent,
+    ExamOverviewComponent
   ],
   imports: [
     BrowserModule,
