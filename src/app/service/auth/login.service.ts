@@ -41,7 +41,7 @@ export class LoginService {
 
         this.state.setExamUser(user);
         this.setToSessionStorage( user.jwt, JSON.stringify(examUser));
-        user.roles != 'ADMIN'? this.router.navigate(['exam']): this.router.navigate(['admin/question']);
+        user.roles != 'ADMIN'? this.router.navigate(['exam']): this.router.navigate(['admin']);
       });
   }
 
@@ -71,6 +71,10 @@ export class LoginService {
         (error)=>
         {
           console.log(error);
+          if(error.status == 403 || error.status == 401)
+          {
+           this.router.navigate(['']);
+          }
           this.logout();
         }
         );
