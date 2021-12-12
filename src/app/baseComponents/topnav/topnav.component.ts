@@ -12,6 +12,8 @@ export class TopnavComponent implements OnInit {
 
   examUser:ExamUser | undefined;
 
+  lang:string;
+
   constructor(private state:StateService,
               private loginService:LoginService) { }
 
@@ -19,6 +21,13 @@ export class TopnavComponent implements OnInit {
     this.state.examUser.subscribe((user)=>{
       this.examUser = user;
     })
+
+    this.state.getLang().subscribe((lang) => this.lang = lang);
+  }
+
+  setLang(lang:string)
+  {
+    this.state.setLang(lang);
   }
 
   logout()
