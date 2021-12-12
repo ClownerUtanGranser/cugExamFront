@@ -24,7 +24,20 @@ export class StateService {
   private _preventionAndReactionToProtectChildrenEnsureSafetyOfChildren:BehaviorSubject<dosAndDonts> = new BehaviorSubject<dosAndDonts>(null)
   private _cwbSwedenChildProtectionPolicy:BehaviorSubject<PhotoText> = new BehaviorSubject<PhotoText>(null);
 
+  //Lang
+  private _Lang:BehaviorSubject<string> = new BehaviorSubject<string>('ENG');
+
   constructor() { }
+
+  getLang():Observable<string>
+  {
+    return this._Lang.asObservable()
+  }
+
+  setLang(lang:string):void
+  {
+    this._Lang.next(lang);
+  }
 
   get courseStart():Observable<StartingPageModel>
   {
