@@ -3,6 +3,7 @@ import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Authentication } from 'src/app/model/authentication';
 import { LoginService } from 'src/app/service/auth/login.service';
+import { ExamService } from 'src/app/service/exam.service';
 
 
 @Component({
@@ -24,6 +25,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private fb:FormBuilder,
               private loginService:LoginService,
+              private examService:ExamService,
               private router:Router) { }
 
   ngOnInit(): void {
@@ -40,6 +42,7 @@ export class LoginComponent implements OnInit {
     
     this.loginService.httpLogin(authLogin).subscribe((jwt)=>{
       this.loginService.httpGetUserAndSetState(authLogin.userEmail, jwt.jwt);
+      this.examService.getExam(jwt.jwt);
       this.loading = false;
     },
     (error)=>{
