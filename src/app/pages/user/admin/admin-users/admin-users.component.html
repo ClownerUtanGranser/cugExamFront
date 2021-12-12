@@ -1,0 +1,21 @@
+<div class="container">
+    
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>email</th>
+            <th>Role</th>
+            <th>Exam passed</th>
+            <th>attempts</th>
+        </tr> 
+        <tr *ngFor="let user of users">
+            <td>{{ user.name }} </td>
+            <td>{{ user.email }}</td>
+            <td>{{ user.roles }}</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+
+</div>
