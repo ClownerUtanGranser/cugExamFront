@@ -11,6 +11,7 @@ import { QuestionBackendModel } from '../model/questionsBackendModel';
 export class ExamService {
 
   private baseUrlAdmin = "http://localhost:8081/v1/admin";
+  private baseUrlUser:string = "http://localhost:8081/v1/user";
   private header:HttpHeader;
 
   constructor(private state:StateService,
@@ -117,5 +118,27 @@ export class ExamService {
           })
       })
       
+   }
+
+   examCorrection(jwt, questions:Question[])
+   {
+    let exam = 'cugExam';
+
+    let backendModel = questions.map((question) =>{
+      //  console.log(question);
+        return({
+          questionId: question.id,
+          question: question.questionText,
+          questionNumber: question.questionNumber,
+          response1: question.answres[0],
+          response2: question.answres[1],
+          response3: question.answres[2],
+          correctResponse: question.correctResponse,
+          selectedAnswre: question.selectedAnswre,
+          lang: question.lang
+        })          
+      })
+
+    return this.http.post(`${this.baseUrlUser}/exam/correction/${exam}`, backendModel, new HttpHeader(jwt).getHeader());
    }
 }

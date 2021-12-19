@@ -105,9 +105,7 @@ export class QuizFrameComponent implements OnInit {
 
   submitExam(theEvent)
   {
-    console.log("this.questions: ", this.questions);
-    this.openOverLay = true;
-    
+    this.openOverLay = true; 
   }
 
   closeOverlay(){

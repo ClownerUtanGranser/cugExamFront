@@ -1,5 +1,8 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import { ExamUser } from 'src/app/model/examUser';
 import { Question } from 'src/app/model/question';
+import { ExamService } from 'src/app/service/exam.service';
+import { StateService } from 'src/app/service/state.service';
 
 @Component({
   selector: 'app-exam-overview',
@@ -11,22 +14,28 @@ export class ExamOverviewComponent implements OnInit, OnChanges{
   @Input() questions:Question[];
   @Output() openOverLayEmit = new EventEmitter();
 
+  user: ExamUser;
+
   numberOfQuestions:number;
   correctResponses:number;
+  questionsCopy:Question[] = []
   firstTime:boolean = true;
 
-  constructor() { }
+  constructor(private state:StateService,
+              private examService: ExamService) { }
+
+
   ngOnChanges(changes: SimpleChanges): void {
-    
     if(this.openOverLay && this.firstTime)
     {
-      this.numberOfQuestions = this.questions.length
-      this.correctResponses = this.questions.filter((question) => this.translateCorrectresponse(question.correctResponse) == question.selectedAnswre).length
-      this.firstTime = false;
+      this.submitExam();
     }
   }
 
   ngOnInit(): void {
+    this.state.examUser.subscribe((user) =>{
+      this.user = user;
+    })
   }
 
   closeOverlay()
@@ -54,6 +63,16 @@ export class ExamOverviewComponent implements OnInit, OnChanges{
     {
       return undefined;
     }
+  }
+
+  submitExam()
+  {
+    
+    this.questions.forEach(val => this.questionsCopy.push(Object.assign({}, val)));
+    this.numberOfQuestions = this.questionsCopy.length
+    this.correctResponses = this.questionsCopy.filter((question) => this.translateCorrectresponse(question.correctResponse) == question.selectedAnswre).length
+    this.firstTime = false;
+    this.examService.examCorrection(this.user.jwt, this.questionsCopy).subscribe((succsess)=> console.log("Success: ", succsess));
   }
 
 }

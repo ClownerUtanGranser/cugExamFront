@@ -8,7 +8,7 @@
         <h3>Correct responses: {{ correctResponses }}</h3> 
     </div>
     <ul>
-        <li *ngFor="let question of questions">
+        <li *ngFor="let question of questionsCopy">
             <div *ngIf="translateCorrectresponse(question.correctResponse) == question.selectedAnswre" class="green_circle small">
                 {{ question.questionNumber }}
             </div>
@@ -20,7 +20,7 @@
         </li>
     </ul>
     <div class="btn-box">
-        <button (click)="closeOverlay()" class="btn-update left">BACK</button>
-        <button class="btn-update right">Submit exam</button>
+        <button *ngIf="correctResponses<9" (click)="closeOverlay()" class="btn-update left">Try again</button>
+        <button class="btn-update right">Home</button>
     </div>
 </div>
