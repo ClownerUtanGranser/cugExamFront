@@ -12,8 +12,8 @@
             <td>{{ user.name }} </td>
             <td>{{ user.email }}</td>
             <td>{{ user.roles }}</td>
-            <td></td>
-            <td></td>
+            <td>{{ examsPassed(user.examsTaken) }}</td>
+            <td>{{ user.examsTaken.length }}</td>
         </tr>
     </table>
 

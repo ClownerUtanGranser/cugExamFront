@@ -26,8 +26,17 @@ export class AdminUsersComponent implements OnInit {
 
   getAllUsers()
   {
-    console.log(this.user);
-    this.userService.getAllUsers(this.user.jwt).subscribe((users) => this.users = users);
+    
+    this.userService.getAllUsers(this.user.jwt).subscribe((users) => {
+      this.users = users
+      console.log(this.users);
+    });
+    
+  }
+
+  examsPassed(examsPassed:{passed:boolean}[]):number
+  {
+    return examsPassed.filter((exam) => exam.passed).length
   }
 
 }
