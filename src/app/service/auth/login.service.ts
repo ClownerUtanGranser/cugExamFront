@@ -27,21 +27,21 @@ export class LoginService {
 
   httpGetUserAndSetState(email:string, jwt:string):void
   {
-    this.http.get(`${this.baseUrlUser}/${email}`, new HttpHeader(jwt).getHeader())
-      .subscribe((user:ExamUser)=>{
-        user.jwt = jwt;
+    this.http.get(`${this.baseUrlUser}/jwt/${email}`, new HttpHeader(jwt).getHeader())
+      .subscribe((user:{cugExamUser:ExamUser, jwt:string})=>{
+        user.jwt = user.jwt;
         //Set user
         const examUser:ExamUser = new ExamUser();
-        examUser.name = user.name;
-        examUser.email = user.email;
-        examUser.examsTaken = user.examsTaken
+        examUser.name = user.cugExamUser.name;
+        examUser.email = user.cugExamUser.email;
+        examUser.examsTaken = user.cugExamUser.examsTaken
         examUser.jwt = jwt; 
-        examUser.country = user.country
-        examUser.roles = user.roles;
-
-        this.state.setExamUser(user);
+        examUser.country = user.cugExamUser.country
+        examUser.roles = user.cugExamUser.roles;
+        
+        this.state.setExamUser(examUser);
         this.setToSessionStorage( user.jwt, JSON.stringify(examUser));
-        user.roles != 'ADMIN'? this.router.navigate(['exam']): this.router.navigate(['admin']);
+        user.cugExamUser.roles != 'ADMIN'? this.router.navigate(['exam']): this.router.navigate(['admin']);
       });
   }
 
