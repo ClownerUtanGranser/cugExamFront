@@ -14,6 +14,8 @@ export class TopnavComponent implements OnInit {
 
   lang:string;
 
+  openCloseBoolean:boolean = false;
+
   constructor(private state:StateService,
               private loginService:LoginService) { }
 
@@ -28,6 +30,7 @@ export class TopnavComponent implements OnInit {
   setLang(lang:string)
   {
     this.state.setLang(lang);
+    this.openCloseBoolean = !this.openCloseBoolean;
   }
 
   logout()

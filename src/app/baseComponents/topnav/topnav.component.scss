@@ -24,7 +24,7 @@ nav{
 .loggo{
     min-width: 17rem;
     padding: 0.5rem;
-    //border:solid black 1px;
+    background-color: $white;
 }
 
 .loggin
@@ -60,3 +60,77 @@ nav{
     cursor: pointer;
     
 }
+
+.lang-selection{
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .large {
+      display: none;
+    }
+
+    nav{   
+        justify-content: stretch ;        
+    }
+
+    .loggin
+    {
+        flex-grow: 4;
+        justify-content: flex-end;
+
+        a{
+            justify-content: end;
+        }
+    }
+
+    .lang-selection{
+        
+        position: relative;
+        display: flex;
+        width: 4rem;
+        height: 100%;
+        
+        .small{
+            position: absolute;
+            background-color: $white;
+            width: 4rem;
+            margin: 0;
+            padding:0;
+            height: 100%;
+            transition: all .5s ease;
+
+            &:hover{
+                color:$yellow;
+                cursor: pointer;
+            }
+
+            &.open{
+
+                transition: all .5s ease;
+
+                &:nth-child(2){
+                    transform: translate(0, 2.1rem);
+                }
+
+                &:nth-child(3){
+                    transform: translate(0, 4.2rem);
+                }
+            }
+
+            
+
+            
+
+            
+        }
+
+        .lang{
+            z-index: 7;
+            color:$yellow;
+        }
+
+        
+
+    }
+  }
