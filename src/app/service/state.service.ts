@@ -70,29 +70,29 @@ export class StateService {
   }
   //Starting values
 
-  setExamStartBaseValuesEng()
-  {
-    let start:StartingPageModel = {
-      headline : "Welcome",
-      secondHedline: "Welcome to the online training for artists working for Clowns without Borders Sweden!",
-      texts: [
-        "This online training is for people working as representatives for CLowns without Borders, artists, pedagogues, project coordinaters or others.",
-        "Upon completion of this course, you will know how to act as a good ambassador of CWB, what our core values are and what is important to think about when working with children.        "
-      ]
+  // setExamStartBaseValuesEng()
+  // {
+  //   let start:StartingPageModel = {
+  //     headline : "Welcome",
+  //     secondHedline: "Welcome to the online training for artists working for Clowns without Borders Sweden!",
+  //     texts: [
+  //       "This online training is for people working as representatives for CLowns without Borders, artists, pedagogues, project coordinaters or others.",
+  //       "Upon completion of this course, you will know how to act as a good ambassador of CWB, what our core values are and what is important to think about when working with children.        "
+  //     ]
     
-    }
+  //   }
 
-    let startExam:StartingPageModel = {
-      headline : "FINAL TEST",
-      secondHedline: '',
-      texts: [
-        "The final test consists of 12 questions. In order to pass, you must get a minimum of 8 questions correct.", "Make sure you can sit in a place where you can focus undisturbed for at least 30 minutes."
-      ]
+  //   let startExam:StartingPageModel = {
+  //     headline : "FINAL TEST",
+  //     secondHedline: '',
+  //     texts: [
+  //       "The final test consists of 12 questions. In order to pass, you must get a minimum of 8 questions correct.", "Make sure you can sit in a place where you can focus undisturbed for at least 30 minutes."
+  //     ]
     
-    }
-    this.setExamStart(startExam)
-    this.setCourseStart(start);
-  }
+  //   }
+  //   this.setExamStart(startExam)
+  //   this.setCourseStart(start);
+  // }
 
   setExamQuestionsBasealue(questions:Question[])
   {
