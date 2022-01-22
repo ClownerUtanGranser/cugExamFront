@@ -32,6 +32,7 @@ import { AdminNavComponent } from './pages/user/admin/admin-nav/admin-nav.compon
 import { ClownsLogoEngComponent } from './components/clowns-logo-eng/clowns-logo-eng.component';
 import { AdminUsersComponent } from './pages/user/admin/admin-users/admin-users.component';
 import { ExamOverviewComponent } from './exam/exam-overview/exam-overview.component';
+import { FlipingCardsComponent } from './course/fliping-cards/fliping-cards.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +63,8 @@ import { ExamOverviewComponent } from './exam/exam-overview/exam-overview.compon
     AdminNavComponent,
     ClownsLogoEngComponent,
     AdminUsersComponent,
-    ExamOverviewComponent
+    ExamOverviewComponent,
+    FlipingCardsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="headlinesection">
+        <h1 class="headline-marg">
+            {{ flipingCardsCopy.headline }}
+        </h1>
+        <h3>
+            {{ flipingCardsCopy.subHeading }}
+        </h3>
+        <p>
+            {{flipingCardsCopy.paragraf}}
+        </p>
+    </div>
+    <section class="cardsbox">
+        <div 
+            *ngFor="let card of flipingCardsCopy.cards; let i = index;"
+            class="card-container"
+            [class]="card.turned ? 'turned': ''"
+            (click)="turnCard(i ,card.turned)"
+            >
+            <div 
+                class="card"
+                [class]="setCircleSize(card.cardSize)"
+                >
+                <figure 
+                    class="front"
+                    [class]="setCircleSize(card.cardSize)"
+                    >
+                    <h2>
+                        {{ card.frontQuestion }}
+                    </h2>
+                </figure>
+                <figure 
+                    class="back"
+                    [class]="setCircleSize(card.cardSize)"
+                    
+                    >
+                    <span
+                        *ngFor="let expl of card.backexplenation"
+                    >
+                        {{ expl }}
+                       
+                    </span>
+                
+                     <p *ngIf="card?.chart" [innerHTML]="'<br> <p>'+ card?.chart  +'</p>'"></p> 
+                </figure>
+            </div>
+        </div>
+    </section>
+</div>

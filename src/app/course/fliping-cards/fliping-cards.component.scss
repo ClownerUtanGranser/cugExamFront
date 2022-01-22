@@ -1,0 +1,120 @@
+@import '../../scss/variables.scss';
+@import '../../scss/typography.scss';
+
+.container
+{
+    position: relative;
+    z-index: 1;
+    padding: 3rem 1rem 1rem 1rem; 
+    min-height: calc(100vh - 3rem);
+    width: 100%;
+    color: $red; 
+    background: $light-purple;
+    @include column-align-center();
+
+    h1, h3{
+        color: $red;
+        
+        &.headline-marg{
+            font-family: "Marguerite Grotesk";
+        }
+        font-family: DM Sans;
+    }
+    h2{
+        font-family: DM Sans;
+    }
+
+}
+
+.cardsbox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+ .card-container{
+
+     transform-style: preserve-3d;
+     transition: transform 1s ease-in-out;
+     @include circle(10rem);
+     cursor: pointer;
+     font-family: DM Sans;
+
+     &.turned .card{
+         transform: rotateY(180deg);
+     }
+ }
+
+ .card{
+
+    transition: transform 1s ease-in-out;
+     transform-style: preserve-3d;
+     
+     h2{
+
+        text-align: center;
+     }
+}
+
+ .front{
+         position:absolute;
+         background-color: $red;
+         display: flex;
+         justify-content: center;
+
+        &.small-ball
+        {
+            @include circle(7rem);
+            padding: 4rem 3.5rem 1rem 2rem;
+        }
+
+        &.medium-ball
+        {
+            @include circle(9rem);
+            padding: 3rem 4rem 1rem 1rem;
+        } 
+    
+         &.big-ball
+         {
+             @include circle(10rem);
+             text-align: center;
+             padding: 4rem 3rem 1rem 2rem;
+             
+         }   
+    }
+    
+    .back{
+        position:absolute;
+        background-color: $yellow;
+        transform: rotateY(180deg);
+        text-align: center;
+        
+        .Strong{
+            font-weight: bold;
+        }
+
+        &.small-ball
+        {
+            @include circle(7rem);
+            padding-top: 4rem;
+        }
+
+        &.medium-ball
+        {
+            @include circle(9rem);
+            padding: 1rem 1.5rem 0.5rem 1.5rem;
+        }
+
+        &.big-ball
+        {
+            @include circle(10rem);
+            padding: 1rem 1.5rem 0.5rem 1.5rem;
+        }
+                
+    }
+    
+    
+
+
+
