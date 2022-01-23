@@ -1,9 +1,11 @@
-<div class="container">
+<div class="container" [class]="lang">
                 
-    <div class="heading right"> 
-        <h1> {{ resource.headline }} </h1>
-        <ul>
-            <li *ngFor="let point of resource.points" >
+    <div class="heading right"
+         [class]="lang"> 
+        <h1 *ngIf="lang != 'AR'"> {{ resources.headline }} </h1>
+        <ul [class]="lang">
+            <h1 *ngIf="lang == 'AR'" [class]="lang"> {{ resources.headline }} </h1>
+            <li *ngFor="let point of resources.points" >
                 {{ point }}
             </li>
         </ul>
@@ -12,7 +14,7 @@
         <button 
             class="btn-start"
             >
-                {{  resource.links.linkText }}
+                {{  resources.links.linkText }}
         </button>
     </a>
 </div>

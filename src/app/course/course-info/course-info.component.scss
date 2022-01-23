@@ -9,10 +9,15 @@
     background: $green;
     @include column-align-center();
 
+    
+
     ul{
         margin-top: 2rem;
         list-style: none; 
-           
+
+        &.AR{               
+            direction: rtl;
+        }       
 
         li{
            
@@ -38,6 +43,10 @@
         .strong{
             font-weight: bold;
             padding-right: 2rem;
+
+            &.AR{
+                padding-left: 2rem;
+            }
         }
     }
     // display: flex;

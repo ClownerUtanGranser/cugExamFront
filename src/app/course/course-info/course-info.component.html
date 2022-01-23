@@ -1,10 +1,35 @@
 <div 
+    *ngIf="lang == 'ENG'"
     class="container"
     >
-     <h1>{{ chapters.headline }}</h1>
+     <h1>{{ chapters.headlineEng }}</h1>
      <ul>
          <li *ngFor="let chapter of chapters.chapters; let i = index">
              <a [routerLink]="['.', chapter.toLowerCase() , 1 ]"><span class="strong">SECTION {{ i + 1 }}</span><span class="headline-text">{{ chapter }}</span>
+            </a>
+        </li>
+     </ul>
+</div>
+<div 
+    *ngIf="lang == 'SV'"
+    class="container"
+    >
+     <h1>{{ chapters.headlineSv }}</h1>
+     <ul>
+         <li *ngFor="let chapter of chapters.chapters; let i = index">
+             <a [routerLink]="['.', chapter.toLowerCase() , 1 ]"><span class="strong">DEL {{ i + 1 }}</span><span class="headline-text">{{ chapters.chaptersSv[i] }}</span>
+            </a>
+        </li>
+     </ul>
+</div>
+<div 
+    *ngIf="lang == 'AR'"
+    class="container"
+    >
+     <h1>{{ chapters.headlineArb }}</h1>
+     <ul class="AR">
+         <li *ngFor="let chapter of chapters.chapters; let i = index">
+             <a [routerLink]="['.', chapter.toLowerCase() , 1 ]"><span class="strong AR"> الجزء {{ i + 1 }}</span><span class="headline-text"> {{ chapters.chaptersArb[i] }} </span>
             </a>
         </li>
      </ul>

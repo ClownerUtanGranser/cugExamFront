@@ -11,7 +11,9 @@
     background: $purple;
     @include column-align-center();
 
-    
+    &.AR{
+        direction: rtl;
+    }
 }
 
 .heading{
@@ -25,9 +27,12 @@
         background-color: $red;
         border-top-right-radius: 15rem;
         border-bottom-right-radius: 15rem;
+    
         ul{
-            margin-left: 2rem
+            margin-left: 2rem;
+
         }
+        
         li{
             margin: 0.5rem;
             font-size: 1.2rem;

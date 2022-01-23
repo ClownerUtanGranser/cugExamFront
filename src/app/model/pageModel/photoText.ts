@@ -1,4 +1,5 @@
 export interface  PhotoText {
+    chapter?:string,
     headline:string, 
     headlineText?:string, 
     sectionText?:string[],
@@ -235,9 +236,8 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     headlineText:"Action plan in case of suspected crime against children",
     sectionTextHtml:[
       '<span style="font-weight:bold; letter-spacing: .1rem;"> If you suspect, hear of or witness a child being subjected to any violation of our Child Protection policy you have a duty to report it. </span> This is in order to protect children and to ensure that you get the right support.',
-      "",
-      " According to the Action Plan you shall:",
-      ""
+      // "",
+      " According to the Action Plan you shall:"
     ],
     pointsHtml:[
       '<span style="font-weight:bold; letter-spacing: .1rem;"> Listen openly </span> to what the child says',
@@ -257,6 +257,51 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
 
   }
 
-      
+  //CODE OF CONDUCT
+
+  page1CodeOfConductEng:PhotoText = {
+    
+    chapter:'CODE',
+    headline: "CODE OF CONDUCT",
+    headlineText:"",
+    sectionTextHtml:[
+      'The Code of Conduct is one of the most important documents and forms the basis for a good representative of CWB Sweden.',
+       "",
+      "As a representative, it is your duty to understand and abide by the the Code of Conduct. ",
+      "",
+      "In the next session of this course we will go through all of its 10 basic principles."
+    ],
+    photoName:"photo"   
+  }
+
+  page1CodeOfConductSv:PhotoText = {
+    
+    chapter:'CODE',
+    headline: "UPPFÖRANDEKOD",
+    headlineText:"",
+    sectionTextHtml:[
+      'Uppförandekoden är ett av våra viktigaste dokument och utgör grunden för en god representant för Clowner utan Gränser.',
+       "",
+      "Som CUG-representant är det din skyldighet att förstå och följa uppförandekoden.",
+      "",
+      "I nästa del av utbildningen kommer vi att gå igenom uppförandekodens 10 grundläggande principer. "
+    ],
+    photoName:"photo"   
+  }
+
+  page1CodeOfConductArb:PhotoText = {
+    
+    chapter:'CODE',
+    headline: "مدونة قواعد السلوك",
+    headlineText:"",
+    sectionTextHtml:[
+      'تعتبر مدونة قواعد السلوك من أهم الوثائق، وخط الأساس لكيفية أن تكون ممثلاً جيدًا لمنظمة مهرجون بلا حدود – السويد',
+       "",
+      "بصفتك ممثلاً للمنظمة، فمن واجبك فهم مدونة قواعد السلوك والالتزام بها.",
+      "",
+      "في الجلسة التالية من هذه الدورة، سنتناول جميع مبادئها الأساسية العشرة."
+    ],
+    photoName:"photo"   
+  }
 
 }
