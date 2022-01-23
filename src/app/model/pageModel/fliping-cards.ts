@@ -1,7 +1,9 @@
 export interface FlipingCards{
 
+    chapter?:string,
     headline:string,
     subHeading?:string,
+    sectionTextHtml?:string[],
     paragraf?:string[],
     cards:{
         cardSize?:string,
@@ -9,7 +11,8 @@ export interface FlipingCards{
         backexplenation: string[],
         turned:boolean,
         empWord?:string[],
-        chart?:string
+        chart?:string,
+        correct?:string
     }[]
 }
 
@@ -153,4 +156,240 @@ export class FlipingCardsObj{
         
             ]
         }
+
+        //CODE OF CONDUCT
+
+        prohibitionOfAlcoholAndDrugsEng:FlipingCards = {
+
+            chapter:"CODE",
+            headline:"CODE OF CONDUCT",
+            subHeading:"Principle 6: Prohibition of alcohol and drugs",
+            sectionTextHtml:[
+                '<span style="font-weight:bold; letter-spacing: .1rem;"> Now we will take a look at a situation that could occur during your assignment with Clowns without Borders. </span> </br> Jonas and his colleagues have just completed three long days of performances and workshop. The last day on mission ends with a dinner for CWB representatives and representatives of a partner organisation. The dinner takes place at a restaurant. Jonas is wearing CWB costume/ T-shirt. A person from the local community offers Jonas a typical local liquor. Jonas declines the offer. Someone at the table remarks that according to local customs it is disrespectful to decline such an offer.</br></br></br> WHAT SHOULD JONAS DO?'
+            ],
+            cards:[{
+                frontQuestion: "Decline and explain that as a CWB representative he cannot drink alcohol",
+                cardSize:'XL',
+                turned:false,
+                correct:'correct',
+                backexplenation:[
+                    " Correct ",
+                    '',
+                    "It is never allowed to consume alcohol or illegal substances, or to be hungover during activities that involve Clowns without Borders’ target group, and/or when wearing clothes displaying the CWB logo in public settings. To avoid difficult situations it is important to explain that you are not allowed to consume alcohol or illegal substances. "
+                ],
+                empWord:[
+                    "Correct"
+                ]
+                },
+                {
+                    frontQuestion: "Have just a sip to show gratitude",
+                    cardSize:'XL',
+                    turned:false,
+                    correct:'wrong',
+                    backexplenation:[
+                        "Wrong",
+                        '',
+                        "Alcohol or illegal substances must never be consumed when wearing clothes displaying the CWB logo in public contexts. "
+                    ],
+                    empWord:[
+                        ""
+                    ],
+                    chart:""
+                },
+                {
+                    frontQuestion: "Accept the offer and drink the liquor to avoid being rude ",
+                    cardSize:'XL',
+                    turned:false,
+                    correct:'wrong',
+                    backexplenation:[
+                        'Wrong',
+                        '',
+                        "Alcohol or illegal substances must never be consumed when wearing clothes displaying the CWB logo in public contexts. "
+                    ],
+                    empWord:[
+                        "Wrong"
+                    ],
+                    chart: ""
+        
+                }
+            
+                ]
+            }
+
+            prohibitionOfAlcoholAndDrugsSv:FlipingCards = {
+
+                chapter:"CODE",
+                headline:"UPPFÖRANDEKOD",
+                subHeading:"Princip 6: Förbud mot alkohol och droger",
+                sectionTextHtml:[
+                    '<span style="font-weight:bold; letter-spacing: .1rem;">Nu ska vi ta en titt på en situation som kan uppstå under ditt uppdrag med Clowner utan Gränser. </span> </br>  Jonas och hans kollegor har precis avslutat tre långa dagar med föreställningar och workshops. Sista arbetsdagen avslutas med en middag för CUG-representanter och representanter för en partnerorganisation. Middagen äger rum på en restaurang. Jonas har kläder med CUGs logga på sig. En person från lokalsamhället erbjuder Jonas att smaka en typisk lokal spritsort. Jonas tackar nej. Någon vid bordet påpekar att det enligt lokala seder är respektlöst att tacka nej till ett sådant erbjudande.</br></br> VAD SKA JONAS GÖRA?'
+                ],
+                cards:[{
+                    frontQuestion: "Avböja och förklara att han som CUG-representant inte kan dricka alkohol",
+                    cardSize:'XL',
+                    turned:false,
+                    correct:'correct',
+                    backexplenation:[
+                        " Rätt ",
+                        '',
+                        "Det är aldrig tillåtet att nyttja alkohol eller droger, eller att vara bakfull under aktiviteter som involverar Clowner utan Gränsers målgrupp och/eller när man i offentliga miljöer bär kläder med CUG-logotypen. För att undvika svåra situationer är det viktigt att förklara att du inte får konsumera alkohol eller droger. "
+                    ],
+                    empWord:[
+                        "Correct"
+                    ]
+                    },
+                    {
+                        frontQuestion: "Bara ta en klunk för att visa uppskattning",
+                        cardSize:'XL',
+                        turned:false,
+                        correct:'wrong',
+                        backexplenation:[
+                            "Fel",
+                            '',
+                            "Alkohol eller droger får aldrig konsumeras när man bär kläder med CUG-logotypen i offentliga miljöer. "
+                        ],
+                        empWord:[
+                            ""
+                        ],
+                        chart:""
+                    },
+                    {
+                        frontQuestion: "Acceptera erbjudandet och dricka spriten för att undvika att vara oförskämd ",
+                        cardSize:'XL',
+                        turned:false,
+                        correct:'wrong',
+                        backexplenation:[
+                            "Fel",
+                            '',
+                            "Alkohol eller droger får aldrig konsumeras när man bär kläder med CUG-logotypen i offentliga miljöer. "
+                        ],
+                        empWord:[
+                            "Wrong"
+                        ],
+                        chart: ""
+            
+                    }
+                    
+                    ]
+                }
+
+                prohibitionOfAlcoholAndDrugsArb:FlipingCards = {
+
+                    chapter:"CODE",
+                    headline:"مدونة قواعد السلوك",
+                    subHeading:"المبدأ رقم 6: حظر الكحول والمخدرات",
+                    sectionTextHtml:[
+                        'الآن سوف نلقي نظرة على موقف يمكن أن ينشأ أثناء عملك في مهمة مع منظمة مهرجون بلا حدود أكمل جوناس وزملاؤه ثلاثة أيام طويلة من العروض وورش العمل. وينتهي اليوم الأخير في المهمة بعشاء مع كل من موظفي مهرجون بلا حدود والمنظمة الشريكة. جوناس يرتدي زي/ قميص المنظمة وهو في المطعم. يقدم ممثل من المجتمع المحلي مشروبات كحولية محلية لجوناس. جوناس يرفض العرض. يقول شخص من الحضور أنه وفقًا للعادات المحلية، أن رفض مثل هذا العرض يعتبر عدم احترام. <br><br> ماذا يجب أن يفعل جوناس؟ '
+                    ],
+                    cards:[{
+                        frontQuestion: " أن يصر ويشرح أنه لا يستطيع الشرب أثناء العمل مع منظمة مهرجون بلا حدود",
+                        cardSize:'XL',
+                        turned:false,
+                        correct:'correct',
+                        backexplenation:[
+                            " صحيح ",
+                            '',
+                            "لأنه لا يُسمح أبدًا بتناول الكحول أو المخدرات أثناء الأنشطة مع مجموعات المنظمة المستهدفة. عند ارتداء ملابس تعرض شعار المنظمة، من المهم أن تشرح للشخص الذي تتواجد معه أنه يُسمح لك بتجنب مثل هذه المواقف الصعبة."
+                        ],
+                        empWord:[
+                            "Correct"
+                        ]
+                        },
+                        {
+                            frontQuestion: " أن يتناول رشفة واحدة فقط لإظهار الامتنان",
+                            cardSize:'XL',
+                            turned:false,
+                            correct:'wrong',
+                            backexplenation:[
+                                "خطأ",
+                                '',
+                                "يجب عدم تناول المشروبات الكحولية أو المواد غير القانونية مطلقًا عند ارتداء ملابس تعرض شعار المنظمة في السياقات العامة. "
+                            ],
+                            empWord:[
+                                ""
+                            ],
+                            chart:""
+                        },
+                        {
+                            frontQuestion: "أن يقبل العرض ويتناول المشروب حتى لا يبدو وقحاً ",
+                            cardSize:'XL',
+                            turned:false,
+                            correct:'wrong',
+                            backexplenation:[
+                                'خطأ',
+                                '',
+                                "يجب عدم تناول المشروبات الكحولية أو المواد غير القانونية مطلقًا عند ارتداء ملابس تعرض شعار المنظمة في السياقات العامة"
+                            ],
+                            empWord:[
+                                "خطأ"
+                            ],
+                            chart: ""
+                
+                        }
+                    
+                        ]
+                    }
+        
+    
+    
+            anExampleOfAPotentialSituationEng:FlipingCards = {
+
+                headline:"DOCUMENTATION OF CHILDREN",
+                subHeading:"An example of a potential situation",
+                sectionTextHtml:[
+                    'You are in charge of documenting and taking photos during a CWB tour. You take a beautiful photo of a 14-year-old boy with a big smile on his face. The photo is so expressive and positive. You want to write a blog post and publish the photo on your social media account. What do you do? '
+                ],
+                paragraf:[
+                    ""
+                ],
+                cards:[{
+                    frontQuestion: "I can publish the photo since it is so expressive and positive.",
+                    cardSize:'XL',
+                    turned:false,
+                    correct:'wrong',
+                    backexplenation:[
+                        " Wrong ",
+                        '',
+                        "Publishing the photo means violating the child’s right to privacy."
+                    ],
+                    empWord:[
+                        "wrong"
+                    ]
+                    },
+                    {
+                        frontQuestion: "Ask the boy if it’s okay to use the photo, since the boy is big enough to decide.",
+                        cardSize:'XL',
+                        turned:false,
+                        correct:'wrong',
+                        backexplenation:[
+                            "Wrong",
+                            '',
+                            "A minor cannot give consent!"
+                        ],
+                        empWord:[
+                            ""
+                        ],
+                        chart:""
+                    },
+                    {
+                        frontQuestion: "Ask the boy and the boy’s caregiver for permission and sign a consent form or possibly give oral consent.  ",
+                        cardSize:'XL',
+                        turned:false,
+                        correct:'correct',
+                        backexplenation:[
+                            'Correct',
+                            '',
+                            "When working directly with children you must make sure that photos, videos, audio files and personal data respects children’s rights to privacy. This means that consent must be obtained from the child in question and a legal guardian or another person responsible for the child on site.  "
+                        ],
+                        empWord:[
+                            "Correct"
+                        ],
+                        chart: ""
+            
+                    }
+                
+                    ]
+                }
+
+
 }

@@ -101,6 +101,60 @@
     </app-text-photo>
 
 
+    <!--Code of conduct-->
+    <app-text-photo
+        *ngIf="page == '1' && url == 'code of conduct'"
+        [photoText]='page1CodeOfConduct'
+        [lang]="lang"
+    >
+    </app-text-photo>
+
+    <app-code-of-conduct
+        [codeOfConduct]='code1And2'
+        [lang]="lang"
+        *ngIf="page == '2' && url == 'code of conduct'"
+    >
+    </app-code-of-conduct>
+    <app-code-of-conduct
+        [codeOfConduct]='code3And4'
+        [lang]="lang"
+        *ngIf="page == '3' && url == 'code of conduct'"
+    >
+    </app-code-of-conduct>
+    <app-code-of-conduct
+        [codeOfConduct]='code5And6'
+        [lang]="lang"
+        *ngIf="page == '4' && url == 'code of conduct'"
+    >
+    </app-code-of-conduct>
+    <app-code-of-conduct
+        [codeOfConduct]='code7And8'
+        [lang]="lang"
+        *ngIf="page == '5' && url == 'code of conduct'"
+    >
+    </app-code-of-conduct>
+    <app-code-of-conduct
+        [codeOfConduct]='code9And10'
+        [lang]="lang"
+        *ngIf="page == '6' && url == 'code of conduct'"
+    >
+    </app-code-of-conduct>
+
+    <app-fliping-cards
+        *ngIf="page == '7' && url == 'code of conduct'"
+        [flipingCards]="prohibitionOfAlcoholAndDrugs"
+        [lang]='lang'
+    >
+    </app-fliping-cards>
+    
+    <!--documentation of children-->
+    <app-fliping-cards
+        *ngIf="page == '1' && url == 'documentation of children'"
+        [flipingCards]="anExampleOfAPotentialSituation"
+        [lang]='lang'
+    >
+    </app-fliping-cards>
+
     
 
 </div>

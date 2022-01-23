@@ -1,0 +1,18 @@
+<div 
+    class="container"
+    [class]="lang"
+    >
+    <h1 *ngIf="codeOfConduct?.headline" >{{ codeOfConduct.headline }}</h1>
+    <section 
+        *ngFor="let conduct of codeOfConduct.paragrafHtmls; let i = index;"
+    >
+        <h3>{{ conduct.paragrafHeadline }}</h3>
+        <p *ngFor="let textHtml of conduct.paragrafHtml" >
+            {{ textHtml }}
+        </p>
+        <br>
+        <label [for]="conduct.checkboxText"> {{ conduct.checkboxText }} </label>
+        <input type="checkbox" [id]="conduct.checkboxText" [name]="conduct.checkboxText" value="i">
+
+    </section>
+</div>

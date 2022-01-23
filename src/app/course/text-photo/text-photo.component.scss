@@ -11,8 +11,22 @@
     background: linear-gradient(to left, $light-green 42%, $light-pink 67%, $light-green 0%, $light-pink 0%);
     display: flex;
 
+    &.CODE{
+        color: $black; 
+        background: $light-purple;
+    }
+    
+
     .text{
         width: 50%;
+        &.AR{
+            direction: rtl;
+        }
+
+        .bold{
+            font-weight: bolder;
+        }
+        
     }
 
     .img{
@@ -28,8 +42,8 @@
         .red_circle{
             position: absolute;
             bottom: -3rem;
-            left: 15rem;
-            right: -2rem;
+            left: calc(0vw - 2rem);
+            right: 0rem;
 
             display: flex;
             justify-content: center;
@@ -37,12 +51,21 @@
 
             padding: 3rem;
             min-height: 25rem;
-            min-width: 20rem;
+            min-width: 25rem;
             background-color: rgba($green, .8);
             color: $white;
             line-height: 1.7rem;
             font-size: 1.5rem;
             letter-spacing: 0.4 rem;
+
+            &.AR{
+                direction: rtl;
+            }
+
+            &.bigger{
+                min-height: 35rem;
+                min-width: 35rem;
+            }
             
         }
     }
@@ -51,6 +74,12 @@
         margin-bottom: 1rem;
         color: $red; 
         margin-left: 1rem;
+        margin-right: 1rem;
+
+        &.CODE{
+            color: $black; 
+        }
+    
     }
 
     p{
@@ -62,6 +91,11 @@
 
     .points{
         margin-bottom: 0.5rem;
+        padding: 0 1rem 0 1rem;
+
+        &:last-child{
+            margin-bottom: 2rem;
+          }
     }
 }
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { CodeOfConduct, CodeOfConductObj } from 'src/app/model/pageModel/code-of-conduct';
 import { dosAndDonts, DosAndDontsObj } from 'src/app/model/pageModel/dos-and-donts';
 import { DoubleCug, DoubleCugObj } from 'src/app/model/pageModel/double-cug';
 import { FlipingCards, FlipingCardsObj } from 'src/app/model/pageModel/fliping-cards';
@@ -20,6 +21,7 @@ export class SectionComponent implements OnInit {
   ResourcesObj = new  ResourcesObj();
   flipingCardsObj = new FlipingCardsObj();
   dosAndDontsObj = new DosAndDontsObj();
+  codeOfConductObj = new CodeOfConductObj();
 
   url:string;
   page:string;
@@ -43,6 +45,19 @@ export class SectionComponent implements OnInit {
   largeCrowdsAtPerformances:PhotoText;
   scenario2LongtermWorkWithChildren:DoubleCug;
   actionPlanInCaseOfSuspectedCrimeAgainstChildren:PhotoText;
+
+  //Section CODE OF CONDUCT
+  page1CodeOfConduct:PhotoText
+  code1And2:CodeOfConduct;
+  code3And4:CodeOfConduct;
+  code5And6:CodeOfConduct;
+  code7And8:CodeOfConduct;
+  code9And10:CodeOfConduct;
+  prohibitionOfAlcoholAndDrugs:FlipingCards;
+
+  //DOCUMENTATION OF CHILDREN
+  anExampleOfAPotentialSituation:FlipingCards;
+
 
 
   constructor(private route: ActivatedRoute,
@@ -118,6 +133,14 @@ export class SectionComponent implements OnInit {
         this.largeCrowdsAtPerformances = this.photoTextObj.largeCrowdsAtPerformancesEng;
         this.scenario2LongtermWorkWithChildren = this.doubleCugObj.scenario2LongtermWorkWithChildrenEng
         this.actionPlanInCaseOfSuspectedCrimeAgainstChildren = this.photoTextObj.actionPlanInCaseOfSuspectedCrimeAgainstChildrenEng;
+        this.prohibitionOfAlcoholAndDrugs = this.flipingCardsObj.prohibitionOfAlcoholAndDrugsSv;
+        this.anExampleOfAPotentialSituation = this.flipingCardsObj.anExampleOfAPotentialSituationEng;
+        this.page1CodeOfConduct = this.photoTextObj.page1CodeOfConductSv;
+        this.code1And2 = this.codeOfConductObj.code1And2Sv;
+        this.code3And4 = this.codeOfConductObj.code3And4Sv;
+        this.code5And6 = this.codeOfConductObj.code5And6Sv;
+        this.code7And8 = this.codeOfConductObj.code7And8Sv;
+        this.code9And10 = this.codeOfConductObj.code9And10Sv;
 
       }
       else if(this.lang == 'ENG')
@@ -135,6 +158,14 @@ export class SectionComponent implements OnInit {
         this.largeCrowdsAtPerformances = this.photoTextObj.largeCrowdsAtPerformancesEng;
         this.scenario2LongtermWorkWithChildren = this.doubleCugObj.scenario2LongtermWorkWithChildrenEng
         this.actionPlanInCaseOfSuspectedCrimeAgainstChildren = this.photoTextObj.actionPlanInCaseOfSuspectedCrimeAgainstChildrenEng;
+        this.prohibitionOfAlcoholAndDrugs = this.flipingCardsObj.prohibitionOfAlcoholAndDrugsEng;
+        this.anExampleOfAPotentialSituation = this.flipingCardsObj.anExampleOfAPotentialSituationEng;
+        this.page1CodeOfConduct = this.photoTextObj.page1CodeOfConductEng;
+        this.code1And2 = this.codeOfConductObj.code1And2Eng;
+        this.code3And4 = this.codeOfConductObj.code3And4Eng;
+        this.code5And6 = this.codeOfConductObj.code5And6Eng;
+        this.code7And8 = this.codeOfConductObj.code7And8Eng;
+        this.code9And10 = this.codeOfConductObj.code9And10Eng;
 
 
       }
@@ -153,6 +184,14 @@ export class SectionComponent implements OnInit {
         this.largeCrowdsAtPerformances = this.photoTextObj.largeCrowdsAtPerformancesEng;
         this.scenario2LongtermWorkWithChildren = this.doubleCugObj.scenario2LongtermWorkWithChildrenEng;
         this.actionPlanInCaseOfSuspectedCrimeAgainstChildren = this.photoTextObj.actionPlanInCaseOfSuspectedCrimeAgainstChildrenEng;
+        this.prohibitionOfAlcoholAndDrugs = this.flipingCardsObj.prohibitionOfAlcoholAndDrugsArb;
+        this.anExampleOfAPotentialSituation = this.flipingCardsObj.anExampleOfAPotentialSituationEng;
+        this.page1CodeOfConduct = this.photoTextObj.page1CodeOfConductArb;
+        this.code1And2 = this.codeOfConductObj.code1And2Arb;
+        this.code3And4 = this.codeOfConductObj.code3And4Arb;
+        this.code5And6 = this.codeOfConductObj.code5And6Arb;
+        this.code7And8 = this.codeOfConductObj.code7And8Arb;
+        this.code9And10 = this.codeOfConductObj.code9And10Arb;
 
       }
    }

@@ -1,13 +1,28 @@
-<div class="container">
+<div 
+    class="container"
+    [class]="lang"
+    >
     <div class="headlinesection">
-        <h1 class="headline-marg">
-            {{ flipingCardsCopy.headline }}
+        <h1 class="headline-marg"
+            [class]="flipingCardsCopy?.chapter"
+        >
+            {{ flipingCardsCopy.headline }} 
         </h1>
-        <h3>
+        <h3
+            [class]="flipingCardsCopy?.chapter"
+        >
             {{ flipingCardsCopy.subHeading }}
         </h3>
-        <p>
+        <p
+            [class]="flipingCardsCopy?.chapter"
+        >
             {{flipingCardsCopy.paragraf}}
+        </p>
+        <p
+            *ngFor="let textHtml of flipingCardsCopy.sectionTextHtml"
+            [class]="flipingCardsCopy?.chapter"
+            [innerHtml]="textHtml"
+        >
         </p>
     </div>
     <section class="cardsbox">
@@ -19,11 +34,11 @@
             >
             <div 
                 class="card"
-                [class]="setCircleSize(card.cardSize)"
+                [class]="setCircleSize(card.cardSize, card?.correct)"
                 >
                 <figure 
                     class="front"
-                    [class]="setCircleSize(card.cardSize)"
+                    [class]="setCircleSize(card.cardSize, card?.correct)"
                     >
                     <h2>
                         {{ card.frontQuestion }}
@@ -31,13 +46,14 @@
                 </figure>
                 <figure 
                     class="back"
-                    [class]="setCircleSize(card.cardSize)"
+                    [class]="setCircleSize(card.cardSize, card?.correct)"
                     
                     >
                     <span
                         *ngFor="let expl of card.backexplenation"
                     >
                         {{ expl }}
+                        <br *ngIf="card?.correct" > 
                        
                     </span>
                 

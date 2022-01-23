@@ -33,14 +33,18 @@ export class FlipingCardsComponent implements OnInit, OnChanges {
     this.flipingCardsCopy.cards[index].turned = !this.flipingCardsCopy.cards[index].turned;
   }
 
-  setCircleSize(circleSize:string):string
+  setCircleSize(circleSize:string, correct?:string):string
   {
+    correct = correct ?? '';
     if(circleSize == 'S')
     {
-      return "small-ball"
+      return "small-ball " + correct
     }
     else if(circleSize == 'M'){
-      return "medium-ball"
+      return "medium-ball " + correct
+    }
+    else if(circleSize == 'XL'){
+      return "XL-box " + correct
     }
     else
     {

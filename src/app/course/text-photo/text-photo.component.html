@@ -1,6 +1,13 @@
-<div class="container">
-    <div class="text">
-        <h2>{{photoText.headline}}</h2>
+<div class="container"
+    [class]="photoText.chapter"
+>
+    <div class="text"
+        [class]="lang"   
+    >
+        <h2 
+            [class]="photoText.chapter">
+            {{photoText.headline}}
+        </h2>
         <h3 *ngIf="photoText?.headlineText">{{photoText?.headlineText}}</h3>
         <p 
             class="sectionText"
@@ -8,18 +15,62 @@
         >
             {{text}}
         </p>
+        <span >
+            <p 
+                class="sectionText"
+                *ngFor="let text of sectionTextHtml"
+                [innerHtml]="text"
+            >
+                {{text}}
+            </p>
+        </span>
         <p 
             class="points"
             *ngFor="let point of photoText.points"
             >
             {{point}}
         </p>
+        <span>
+            <p 
+                class="points"
+                *ngFor="let point of pointsHtml"
+                [innerHtml]="point"
+                >
+            </p>
+        </span>
+        <section *ngIf="photoText?.secondSectionText">
+            <p 
+                class="sectionText"
+                *ngFor="let text of photoText.secondSectionText"
+            >
+                {{text}}
+            </p>
+        </section>
+        <section *ngIf="endTextHtml.length > 0">
+            <p 
+                class="sectionText"
+                *ngFor="let endText of endTextHtml"
+                [innerHtml]="endText"
+            >
+            </p>
+        </section>
+        <section *ngIf="photoText?.endBoldText">
+            <p 
+                class="sectionText bold"
+                *ngFor="let textBold of photoText.endBoldText"
+            >
+                {{textBold}}
+            </p>
+        </section>
+
 
     </div>
     <div class="img">
-        <div *ngIf="photoText?.circleText" class="red_circle">
-            {{ photoText?.circleText }}
+        <div 
+            *ngIf="photoText?.circleText" 
+            class="red_circle text"
+            [class]="photoText?.circleText.length > 400 ? lang + ' bigger' : lang">
+            {{ photoText?.circleText }} 
         </div>
-
     </div>
 </div>
