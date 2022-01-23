@@ -391,5 +391,124 @@ export class FlipingCardsObj{
                     ]
                 }
 
+                anExampleOfAPotentialSituationSv:FlipingCards = {
+
+                    headline:"DOCUMENTATION OF CHILDREN",
+                    subHeading:"An example of a potential situation",
+                    sectionTextHtml:[
+                        'You are in charge of documenting and taking photos during a CWB tour. You take a beautiful photo of a 14-year-old boy with a big smile on his face. The photo is so expressive and positive. You want to write a blog post and publish the photo on your social media account. What do you do? '
+                    ],
+                    paragraf:[
+                        ""
+                    ],
+                    cards:[{
+                        frontQuestion: "I can publish the photo since it is so expressive and positive.",
+                        cardSize:'XL',
+                        turned:false,
+                        correct:'wrong',
+                        backexplenation:[
+                            " Wrong ",
+                            '',
+                            "Publishing the photo means violating the child’s right to privacy."
+                        ],
+                        empWord:[
+                            "wrong"
+                        ]
+                        },
+                        {
+                            frontQuestion: "Ask the boy if it’s okay to use the photo, since the boy is big enough to decide.",
+                            cardSize:'XL',
+                            turned:false,
+                            correct:'wrong',
+                            backexplenation:[
+                                "Wrong",
+                                '',
+                                "A minor cannot give consent!"
+                            ],
+                            empWord:[
+                                ""
+                            ],
+                            chart:""
+                        },
+                        {
+                            frontQuestion: "Ask the boy and the boy’s caregiver for permission and sign a consent form or possibly give oral consent.  ",
+                            cardSize:'XL',
+                            turned:false,
+                            correct:'correct',
+                            backexplenation:[
+                                'Correct',
+                                '',
+                                "When working directly with children you must make sure that photos, videos, audio files and personal data respects children’s rights to privacy. This means that consent must be obtained from the child in question and a legal guardian or another person responsible for the child on site.  "
+                            ],
+                            empWord:[
+                                "Correct"
+                            ],
+                            chart: ""
+                
+                        }
+                    
+                        ]
+                    }
+
+                    anExampleOfAPotentialSituationArb:FlipingCards = {
+
+                        headline:"التوثيق للأطفال",
+                        subHeading:"مثال على حالة محتملة",
+                        sectionTextHtml:[
+                            ' أنت مسؤول عن التوثيق والتقاط الصور أثناء الجولة، تلتقط صورة جميلة جدًا لطفل يبلغ من العمر 14 عامًا بابتسامة جميلة على وجهه. الصورة معبرة وإيجابية للغاية. تريد كتابة مدونة ونشر الصورة على وسائل التواصل الاجتماعي الخاصة بك. كيف ستتصرف؟'
+                        ],
+                        paragraf:[
+                            ""
+                        ],
+                        cards:[{
+                            frontQuestion: "يمكنني نشر الصورة لأن الصورة معبرة وإيجابية للغاية",
+                            cardSize:'XL',
+                            turned:false,
+                            correct:'wrong',
+                            backexplenation:[
+                                " خطأ ",
+                                '',
+                                "من خلال نشر الصورة على الإنترنت، فإنك تنتهك حق الطفل في الخصوصية"
+                            ],
+                            empWord:[
+                                "خطأ"
+                            ]
+                            },
+                            {
+                                frontQuestion: " اسأل الفتى إذا كان يوافق على استخدام الصورة، فهو كبير بما يكفي لاتخاذ القرار",
+                                cardSize:'XL',
+                                turned:false,
+                                correct:'wrong',
+                                backexplenation:[
+                                    "خطأ",
+                                    '',
+                                    "الطفل لا يمكنه منح الموافقة"
+                                ],
+                                empWord:[
+                                    ""
+                                ],
+                                chart:""
+                            },
+                            {
+                                frontQuestion: "أطلب من الفتى ومقدم الرعاية له تأكيد استخدام الصورة والتوقيع على استمارة الموافقة",
+                                cardSize:'XL',
+                                turned:false,
+                                correct:'correct',
+                                backexplenation:[
+                                    'صحيح',
+                                    '',
+                                    ""
+                                ],
+                                empWord:[
+                                    "صحيح"
+                                ],
+                                chart: "عند العمل بشكل مباشر مع الأطفال، يجب التأكد من أن الصور ومقاطع الفيديو والملفات الصوتية والبيانات الشخصية تحترم حقوق الأطفال في الخصوصية. هذا يعني أنه يجب الحصول على الموافقة من الطفل المعني ومن الوصي القانوني أو أي شخص آخر مسؤول عن الطفل في الموقع."
+                    
+                            }
+                        
+                            ]
+                        }
+        
+
 
 }

@@ -146,6 +146,15 @@
         [lang]='lang'
     >
     </app-fliping-cards>
+    <!--whistle blower policy-->
+    <app-dos-and-donts
+        *ngIf="page == '1' && url == 'whistle blower policy'"
+        [dosAndDonts] = 'whistleBlowerPolicy'
+        [lang]="lang"
+    >
+    </app-dos-and-donts>
+
+
     
     <!--documentation of children-->
     <app-text-photo

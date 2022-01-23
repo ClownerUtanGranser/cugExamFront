@@ -182,6 +182,66 @@ export class DosAndDontsObj {
           "- اقرأ المزيد في: خطة العمل وسياسة حماية المبلغين"
         ]
     }
-      
 
+    //whistle blower policy
+
+    whistleBlowerPolicyEng:dosAndDonts = {
+      headline: 'WHISTLEBLOWER POLICY', 
+      headlineText: 'It is crucial that everyone involved in Clowns without Borders abide by the same rules and conduct themselves according to the same standards, no matter their position or where they work. Hence we have a whistle-blower policy in place.',
+      dosText:[
+        'If you become aware of somebody in the organisation acting in a way that contradicts CWB policies, statutes or regulations you should immediately reach out to your nearest point of contact. If you do not wish to reach out to your closest point of contact, you can contact the Secretary-General or a member of the Board of directors.',
+        '',
+        'Reporting is anonymous. CWB guarantees the anonymity of anyone reporting irregularities.'
+      ],
+      dontHeadline:'Irregularities can be:',
+      dontsText: [
+        '- of financial nature ',
+        '',
+        '- illegal activities ',
+        '',
+        '- mismanagement of an assignment or a position',
+        '',
+        '- actions or behaviour that go against CWB’s statutes or policies'
+      ]
+    }
+
+    whistleBlowerPolicySv:dosAndDonts = {
+      headline: 'VISSELBLÅSARPOLICY', 
+      headlineText: 'Det är av yttersta vikt att alla som är engagerade i Clowner utan Gränser följer samma regler och riktlinjer, oavsett befattning eller var de arbetar. Därför har vi en visselblåsarpolicy.',
+      dosText:[
+        'Om du får reda på att någon i organisationen agerar på ett sätt som strider mot CUGs policies, stadgar eller föreskrifter bör du omedelbart berätta det för din närmaste kontaktperson. Om du inte vill meddela din närmaste kontaktperson kan du kontakta generalsekreteraren eller en styrelseledamot.',
+        '',
+        'Rapporteringen är anonym. CUG garanterar att alla som rapporterar oegentligheter förblir anonyma. '
+      ],
+      dontHeadline:'Oegentligheter kan vara:',
+      dontsText: [
+        '– ekonomiska',
+        '',
+        '– illegal verksamhet',
+        '',
+        '– misskötsel av ett uppdrag eller en befattning',
+        '',
+        '– handlingar eller beteende som strider mot CUGs stadgar eller policies'
+      ]
+    }
+
+    whistleBlowerPolicyArb:dosAndDonts = {
+      headline: 'سياسة الإبلاغ عن المخالفات', 
+      headlineText: ' نحن في منظمة مهرجون بلا حدود نعتقد أنه من الأهمية أن نتبع جميعًا القواعد نفسها، ونتصرف بنفس الطريقة أثناء تنفيذ عملنا، بغض النظر عن البلد الذي نعمل فيه. لذلك، لدينا سياسة خاصة بالإبلاغ عن المخالفات معمول بها.',
+      dosText:[
+        'إذا كنت على علم بأن شخصًا ما في المنظمة يرتكب مخالفات، يجب أن تصل على الفور بأقرب نقطة اتصال لك بالمنظمة. إذا كنت لا ترغب في الوصول إلى أقرب نقطة اتصال لك، فيمكنك دائمًا الاتصال بالأمين العام أو أحد أعضاء مجلس الإدارة.',
+        '',
+        'الإبلاغ سيكون مجهول المصدر، وستضمن المنظمة عدم الكشف عن هوية الشخص الذي قام بالإبلاغ عن المخالفات.'
+      ],
+      dontHeadline:'يمكن أن تكون المخالفات:',
+      dontsText: [
+        '- ذات طبيعة مالية ',
+        '',
+        '- أنشطة غير قانونية ',
+        '',
+        '- تتعلق بسوء إدارة المهمة أو الوظيفة',
+        '',
+        '- تتعلق بالأنشطة أو السلوك الذي يتعارض مع اللوائح أو السياسات الخاصة بالمنظمة'
+      ]
+    }
 }

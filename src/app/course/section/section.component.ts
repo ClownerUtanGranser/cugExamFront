@@ -59,6 +59,9 @@ export class SectionComponent implements OnInit {
   anExampleOfAPotentialSituation:FlipingCards;
   documentationOfChildrenPage1:PhotoText
 
+  //whistle blower policy
+  whistleBlowerPolicy:dosAndDonts
+
 
 
   constructor(private route: ActivatedRoute,
@@ -135,7 +138,7 @@ export class SectionComponent implements OnInit {
         this.scenario2LongtermWorkWithChildren = this.doubleCugObj.scenario2LongtermWorkWithChildrenEng
         this.actionPlanInCaseOfSuspectedCrimeAgainstChildren = this.photoTextObj.actionPlanInCaseOfSuspectedCrimeAgainstChildrenEng;
         this.prohibitionOfAlcoholAndDrugs = this.flipingCardsObj.prohibitionOfAlcoholAndDrugsSv;
-        this.anExampleOfAPotentialSituation = this.flipingCardsObj.anExampleOfAPotentialSituationEng;
+        this.anExampleOfAPotentialSituation = this.flipingCardsObj.anExampleOfAPotentialSituationSv;
         this.page1CodeOfConduct = this.photoTextObj.page1CodeOfConductSv;
         this.code1And2 = this.codeOfConductObj.code1And2Sv;
         this.code3And4 = this.codeOfConductObj.code3And4Sv;
@@ -143,6 +146,7 @@ export class SectionComponent implements OnInit {
         this.code7And8 = this.codeOfConductObj.code7And8Sv;
         this.code9And10 = this.codeOfConductObj.code9And10Sv;
         this.documentationOfChildrenPage1 = this.photoTextObj.documentationOfChildrenPage1Sv;
+        this.whistleBlowerPolicy = this.dosAndDontsObj.whistleBlowerPolicySv;
 
       }
       else if(this.lang == 'ENG')
@@ -169,7 +173,7 @@ export class SectionComponent implements OnInit {
         this.code7And8 = this.codeOfConductObj.code7And8Eng;
         this.code9And10 = this.codeOfConductObj.code9And10Eng;
         this.documentationOfChildrenPage1 = this.photoTextObj.documentationOfChildrenPage1Eng;
-
+        this.whistleBlowerPolicy = this.dosAndDontsObj.whistleBlowerPolicyEng;
 
 
       }
@@ -189,7 +193,7 @@ export class SectionComponent implements OnInit {
         this.scenario2LongtermWorkWithChildren = this.doubleCugObj.scenario2LongtermWorkWithChildrenEng;
         this.actionPlanInCaseOfSuspectedCrimeAgainstChildren = this.photoTextObj.actionPlanInCaseOfSuspectedCrimeAgainstChildrenEng;
         this.prohibitionOfAlcoholAndDrugs = this.flipingCardsObj.prohibitionOfAlcoholAndDrugsArb;
-        this.anExampleOfAPotentialSituation = this.flipingCardsObj.anExampleOfAPotentialSituationEng;
+        this.anExampleOfAPotentialSituation = this.flipingCardsObj.anExampleOfAPotentialSituationArb;
         this.page1CodeOfConduct = this.photoTextObj.page1CodeOfConductArb;
         this.code1And2 = this.codeOfConductObj.code1And2Arb;
         this.code3And4 = this.codeOfConductObj.code3And4Arb;
@@ -197,7 +201,7 @@ export class SectionComponent implements OnInit {
         this.code7And8 = this.codeOfConductObj.code7And8Arb;
         this.code9And10 = this.codeOfConductObj.code9And10Arb;
         this.documentationOfChildrenPage1 = this.photoTextObj.documentationOfChildrenPage1Arb;
-
+        this.whistleBlowerPolicy = this.dosAndDontsObj.whistleBlowerPolicyArb;
       }
    }
 
