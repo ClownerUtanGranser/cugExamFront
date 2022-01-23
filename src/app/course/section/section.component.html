@@ -148,8 +148,14 @@
     </app-fliping-cards>
     
     <!--documentation of children-->
-    <app-fliping-cards
+    <app-text-photo
         *ngIf="page == '1' && url == 'documentation of children'"
+        [photoText]='documentationOfChildrenPage1'
+        [lang]="lang"
+    >
+    </app-text-photo>
+    <app-fliping-cards
+        *ngIf="page == '2' && url == 'documentation of children'"
         [flipingCards]="anExampleOfAPotentialSituation"
         [lang]='lang'
     >

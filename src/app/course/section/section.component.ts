@@ -57,6 +57,7 @@ export class SectionComponent implements OnInit {
 
   //DOCUMENTATION OF CHILDREN
   anExampleOfAPotentialSituation:FlipingCards;
+  documentationOfChildrenPage1:PhotoText
 
 
 
@@ -141,6 +142,7 @@ export class SectionComponent implements OnInit {
         this.code5And6 = this.codeOfConductObj.code5And6Sv;
         this.code7And8 = this.codeOfConductObj.code7And8Sv;
         this.code9And10 = this.codeOfConductObj.code9And10Sv;
+        this.documentationOfChildrenPage1 = this.photoTextObj.documentationOfChildrenPage1Sv;
 
       }
       else if(this.lang == 'ENG')
@@ -166,6 +168,8 @@ export class SectionComponent implements OnInit {
         this.code5And6 = this.codeOfConductObj.code5And6Eng;
         this.code7And8 = this.codeOfConductObj.code7And8Eng;
         this.code9And10 = this.codeOfConductObj.code9And10Eng;
+        this.documentationOfChildrenPage1 = this.photoTextObj.documentationOfChildrenPage1Eng;
+
 
 
       }
@@ -192,6 +196,7 @@ export class SectionComponent implements OnInit {
         this.code5And6 = this.codeOfConductObj.code5And6Arb;
         this.code7And8 = this.codeOfConductObj.code7And8Arb;
         this.code9And10 = this.codeOfConductObj.code9And10Arb;
+        this.documentationOfChildrenPage1 = this.photoTextObj.documentationOfChildrenPage1Arb;
 
       }
    }

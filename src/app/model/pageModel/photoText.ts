@@ -304,4 +304,66 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     photoName:"photo"   
   }
 
+  //DOCUMENTATION OF CHILDREN
+
+  documentationOfChildrenPage1Eng:PhotoText = {
+
+    headline: 'DOCUMENTATION OF CHILDREN',
+    sectionTextHtml:[
+      'Children’s integrity and privacy is important to CWB Sweden. Artists must never, in social media or otherwise, publish photos of children that can be identified. Furthermore, CWB Sweden is obliged to follow the European GDPR law which states that no personal information about children (such as photos, videos, audio files or personal data) can be shared unless we have <span style="font-weight:bold; letter-spacing: .1rem;">  informed consent </span> from the child and their legal guardian.',
+      '',
+      'If you are in charge of documenting activities or any other work of CWB Sweden you must make sure that all documentation respects children’s rights to privacy.',
+      '',
+      'This means that <span style="font-weight:bold; letter-spacing: .1rem;">  informed consent </span> must be obtained from the child in question and a legal guardian or other person responsible for the child on site. ',
+      '',
+      'Please note that a minor <span style="font-weight:bold; letter-spacing: .1rem;">  cannot </span> give consent! '
+    ],
+
+    endTextHtml:[
+      'You can read more about this in the Communication policy.'
+    ],
+    circleText: 'Informed consent means that the person being portrayed understands how their photos/information will be used.',
+    photoName:'photo'
+  }
+
+  documentationOfChildrenPage1Sv:PhotoText = {
+
+    headline: 'DOKUMENTATION AV BARN',
+    sectionTextHtml:[
+      'Barns integritet är viktig för Clowner utan Gränser. Artister får aldrig, i sociala medier eller på annat sätt, publicera foton på barn som kan identifieras. Clowner utan Gränser är också skyldig att följa den europeiska GDPR-lagen som anger att ingen personlig information om barn (såsom bilder, videor, ljudfiler eller personuppgifter) får spridas om vi inte har informerat samtycke från barnet och dess vårdnadshavare.',
+      '',
+      'Om du ansvarar för att dokumentera aktiviteter eller något annat arbete inom CUG måste du se till att all dokumentation respekterar barns rätt till integritet.',
+      '',
+      'Det innebär att informerat samtycke ska inhämtas från barnet och en vårdnadshavare eller annan ansvarig för barnet på plats.',
+      '',
+      'Observera att en <span style="font-weight:bold; letter-spacing: .1rem;"> minderårig inte kan ge sitt samtycke </span>!'
+    ],
+
+    endTextHtml:[
+      'Du kan läsa mer om detta i Kommunikationspolicyn.'
+    ],
+    circleText: 'Informerat samtycke innebär att personen förstår hur bilder/information kommer att användas.',
+    photoName:'photo'
+  }
+
+  documentationOfChildrenPage1Arb:PhotoText = {
+
+    headline: 'التوثيق للأطفال',
+    sectionTextHtml:[
+      'إن كرامة وخصوصية الأطفال أمران مهمان في مهرجون بلا حدود - السويد. لضمان ذلك، لدينا قاعدة تقضي بعدم تمكن الفنانين مطلقًا من نشر صور الأطفال التي يمكن التعرف عليها على وسائل التواصل الاجتماعي. علاوة على ذلك، تلتزم منظمة مهرجون بلا حدود – السويد باتباع قانون حماية المعلومات الأوروبي الذي ينص على أنه لا يمكن مشاركة المعلومات الشخصية للأطفال (مثل الصور ومقاطع الفيديو والملفات الصوتية والبيانات الشخصية) إلا إذا حصلنا على موافقة مستنيرة.',
+      '',
+      'إذا كنت مسؤولاً عن توثيق عملك مع المنظمة، فيجب عليك التأكد من أن جميع الوثائق تحترم حقوق الأطفال في الخصوصية.',
+      '',
+      'هذا يعني أنه يجب الحصول على الموافقة المستنيرة من الطفل المعني ومن الوصي القانوني أو أي شخص آخر مسؤول عن الطفل في الموقع.',
+      '',
+      'يرجى ملاحظة أن <span style="font-weight:bold; letter-spacing: .1rem;"> الطفل لا يمكنه </span> منح الموافقة!'
+    ],
+
+    endTextHtml:[
+      'يمكنك قراءة المزيد عن هذا في سياسة الاتصال '
+    ],
+    circleText: 'الموافقة المستنيرة تعني أن يفهم الشخص الذي يتم تصويره كيف سيتم استخدام صوره / معلوماته.',
+    photoName:'photo'
+  }
+
 }
