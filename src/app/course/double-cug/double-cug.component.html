@@ -1,17 +1,23 @@
-<div class="container">
+<div class="container" [class]="lang">
 
-    
-
-    <h2>{{introductionObj.headline }}</h2>
-    <div class="heading left">
-        <h2>{{introductionObj.paragraph[0].subTitle}}</h2>
-        <p *ngFor="let text of introductionObj.paragraph[0].text" >{{ text }}</p>
+     <h2>{{doubleCug.headline }}</h2>
+     <p 
+        *ngIf="doubleCug?.ingressHtml" 
+        [innerHTML]="ingress"
+        class="ingress"
+        >
+    </p>
+    <div 
+        *ngFor="let paragraph of doubleCug.paragraph; let i = index;"
+        class="heading"
+        [class]=" paragraph.direction == 'L' ? 'left':'right' "
+        >
+        <h2 *ngIf="paragraph?.subTitle" >{{paragraph.subTitle}}</h2>
+        <p *ngFor="let text of paragraph.text; let i = index" >{{ text }}</p>
+        <p *ngIf="paragraph.textHtml" [innerHTML]="this.bulltes[i].safeHtml"></p>
     </div>
-    <div class="heading right">
-        <h2>{{introductionObj.paragraph[1].subTitle}}</h2>
-        <p *ngFor="let text of introductionObj.paragraph[1].text" >{{ text }}</p>
-    </div>
-
-    
-    
+    <!-- <div class="heading right">
+        <h2>{{doubleCug.paragraph[1].subTitle}}</h2>
+        <p *ngFor="let text of doubleCug.paragraph[1].text" >{{ text }}</p>
+    </div>     -->
 </div>

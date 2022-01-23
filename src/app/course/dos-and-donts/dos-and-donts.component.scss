@@ -11,6 +11,10 @@
     background: $light-purple;
     @include column-align-center();
 
+    &.AR{
+        direction: rtl;
+    }
+
     h2{
         margin-bottom: 1rem;
         color: $red; 

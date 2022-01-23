@@ -9,6 +9,7 @@ import { dosAndDonts } from 'src/app/model/pageModel/dos-and-donts';
 export class DosAndDontsComponent implements OnInit {
 
   @Input() dosAndDonts:dosAndDonts;
+  @Input() lang:string;
 
   constructor() { }
 
