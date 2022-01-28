@@ -18,13 +18,11 @@
         [lang]="lang"
     >
     </app-text-photo>
-    <!--Purpose duration-->
     <app-double-cug
             *ngIf="page == '3' && url == 'introduction'"
             [doubleCug]="introductionPurpose"
             [lang]="lang"
     ></app-double-cug>
-
     <app-resources
         *ngIf="page == '4' && url == 'introduction'"
         [resources] = "resources"
@@ -32,24 +30,18 @@
         >
     </app-resources>
     
-    
-    
-    
-
-    <!--Page 2-->
+    <!--working with children-->
     <app-fliping-cards
         *ngIf="page == '1' && url == 'working with children'"
         [flipingCards]="flipingCards"
         [lang]='lang'
     >
     </app-fliping-cards>
-
     <app-text-photo
         *ngIf="page == '2' && url == 'working with children'"
-        [photoText]='safetyGuidelinesForLargeCrowds'
+        [photoText]='cwbSwedenChildProtectionPolicy'
         [lang]="lang"
     >
-
     </app-text-photo>
     <app-dos-and-donts
         *ngIf="page == '3' && url == 'working with children'"
@@ -59,47 +51,66 @@
     </app-dos-and-donts>
     <app-text-photo
         *ngIf="page == '4' && url == 'working with children'"
-        [photoText]='cwbSwedenChildProtectionPolicy'
-        [lang]="lang"
-    >
-    </app-text-photo>
-    <app-dos-and-donts
-        *ngIf="page == '5' && url == 'working with children'"
-        [dosAndDonts] = 'dosAndDontsWhenWorkingWithChildren'
-        [lang]="lang"
-    >
-    </app-dos-and-donts>
-    <app-double-cug
-        *ngIf="page == '6' && url == 'working with children'"
-        [doubleCug]="scenario1SafetyGuidelinesForLargeCrowds"
-        [lang]="lang"
-    >
-    </app-double-cug>
-    <app-text-photo
-        *ngIf="page == '7' && url == 'working with children'"
         [photoText]='whatIsViolence'
         [lang]="lang"
     >
     </app-text-photo>
     <app-text-photo
-        *ngIf="page == '8' && url == 'working with children'"
+        *ngIf="page == '5' && url == 'working with children'"
         [photoText]='largeCrowdsAtPerformances'
+        [lang]="lang"
+    >
+    </app-text-photo>
+    <app-text-photo
+        *ngIf="page == '6' && url == 'working with children'"
+        [photoText]='preventingRisksWhenWorkingWithLargeCrowds'
+        [lang]="lang"
+    >
+    </app-text-photo>
+    <app-double-cug
+        *ngIf="page == '7' && url == 'working with children'"
+        [doubleCug]="scenario1SafetyGuidelinesForLargeCrowds"
+        [lang]="lang"
+    >
+    </app-double-cug>
+    <app-text-photo
+        *ngIf="page == '8' && url == 'working with children'"
+        [photoText]='safetyGuidelinesForLargeCrowds'
         [lang]="lang"
     >
     </app-text-photo>
     <app-double-cug
         *ngIf="page == '9' && url == 'working with children'"
-        [doubleCug]="scenario2LongtermWorkWithChildren"
+        [doubleCug]="preventingRisksWhenWorkingWithLargeCrowds2"
+        [lang]="lang"
+    >
+    </app-double-cug>
+
+
+    <app-dos-and-donts
+        *ngIf="page == '10' && url == 'working with children'"
+        [dosAndDonts] = 'scenario2LongtermWorkWithChildren'
+        [lang]="lang"
+    >
+    </app-dos-and-donts>
+    <app-double-cug
+        *ngIf="page == '11' && url == 'working with children'"
+        [doubleCug]="scenario2LongtermWorkWithChildrenGuideline"
         [lang]="lang"
     >
     </app-double-cug>
     <app-text-photo
-        *ngIf="page == '10' && url == 'working with children'"
+        *ngIf="page == '12' && url == 'working with children'"
         [photoText]='actionPlanInCaseOfSuspectedCrimeAgainstChildren'
         [lang]="lang"
     >
-    </app-text-photo>
-
+    </app-text-photo>  
+    <app-dos-and-donts
+        *ngIf="page == '13' && url == 'working with children'"
+        [dosAndDonts] = 'dosAndDontsWhenWorkingWithChildren'
+        [lang]="lang"
+    >
+    </app-dos-and-donts>
 
     <!--Code of conduct-->
     <app-text-photo

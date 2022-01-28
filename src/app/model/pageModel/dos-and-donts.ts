@@ -155,33 +155,131 @@ export class DosAndDontsObj {
     prevention_and_reaction_to_protect_children_ensure_safety_of_childrenArb:dosAndDonts = {
 
       headline: "العمل مع الأطفال",
-        headlineText:"الوقاية والتفاعل لحماية الأطفال / ضمان سلامتهم",
-        dosText:[
-          "الوقاية:",
-          "العمل الوقائي هو أساس عملنا لحماية الطفل. من خلال وجود إرشادات وقائية واضحة، نضمن أننا نقدم دائمًا بيئة آمنة للأطفال. التدابير الوقائية في أنشطتنا هي:",
-          "",
-          " التدابير الوقائية في أنشطتنا هي:",
-          " ",
-          "- مراقبة جودة عمل جميع الممثلين العاملين مع الأطفال في المنظمة",
-          "- سياسات وارشادات لحماية الأطفال ",
-          "- تحليل مخاطر الأنشطة / المشاريع",
-          "- إرشادات حول كيفية التخطيط للأنشطة الآمنة",
-          "- إجراءات واضحة لبدء العمل والإعداد للمشاريع الجديدة / الممثلين",
-          " ",
-          "اقرأ المزيد في: سياسة حماية الطفل"
-        ],
-        dontsText:[
-          "التفاعل:",
-          "من خلال وجود آليات إبلاغ واضحة، نضمن أن يتم التعامل بجدية مع أي جريمة أو انتهاك ضد الأطفال.",
-          " ",
-          "تدابير التفاعل الخاصة بالمنظمة هي كما يلي:",
-          " ",
-          "- يجب على جميع ممثلي منظمة مهرجون بلا حدود- السويد معرفة ما يجب عمله في حالة الإشتباه بحدوث بجريمة أو أي خطريهدد سلامة الأطفال",
-          "- لدينا خطة عمل في حالة الاشتباه بوقوع جريمة",
-          "- لدينا سياسة لحماية المبلغين عن المخالفات",
-          "- اقرأ المزيد في: خطة العمل وسياسة حماية المبلغين"
-        ]
+      headlineText:"الوقاية والتفاعل لحماية الأطفال / ضمان سلامتهم",
+      dosText:[
+        "الوقاية:",
+        "العمل الوقائي هو أساس عملنا لحماية الطفل. من خلال وجود إرشادات وقائية واضحة، نضمن أننا نقدم دائمًا بيئة آمنة للأطفال. التدابير الوقائية في أنشطتنا هي:",
+        "",
+        " التدابير الوقائية في أنشطتنا هي:",
+        " ",
+        "- مراقبة جودة عمل جميع الممثلين العاملين مع الأطفال في المنظمة",
+        "- سياسات وارشادات لحماية الأطفال ",
+        "- تحليل مخاطر الأنشطة / المشاريع",
+        "- إرشادات حول كيفية التخطيط للأنشطة الآمنة",
+        "- إجراءات واضحة لبدء العمل والإعداد للمشاريع الجديدة / الممثلين",
+        " ",
+        "اقرأ المزيد في: سياسة حماية الطفل"
+      ],
+      dontsText:[
+        "التفاعل:",
+        "من خلال وجود آليات إبلاغ واضحة، نضمن أن يتم التعامل بجدية مع أي جريمة أو انتهاك ضد الأطفال.",
+        " ",
+        "تدابير التفاعل الخاصة بالمنظمة هي كما يلي:",
+        " ",
+        "- يجب على جميع ممثلي منظمة مهرجون بلا حدود- السويد معرفة ما يجب عمله في حالة الإشتباه بحدوث بجريمة أو أي خطريهدد سلامة الأطفال",
+        "- لدينا خطة عمل في حالة الاشتباه بوقوع جريمة",
+        "- لدينا سياسة لحماية المبلغين عن المخالفات",
+        "- اقرأ المزيد في: خطة العمل وسياسة حماية المبلغين"
+      ]
     }
+
+    scenario1SafetyGuidelinesForLargeCrowdsEng:dosAndDonts = {
+
+      headline: '',
+      headlineText: 'Scenario 1: Safety guidelines for large crowds',
+      dosText : [
+        'In the example we just looked at, Marwa’s only option is to avoid further escalation that can harm children.',
+        '',
+        'Unfortunately, in some of the countries where CWB works, violence against children is common. Thus it is important to be clear with partners – especially with those involved in crowd management – what you need support with and how. It is also important to explain beforehand that violence, such as hitting children, is not allowed during the event. '
+      ],
+      dontsText : [
+        'In most cases, the CWB Project Manager signs a contract with partners, which includes our Child Protection policy. The Project Manager informs local partners that violence against children is not accepted. Your point of contact at CWB is available to support you throughout the project period. '
+      ] 
+
+    } 
+
+    scenario1SafetyGuidelinesForLargeCrowdsSv:dosAndDonts = {
+
+      headline: '',
+      headlineText: 'Scenario 1: Säkerhetsriktlinjer för stora folksamlingar',
+      dosText : [
+        'I exemplet vi just tittade på är Marwas enda alternativ att undvika ytterligare eskalering av situationen och därmed risk för att barn ska skadas.',
+        '',
+        'Tyvärr är våld mot barn vanligt i vissa av de länder där CUG arbetar. Därför är det viktigt att vara tydlig med partners – särskilt med dem som är involverade i publikhantering– vad du behöver stöd med och hur. Det är också viktigt att på förhand förklara att våld, exempelvis att slå barn, inte är tillåtet under CUGs aktiviteter.'
+      ],
+      dontsText : [
+        'I de flesta fall undertecknar projektledaren ett kontrakt med partners, som inkluderar vår barnskyddspolicy. Projektledaren informerar partners om att våld mot barn inte är accepterat. Din kontaktperson på CUG finns tillhands för att stödja dig under hela projektperioden.'
+      ] 
+
+    } 
+
+    scenario1SafetyGuidelinesForLargeCrowdsArb:dosAndDonts = {
+
+      headline: '',
+      headlineText: 'السيناريو 1: إرشادات السلامة للحشود الكبيرة',
+      dosText : [
+        'في الحالة التي رأيناها من قبل، الشيء الوحيد الذي تستطيع مروى فعله هو تجنب المزيد من التصعيد الذي يمكن أن يضر بالأطفال.',
+        '',
+        'في بعض البلدان التي تعمل فيها منظمة مهرجون بلا حدود، يعتبر العنف ضد الأطفال، للأسف، أمرًا شائعًا عند التعامل مع الأطفال. لذلك، من المهم أن تكون واضحًا مع الشركاء، وخاصة الموظفين والمتطوعين الذين يدعمون عملية إدارة الحشود، حول ما تحتاجه من دعم، وكيفية تقديم هذا الدعم، وأن تشرح لهم مسبقًا أن العنف ضد الأطفال أو ضربهم غير مقبول هنا، لأننا موجودون هنا أصلا من أجل الأطفال.'
+      ],
+      dontsText : [
+        'في معظم الحالات، يوقع مدير المشروع من منظمة مهرجون بلا حدود عقدًا مع الشريك، يتضمن سياسة حماية الطفل الخاصة بالمنظمة، يقوم مدير المشروع بإبلاغ الشركاء المحليين بعدم السماح باستخدام العنف ضد الأطفال. إن نقطة الاتصال الخاصة بك في المنظمة متاحة لتقديم الدعم طوال فترة المشروع.'
+      ] 
+
+    } 
+
+    scenario2LongtermWorkWithChildrenEng:dosAndDonts = {
+
+      headline: 'WORKING WITH CHILDREN',
+      headlineText: '',
+      dontHeadline: 'Scenario 2: Long-term work with children',
+      dosText : [],
+      dontsText : [
+        "In some CWB projects we conduct long-term pedagogical sessions that create strong bonds between participants and CWB representatives. If you are going to be involved in this kind of work it is important that you know how to prepare safely. You also need to know what to do if you witness or hear of any kind of violations of children's rights.",
+        "",
+        "Nedan följer några praktiska exempel på våld mot barn och risker för deras säkerhet som du kan stöta på när du arbetar med långsiktiga pedagogiska insatser:",
+        "– Du är workshopledare och ett barn berättar att hon/han har blivit utsatt för någon form av våld",
+        "– Barn är aggressiva/utåtagerande/bråkiga",
+        "– Barn mobbar och trakasserar varandra",
+        "– Du ser en volontär eller personal från en partnerorganisation bete sig olämpligt med barn och agera i strid med CUGs riktlinjer"
+      ] 
+
+    } 
+
+    scenario2LongtermWorkWithChildrenSv:dosAndDonts = {
+
+      headline: 'ATT ARBETA MED BARN',
+      headlineText: '',
+      dontHeadline: 'Scenario 2: Långsiktigt arbete med barn',
+      dosText : [ ],
+      dontsText : [
+        'I vissa projekt arbetar vi med långsiktiga pedagogiska insatser som skapar starka band mellan deltagare och CUG-representanter. Om du ska arbeta med den typen av insatser är det viktigt att du vet hur du ska förbereda dig på ett säkert sätt. Du måste också veta vad du ska göra om du bevittnar eller hör talas om någon form av kränkningar mot barn och deras rättigheter.',
+        "Nedan följer några praktiska exempel på våld mot barn och risker för deras säkerhet som du kan stöta på när du arbetar med långsiktiga pedagogiska insatser:",
+        "– Du är workshopledare och ett barn berättar att hon/han har blivit utsatt för någon form av våld",
+        "– Barn är aggressiva/utåtagerande/bråkiga",
+        "– Barn mobbar och trakasserar varandra",
+        "– Du ser en volontär eller personal från en partnerorganisation bete sig olämpligt med barn och agera i strid med CUGs riktlinjer"
+      ] 
+
+    } 
+
+    scenario2LongtermWorkWithChildrenSvArb:dosAndDonts = {
+
+      headline: 'العمل مع الأطفال',
+      headlineText: '',
+      dontHeadline: 'السيناريو 2: العمل مع الأطفال على المدى الطويل',
+      dosText : [],
+      dontsText : [
+        ' في بعض مشاريع منظمة مهرجون بلا حدود، نجري جلسات تربوية طويلة الأمد، تخلق روابط قوية بين المشاركين وممثلي المنظمة. إذا كنت تقوم بهذا النوع من العمل، فمن المهم أن تعرف كيفية الاستعداد بطريقة آمنة، وماذا تفعل إذا شاهدت أو سمعت شيئًا حول انتهاك حقوق الأطفال.',,
+        'فيما يلي بعض الأمثلة العملية حول العنف ضد الأطفال، والمخاطر على سلامتهم، التي قد تواجهها أو تلفت انتباهك أثناء العمل في جلسات تربوية طويلة المدى:',
+        '- يخبرك طفل (بصفتك ميسر في ورشة عمل) أنه قد تعرض لنوع من العنف',
+        '-  أطفال عدوانيون / يتصرفون بانفعال وعصبية / يتشاجرون',
+        '- أطفال يتنمرون ويتحرشون ببعضهم البعض.',
+        '- تشاهد متطوعًا أو موظفًا من منظمة شريكة يتصرف بشكل غير لائق، ويتعارض مع سياسات منظمة مهرجون بلا حدود في التعامل مع الأطفال '
+      ] 
+
+    } 
+
 
     //whistle blower policy
 

@@ -8,7 +8,9 @@
     </div>
     
     <div class="do-dont">
-        <div class="do">
+        <div 
+            *ngIf="dosAndDonts.dosText?.length > 0 || dosAndDonts.doHeadline"
+            class="do">
             <p>{{dosAndDonts.doHeadline}}</p>
             <p *ngFor="let do of dosAndDonts.dosText"> {{do}} </p>
             <ul>
@@ -16,7 +18,7 @@
             </ul>
         </div>
         <div class="dont">
-            <p>{{dosAndDonts.dontHeadline}}</p>
+            <p class="bold">{{dosAndDonts.dontHeadline}}</p>
             <p *ngFor="let dont of dosAndDonts.dontsText"> {{dont}} </p>
             <ul>
                 <li *ngFor="let dont of dosAndDonts.donts">{{ dont }}</li>

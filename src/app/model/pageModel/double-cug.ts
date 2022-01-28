@@ -40,7 +40,7 @@ export class DoubleCugObj{
 
     introductionPurposeSv:DoubleCug = {
 
-        headline: "Scenario 1: Safety guidelines for large crowds",
+        headline: "INTRODUKTION",
         paragraph:[
             {
             subTitle:"Varaktighet",
@@ -192,6 +192,7 @@ export class DoubleCugObj{
         ]
 
     }
+    
 
 
     scenario1SafetyGuidelinesForLargeCrowdsArb:DoubleCug = {
@@ -247,7 +248,7 @@ export class DoubleCugObj{
     }
 
 
-    scenario2LongtermWorkWithChildrenEng:DoubleCug = {
+    scenario2LongtermWorkWithChildrenGuidelineEng:DoubleCug = {
         headline:"WORKING WITH CHILDREN",
         subHeadline: "Scenario 2: Long-term work with children",
         ingressHtml:'The guidelines below are intended to help you integrate preventive methods when doing long-term activities with children.',
@@ -281,5 +282,152 @@ export class DoubleCugObj{
         ]
 
     }
+
+    scenario2LongtermWorkWithChildrenGuidelineSv:DoubleCug = {
+        headline:"ATT ARBETA MED BARN",
+        subHeadline: "Scenario 2: Långsiktigt arbete med barn",
+        ingressHtml:'Riktlinjerna är till för att hjälpa dig att integrera förebyggande metoder när du arbetar med barn i långsiktiga insatser.',
+        paragraph:[
+            {
+                text:[],
+                textHtml:'Gå igenom <span style="font-weight:bold; letter-spacing: .1rem;"> säkerhetschecklistan  </span>: Ser du några potentiella risker? Finns det tillräckligt med plats för antalet förväntade deltagare? Finns det kulturella/sociala aspekter som kan göra deltagare otrygga?'
+                
+            },
+            {
+                text:[],
+                textHtml:'<span style="font-weight:bold; letter-spacing: .1rem;"> Bestäm regler för aktiviteterna  </span> och se till att gruppen går med på att följa dem. Påminn kontinuerligt gruppen om reglerna ni kommit överens om.'
+                
+            },
+            {
+                text:[],
+                textHtml:'<span style="font-weight:bold; letter-spacing: .1rem;"> Använd inkluderande lekar och övningar   </span> för att undvika mobbning. '
+            },
+            {
+                text:[],
+                textHtml:'Gör en <span style="font-weight:bold; letter-spacing: .1rem;"> lista över organisationer som är specialiserade </span> inom barnskydd och psykosocialt stöd.'
+            },
+            {
+                text:[],
+                textHtml:'<span style="font-weight:bold; letter-spacing: .1rem;"> Var medveten om din fysiska plats och närvaro </span> för att inkludera och se alla deltagare. <span style="font-weight:bold; letter-spacing: .1rem;"> Behandla alla deltagare lika! </span>'
+            },
+            {
+                text:[],
+                textHtml:'<span style="font-weight:bold; letter-spacing: .1rem;"> Dela aldrig ut presenter eller sötsaker</span>  under Clowner utan Gränsers aktiviteter.'
+            }
+        ]
+
+    }
+
+    scenario2LongtermWorkWithChildrenGuidelineArb:DoubleCug = {
+        headline:"العمل مع الأطفال",
+        subHeadline: "السيناريو 2: العمل مع الأطفال على المدى الطويل",
+        ingressHtml:' تهدف الإرشادات أدناه إلى مساعدتك على دمج الأساليب الوقائية أثناء تنفيذ أنشطة طويلة الأمد مع الأطفال.',
+        paragraph:[
+            {
+                text:[],
+                textHtml:'أكمل<span style="font-weight:bold; letter-spacing: .1rem;">   قائمة التحقق من السلامة </span>     : هل توجد مخاطر محتملة؟ هل هناك مساحة كافية للمشاركين المتوقع حضورهم؟ هل توجد عناصر ثقافية / اجتماعية قد تجعل المشاركين في وضع غير آمن؟ '
+                
+            },
+            {
+                text:[],
+                textHtml:' . ضع قواعد للجلسات توافق المجموعة على اتباعها، وذكّر المجموعة بها باستمرار'
+                
+            },
+            {
+                text:[],
+                textHtml:' . استخدم ألعاب وتمارين تشمل الجميع لتجنب التنمر'
+            },
+            {
+                text:[],
+                textHtml:'ضع بين يديك<span style="font-weight:bold; letter-spacing: .1rem;">    قائمة بالمنظمات المتخصصة </span>      التي تعمل في مجال حماية الطفل، وتقديم والدعم النفسي والاجتماعي'
+            },
+            {
+                text:[],
+                textHtml:' كن منتبها<span style="font-weight:bold; letter-spacing: .1rem;">    لموقعك المادي ووجودك في المساحة </span>     ، بحيث يمكنك شمول جميع المشاركين ورؤيتهم. تعامل مع جميع المشاركين على قدم المساواة! '
+            },
+            {
+                text:[],
+                textHtml:'<span style="font-weight:bold; letter-spacing: .1rem;">    لا توزع الهدايا أو الحلوى نهائيا خلال </span>      أنشطة منظمة مهرجون بلا حدود'
+            }
+        ]
+
+    }
+
+
+
+    preventingRisksWhenWorkingWithLargeCrowds2Eng:DoubleCug = {
+
+        headline: 'WORKING WITH CHILDREN',
+        subHeadline: 'Scenario 1: Safety guidelines for large crowds',
+        paragraph:[
+            {
+               text:[],
+               direction:'L',
+               textHtml: 'In the example we just looked at, Marwa’s only option is to avoid further escalation that can harm children.'
+            },
+            {
+                text:[],
+                textHtml: 'Unfortunately, in some of the countries where CWB works, violence against children is common. Thus it is important to be clear with partners – especially with those involved in crowd management – what you need support with and how. It is also important to explain beforehand that violence, such as hitting children, is not allowed during the event. ',
+   
+            },
+            {
+               text:[],
+               direction:'L',
+               textHtml: 'In most cases, the CWB Project Manager signs a contract with partners, which includes our Child Protection policy. The Project Manager informs local partners that violence against children is not accepted. Your point of contact at CWB is available to support you throughout the project period. '
+   
+            }
+        ]
+   
+    }
+
+    preventingRisksWhenWorkingWithLargeCrowds2Sv:DoubleCug = {
+
+        headline: 'ATT ARBETA MED BARN',
+        subHeadline: 'Scenario 1: Säkerhetsriktlinjer för stora folksamlingar',
+        paragraph:[
+            {
+               text:[],
+               direction:'L',
+               textHtml: 'I exemplet vi just tittade på är Marwas enda alternativ att undvika ytterligare eskalering av situationen och därmed risk för att barn ska skadas.'
+            },
+            {
+                text:[],
+                textHtml: 'Tyvärr är våld mot barn vanligt i vissa av de länder där CUG arbetar. Därför är det viktigt att vara tydlig med partners – särskilt med dem som är involverade i publikhantering– vad du behöver stöd med och hur. Det är också viktigt att på förhand förklara att våld, exempelvis att slå barn, inte är tillåtet under CUGs aktiviteter.',
+   
+            },
+            {
+               text:[],
+               direction:'L',
+               textHtml: 'I de flesta fall undertecknar projektledaren ett kontrakt med partners, som inkluderar vår barnskyddspolicy. Projektledaren informerar partners om att våld mot barn inte är accepterat. Din kontaktperson på CUG finns tillhands för att stödja dig under hela projektperioden.'
+            }
+        ]
+   
+    }
+   
+   
+    preventingRisksWhenWorkingWithLargeCrowds2Arb:DoubleCug = {
+
+     headline: "لعمل مع الأطفال",
+     subHeadline: "السيناريو 1: إرشادات السلامة للحشود الكبيرة",
+     paragraph:[
+         {
+            text:[],
+            textHtml:'في الحالة التي رأيناها من قبل، الشيء الوحيد الذي تستطيع مروى فعله هو تجنب المزيد من التصعيد الذي يمكن أن يضر بالأطفال.'
+         },
+         {
+             text:[],
+             direction:'L',
+             textHtml: 'في بعض البلدان التي تعمل فيها منظمة مهرجون بلا حدود، يعتبر العنف ضد الأطفال، للأسف، أمرًا شائعًا عند التعامل مع الأطفال. لذلك، من المهم أن تكون واضحًا مع الشركاء، وخاصة الموظفين والمتطوعين الذين يدعمون عملية إدارة الحشود، حول ما تحتاجه من دعم، وكيفية تقديم هذا الدعم، وأن تشرح لهم مسبقًا أن العنف ضد الأطفال أو ضربهم غير مقبول هنا، لأننا موجودون هنا أصلا من أجل الأطفال.',
+
+         },
+         {
+            text:[],
+            textHtml:   'في معظم الحالات، يوقع مدير المشروع من منظمة مهرجون بلا حدود عقدًا مع الشريك، يتضمن سياسة حماية الطفل الخاصة بالمنظمة، يقوم مدير المشروع بإبلاغ الشركاء المحليين بعدم السماح باستخدام العنف ضد الأطفال. إن نقطة الاتصال الخاصة بك في المنظمة متاحة لتقديم الدعم طوال فترة المشروع.'
+
+         }
+     ]
+
+   }
+
 
 }

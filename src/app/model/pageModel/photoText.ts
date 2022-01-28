@@ -211,6 +211,63 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
 
   }
 
+  whatIsViolenceSv:PhotoText = {
+    headline: "ATT ARBETA MED BARN",
+    headlineText: "Vad är våld?",
+
+    sectionText: ["Clowner utan Gränser arbetar med utsatta barn och alla som är engagerade i organisationen måste vara medvetna om de olika typer av våld som barn kan utsättas för.",
+          "",
+          "Våld mot barn inkluderar:"],
+    points:[
+      "– Fysiskt våld",
+      "– Sexuellt våld",
+      "– Psykiskt våld",
+      "– Hedersvåld"
+    ],
+
+    secondSectionText: [
+      "",
+      "Clowner utan Gränser Sverige har nolltolerans mot alla former av våldshandlingar mot barn."
+    ],
+
+    endBoldText:[
+      "Om du bevittnar, hör talas om eller misstänker att en våldshandling begåtts under Clowner utan Gränsers verksamhet ska du rapportera det till din kontaktperson."
+    ],
+    circleText:"We will now look at two possible scenarios from CWB activities, where you can encounter violence or harm against children.",
+
+    photoName:"photo"
+
+  }
+
+  whatIsViolenceArb:PhotoText = {
+    headline: "العمل مع الأطفال",
+    headlineText: "ما هو العنف؟",
+
+    sectionText: ["بما أن منظمة مهرجون بلا حدود - السويد  تعمل مع الأطفال المعرضين للخط ، فمن المهم أن يدرك كل من يعمل في المنظمة أن هناك أنواعًا مختلفة من العنف التي يمكن أن يتعرض لها الأطفال، ويرفضونها.",
+          "",
+          "يمكن أن يشمل العنف ضد الأطفال ما يلي:"],
+    points:[
+      "العنف الجسدي",
+      "العنف الجنسي",
+      "العنف النفسي",
+      "العنف الذي يرتكب باسم الشرف"
+    ],
+
+    secondSectionText: [
+      "",
+      "إن منظمة مهرجون بلا حدود – السويد لا تتساهل مطلقا إزاء أي عنف يرتكب ضد الأطفال"
+    ],
+
+    endBoldText:[
+      "إذا رأيت أو سمعت أو اشتبهت في أي عمل عنيف تم ارتكابه أثناء أنشطتنا، فيجب عليك إبلاغ نقطة الاتصال الخاصة بك بذلك"
+    ],
+    circleText:"سننظر الآن في سيناريوهين محتملين من أنشطة مهرجون بلا حدود، حيث يمكنك مواجهة حالات عنف أو أذى ضد الأطفال",
+
+    photoName:"photo"
+
+  }
+
+
   largeCrowdsAtPerformancesEng:PhotoText = {
 
     headline: "WORKING WITH CHILDREN",
@@ -229,6 +286,41 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
 
   }
 
+  largeCrowdsAtPerformancesSv:PhotoText = {
+
+    headline: "ATT ARBETA MED BARN",
+    headlineText:"Scenario 1: Stor publik vid föreställningar",
+    sectionTextHtml:[
+      "Föreställningar är en av våra nyckelaktiviteter. Nedan följer några praktiska exempel på våld mot barn och risker för barn säkerhet som du kan stöta på när du arbetar med stora folkmassor vid föreställningar:",
+      ""
+    ],
+    points:[
+      "– Barn är överexalterade och börjar dra i varandra, knuffas och leka för våldsamt, antingen med varandra eller med Clowner utan Gränsers artister",
+      "– Barn vill hjälpa Clowner utan Gränsers artister med att samla in rekvisita efter föreställningen och börjar slåss om föremålen",
+      "– Vuxna från partnerorganisationer försöker få kontroll över barn i publiken genom att använda våld",
+      "– Barn står upp för att se föreställningen bättre, vilket leder till att andra, som sitter bakom dem, inte kan se och det uppstår risk för slagsmål"
+    ],
+    photoName:"photo"
+
+  }
+
+  largeCrowdsAtPerformancesArb:PhotoText = {
+
+    headline: "العمل مع الأطفال",
+    headlineText:" السيناريو 1: المخاطر عند العمل مع حشود كبيرة أثناء تقديم العروض",
+    sectionTextHtml:[
+      " تعتبر العروض من الأنشطة الرئيسية في الكثير من أعمال منظمة مهرجون بلا حدود. فيما يلي بعض الأمثلة العملية للعنف ضد الأطفال والمخاطر على سلامتهم التي قد تواجهها عند العمل مع حشود كبيرة عند العروض:",
+      ""
+    ],
+    points:[
+      "-  الأطفال بطبيعتهم يتحمسون للغاية، ويبدأون في الإمساك والدفع واللعب بقسوة مع بعضهم البعض، أو مع فناني المنظمة",
+      "-  قد يرغب الأطفال في مساعدة فناني المنظمة، والقيام بجمع بعض المواد عند انتهاء العرض، والبدء في الاقتتال عليها",
+      "-  قد يحاول بعض البالغون من المنظمات الشريكة قمع الأطفال باستخدام العنف",
+      "-   قد يبدأ بعض الأطفال بالوقوف أثناء العرض لرؤية العرض بشكل أفضل، مما يؤدي إلى حجب الرؤية عن أطفال آخرين، مما يؤدي الى خطر نشوب قتال بين الأطفال انفسهم"
+    ],
+    photoName:"photo"
+
+  }
 
   actionPlanInCaseOfSuspectedCrimeAgainstChildrenEng:PhotoText = {
 
@@ -236,7 +328,6 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     headlineText:"Action plan in case of suspected crime against children",
     sectionTextHtml:[
       '<span style="font-weight:bold; letter-spacing: .1rem;"> If you suspect, hear of or witness a child being subjected to any violation of our Child Protection policy you have a duty to report it. </span> This is in order to protect children and to ensure that you get the right support.',
-      // "",
       " According to the Action Plan you shall:"
     ],
     pointsHtml:[
@@ -253,6 +344,104 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     ],
     circleText:"If a suspected crime is reported, the Secretary General and the Board of CWB Sweden will launch an internal or external investigation. If the suspected violation is a criminal offence, CWB will contact the police, after making a security analysis to ensure that no further harm is done to the child. If a crime is committed by a CWB representative, it will have disciplinary consequences and, in serious cases, lead to exclusion. ",
 
+    photoName:"photo"
+
+  }
+
+  actionPlanInCaseOfSuspectedCrimeAgainstChildrenSv:PhotoText = {
+
+    headline: "ATT ARBETA MED BARN",
+    headlineText:"Handlingsplan vid misstänkt brott mot barn",
+    sectionTextHtml:[
+      '<span style="font-weight:bold; letter-spacing: .1rem;"> Om du misstänker, hör talas om eller bevittnar att ett barn utsätts för en kränkning av vår barnskyddspolicy är du skyldig att rapportera det. Detta för att skydda barn och för att säkerställa att du får rätt stöd. </span>',
+      "Enligt handlingsplanen ska du:"
+    ],
+    pointsHtml:[
+      '– Lyssna öppet på vad barnet säger',
+      '– Låta barnet tala fritt och bara ställa frågor för att fastställa grundläggande fakta',
+      '– Försäkra barnet om att hon/han gjorde rätt i att berätta vad som hänt',
+      '– Förklara för barnet att du måste rapportera händelsen till CUG',
+      '– Göra en incidentrapport genom att använda vårt formulär eller genom att kontakta din kontaktperson',
+      '– Bistå CUG i att ta ärendet vidare med partners eller myndigheter',
+      '– Samarbeta i en eventuell utredning'
+    ],
+    endTextHtml:[
+      'Alla steg ovan ingår i dokumentet <span style="font-weight:bold; letter-spacing: .1rem;">HANDLINGSPLAN VID MISSTÄNKT BROTT  </span>'
+    ],
+    circleText:"Om en misstänkt kränkning anmäls inleder CUGs generalsekreterare och styrelsen en intern eller extern utredning. Om den misstänkta överträdelsen är ett brott kommer CWB att kontakta polisen, efter att ha gjort en säkerhetsanalys för att säkerställa att barnet inte skadas ytterligare. Om ett brott begås av en representant för CUG får det disciplinära konsekvenser och kan i allvarliga fall leda till uteslutning.",
+
+    photoName:"photo"
+
+  }
+
+  actionPlanInCaseOfSuspectedCrimeAgainstChildrenArb:PhotoText = {
+
+    headline: "العمل مع الأطفال",
+    headlineText:"خطة العمل في حالة الاشتباه بجرائم ضد الأطفال",
+    sectionTextHtml:[
+      '<span style="font-weight:bold; letter-spacing: .1rem;"> إذا كنت تشك أو تسمع أو تشاهد طفلًا يتعرض لجريمة ضد سياسة حماية الطفل الخاصة بنا، فمن واجبك الإبلاغ عنها. وذلك لحماية الأطفال، ولضمان حصولك كممثل للمنظمة على الدعم المناسب. </span> ',
+      " وفقًا لخطة العمل، يجب عليك القيام بما يلي:"
+    ],
+    pointsHtml:[
+      ' استمع جيدا لما يقوله الطفل',
+      'اسمح للطفل بالتحدث بحرية واطرح الأسئلة فقط لتوضيح الحقائق الأساسية',
+      'أكد للطفل أنه قام بعمل الشيء الصحيح في التحدث عما حدث ',
+      'اشرح للطفل أنه يجب عليك إبلاغ المنظمة بما حدث ',
+      'قم بالإبلاغ عن الحادث من خلال ملء تقرير الحوادث الخاص بمنظمة مهرجون بلا حدود أو عن طريق الاتصال بنقطة الاتصال الخاصة بك في المنظمة',
+      'ساعد المنظمة على متابعة الأمر مع أي شركاء أو سلطات أخرى',
+      'تعاون مع التحقيق'
+    ],
+    endTextHtml:[
+      ' تم تضمين جميع الخطوات المذكورة أعلاه في <span style="font-weight:bold; letter-spacing: .1rem;">خطة العمل في حال الاشتباه بوقوع جريمة </span>'
+    ],
+    circleText:"إذا تم الإبلاغ عن الاشتباه بجريمة، سيبدأ الأمين العام ومجلس منظمة مهرجون بلا حدود -بالسويد تحقيقًا داخليًا أو خارجيًا. إذا كانت الجريمة المشتبه بها هي جريمة جنائية، فستقوم المنظمة بالاتصال بالشرطة، بعد إجراء تحليل أمني لضمان عدم إلحاق مزيد من الضرر بالطفل. إذا تم ارتكاب جريمة من قبل ممثل للمنظمة، فسيؤدي ذلك إلى عواقب تأديبية، وفي الحالات الخطيرة، الطرد من المنظمة.",
+
+    photoName:"photo"
+
+  }
+
+
+  preventingRisksWhenWorkingWithLargeCrowdsEng:PhotoText = {
+
+    headline: "WORKING WITH CHILDREN",
+    headlineText:"Scenario 1: Preventing risks when working with large crowds",
+    sectionTextHtml:[
+      '<span style="font-weight:bold; letter-spacing: .1rem;"> The importance of prevention in CWB’s work with children  </span>',
+      '',
+      'As mentioned earlier, prevention is an important part of our work. CWB works in difficult settings and often with large crowds consisting of both children and adults. In order to prevent risks to the safety of children, CWB has outlined preventive measures to be implemented when we encounter large crowds.',
+      ''
+    ],
+    circleText: "Let's see some examples of these preventive measures",
+    photoName:"photo"
+
+  }
+
+  preventingRisksWhenWorkingWithLargeCrowdsSv:PhotoText = {
+
+    headline: "ATT ARBETA MED BARN",
+    headlineText:"Scenario 1: Förebygga risker vid arbete med stora folkmassor",
+    sectionTextHtml:[
+      '<span style="font-weight:bold; letter-spacing: .1rem;"> Vikten av förebyggande arbete i Clowner utan Gränsers verksamhet med barn  </span>',
+      '',
+      'Som tidigare nämnts är prevention en viktig del av vårt arbete. CUG arbetar i svåra miljöer och ofta med stora grupper av både barn och vuxna. För att förebygga risker för barns säkerhet har CUG tagit fram förebyggande åtgärder för situationer där vi möter stora folkmassor.',
+      ''
+    ],
+    circleText: "Nu ska vi titta på några exempel på våra förebyggande åtgärder",
+    photoName:"photo"
+
+  }
+
+  preventingRisksWhenWorkingWithLargeCrowdsArb:PhotoText = {
+
+    headline: "العمل مع الأطفال",
+    headlineText:"السيناريو 1: منع المخاطر عند العمل مع حشود كبيرة",
+    sectionTextHtml:[
+      '<span style="font-weight:bold; letter-spacing: .1rem;"> أهمية الوقاية في عمل المنظمة مع الأطفال  </span>',
+      '',
+      'كما ذكرنا من قبل، تعتبر الوقاية جزءًا مهمًا من عمل منظمة مهرجون بلا حدود. فالمنظمة تعمل في بيئات صعبة، وغالبًا مع حشود كبيرة تتكون من الأطفال والبالغين. ومن أجل منع المخاطر على سلامة الأطفال، لدينا تدابير وقائية يجب اتباعها في حالة العمل مع الحشود الكبيرة. ',
+      ''
+    ],
+    circleText: "دعونا نرى بعض الأمثلة على ماهية هذه التدابير الوقائية",
     photoName:"photo"
 
   }

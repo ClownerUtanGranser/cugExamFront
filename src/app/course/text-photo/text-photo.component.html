@@ -15,29 +15,25 @@
         >
             {{text}}
         </p>
-        <span >
-            <p 
-                class="sectionText"
-                *ngFor="let text of sectionTextHtml"
-                [innerHtml]="text"
-            >
-                {{text}}
-            </p>
-        </span>
+        <p 
+            class="sectionText"
+            *ngFor="let text of sectionTextHtml"
+            [innerHtml]="text"
+        >
+            <!-- {{text}} -->
+        </p>
         <p 
             class="points"
             *ngFor="let point of photoText.points"
             >
             {{point}}
         </p>
-        <span>
-            <p 
-                class="points"
-                *ngFor="let point of pointsHtml"
-                [innerHtml]="point"
-                >
-            </p>
-        </span>
+        <p 
+            class="points"
+            *ngFor="let point of pointsHtml"
+            [innerHtml]="point"
+            >
+        </p>
         <section *ngIf="photoText?.secondSectionText">
             <p 
                 class="sectionText"

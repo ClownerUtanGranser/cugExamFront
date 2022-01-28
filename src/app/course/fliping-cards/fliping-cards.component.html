@@ -28,6 +28,40 @@
     <section class="cardsbox">
         <div 
             *ngFor="let card of flipingCardsCopy.cards; let i = index;"
+            class="flip-card"
+            [class]="card.turned ? 'turned': ''"
+            (click)="turnCard(i ,card.turned)"
+            >
+            <div 
+                class="flip-card-inner"
+                [class]="setCircleSize(card.cardSize, card?.correct)"
+                >
+              <div 
+                    class="flip-card-front"
+                    [class]="setCircleSize(card.cardSize, card?.correct)"
+                    >
+                <h2>
+                    {{ card.frontQuestion }}
+                </h2>
+              </div>
+              <div 
+                    class="flip-card-back"
+                    [class]="setCircleSize(card.cardSize, card?.correct)"
+                    >
+            
+                <span
+                    *ngFor="let expl of card.backexplenation"
+                >
+                    {{ expl }}
+                    <br *ngIf="card?.correct" >        
+                </span>
+                <p *ngIf="card?.chart" [innerHTML]="'<br> <p>'+ card?.chart  +'</p>'"></p>
+              </div>
+            </div>
+          </div>
+          
+        <!-- <div 
+            *ngFor="let card of flipingCardsCopy.cards; let i = index;"
             class="card-container"
             [class]="card.turned ? 'turned': ''"
             (click)="turnCard(i ,card.turned)"
@@ -60,6 +94,6 @@
                      <p *ngIf="card?.chart" [innerHTML]="'<br> <p>'+ card?.chart  +'</p>'"></p> 
                 </figure>
             </div>
-        </div>
+        </div> -->
     </section>
 </div>

@@ -33,7 +33,7 @@
         width: 50%;
         height: 75vh;
         position: relative;
-        align-self: center;
+        align-self: start;
         background: //linear-gradient(rgba($light-green,.0), rgba($light-green,0.8)),
         url("../../../assets/img/miniature_grekland_henrik_kindgren.jpg");
         background-repeat: no-repeat;
@@ -84,7 +84,7 @@
 
     p{
         // color:$white;
-        font-size: 1.4rem;    
+        font-size: 1.2rem;    
         margin: 0rem 2rem 2rem 1rem;
         
     }
@@ -115,7 +115,7 @@
 .do, .dont{
 
     padding:1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     
     li{
         margin: 1rem;

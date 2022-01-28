@@ -393,55 +393,55 @@ export class FlipingCardsObj{
 
                 anExampleOfAPotentialSituationSv:FlipingCards = {
 
-                    headline:"DOCUMENTATION OF CHILDREN",
-                    subHeading:"An example of a potential situation",
+                    headline:"DOKUMENTATION AV BARN",
+                    subHeading:"Ett exempel på en potentiell situation",
                     sectionTextHtml:[
-                        'You are in charge of documenting and taking photos during a CWB tour. You take a beautiful photo of a 14-year-old boy with a big smile on his face. The photo is so expressive and positive. You want to write a blog post and publish the photo on your social media account. What do you do? '
+                        'Du ansvarar för att dokumentera och ta bilder under en av Clowner utan Gränsers turnéer. Du tar ett fantastiskt foto av en 14-årig pojke med ett stort leende på läpparna. Bilden är så uttrycksfull och positiv. Du vill skriva ett blogginlägg och publicera bilden på dina sociala medier.</br> Vad gör du? '
                     ],
                     paragraf:[
                         ""
                     ],
                     cards:[{
-                        frontQuestion: "I can publish the photo since it is so expressive and positive.",
+                        frontQuestion: "Jag kan publicera bilden eftersom den är så uttrycksfull och positiv.",
                         cardSize:'XL',
                         turned:false,
                         correct:'wrong',
                         backexplenation:[
-                            " Wrong ",
+                            " FEL ",
                             '',
-                            "Publishing the photo means violating the child’s right to privacy."
+                            "Att publicera bilden innebär att kränka barnets rätt till integritet."
                         ],
                         empWord:[
-                            "wrong"
+                            "FEL"
                         ]
                         },
                         {
-                            frontQuestion: "Ask the boy if it’s okay to use the photo, since the boy is big enough to decide.",
+                            frontQuestion: "Fråga pojken om det är okej att använda bilden, eftersom han är stor nog att bestämma själv.",
                             cardSize:'XL',
                             turned:false,
                             correct:'wrong',
                             backexplenation:[
-                                "Wrong",
+                                "FEL",
                                 '',
-                                "A minor cannot give consent!"
+                                "En minderårig kan inte ge sitt samtycke!"
                             ],
                             empWord:[
-                                ""
+                                "FEL"
                             ],
                             chart:""
                         },
                         {
-                            frontQuestion: "Ask the boy and the boy’s caregiver for permission and sign a consent form or possibly give oral consent.  ",
+                            frontQuestion: "Be pojken och hans vårdnadshavare om lov och underteckna en samtyckesblankett eller eventuellt ge muntligt samtycke. ",
                             cardSize:'XL',
                             turned:false,
                             correct:'correct',
                             backexplenation:[
-                                'Correct',
+                                'RÄTT',
                                 '',
-                                "When working directly with children you must make sure that photos, videos, audio files and personal data respects children’s rights to privacy. This means that consent must be obtained from the child in question and a legal guardian or another person responsible for the child on site.  "
+                                "När du arbetar med barn måste du se till att foton, videor, ljudfiler och personuppgifter respekterar barns rätt till integritet. Det innebär att samtycke ska inhämtas från barnet och en vårdnadshavare eller annan ansvarig för barnet på plats."
                             ],
                             empWord:[
-                                "Correct"
+                                "RÄTT"
                             ],
                             chart: ""
                 
@@ -455,7 +455,7 @@ export class FlipingCardsObj{
                         headline:"التوثيق للأطفال",
                         subHeading:"مثال على حالة محتملة",
                         sectionTextHtml:[
-                            ' أنت مسؤول عن التوثيق والتقاط الصور أثناء الجولة، تلتقط صورة جميلة جدًا لطفل يبلغ من العمر 14 عامًا بابتسامة جميلة على وجهه. الصورة معبرة وإيجابية للغاية. تريد كتابة مدونة ونشر الصورة على وسائل التواصل الاجتماعي الخاصة بك. كيف ستتصرف؟'
+                            ' أنت مسؤول عن التوثيق والتقاط الصور أثناء الجولة، تلتقط صورة جميلة جدًا لطفل يبلغ من العمر 14 عامًا بابتسامة جميلة على وجهه. الصورة معبرة وإيجابية للغاية. تريد كتابة مدونة ونشر الصورة على وسائل التواصل الاجتماعي الخاصة بك.<br> كيف ستتصرف؟'
                         ],
                         paragraf:[
                             ""

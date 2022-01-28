@@ -15,10 +15,15 @@
         direction: rtl;
     }
 
-    h2{
-        margin-bottom: 2rem;
+    h2, h3{
+        margin-bottom: 1rem;
         color: $yellow; 
     }
+
+    // h3{
+    //     color: $yellow;
+    //     margin-bottom: 1rem;
+    // }
 
     p{
         // color:$white;

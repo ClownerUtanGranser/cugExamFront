@@ -28,7 +28,9 @@ export class SectionComponent implements OnInit {
 
   lang:string;
 
-  //Section 1
+  menuOpen:boolean = false;
+
+  //Section 1 introduction
   WELCOME_page2:PhotoText;
   introductionPurpose:DoubleCug;
   resources:Resources;
@@ -43,8 +45,12 @@ export class SectionComponent implements OnInit {
   scenario1SafetyGuidelinesForLargeCrowds:DoubleCug;
   whatIsViolence:PhotoText;
   largeCrowdsAtPerformances:PhotoText;
-  scenario2LongtermWorkWithChildren:DoubleCug;
+  scenario2LongtermWorkWithChildrenGuideline:DoubleCug;
   actionPlanInCaseOfSuspectedCrimeAgainstChildren:PhotoText;
+  preventingRisksWhenWorkingWithLargeCrowds:PhotoText;
+  preventingRisksWhenWorkingWithLargeCrowds2:DoubleCug;
+  scenario1SafetyGuidelinesForLargeCrowdsMarwa:dosAndDonts;
+  scenario2LongtermWorkWithChildren:dosAndDonts;
 
   //Section CODE OF CONDUCT
   page1CodeOfConduct:PhotoText
@@ -82,25 +88,53 @@ export class SectionComponent implements OnInit {
       if(parseInt(this.page) < 1 ) this.router.navigate(['/course/material'])
     } )
 
-    // this.state.getDoesAndDonts().subscribe((page) => this.page4 = page);
-    // this.state.getPhotoText().subscribe((page) => this.page2 = page)
-    // this.state.getSafetyGuidelinesForLargeCrowds().subscribe((page) => this.safetyGuidelinesForLargeCrowds = page);
-    // this.state.getPreventionAndReactionToProtectChildrenEnsureSafetyOfChildren().subscribe((page) =>{
-    //   this.preventionAndReactionToProtectChildrenEnsureSafetyOfChildren = page;
-    // })
-    // this.state.getCwbSwedenChildProtectionPolicy().subscribe((page)=> this.cwbSwedenChildProtectionPolicy = page);
   }
 
   nextPage()
   {
-    
-    if(parseInt(this.page) > 0 && parseInt(this.page)<10)
-    {
+
+    if( parseInt(this.page)<=3 && this.url == 'introduction'){
       this.router.navigate(['/course/material/',this.url, parseInt(this.page)  +1])
+      console.log(this.url, (parseInt(this.page) + 1) )
     }
-    else
-    {
+    else if( parseInt(this.page) > 3 && this.url == 'introduction'){
+      console.log(this.url, (parseInt(this.page) > 3 ) )
+      this.url = 'working with children';
+      this.page = '1'
+      this.router.navigate(['/course/material/',this.url, this.page ])
+      
+    }
+    else if(parseInt(this.page)<13 && this.url == 'working with children'){
+      this.router.navigate(['/course/material/',this.url, parseInt(this.page)  +1])
+    }else if( this.url == 'working with children'){
+      console.log(this.url, (parseInt(this.page) > 3 ) )
+      this.url = 'code of conduct';
+      this.page = '1'
+      this.router.navigate(['/course/material/',this.url, this.page ])
+      
+    }else if( parseInt(this.page) < 7 && this.url == 'code of conduct'){
+      console.log(this.url, (parseInt(this.page) ) )
+      this.router.navigate(['/course/material/',this.url, parseInt(this.page) + 1 ])
+      
+    }else if( parseInt(this.page) > 1 && this.url == 'code of conduct'){
+      console.log(this.url, (parseInt(this.page) ) )
+      this.url = 'whistle blower policy';
+      this.page = '1'
+      this.router.navigate(['/course/material/',this.url, this.page ])
+      
+    }else if( parseInt(this.page) > 0 && this.url == 'whistle blower policy'){
+      console.log(this.url, (parseInt(this.page) ) )
+      this.url = 'documentation of children';
+      this.page = '1'
+      this.router.navigate(['/course/material/',this.url, this.page ])
+      
+    }else if( parseInt(this.page) < 2 && this.url == 'documentation of children'){
+      console.log(this.url, (parseInt(this.page) ) )
+      this.router.navigate(['/course/material/',this.url, parseInt(this.page) + 1 ])
+      
+    }else{
       this.router.navigate(['/course/material'])
+      console.log(this.url, (parseInt(this.page) + 1) )
     }
     
   }
@@ -133,10 +167,10 @@ export class SectionComponent implements OnInit {
         this.cwbSwedenChildProtectionPolicy = this.photoTextObj.cwbSwedenChildProtectionPolicySv
         this.dosAndDontsWhenWorkingWithChildren = this.dosAndDontsObj.dosAndDontsWhenWorkingWithChildrenSv
         this.scenario1SafetyGuidelinesForLargeCrowds = this.doubleCugObj.scenario1SafetyGuidelinesForLargeCrowdsSv;
-        this.whatIsViolence = this.photoTextObj.whatIsViolenceEng;
-        this.largeCrowdsAtPerformances = this.photoTextObj.largeCrowdsAtPerformancesEng;
-        this.scenario2LongtermWorkWithChildren = this.doubleCugObj.scenario2LongtermWorkWithChildrenEng
-        this.actionPlanInCaseOfSuspectedCrimeAgainstChildren = this.photoTextObj.actionPlanInCaseOfSuspectedCrimeAgainstChildrenEng;
+        this.whatIsViolence = this.photoTextObj.whatIsViolenceSv;
+        this.largeCrowdsAtPerformances = this.photoTextObj.largeCrowdsAtPerformancesSv;
+        this.scenario2LongtermWorkWithChildrenGuideline = this.doubleCugObj.scenario2LongtermWorkWithChildrenGuidelineSv
+        this.actionPlanInCaseOfSuspectedCrimeAgainstChildren = this.photoTextObj.actionPlanInCaseOfSuspectedCrimeAgainstChildrenSv;
         this.prohibitionOfAlcoholAndDrugs = this.flipingCardsObj.prohibitionOfAlcoholAndDrugsSv;
         this.anExampleOfAPotentialSituation = this.flipingCardsObj.anExampleOfAPotentialSituationSv;
         this.page1CodeOfConduct = this.photoTextObj.page1CodeOfConductSv;
@@ -147,6 +181,10 @@ export class SectionComponent implements OnInit {
         this.code9And10 = this.codeOfConductObj.code9And10Sv;
         this.documentationOfChildrenPage1 = this.photoTextObj.documentationOfChildrenPage1Sv;
         this.whistleBlowerPolicy = this.dosAndDontsObj.whistleBlowerPolicySv;
+        this.preventingRisksWhenWorkingWithLargeCrowds = this.photoTextObj.preventingRisksWhenWorkingWithLargeCrowdsSv;
+        this.preventingRisksWhenWorkingWithLargeCrowds2 = this.doubleCugObj.preventingRisksWhenWorkingWithLargeCrowds2Sv;
+        this.scenario1SafetyGuidelinesForLargeCrowdsMarwa = this.dosAndDontsObj.scenario1SafetyGuidelinesForLargeCrowdsSv;
+        this.scenario2LongtermWorkWithChildren = this.dosAndDontsObj.scenario2LongtermWorkWithChildrenSv;
 
       }
       else if(this.lang == 'ENG')
@@ -162,7 +200,7 @@ export class SectionComponent implements OnInit {
         this.scenario1SafetyGuidelinesForLargeCrowds = this.doubleCugObj.scenario1SafetyGuidelinesForLargeCrowdsEng 
         this.whatIsViolence = this.photoTextObj.whatIsViolenceEng;
         this.largeCrowdsAtPerformances = this.photoTextObj.largeCrowdsAtPerformancesEng;
-        this.scenario2LongtermWorkWithChildren = this.doubleCugObj.scenario2LongtermWorkWithChildrenEng
+        this.scenario2LongtermWorkWithChildrenGuideline = this.doubleCugObj.scenario2LongtermWorkWithChildrenGuidelineEng;
         this.actionPlanInCaseOfSuspectedCrimeAgainstChildren = this.photoTextObj.actionPlanInCaseOfSuspectedCrimeAgainstChildrenEng;
         this.prohibitionOfAlcoholAndDrugs = this.flipingCardsObj.prohibitionOfAlcoholAndDrugsEng;
         this.anExampleOfAPotentialSituation = this.flipingCardsObj.anExampleOfAPotentialSituationEng;
@@ -174,6 +212,10 @@ export class SectionComponent implements OnInit {
         this.code9And10 = this.codeOfConductObj.code9And10Eng;
         this.documentationOfChildrenPage1 = this.photoTextObj.documentationOfChildrenPage1Eng;
         this.whistleBlowerPolicy = this.dosAndDontsObj.whistleBlowerPolicyEng;
+        this.preventingRisksWhenWorkingWithLargeCrowds = this.photoTextObj.preventingRisksWhenWorkingWithLargeCrowdsEng;
+        this.preventingRisksWhenWorkingWithLargeCrowds2 = this.doubleCugObj.preventingRisksWhenWorkingWithLargeCrowds2Eng;
+        this. scenario1SafetyGuidelinesForLargeCrowdsMarwa = this.dosAndDontsObj.scenario1SafetyGuidelinesForLargeCrowdsEng;
+        this.scenario2LongtermWorkWithChildren = this.dosAndDontsObj.scenario2LongtermWorkWithChildrenEng;
 
 
       }
@@ -187,11 +229,11 @@ export class SectionComponent implements OnInit {
         this.prevention_and_reaction_to_protect_children_ensure_safety_of_children = this.dosAndDontsObj.prevention_and_reaction_to_protect_children_ensure_safety_of_childrenArb;
         this.cwbSwedenChildProtectionPolicy = this.photoTextObj.cwbSwedenChildProtectionPolicyArb;
         this.dosAndDontsWhenWorkingWithChildren = this.dosAndDontsObj.dosAndDontsWhenWorkingWithChildrenArb
-        this.scenario1SafetyGuidelinesForLargeCrowds = this.doubleCugObj.scenario1SafetyGuidelinesForLargeCrowdsArb 
-        this.whatIsViolence = this.photoTextObj.whatIsViolenceEng;
-        this.largeCrowdsAtPerformances = this.photoTextObj.largeCrowdsAtPerformancesEng;
-        this.scenario2LongtermWorkWithChildren = this.doubleCugObj.scenario2LongtermWorkWithChildrenEng;
-        this.actionPlanInCaseOfSuspectedCrimeAgainstChildren = this.photoTextObj.actionPlanInCaseOfSuspectedCrimeAgainstChildrenEng;
+        this.scenario1SafetyGuidelinesForLargeCrowds = this.doubleCugObj.scenario1SafetyGuidelinesForLargeCrowdsArb
+        this.whatIsViolence = this.photoTextObj.whatIsViolenceArb;
+        this.largeCrowdsAtPerformances = this.photoTextObj.largeCrowdsAtPerformancesArb;
+        this.scenario2LongtermWorkWithChildrenGuideline = this.doubleCugObj.scenario2LongtermWorkWithChildrenGuidelineArb;
+        this.actionPlanInCaseOfSuspectedCrimeAgainstChildren = this.photoTextObj.actionPlanInCaseOfSuspectedCrimeAgainstChildrenArb;
         this.prohibitionOfAlcoholAndDrugs = this.flipingCardsObj.prohibitionOfAlcoholAndDrugsArb;
         this.anExampleOfAPotentialSituation = this.flipingCardsObj.anExampleOfAPotentialSituationArb;
         this.page1CodeOfConduct = this.photoTextObj.page1CodeOfConductArb;
@@ -202,6 +244,11 @@ export class SectionComponent implements OnInit {
         this.code9And10 = this.codeOfConductObj.code9And10Arb;
         this.documentationOfChildrenPage1 = this.photoTextObj.documentationOfChildrenPage1Arb;
         this.whistleBlowerPolicy = this.dosAndDontsObj.whistleBlowerPolicyArb;
+        this.preventingRisksWhenWorkingWithLargeCrowds = this.photoTextObj.preventingRisksWhenWorkingWithLargeCrowdsArb;
+        this.preventingRisksWhenWorkingWithLargeCrowds2 = this.doubleCugObj.preventingRisksWhenWorkingWithLargeCrowds2Arb;
+        this.scenario1SafetyGuidelinesForLargeCrowdsMarwa = this.dosAndDontsObj.scenario1SafetyGuidelinesForLargeCrowdsArb;
+        this.scenario2LongtermWorkWithChildren = this.dosAndDontsObj.scenario2LongtermWorkWithChildrenSvArb;
+
       }
    }
 
