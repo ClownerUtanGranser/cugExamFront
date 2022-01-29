@@ -1,6 +1,8 @@
 export interface WellDone {
     headline:string;
     text:string[];
+    courseMaterial:string;
+    exam:string;
 }
 
 export class WellDoneObj{
@@ -11,7 +13,9 @@ export class WellDoneObj{
             'Congratulations! You have now completed the course.',
             'You can repeat this session as many times as you like.',
             'When you feel ready, go to the next page and take the test.   '
-        ]
+        ],
+        exam:'EXAM',
+        courseMaterial:'Course material'
     }
 
     wellDoneSv:WellDone = {
@@ -20,7 +24,10 @@ export class WellDoneObj{
             'Grattis! Du har nu slutfört utbildningen.',
             'Du kan gå igenom den så många gånger du vill.',
             'När du känner dig redo, gå till nästa sida och gör testet.'
-        ]
+        ],
+        exam:'EXAM',
+        courseMaterial:'kursmaterial'
+
     }
 
     wellDoneArb:WellDone = {
@@ -29,7 +36,10 @@ export class WellDoneObj{
             'تهانينا! لقد أكملت الآن الدورة.',
             'يمكنك تكرار هذه الجلسة بقدر ما تريد.',           
             'عندما تشعر بأنك جاهز، انتقل إلى الصفحة التالية وقم بإجراء الاختبار.'
-        ]
+        ],
+        exam:'امتحان',
+        courseMaterial:'مواد الدورة'
+
     }
 
 }
