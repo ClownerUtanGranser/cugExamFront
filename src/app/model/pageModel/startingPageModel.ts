@@ -11,9 +11,11 @@ export class StartingPage{
     startingSv():StartingPageModel
     {
         return {
-            headline : "Välkommen",
-            secondHedline: "",
-            texts: [],
+            headline : "Digital utbildning",
+            secondHedline: "policies & riktlinjer",
+            texts: [
+                'För artister och andra representanter för Clowner utan Gränser'
+            ],
             buttonText:'Starta'
           }
     }
@@ -21,9 +23,12 @@ export class StartingPage{
     startingEng():StartingPageModel
     {
         return {
-            headline : "Welcome",
-            secondHedline: "",
-            texts: [],
+            headline : "Online training",
+            secondHedline: "policies & guidelines",
+            texts: [
+                'For artists and other representatives of Clowns without Borders'
+
+            ],
             buttonText:'Start'
           }
     }
@@ -31,9 +36,11 @@ export class StartingPage{
     startingArb():StartingPageModel
     {
         return {
-            headline : "أهلا بك",
-            secondHedline: "",
-            texts: [],
+            headline : 'تدريب عبر الإنترنت',
+            secondHedline: "سياسات وإرشادات",
+            texts: [
+                'للفنانين والممثلين الآخرين الذين يعملون مع مهرجون بلا حدود'
+            ],
             buttonText:'يبدأ'
           }
     }
