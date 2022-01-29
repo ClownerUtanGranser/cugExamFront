@@ -6,6 +6,7 @@ import { DoubleCug, DoubleCugObj } from 'src/app/model/pageModel/double-cug';
 import { FlipingCards, FlipingCardsObj } from 'src/app/model/pageModel/fliping-cards';
 import { PhotoText, PhotoTextObj } from 'src/app/model/pageModel/photoText';
 import { Resources, ResourcesObj } from 'src/app/model/pageModel/resources';
+import { WellDone, WellDoneObj } from 'src/app/model/pageModel/wellDone';
 import { StateService } from 'src/app/service/state.service';
 
 @Component({
@@ -22,6 +23,7 @@ export class SectionComponent implements OnInit {
   flipingCardsObj = new FlipingCardsObj();
   dosAndDontsObj = new DosAndDontsObj();
   codeOfConductObj = new CodeOfConductObj();
+  wellDoneObj:WellDoneObj = new WellDoneObj()
 
   url:string;
   page:string;
@@ -67,6 +69,9 @@ export class SectionComponent implements OnInit {
 
   //whistle blower policy
   whistleBlowerPolicy:dosAndDonts
+
+  //conclusion
+  wellDone:WellDone;
 
 
 
@@ -185,6 +190,7 @@ export class SectionComponent implements OnInit {
         this.preventingRisksWhenWorkingWithLargeCrowds2 = this.doubleCugObj.preventingRisksWhenWorkingWithLargeCrowds2Sv;
         this.scenario1SafetyGuidelinesForLargeCrowdsMarwa = this.dosAndDontsObj.scenario1SafetyGuidelinesForLargeCrowdsSv;
         this.scenario2LongtermWorkWithChildren = this.dosAndDontsObj.scenario2LongtermWorkWithChildrenSv;
+        this.wellDone = this.wellDoneObj.wellDoneSv;
 
       }
       else if(this.lang == 'ENG')
@@ -216,7 +222,7 @@ export class SectionComponent implements OnInit {
         this.preventingRisksWhenWorkingWithLargeCrowds2 = this.doubleCugObj.preventingRisksWhenWorkingWithLargeCrowds2Eng;
         this. scenario1SafetyGuidelinesForLargeCrowdsMarwa = this.dosAndDontsObj.scenario1SafetyGuidelinesForLargeCrowdsEng;
         this.scenario2LongtermWorkWithChildren = this.dosAndDontsObj.scenario2LongtermWorkWithChildrenEng;
-
+        this.wellDone = this.wellDoneObj.wellDoneEng;
 
       }
       else
@@ -248,6 +254,7 @@ export class SectionComponent implements OnInit {
         this.preventingRisksWhenWorkingWithLargeCrowds2 = this.doubleCugObj.preventingRisksWhenWorkingWithLargeCrowds2Arb;
         this.scenario1SafetyGuidelinesForLargeCrowdsMarwa = this.dosAndDontsObj.scenario1SafetyGuidelinesForLargeCrowdsArb;
         this.scenario2LongtermWorkWithChildren = this.dosAndDontsObj.scenario2LongtermWorkWithChildrenSvArb;
+        this.wellDone = this.wellDoneObj.wellDoneArb;
 
       }
    }

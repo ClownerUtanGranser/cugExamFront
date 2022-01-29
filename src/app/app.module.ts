@@ -34,6 +34,7 @@ import { AdminUsersComponent } from './pages/user/admin/admin-users/admin-users.
 import { ExamOverviewComponent } from './exam/exam-overview/exam-overview.component';
 import { FlipingCardsComponent } from './course/fliping-cards/fliping-cards.component';
 import { CodeOfConductComponent } from './course/code-of-conduct/code-of-conduct.component';
+import { WellDoneComponent } from './course/well-done/well-done.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +67,8 @@ import { CodeOfConductComponent } from './course/code-of-conduct/code-of-conduct
     AdminUsersComponent,
     ExamOverviewComponent,
     FlipingCardsComponent,
-    CodeOfConductComponent
+    CodeOfConductComponent,
+    WellDoneComponent
   ],
   imports: [
     BrowserModule,

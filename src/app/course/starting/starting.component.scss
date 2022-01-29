@@ -7,10 +7,6 @@
     background-repeat:no-repeat; 
     background: linear-gradient(to left, $light-green 49%, $light-pink 50%, $light-green 0%, $light-pink 0%);
     @include column-align-center();
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    //justify-content: center;
 
     p{
         color:$white;
