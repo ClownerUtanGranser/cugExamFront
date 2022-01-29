@@ -1,10 +1,29 @@
-<div class="container">
-    <h1>
+<div 
+    class="container"
+    [class]="lang"
+    >
+    <h1>        
         {{wellDone.headline}}
     </h1>
-    <p 
-        *ngFor="let text of wellDone.text"
-    >
-        {{text}}
-    </p>
+    <div class="text-placing">
+        <p 
+            *ngFor="let text of wellDone.text"
+        >
+            {{text}}
+        </p>
+    </div>
+    <div class="red-circle-box">
+        <div class="red-circle">
+            <a [routerLink]="'/course/material'">
+                <h3>
+                    {{ 'course' }}  
+                </h3>
+            </a>
+        </div>
+        <div [routerLink]="'/exam'" class="red-circle">
+            <h3>
+                {{ 'exam' }}  
+            </h3>
+        </div>
+    </div>
 </div>

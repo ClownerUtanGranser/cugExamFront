@@ -8,9 +8,79 @@
     background-repeat:no-repeat; 
     background: linear-gradient(to left, $light-green 30%, $grey 65%, $light-green 10%, $grey 10%);
     @include column-align-center();
+    &.AR{
+        direction: rtl;
+    }
+    
 
-    p{
+    p, h1{
         color:$red;
-        font-size: 1.5rem;
+        margin-top: 2rem;
+        animation: letterAnim 3s forwards;
+
     }
 }
+
+.red-circle-box
+{
+    margin: auto;
+    display: flex;
+    justify-content: space-between ;
+    width:50%;
+    visibility: hidden;
+}
+
+.red-circle{
+
+    background-color: $red;
+    color: $white;
+    border-radius: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    width: 10rem;
+    animation: ballDrop 2s forwards 2s ease-out;
+    transition: border 0.5s;
+    cursor: pointer;
+
+    &:hover{
+        border: solid $yellow 2px;
+    }
+    
+
+    &:nth-child(2n)
+    {
+        background-color: $green;
+        animation: ballDrop 2.5s forwards 2.5s ease-in;
+
+    }    
+}
+
+@keyframes letterAnim {
+    from {
+      transform: translate(30%, 110vh);
+      letter-spacing: 200px;
+      word-spacing: 500px;
+      text-orientation: upright;
+    }
+  
+    to {
+      transform: translate(0%, 0%);
+      letter-spacing: 2px;
+      word-spacing: 5px;
+      text-align: center;;
+    }
+  }
+
+  @keyframes ballDrop{
+      0%{
+        transform: translate(-40%, 110vh);
+        visibility: visible;
+      }
+      100%{
+        transform: translate(0%, 0vh);
+        visibility: visible;
+      }
+  }
