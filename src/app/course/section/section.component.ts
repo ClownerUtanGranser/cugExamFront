@@ -30,7 +30,7 @@ export class SectionComponent implements OnInit {
 
   lang:string;
 
-  menuOpen:boolean = false;
+  menuOpen:string = 'Menu';
 
   //Section 1 introduction
   WELCOME_page2:PhotoText;
@@ -137,6 +137,11 @@ export class SectionComponent implements OnInit {
       console.log(this.url, (parseInt(this.page) ) )
       this.router.navigate(['/course/material/',this.url, parseInt(this.page) + 1 ])
       
+    }else if( parseInt(this.page) == 2 && this.url == 'documentation of children'){
+      this.url = 'conclusion';
+      this.page = '1'
+      this.router.navigate(['/course/material/',this.url, parseInt(this.page) + 1 ])
+      
     }else{
       this.router.navigate(['/course/material'])
       console.log(this.url, (parseInt(this.page) + 1) )
@@ -146,17 +151,56 @@ export class SectionComponent implements OnInit {
 
   previousPage()
   {
-    
-    if(parseInt(this.page) > 1 )
-    {
-      this.router.navigate(['/course/material/',this.url, parseInt(this.page)  -1])
-    }
-    else
-    {
-      // console.log("Router1: ", this.route);
+    if( parseInt(this.page)<=1 && this.url == 'introduction'){
       this.router.navigate(['/course/material'])
+      console.log(this.url, (parseInt(this.page) + 1) )
+    }
+    else if( parseInt(this.page) > 0 && this.url == 'introduction'){
+      this.router.navigate(['/course/material/', this.url, parseInt(this.page) - 1 ]);
+
+    }else if( parseInt(this.page) == 1 && this.url == 'working with children'){
+      this.url = 'introduction';
+      this.page = '4'
+      this.router.navigate(['/course/material/',this.url, this.page ])
+      
+    }else if( parseInt(this.page) > 0 && this.url == 'working with children'){
+      this.router.navigate(['/course/material/', this.url, parseInt(this.page) - 1 ]);
+      
+    }else if( parseInt(this.page) == 1 && this.url == 'code of conduct'){
+      this.url = 'working with children';
+      this.page = '13'
+      this.router.navigate(['/course/material/',this.url, this.page ])
+      
+    }else if( parseInt(this.page) > 1 && this.url == 'code of conduct'){
+      this.router.navigate(['/course/material/',this.url, parseInt(this.page) - 1 ])
+      
+    }else if( parseInt(this.page) == 1 && this.url == 'whistle blower policy'){
+      console.log(this.url, (parseInt(this.page) ) )
+      this.url = 'code of conduct';
+      this.page = '7'
+      this.router.navigate(['/course/material/',this.url, this.page ])
+      
+    }else if( parseInt(this.page) == 1 && this.url == 'documentation of children'){
+      this.url = 'whistle blower policy';
+      this.page = '1'
+      this.router.navigate(['/course/material/',this.url, parseInt(this.page) ])
+      
+    }else if( parseInt(this.page) > 1 && this.url == 'documentation of children'){
+      this.router.navigate(['/course/material/',this.url, parseInt(this.page) - 1 ])
+      
+    }else if( this.url == 'conclusion'){
+      this.url = 'documentation of children';
+      this.page = '2'
+      this.router.navigate(['/course/material/',this.url, parseInt(this.page) ]);
+    }else{
+      this.router.navigate(['/course/material'])
+      console.log(this.url, (parseInt(this.page) - 1) )
     }
     
+  }
+
+  showMenu(){
+    this.router.navigate(['/course/material'])
   }
 
   setPageLang()
@@ -191,6 +235,7 @@ export class SectionComponent implements OnInit {
         this.scenario1SafetyGuidelinesForLargeCrowdsMarwa = this.dosAndDontsObj.scenario1SafetyGuidelinesForLargeCrowdsSv;
         this.scenario2LongtermWorkWithChildren = this.dosAndDontsObj.scenario2LongtermWorkWithChildrenSv;
         this.wellDone = this.wellDoneObj.wellDoneSv;
+        this.menuOpen = "Meny"
 
       }
       else if(this.lang == 'ENG')
@@ -223,6 +268,7 @@ export class SectionComponent implements OnInit {
         this. scenario1SafetyGuidelinesForLargeCrowdsMarwa = this.dosAndDontsObj.scenario1SafetyGuidelinesForLargeCrowdsEng;
         this.scenario2LongtermWorkWithChildren = this.dosAndDontsObj.scenario2LongtermWorkWithChildrenEng;
         this.wellDone = this.wellDoneObj.wellDoneEng;
+        this.menuOpen = 'Menu'
 
       }
       else
@@ -255,6 +301,7 @@ export class SectionComponent implements OnInit {
         this.scenario1SafetyGuidelinesForLargeCrowdsMarwa = this.dosAndDontsObj.scenario1SafetyGuidelinesForLargeCrowdsArb;
         this.scenario2LongtermWorkWithChildren = this.dosAndDontsObj.scenario2LongtermWorkWithChildrenSvArb;
         this.wellDone = this.wellDoneObj.wellDoneArb;
+        this.menuOpen = 'قائمة';
 
       }
    }

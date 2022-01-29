@@ -28,3 +28,24 @@
         bottom: 1rem;
     }
 }
+
+.menu{
+    position: absolute;
+    z-index: 4;
+    left:47%;
+    background-color: $yellow;
+    padding:.1rem 1rem 0.1rem 1rem;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    cursor: pointer;
+    color:white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 0px solid $white;
+    transition: border .5s;
+
+    &:hover{
+        border-bottom: 3px solid $white;
+    }
+}

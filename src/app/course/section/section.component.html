@@ -1,4 +1,10 @@
 <div class="section">
+    <div
+        (click)="showMenu()"
+        class="menu"
+        >
+        {{menuOpen}}  
+    </div>    
 
     <div class="nav top">
         <p (click)="previousPage()"><</p>
@@ -187,6 +193,6 @@
         [wellDone]="wellDone"
         [lang]="lang"
     >
-    </app-well-done>
+     </app-well-done>
 
 </div>
