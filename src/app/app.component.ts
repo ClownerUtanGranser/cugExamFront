@@ -26,15 +26,12 @@ export class AppComponent implements OnInit{
               private examService:ExamService){}
 
   ngOnInit(): void {
+    let lang = sessionStorage.getItem('cugLang')
+    this.state.setLang(lang);
     this.examService.getExam();
     this.loginService.readJwt();
-    // this.state.setExamStartBaseValuesEng();
     this.baseInfoService.startingServer();
-    // this.state.setDoesAndDonts(this.pages.page3);
-    // this.state.setPhotoText(this.pages2.page2);
-    // this.state.setSafetyGuidelinesForLargerowds(this.pages2.Safety_guidelines_for_large_crowds);
-    // this.state.setPreventionAndReactionToProtectChildrenEnsureSafetyOfChildren(this.pages.prevention_and_reaction_to_protect_children_ensure_safety_of_children);
-    // this.state.setCwbSwedenChildProtectionPolicy(this.pages2.cwbSwedenChildProtectionPolicy);
+    this.baseInfoService.setLang();
     
   }
   
