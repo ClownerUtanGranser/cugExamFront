@@ -17,9 +17,9 @@
         class="gotoadmin">
         <h3>ADMIN</h3>
     </div> 
-    <div *ngIf="examUser" class="welcome">
+    <!-- <div *ngIf="examUser" class="welcome">
         {{ examUser.name }}
-    </div>
+    </div> -->
     
     
     <div class="loggin">
@@ -40,9 +40,14 @@
             *ngIf="examUser?.jwt?.length > 3" 
             (click)="logout()"
             [routerLink]="''">
-            <h2>
+            <!-- <h2>
             Logout  
-            </h2>
+            </h2> -->
+            <div class="circ">
+                <span>
+                   {{ examUser.name.split('')[0] }} 
+                </span>
+            </div>
         </a>
     </div>
 </nav>

@@ -24,15 +24,37 @@ nav{
 .loggo{
     position: relative;
     z-index: 3;
-    min-width: 17rem;
-    padding: 0.5rem;
+    min-width: 15rem;
+    padding-top: 0rem;
     background-color: $white;
+}
+
+.circ{
+    border:solid 2px black;
+    border-radius: 50%;
+    // width: 2rem;
+    // height: 2rem;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+    span{
+        vertical-align: bottom;
+        // width: 100%;
+        // height: 1rem;
+        // margin: 1rem;
+        font-size: 2rem;
+        margin: .1rem .6rem;
+        padding: 0rem .2rem 0.1rem .2rem;
+        // background-color: black;
+    }
 }
 
 .loggin
 {
     display: flex;
-    padding: 0.5rem;
+    padding: 0rem;
     font-size: 2rem;
     font-weight: bold;
     transition: color .5s ease;
@@ -75,6 +97,11 @@ nav{
       display: none;
     }
 
+    .loggo{
+        min-width: 13rem;
+        padding: 0rem;
+    }
+
     nav{   
         justify-content: stretch ;        
     }
@@ -83,6 +110,13 @@ nav{
     {
         flex-grow: 4;
         justify-content: flex-end;
+        padding: 0rem;
+        
+
+        h2{
+            margin-top:1rem;
+            font-size: 1.5rem;
+        }
 
         a{
             justify-content: end;
@@ -98,9 +132,11 @@ nav{
         
         .small{
             position: absolute;
+            justify-content: flex-end;
             z-index: 9;
             background-color: $white;
             width: 4rem;
+            height: 2rem;
             margin: 0;
             padding:0;
             height: 100%;
@@ -116,11 +152,11 @@ nav{
                 transition: all .5s ease;
 
                 &:nth-child(2){
-                    transform: translate(0, 2.1rem);
+                    transform: translate(0, 3rem);
                 }
 
                 &:nth-child(3){
-                    transform: translate(0, 4.2rem);
+                    transform: translate(0, 6rem);
                 }
             }
 
