@@ -8,6 +8,7 @@ nav{
     font-family: Marguerite Grotesk;
     display: flex;
     justify-content: space-between ;
+    align-items: flex-end;
     color:$black;
 
     height: 3rem;
@@ -23,37 +24,43 @@ nav{
 
 .loggo{
     position: relative;
-    z-index: 3;
+    z-index: 12;
     min-width: 15rem;
     padding-top: 0rem;
-    background-color: $white;
+    background-color: transparent;
+    margin-bottom: -1.5rem;
 }
 
-.circ{
-    border:solid 2px black;
-    border-radius: 50%;
-    // width: 2rem;
-    // height: 2rem;
-    text-align: center;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+
+.logout{
     
-    span{
-        vertical-align: bottom;
-        // width: 100%;
-        // height: 1rem;
-        // margin: 1rem;
-        font-size: 2rem;
-        margin: .1rem .6rem;
-        padding: 0rem .2rem 0.1rem .2rem;
-        // background-color: black;
+    border:solid 2px black;
+    border-radius: 100%;    
+    margin: 0px 2px 5px 20px;
+    padding: 0 0.6rem 0.2rem 0.6rem;
+    font-size: 1.7rem;
+    font-weight: bolder;
+    transition: border .2s, color .2s;
+    cursor: pointer;
+
+    &.red{
+        border: solid 2px $red;
+        color: $red;
+    }
+
+    &:hover{
+        border: solid 2px $yellow;
+        color: $yellow;
+
     }
 }
+
 
 .loggin
 {
     display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
     padding: 0rem;
     font-size: 2rem;
     font-weight: bold;
@@ -76,10 +83,16 @@ nav{
         }
 
     h2{
+        margin-bottom: 0;
         &:hover{
             color:$yellow;
         }
-    }   
+    }
+    
+    // a{
+    //     align-self: flex-start;
+    //     justify-self: start;
+    // }
 }
 
 .gotoadmin{
@@ -98,8 +111,9 @@ nav{
     }
 
     .loggo{
-        min-width: 13rem;
+        min-width: 10rem;
         padding: 0rem;
+        margin-bottom: -1.3rem;
     }
 
     nav{   
@@ -108,7 +122,7 @@ nav{
 
     .loggin
     {
-        flex-grow: 4;
+        flex-grow: 0;
         justify-content: flex-end;
         padding: 0rem;
         
@@ -118,15 +132,17 @@ nav{
             font-size: 1.5rem;
         }
 
-        a{
-            justify-content: end;
-        }
+        // a{
+        //     justify-content: end;
+        // }
     }
 
     .lang-selection{
         
         position: relative;
         display: flex;
+        justify-content: flex-end;
+        flex-grow: 2;
         width: 4rem;
         height: 100%;
         

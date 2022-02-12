@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { ExamUser } from 'src/app/model/examUser';
 import { LoginService } from 'src/app/service/auth/login.service';
 import { StateService } from 'src/app/service/state.service';
@@ -9,6 +9,10 @@ import { StateService } from 'src/app/service/state.service';
   styleUrls: ['./topnav.component.scss']
 })
 export class TopnavComponent implements OnInit {
+  @Input() openMyPageBool:boolean;
+  @Output() openMyPageBoolEmit = new EventEmitter();
+
+
 
   examUser:ExamUser | undefined;
 
@@ -31,6 +35,11 @@ export class TopnavComponent implements OnInit {
   {
     this.state.setLang(lang);
     this.openCloseBoolean = !this.openCloseBoolean;
+  }
+
+  openCloseMyPage()
+  {
+    this.openMyPageBoolEmit.emit(this.openMyPageBool);
   }
 
   logout()
