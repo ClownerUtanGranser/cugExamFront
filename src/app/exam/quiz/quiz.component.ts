@@ -7,6 +7,7 @@ import { Question } from 'src/app/model/question';
   styleUrls: ['./quiz.component.scss']
 })
 export class QuizComponent implements OnInit {
+  @Input() lang:string;
   @Input() question:Question;
   @Output() answerEmit = new EventEmitter();
   @Output() submitExamEmit = new EventEmitter();

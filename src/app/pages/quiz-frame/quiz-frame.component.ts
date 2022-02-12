@@ -11,9 +11,16 @@ import { StateService } from 'src/app/service/state.service';
 export class QuizFrameComponent implements OnInit {
 
   questions:Question[] = [];
+
+  questionsEng:Question[] = [];
+  questionsSv:Question[] = [];
+  questionsArb:Question[] = [];
+
   showQuestionIndex:number = 0;
 
   openOverLay:boolean = false;
+
+  lang:string;
 
   constructor(private route: ActivatedRoute,
               private router: Router,
@@ -21,8 +28,17 @@ export class QuizFrameComponent implements OnInit {
 
   ngOnInit(): void {
 
+    this.state.getLang().subscribe((lang) => {
+      this.lang = lang
+      this.changeLang();
+    });
+
     this.state.questions.subscribe((questions)=>{
-      this.questions = questions;
+      this.questionsEng = questions.filter((question) => question.lang == 'ENG');
+      this.questionsSv = questions.filter((question) => question.lang == 'SV');
+      this.questionsArb = questions.filter((question) => question.lang == 'AR');
+      this.changeLang();
+
     })
 
     this.route.params.subscribe((param)=>{
@@ -32,6 +48,18 @@ export class QuizFrameComponent implements OnInit {
       if(this.showQuestionIndex < 1  || !this.showQuestionIndex) this.router.navigate(['/exam/question/1'])
     } )
   }
+
+  changeLang(){
+    
+    if(this.lang == 'ENG'){
+      this.questions = this.questionsEng;
+    }else if(this.lang == 'SV'){
+      this.questions = this.questionsSv;
+    }else{
+      this.questions = this.questionsArb;
+    }
+  }
+
 
   answeredQuestion(answerIndex:number)
   {

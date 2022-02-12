@@ -23,9 +23,18 @@ export class AdminNavComponent implements OnInit {
     
   }
 
-  updateDB()
+  updateDBEng()
   {
-    console.log(this.jwt);
-    this.examService.resetQuestions(this.jwt);
+    this.examService.resetQuestionsEng(this.jwt);
+  }
+
+  updateDBSv()
+  {
+    this.examService.resetQuestionsSv(this.jwt);
+  }
+
+  updateDBArb()
+  {
+    this.examService.resetQuestionsArb(this.jwt);
   }
 }

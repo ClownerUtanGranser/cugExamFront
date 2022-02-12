@@ -24,6 +24,7 @@
     </div>
         <app-quiz
             [question]="questions[showQuestionIndex - 1]" 
+            [lang]="lang"
             (answerEmit) = "answeredQuestion($event)"
             (submitExamEmit) = "submitExam($event)"
             

@@ -1,6 +1,10 @@
 
-<div class="container">
-    <div class="green_headline">
+<div class="container"
+    [ngClass]="lang"
+>
+    <div class="green_headline"
+        [ngClass]="lang"
+    >
         <h2>{{ question?.questionText }}</h2>
         <!-- <h2>1. If you suspect a case of violence against children, you should?</h2> -->
     </div>
@@ -10,7 +14,7 @@
         (click)="select(i)"
         class="alternative">
         
-        <span>{{ i + 1 }}. </span> {{ answre }}
+        <span *ngIf="lang !='AR'">{{ i + 1 }}. </span> {{ answre }}
         <!-- A. 	Discuss with a colleague on what is the next step to take -->
     </p>
     <button (click)="submitExam()" class="btn-update">Submit exam</button>
