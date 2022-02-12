@@ -18,4 +18,8 @@ export class ResourcesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  downloadPages(){
+    console.log("CLICK");
+  }
+
 }

@@ -9,10 +9,13 @@
     background: $green;
     @include column-align-center();
 
-    
+    h1{
+        color: $yellow;
+    }
 
     ul{
         margin-top: 2rem;
+        margin-left: 1rem;
         list-style: none; 
 
         &.AR{               
@@ -49,60 +52,40 @@
             }
         }
     }
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // justify-content: flex-end;
-    // h1{
-    //     flex:1;
-    //     color: $red;
-    //     text-align: center;
-    // }
-
-    // .point{
-    //     flex:1;
-    //      align-self: center;
-    //      justify-self: start;
-
-    // }
-
-    // p{
-    //     color:$white;
-    //     font-size: 1.5rem;
-    // }
-
-    // .point{
-    //     margin: 2rem;
-    //     color:$red;
-    //     ul{
-    //         list-style-type: circle;
-            
-    //         li{
-    //             line-height: 1.5;
-    //             white-space: nowrap;
-    //         }
-    //     }
-    // }
-
-    // .courseinfo{
-    //     flex:1;
-    //     border: solid rgb(209, 49, 49) 1px;
-    //     flex-grow: 0;
-    //     align-self: end;
-    //     display: flex;
-    //     // flex-direction: column;
-    //     // justify-content: flex-end;
-    //      align-items: flex-end;
-    //     width:50%
-    // }
 }
 
-// app-info-box{
-    //width: ;
-    //border: solid black 1px;
-    // align-self: end;
-    // justify-self: start;
-// }
-h1{
-    color: $yellow;
+.smallScreen{
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .container
+    {
+        h1{
+            font-size: 2rem;
+        }
+
+        h2{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        ul{
+
+            li{
+                font-size: 1.2rem;
+
+                .headline-text{
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .smallScreen{
+        display: block;
+    }
+
 }

@@ -5,7 +5,7 @@
      <h1>{{ chapters.headlineEng }}</h1>
      <ul>
          <li *ngFor="let chapter of chapters.chapters; let i = index">
-             <a [routerLink]="['.', chapter.toLowerCase() , 1 ]"><span class="strong">SECTION {{ i + 1 }}</span><span class="headline-text">{{ chapter }}</span>
+             <a [routerLink]="['.', chapter.toLowerCase() , 1 ]"><span class="strong">SECTION&nbsp;{{ i + 1 }}</span><br class="smallScreen"><span class="headline-text">{{ chapter }}</span>
             </a>
         </li>
      </ul>
@@ -17,7 +17,7 @@
      <h1>{{ chapters.headlineSv }}</h1>
      <ul>
          <li *ngFor="let chapter of chapters.chapters; let i = index">
-             <a [routerLink]="['.', chapter.toLowerCase() , 1 ]"><span class="strong">DEL {{ i + 1 }}</span><span class="headline-text">{{ chapters.chaptersSv[i] }}</span>
+             <a [routerLink]="['.', chapter.toLowerCase() , 1 ]"><span class="strong">DEL&nbsp;{{ i + 1 }}</span><br class="smallScreen"><span class="headline-text">{{ chapters.chaptersSv[i] }}</span>
             </a>
         </li>
      </ul>
@@ -29,7 +29,7 @@
      <h1>{{ chapters.headlineArb }}</h1>
      <ul class="AR">
          <li *ngFor="let chapter of chapters.chapters; let i = index">
-             <a [routerLink]="['.', chapter.toLowerCase() , 1 ]"><span class="strong AR"> الجزء {{ i + 1 }}</span><span class="headline-text"> {{ chapters.chaptersArb[i] }} </span>
+             <a [routerLink]="['.', chapter.toLowerCase() , 1 ]"><span class="strong AR"> الجزء&nbsp;{{ i + 1 }}</span><span class="headline-text"> {{ chapters.chaptersArb[i] }} </span>
             </a>
         </li>
      </ul>

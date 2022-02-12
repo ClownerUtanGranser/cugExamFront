@@ -3,7 +3,7 @@
 .container
 {
     position: relative;
-    z-index: -1;
+    z-index: 1;
     padding-top: 3rem;
     min-height: calc(100vh - 3rem);
     width: 100%;
@@ -43,7 +43,7 @@
 
 .btn-start
 {
-    width: 100%;
+    // width: 100%;
     margin:2rem 0 1rem 0;
     padding: 0.5rem;
     border: none;
@@ -54,10 +54,38 @@
     font-size: 1.2rem;
     color: $white;
     cursor: pointer;
+    transition: 0.5s ease-in;
 
     &:hover{
-        border: solid $yellow 4px;
-        transition: border .5s;
+        border: solid $yellow 2px;
+        
     }
+}
+
+@media only screen and (max-width: 600px) {
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .heading{
+        align-items: flex-start;
+
+        &.right{
+            margin-top:1rem;
+        
+            ul{
+                margin-left: 0rem;
+    
+            }
+            
+            li{
+                margin: 0rem;
+            }
+            
+        }
+    
+    }
+
 }
 
