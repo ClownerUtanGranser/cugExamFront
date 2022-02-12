@@ -13,12 +13,11 @@ import { StateService } from './service/state.service';
 })
 export class AppComponent implements OnInit{
 
-  
-  // pages2 = new PhotoTextObj();
   exam;
 
+  openMyPageBool:boolean = false;
 
-  questionList:QuestionList = new QuestionList();
+  // questionList:QuestionList = new QuestionList();
 
   constructor(private state:StateService, 
               private baseInfoService:BaseInfoService, 
@@ -26,13 +25,17 @@ export class AppComponent implements OnInit{
               private examService:ExamService){}
 
   ngOnInit(): void {
-    let lang = sessionStorage.getItem('cugLang')
+    let lang = sessionStorage.getItem('cugLang') ?? 'ENG'
     this.state.setLang(lang);
     this.examService.getExam();
     this.loginService.readJwt();
     this.baseInfoService.startingServer();
     this.baseInfoService.setLang();
     
+  }
+
+  openMyPage(openPage){
+    this.openMyPageBool = ! this.openMyPageBool;
   }
   
 }

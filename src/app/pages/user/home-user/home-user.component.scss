@@ -2,116 +2,46 @@
 
 .container
 {
+    position: fixed;
+    top: calc(3rem);
+    bottom: 0;
+    z-index: 7;
     min-height: calc(100vh - 3rem);
     width: 100%;
     background-repeat:no-repeat; 
-    background: linear-gradient(to left, $light-green 49%, $light-pink 50%, $light-green 0%, $light-pink 0%);
+    background: rgba(0, 0, 0, 0.8);
     @include column-align-center();
 
+    li{
+        margin-top: 1.2rem;
+        list-style: none;
+        cursor: pointer;
+    }
 
-    p{
+
+    a{
         color:$white;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+
+        &:hover{
+            color:$yellow;
+        }
+
     }
 }
 
-table{ 
+@media only screen and (max-width: 800px) {
 
- 
-    background:white;
-    border-radius:6px;
-    width:100%;
-    
-   
-    
-    td,th{
-        padding: 0.5rem 1rem 1rem 1rem;
-
-
-
+    .container
+    {
+        h1{
+            margin-top: 2rem;
+            font-size: 1.4rem;
         }
-  
-    thead tr{
-
-      height: 3rem;
-      background:$green;
-      color:#fff;
-      font-size:1.2rem;
-      font-weight: lighter;
-      text-align: center;
-
-      
-    }
-
-    thead tr:nth-child(1) th
-    {
-        
-        border-left: 0px solid #000;
-
-    }
-
-    thead tr:nth-child(2) th:nth-child(3), thead tr:nth-child(2) th:nth-child(6)
-    {
-        
-        border-right: 1px solid #000;
-
-    }
-    
-    tbody tr{
-         height:48px; 
-         border-bottom:1px solid #E3F1D5;
-
-         &:hover
-         {
-            background: #bbb;
-         }
-
-      &:last-child {
-           border:0; 
+        a{
+            font-size: 1.2rem;
         }
     }
+
+}
     
-  }
-
-  .remove
-  {
-//       background-image: url("../../../assets/img/trash.svg");
-//       background-repeat: no-repeat;
-//       background-position: center;
-//       background-size: 1.5rem;
-      background-color: #f23;
-      
-  }
-
-  .create-seat
-  {
-      margin-top: 1rem;
-      display: flex;
-
-      .from, .to
-      {
-        margin: 0 .3rem 0 .3rem;
-        font-weight: bold;
-      }
-
-      input{
-        width:2.5rem;
-        margin-left: 0.5rem;
-    }
-  }
-
-  .btn-sign-in
-  {
-      width: 8rem;
-      margin:-.5rem 1rem 0rem 1rem;
-      padding: 0.5rem;
-      border: none;
-      border-radius: 5px; 
-      background-color: #00e;
-
-      font-weight: bold;
-      font-size: 1.2rem;
-      color:#fff;
-  }
-
-  

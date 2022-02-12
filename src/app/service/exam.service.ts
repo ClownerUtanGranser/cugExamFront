@@ -64,7 +64,7 @@ export class ExamService {
 
    createEngExam(jwt:string)
    {
-       let ouestionsEng:Question[] = new QuestionList().QuestionList;
+       let ouestionsEng:Question[] = new QuestionList().QuestionListEng;
        let exam = 'cugExam';
        this.http.post(`${this.baseUrlAdmin}/create/exam`, { examName: exam }, new HttpHeader(jwt).getHeader()).subscribe((exam) =>{
         let backendModel = ouestionsEng.map((question) =>{
@@ -81,15 +81,61 @@ export class ExamService {
           })          
         }) 
         this.http.post(`${this.baseUrlAdmin}/exam/question/${exam}`, backendModel, new HttpHeader(jwt).getHeader()).subscribe();
-      //  console.log(backendModel);
        })
      
    }
 
-   resetQuestions(jwt:string)
+   createSvExam(jwt:string)
+   {
+       let ouestionsEng:Question[] = new QuestionList().QuestionListSv;
+       let exam = 'cugExam';
+       this.http.post(`${this.baseUrlAdmin}/create/exam`, { examName: exam }, new HttpHeader(jwt).getHeader()).subscribe((exam) =>{
+        let backendModel = ouestionsEng.map((question) =>{
+        //  console.log(question);
+          return({
+            questionId: question.id,
+            question: question.questionText,
+            questionNumber: question.questionNumber,
+            response1: question.answres[0],
+            response2: question.answres[1],
+            response3: question.answres[2],
+            correctResponse:"Should be set",
+            lang: question.lang
+          })          
+        }) 
+        this.http.post(`${this.baseUrlAdmin}/exam/question/${exam}`, backendModel, new HttpHeader(jwt).getHeader()).subscribe();
+       })
+     
+   }
+
+   createArbExam(jwt:string)
+   {
+       let ouestionsEng:Question[] = new QuestionList().QuestionListArb;
+       let exam = 'cugExam';
+       this.http.post(`${this.baseUrlAdmin}/create/exam`, { examName: exam }, new HttpHeader(jwt).getHeader()).subscribe((exam) =>{
+        let backendModel = ouestionsEng.map((question) =>{
+        //  console.log(question);
+          return({
+            questionId: question.id,
+            question: question.questionText,
+            questionNumber: question.questionNumber,
+            response1: question.answres[0],
+            response2: question.answres[1],
+            response3: question.answres[2],
+            correctResponse:"Should be set",
+            lang: question.lang
+          })          
+        }) 
+        this.http.post(`${this.baseUrlAdmin}/exam/question/${exam}`, backendModel, new HttpHeader(jwt).getHeader()).subscribe();
+       })
+     
+   }
+
+
+   resetQuestionsEng(jwt:string)
    {
     let exam = 'cugExam';
-    let ouestionsEng:Question[] = new QuestionList().QuestionList;
+    let ouestionsEng:Question[] = new QuestionList().QuestionListEng;
     let backendModel = ouestionsEng.map((question) =>{
       //  console.log(question);
         return({
@@ -107,6 +153,52 @@ export class ExamService {
       this.http.post(`${this.baseUrlAdmin}/exam/question/${exam}`, backendModel, new HttpHeader(jwt).getHeader()).subscribe();
 
    }
+
+   resetQuestionsSv(jwt:string)
+   {
+    let exam = 'cugExam';
+    let ouestionsEng:Question[] = new QuestionList().QuestionListSv;
+    let backendModel = ouestionsEng.map((question) =>{
+      //  console.log(question);
+        return({
+          questionId: question.id,
+          question: question.questionText,
+          questionNumber: question.questionNumber,
+          response1: question.answres[0],
+          response2: question.answres[1],
+          response3: question.answres[2],
+          correctResponse:"Should be set",
+          lang: question.lang
+        })          
+      })
+
+      this.http.post(`${this.baseUrlAdmin}/exam/question/${exam}`, backendModel, new HttpHeader(jwt).getHeader()).subscribe();
+
+   }
+
+   resetQuestionsArb(jwt:string)
+   {
+    let exam = 'cugExam';
+    let ouestionsEng:Question[] = new QuestionList().QuestionListArb;
+    let backendModel = ouestionsEng.map((question) =>{
+      //  console.log(question);
+        return({
+          questionId: question.id,
+          question: question.questionText,
+          questionNumber: question.questionNumber,
+          response1: question.answres[0],
+          response2: question.answres[1],
+          response3: question.answres[2],
+          correctResponse:"Should be set",
+          lang: question.lang
+        })          
+      })
+
+      this.http.post(`${this.baseUrlAdmin}/exam/question/${exam}`, backendModel, new HttpHeader(jwt).getHeader()).subscribe();
+
+   }
+
+
 
    uppdateQuestion( questionUpdate:QuestionBackendModel )
    {
