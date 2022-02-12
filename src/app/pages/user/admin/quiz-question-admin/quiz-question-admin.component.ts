@@ -11,6 +11,8 @@ export class QuizQuestionAdminComponent implements OnInit {
 
   @Input() question:Question;
   @Output() answerEmit = new EventEmitter();
+  @Input() lang:string;
+  @Output() langEmit = new EventEmitter();
 
   selectedAnswer:number = null;
 
@@ -34,8 +36,14 @@ export class QuizQuestionAdminComponent implements OnInit {
 
   ngOnInit(): void {
 
+    this.questionForm.controls['lang'].setValue(this.lang)
     //this.questionForm.setValue(['questionText', 'questionText'])
     // this.questionForm.controls['questionText'].setValue(this.question.questionText);
+    this.questionForm.valueChanges.subscribe(() => {
+      this.lang = this.questionForm.controls['lang'].value;
+      this.langEmit.emit(this.lang);
+      
+    });
   }
 
   ngOnChanges(changes: SimpleChanges) {

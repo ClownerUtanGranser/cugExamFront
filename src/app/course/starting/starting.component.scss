@@ -43,3 +43,24 @@
         transition: border .5s;
     }
 }
+
+@media only screen and (max-width: 800px) {
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .yellow_circle{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .text{
+        font-size: 1.2rem;
+    }
+}

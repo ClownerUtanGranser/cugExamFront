@@ -9,6 +9,10 @@
     justify-content: flex-start;
 
     min-height: calc(100vh - 3rem);
+
+    &.AR{
+        direction: rtl;
+    }
 }
 
 form{
@@ -16,6 +20,17 @@ form{
 }
 .green_headline{
     width:100%;
+    &.AR{
+        border-bottom-left-radius: 10rem;
+        border-top-left-radius: 10rem;
+        border-bottom-right-radius: 0rem;
+        border-top-right-radius: 0rem;
+        text-align: center;
+        margin: 2rem 0rem 2rem 0rem;
+        width: 70%;
+      
+        padding: 3rem;
+    }
     .answres{
         input[type=text], input[type=placeholder] {
             background-color: $green;

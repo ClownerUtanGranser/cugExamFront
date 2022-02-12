@@ -1,4 +1,6 @@
-<div class="container">
+<div class="container"
+    [ngClass]="lang"
+>
     <div class="questionbox">
         <div class="nav top">
             <p 
@@ -10,13 +12,15 @@
                 (click)="nextQuestion()">></p>
         </div>
         <div 
-            *ngFor="let question of questions;let i = index;"
+            *ngFor="let question of questions; let i = index;"
             class="border">
             
         </div>
             <app-quiz-question-admin
                 [question]="questions[showQuestionIndex - 1]" 
                 (answerEmit) = updateQuestion($event)
+                [lang]="lang"
+                (langEmit)="changeLang($event)"
             >
             </app-quiz-question-admin>
         <nav class="test-nav">

@@ -1,6 +1,10 @@
-<div class="container">
+<div class="container"
+    [ngClass]="lang"
+>
     <form [formGroup]="questionForm">
-        <div class="green_headline">
+        <div class="green_headline"
+            [ngClass]="lang"
+        >
             <div class="answres">
                 <label for="questionText">Question</label>
                 <input id="questionText" name="text" type="text" formControlName="question" placeholder="headline" autocomplete="off" >

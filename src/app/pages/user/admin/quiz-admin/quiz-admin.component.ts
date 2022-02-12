@@ -13,7 +13,15 @@ import { StateService } from 'src/app/service/state.service';
 export class QuizAdminComponent implements OnInit {
 
   questions:Question[] = [];
+
+  questionsEng:Question[] = [];
+  questionsSv:Question[] = [];
+  questionsArb:Question[] = [];
+
+
   showQuestionIndex:number = 0;
+
+  lang:string = 'ENG';
 
   constructor(private route: ActivatedRoute,
               private router: Router,
@@ -22,18 +30,33 @@ export class QuizAdminComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.state.questions.subscribe((questions)=>{
-      console.log(questions);
-      this.questions = questions;
+    this.state.questions.subscribe((questions:Question[])=>{
+
+      this.questionsEng = questions.filter((question) => question.lang == 'ENG');
+      this.questionsSv = questions.filter((question) => question.lang == 'SV');
+      this.questionsArb = questions.filter((question) => question.lang == 'AR');
+      this.changeLang();
     })
     
-    this.route.params.subscribe((param)=>{
+    this.route.params.subscribe((param) => {
 
       this.showQuestionIndex = parseInt(param.questionNumber)
        this.showQuestion(this.showQuestionIndex);
        if(this.showQuestionIndex < 1  || !this.showQuestionIndex) this.router.navigate(['/admin/question/1'])
 
     })
+
+  }
+
+  changeLang(lang?:string){
+    this.lang = lang ?? 'ENG';
+    if(this.lang == 'ENG'){
+      this.questions = this.questionsEng;
+    }else if(this.lang == 'SV'){
+      this.questions = this.questionsSv;
+    }else{
+      this.questions = this.questionsArb;
+    }
   }
 
   updateQuestion( question:QuestionBackendModel)

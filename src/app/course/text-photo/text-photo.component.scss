@@ -122,3 +122,38 @@
     }
     
 }
+
+@media only screen and (max-width: 800px) {
+
+    .container
+    {
+        flex-direction: column;
+
+        .text{
+            width: 100%;    
+        }
+
+        .img{
+            width: 100%;
+
+            .red_circle{
+
+                min-height: 20rem;
+                min-width: 20rem;
+    
+                
+                top: -2rem;
+                right: -1rem;
+                left: initial;
+                bottom: initial;
+
+                line-height: 1.7rem;
+                font-size: 1.2rem;
+                letter-spacing: 0.4 rem;
+    
+            }
+        }
+    }
+
+
+}
