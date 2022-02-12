@@ -86,5 +86,6 @@ export class LoginService {
     this.state.setExamUser(null);
     sessionStorage.removeItem('cugExam');
     sessionStorage.removeItem('cugExamJwt');
+    this.router.navigate(['']);
   }
 }
