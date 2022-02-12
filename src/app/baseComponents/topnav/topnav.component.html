@@ -6,16 +6,29 @@
         [routerLink]="''"
         *ngIf="lang != 'SV'" >
     </app-clowns-logo-eng>
-    <div class="lang-selection">
+    <div 
+        *ngIf="!isAdminPage"
+        class="lang-selection">
         <h3 [class]="openCloseBoolean ? 'small open' : 'small'" [ngClass]="lang == 'SV'? 'lang': ''" (click)="setLang('SV')">SV</h3>
         <h3 [class]="openCloseBoolean ? 'small open' : 'small'" [ngClass]="lang == 'ENG'? 'lang': ''"  (click)="setLang('ENG')" >ENG</h3>
         <h3 [class]="openCloseBoolean ? 'small open' : 'small'" [ngClass]="lang == 'AR'? 'lang': ''"  (click)="setLang('AR')">عربي</h3>
     </div>
+    <div 
+        *ngIf="isAdminPage"
+        class="lang-selection">
+    </div>
+
     
     <div class="loggin">
-        <h3 class="large" [ngClass]="lang == 'SV'? 'lang': ''" (click)="setLang('SV')">SV</h3>
-        <h3 class="large" [ngClass]="lang == 'ENG'? 'lang': ''"  (click)="setLang('ENG')" >ENG</h3>
-        <h3 class="large" [ngClass]="lang == 'AR'? 'lang': ''"  (click)="setLang('AR')">عربي</h3>    
+        <h3 
+            *ngIf="!isAdminPage"
+            class="large" [ngClass]="lang == 'SV'? 'lang': ''" (click)="setLang('SV')">SV</h3>
+        <h3 
+            *ngIf="!isAdminPage"
+            class="large" [ngClass]="lang == 'ENG'? 'lang': ''"  (click)="setLang('ENG')" >ENG</h3>
+        <h3 
+            *ngIf="!isAdminPage"
+            class="large" [ngClass]="lang == 'AR'? 'lang': ''"  (click)="setLang('AR')">عربي</h3>    
 
         <a *ngIf="examUser?.jwt?.length < 3 || !examUser" [routerLink]="'login'">
             <h2>

@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { ExamUser } from 'src/app/model/examUser';
 import { LoginService } from 'src/app/service/auth/login.service';
 import { StateService } from 'src/app/service/state.service';
@@ -12,7 +13,7 @@ export class TopnavComponent implements OnInit {
   @Input() openMyPageBool:boolean;
   @Output() openMyPageBoolEmit = new EventEmitter();
 
-
+  isAdminPage:boolean = false;
 
   examUser:ExamUser | undefined;
 
@@ -21,7 +22,15 @@ export class TopnavComponent implements OnInit {
   openCloseBoolean:boolean = false;
 
   constructor(private state:StateService,
-              private loginService:LoginService) { }
+              private loginService:LoginService,
+              private router:Router) {
+
+                router.events.subscribe(event => {
+                  if(event instanceof NavigationEnd){
+                    this.isAdminPage = event.url.includes('admin'); 
+                  }
+                });
+               }
 
   ngOnInit(): void {
     this.state.examUser.subscribe((user)=>{
