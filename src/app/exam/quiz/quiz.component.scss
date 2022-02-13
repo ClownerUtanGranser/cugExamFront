@@ -66,3 +66,20 @@
         border: solid 2px $white;
     }
 }
+
+@media only screen and (max-width: 800px) {
+
+    .green_headline{
+
+        width: 100%;
+
+        &.AR{
+            width: 100%; 
+        }
+    }
+.btn-update{
+    margin:0rem 10% 1rem 40%;
+
+}  
+
+}
