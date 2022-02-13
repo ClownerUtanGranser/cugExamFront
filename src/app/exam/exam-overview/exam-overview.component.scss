@@ -21,6 +21,10 @@
     &.open{
         transform: translate(0, 0%);
     }
+
+    &.AR{
+        direction: rtl;
+    }
 }
 
 .result{
@@ -66,4 +70,14 @@ ul{
     &:hover{
         border: solid 2px $white;
     }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .big{
+        height: 20rem;
+        width: 20rem;
+        margin: 0rem;
+    }
+
 }

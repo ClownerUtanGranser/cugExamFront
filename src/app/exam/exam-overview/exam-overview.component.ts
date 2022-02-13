@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
+import { Router } from '@angular/router';
 import { ExamUser } from 'src/app/model/examUser';
 import { Question } from 'src/app/model/question';
 import { ExamService } from 'src/app/service/exam.service';
@@ -12,6 +13,7 @@ import { StateService } from 'src/app/service/state.service';
 export class ExamOverviewComponent implements OnInit, OnChanges{
   @Input() openOverLay:boolean;
   @Input() questions:Question[];
+  @Input() lang:string;
   @Output() openOverLayEmit = new EventEmitter();
 
   user: ExamUser;
@@ -21,8 +23,16 @@ export class ExamOverviewComponent implements OnInit, OnChanges{
   questionsCopy:Question[] = []
   firstTime:boolean = true;
 
+  buttonText:string = "Home";
+  buttonTryAgainText:string = "Try again";
+  numberOfQuestionsText:string = "Number of questions:";
+  correctResponsesText:string = "Correct responses:";
+  notAnswered:string = "Not answered";
+
   constructor(private state:StateService,
-              private examService: ExamService) { }
+              private examService: ExamService,
+              private router:Router
+              ) { }
 
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -30,17 +40,46 @@ export class ExamOverviewComponent implements OnInit, OnChanges{
     {
       this.submitExam();
     }
+    this.changeLang(this.lang);
   }
 
   ngOnInit(): void {
     this.state.examUser.subscribe((user) =>{
       this.user = user;
     })
+
+    this.changeLang(this.lang);
   }
 
-  closeOverlay()
+  changeLang(lang:string){
+    if(lang == 'ENG'){
+      this.buttonText = "Home"
+      this.buttonTryAgainText = "Try again"
+      this.numberOfQuestionsText = "Number of questions:";
+      this.correctResponsesText = "Correct responses:";
+      this.notAnswered = "Not answered";
+    
+    }else if(lang == 'SV'){
+      this.buttonText = "Start sidan"
+      this.buttonTryAgainText = "Nytt försök"
+      this.numberOfQuestionsText = "antal frågor: ";
+      this.correctResponsesText = "Rätta svar: ";
+      this.notAnswered = "Inget svar";
+
+    }else{
+      this.buttonText = "الصفحة الرئيسية"
+      this.buttonTryAgainText = "محاولة جديدة"
+      this.numberOfQuestionsText = "عدد الأسئلة:";
+      this.correctResponsesText = "الاستجابات الصحيحة:";
+      this.notAnswered = "بلا جواب";
+
+    }
+
+  }
+
+  closeOverlay(succsess:boolean)
   {
-    this.openOverLayEmit.emit(false);
+    this.openOverLayEmit.emit(succsess);
   }
 
 

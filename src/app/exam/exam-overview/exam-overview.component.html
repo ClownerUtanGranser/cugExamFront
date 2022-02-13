@@ -1,11 +1,12 @@
-<div class="container-overlay" [class]="openOverLay ? 'open' : ''">
+<div class="container-overlay" 
+    [class]="openOverLay ? 'open ' + lang : lang">
     <div *ngIf="correctResponses<9" class="red_circle big result">
-        <h3>Number of questions: {{ numberOfQuestions }}</h3>
-        <h3>Correct responses: {{ correctResponses }}</h3> 
+        <h3>{{numberOfQuestionsText}} {{ numberOfQuestions }}</h3>
+        <h3>{{correctResponsesText}} {{ correctResponses }}</h3> 
     </div>
     <div *ngIf="correctResponses>=9" class="green_circle big result">
-        <h3>Number of questions: {{ numberOfQuestions }}</h3>
-        <h3>Correct responses: {{ correctResponses }}</h3> 
+        <h3>{{numberOfQuestionsText}} {{ numberOfQuestions }}</h3>
+        <h3>{{correctResponsesText}} {{ correctResponses }}</h3> 
     </div>
     <ul>
         <li *ngFor="let question of questionsCopy">
@@ -16,11 +17,18 @@
                 {{ question.questionNumber }}
             </div>
             <h3 *ngIf="question?.answres[question.selectedAnswre]"> {{ question.answres[question.selectedAnswre] }}  </h3>
-            <h3 *ngIf="!question?.answres[question.selectedAnswre]" class="_red" > Not answered </h3>
+            <h3 *ngIf="!question?.answres[question.selectedAnswre]" class="_red" > {{ notAnswered }} </h3>
         </li>
     </ul>
     <div class="btn-box">
-        <button *ngIf="correctResponses<9" (click)="closeOverlay()" class="btn-update left">Try again</button>
-        <button class="btn-update right">Home</button>
+        <button 
+            *ngIf="correctResponses<9" 
+            (click)="closeOverlay(false)" 
+            class="btn-update left"
+            href="../../"
+            >{{ buttonTryAgainText }}</button>
+        <button 
+            (click)="closeOverlay(true)"
+            class="btn-update right">{{ this.buttonText }}</button>
     </div>
 </div>
