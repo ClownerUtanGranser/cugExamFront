@@ -6,7 +6,9 @@
         <li>
              <a 
                 *ngIf="examUser.roles == 'ADMIN'"
-                [routerLink]="'admin'">
+                [routerLink]="'admin'"
+                (click)="close()"
+                >
                  <span class="strong">ADMIN </span>
                  <span class="headline-text"> PAGE</span>
             </a>
@@ -21,7 +23,7 @@
         </li>
          <li >
              <a 
-                [routerLink]="'exam'" 
+                [routerLink]="'course'" 
                 (click)="close()"
                 >
                  <span class="strong"> course </span><span class="headline-text"> </span>
@@ -29,7 +31,7 @@
         </li>
         <li >
             <a 
-                [routerLink]="'course'"
+                [routerLink]="'exam'"
                 (click)="close()"
                 ><span class="strong"> Take exam </span><span class="headline-text"> </span>
            </a>
