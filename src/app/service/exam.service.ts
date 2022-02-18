@@ -10,8 +10,8 @@ import { QuestionBackendModel } from '../model/questionsBackendModel';
 })
 export class ExamService {
 
-  private baseUrlAdmin = "http://localhost:8081/v1/admin";
-  private baseUrlUser:string = "http://localhost:8081/v1/user";
+  private baseUrlAdmin = "https://clown-exam.herokuapp.com/v1/admin" //"http://localhost:8081/v1/admin";
+  private baseUrlUser:string = "https://clown-exam.herokuapp.com/v1/user" //"http://localhost:8081/v1/user";
   private header:HttpHeader;
 
   constructor(private state:StateService,
@@ -68,7 +68,6 @@ export class ExamService {
        let exam = 'cugExam';
        this.http.post(`${this.baseUrlAdmin}/create/exam`, { examName: exam }, new HttpHeader(jwt).getHeader()).subscribe((exam) =>{
         let backendModel = ouestionsEng.map((question) =>{
-        //  console.log(question);
           return({
             questionId: question.id,
             question: question.questionText,
@@ -91,7 +90,6 @@ export class ExamService {
        let exam = 'cugExam';
        this.http.post(`${this.baseUrlAdmin}/create/exam`, { examName: exam }, new HttpHeader(jwt).getHeader()).subscribe((exam) =>{
         let backendModel = ouestionsEng.map((question) =>{
-        //  console.log(question);
           return({
             questionId: question.id,
             question: question.questionText,
@@ -114,7 +112,6 @@ export class ExamService {
        let exam = 'cugExam';
        this.http.post(`${this.baseUrlAdmin}/create/exam`, { examName: exam }, new HttpHeader(jwt).getHeader()).subscribe((exam) =>{
         let backendModel = ouestionsEng.map((question) =>{
-        //  console.log(question);
           return({
             questionId: question.id,
             question: question.questionText,
@@ -137,7 +134,6 @@ export class ExamService {
     let exam = 'cugExam';
     let ouestionsEng:Question[] = new QuestionList().QuestionListEng;
     let backendModel = ouestionsEng.map((question) =>{
-      //  console.log(question);
         return({
           questionId: question.id,
           question: question.questionText,
@@ -159,7 +155,6 @@ export class ExamService {
     let exam = 'cugExam';
     let ouestionsEng:Question[] = new QuestionList().QuestionListSv;
     let backendModel = ouestionsEng.map((question) =>{
-      //  console.log(question);
         return({
           questionId: question.id,
           question: question.questionText,
@@ -181,7 +176,6 @@ export class ExamService {
     let exam = 'cugExam';
     let ouestionsEng:Question[] = new QuestionList().QuestionListArb;
     let backendModel = ouestionsEng.map((question) =>{
-      //  console.log(question);
         return({
           questionId: question.id,
           question: question.questionText,
@@ -217,7 +211,6 @@ export class ExamService {
     let exam = 'cugExam';
 
     let backendModel = questions.map((question) =>{
-      //  console.log(question);
         return({
           questionId: question.id,
           question: question.questionText,

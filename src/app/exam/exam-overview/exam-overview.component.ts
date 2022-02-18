@@ -111,7 +111,7 @@ export class ExamOverviewComponent implements OnInit, OnChanges{
     this.numberOfQuestions = this.questionsCopy.length
     this.correctResponses = this.questionsCopy.filter((question) => this.translateCorrectresponse(question.correctResponse) == question.selectedAnswre).length
     this.firstTime = false;
-    this.examService.examCorrection(this.user.jwt, this.questionsCopy).subscribe((succsess)=> console.log("Success: ", succsess));
+    this.examService.examCorrection(this.user.jwt, this.questionsCopy).subscribe();
   }
 
 }

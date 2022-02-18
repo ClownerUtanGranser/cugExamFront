@@ -22,6 +22,8 @@ export class QuizFrameComponent implements OnInit {
 
   lang:string;
 
+  OpenMobileQuestions:boolean = false;
+
   constructor(private route: ActivatedRoute,
               private router: Router,
               private state:StateService) { }
@@ -58,6 +60,10 @@ export class QuizFrameComponent implements OnInit {
     }else{
       this.questions = this.questionsArb;
     }
+  }
+
+  openMobileQuestionNav(){
+    this.OpenMobileQuestions = !this.OpenMobileQuestions
   }
 
 
@@ -136,8 +142,13 @@ export class QuizFrameComponent implements OnInit {
     this.openOverLay = true; 
   }
 
-  closeOverlay(){
+  closeOverlay(success:boolean){
     this.openOverLay = false;
+
+    this.router.navigate(!success ? ["exam"] : [""])
+    .then(() => {
+      location.reload();
+    })
   }
 
 }

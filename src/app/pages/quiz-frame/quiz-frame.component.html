@@ -2,8 +2,9 @@
 <div class="questionbox">
     <app-exam-overview
         [openOverLay]="openOverLay"
-        (openOverLayEmit)="closeOverlay()"
+        (openOverLayEmit)="closeOverlay($event)"
         [questions] = "questions"
+        [lang]="lang"
     >
     
     </app-exam-overview>
@@ -30,7 +31,10 @@
             
         >
         </app-quiz>
-    <nav class="test-nav">
+    <nav 
+        class="test-nav"
+        [ngClass]="OpenMobileQuestions ? 'open' : 'close'"
+        >
         <div
             *ngFor="let question of questions;let i = index;" 
             (click)="showQuestion(i+1)"
@@ -40,4 +44,11 @@
                 {{ i + 1 }}
         </div>
     </nav>
+        <div
+            class="red_circle small open-questions"
+            [ngClass]="OpenMobileQuestions ? 'open' : 'close'"
+            (click)="openMobileQuestionNav()"
+            >
+                {{ OpenMobileQuestions ? 'X' : 'III' }}
+        </div>
 </div>

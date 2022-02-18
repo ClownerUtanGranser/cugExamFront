@@ -3,10 +3,11 @@
 .test-nav{
     
     position: fixed;
-    top: 2.5rem;
+    top: 4rem;
     z-index: 3;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     
     
@@ -37,6 +38,7 @@
 
     p{
         font-size: 2.5rem;
+        padding-top: 2rem;
         font-weight: bolder;
         cursor: pointer;
     }
@@ -50,4 +52,44 @@
 .dont-show{
     color:transparent;
     cursor: none;
+    transform: scale(0);
+}
+
+.open-questions{       
+    display: none;
+    transform:scale(0);
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    .test-nav{
+        top: 4.5rem;
+        &.open{
+            transform: translate(0%, 0%);
+            background-color: rgba(0,0,0,0.5);
+
+        }
+
+        &.close{
+            transform: translate(150%, 150%);
+        }   
+    }
+
+    .open-questions{
+        display: flex;
+        position:fixed;
+        top: 2.5rem;
+        left: 0rem;
+        transform: scale(1);
+        z-index: 4;
+
+        &.open{
+            transform: rotate(0deg);
+        }
+        &.close{
+            transform: rotate(90deg);
+        }
+    }
+    
 }

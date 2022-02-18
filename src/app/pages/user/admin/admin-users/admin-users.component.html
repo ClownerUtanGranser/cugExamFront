@@ -1,21 +1,23 @@
 <div class="container">
     
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>email</th>
-            <th>Role</th>
-            <th>Exam passed</th>
-            <th>attempts</th>
-        </tr> 
-        <tr *ngFor="let user of users">
-            <td>{{ user.name }} </td>
-            <td>{{ user.email }}</td>
-            <td>{{ user.roles }}</td>
-            <td>{{ examsPassed(user.examsTaken) }}</td>
-            <td>{{ user.examsTaken.length }}</td>
-        </tr>
-    </table>
-
-
+    <div class="sides">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>email</th>
+                <th>Role</th>
+                <th>Exam passed</th>
+                <th>attempts</th>
+            </tr> 
+            <tr *ngFor="let user of users">
+                <td>{{ user.name }} </td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.roles }}</td>
+                <td>{{ examsPassed(user.examsTaken) }}</td>
+                <td>{{ user.examsTaken.length }}</td>
+            </tr>
+        </table>
+        <app-cug-user-detail-admin>
+        </app-cug-user-detail-admin>
+    </div>
 </div>

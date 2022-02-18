@@ -23,6 +23,10 @@ export class AdminNavComponent implements OnInit {
     
   }
 
+  getExam(){
+    this.examService.getExam();
+  }
+
   updateDBEng()
   {
     this.examService.resetQuestionsEng(this.jwt);
