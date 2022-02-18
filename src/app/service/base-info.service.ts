@@ -7,7 +7,7 @@ import { StateService } from './state.service';
 })
 export class BaseInfoService {
 
-  private baseUrl = "http://localhost:8081/v1/auth"
+  private baseUrl = "https://clown-exam.herokuapp.com/v1/auth"   //"http://localhost:8081/v1/auth"
 
   constructor(private http:HttpClient, private state:StateService) { }
 

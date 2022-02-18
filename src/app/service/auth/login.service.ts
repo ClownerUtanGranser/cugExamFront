@@ -12,8 +12,8 @@ import { Router } from '@angular/router';
 })
 export class LoginService {
 
-  private baseUrlAuth = "http://localhost:8081/v1/auth";
-  private baseUrlUser = "http://localhost:8081/v1/user";
+  private baseUrlAuth = "https://clown-exam.herokuapp.com/v1/auth" //"http://localhost:8081/v1/auth";
+  private baseUrlUser = "https://clown-exam.herokuapp.com/v1/user" //"http://localhost:8081/v1/user";
 
   constructor(private http:HttpClient,
               private state:StateService,
