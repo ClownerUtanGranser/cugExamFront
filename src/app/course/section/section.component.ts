@@ -100,10 +100,8 @@ export class SectionComponent implements OnInit {
 
     if( parseInt(this.page)<=3 && this.url == 'introduction'){
       this.router.navigate(['/course/material/',this.url, parseInt(this.page)  +1])
-      console.log(this.url, (parseInt(this.page) + 1) )
     }
     else if( parseInt(this.page) > 3 && this.url == 'introduction'){
-      console.log(this.url, (parseInt(this.page) > 3 ) )
       this.url = 'working with children';
       this.page = '1'
       this.router.navigate(['/course/material/',this.url, this.page ])
@@ -112,29 +110,24 @@ export class SectionComponent implements OnInit {
     else if(parseInt(this.page)<13 && this.url == 'working with children'){
       this.router.navigate(['/course/material/',this.url, parseInt(this.page)  +1])
     }else if( this.url == 'working with children'){
-      console.log(this.url, (parseInt(this.page) > 3 ) )
       this.url = 'code of conduct';
       this.page = '1'
       this.router.navigate(['/course/material/',this.url, this.page ])
       
     }else if( parseInt(this.page) < 7 && this.url == 'code of conduct'){
-      console.log(this.url, (parseInt(this.page) ) )
       this.router.navigate(['/course/material/',this.url, parseInt(this.page) + 1 ])
       
     }else if( parseInt(this.page) > 1 && this.url == 'code of conduct'){
-      console.log(this.url, (parseInt(this.page) ) )
       this.url = 'whistle blower policy';
       this.page = '1'
       this.router.navigate(['/course/material/',this.url, this.page ])
       
     }else if( parseInt(this.page) > 0 && this.url == 'whistle blower policy'){
-      console.log(this.url, (parseInt(this.page) ) )
       this.url = 'documentation of children';
       this.page = '1'
       this.router.navigate(['/course/material/',this.url, this.page ])
       
     }else if( parseInt(this.page) < 2 && this.url == 'documentation of children'){
-      console.log(this.url, (parseInt(this.page) ) )
       this.router.navigate(['/course/material/',this.url, parseInt(this.page) + 1 ])
       
     }else if( parseInt(this.page) == 2 && this.url == 'documentation of children'){
@@ -144,7 +137,6 @@ export class SectionComponent implements OnInit {
       
     }else{
       this.router.navigate(['/course/material'])
-      console.log(this.url, (parseInt(this.page) + 1) )
     }
     
   }
@@ -153,7 +145,6 @@ export class SectionComponent implements OnInit {
   {
     if( parseInt(this.page)<=1 && this.url == 'introduction'){
       this.router.navigate(['/course/material'])
-      console.log(this.url, (parseInt(this.page) + 1) )
     }
     else if( parseInt(this.page) > 0 && this.url == 'introduction'){
       this.router.navigate(['/course/material/', this.url, parseInt(this.page) - 1 ]);
@@ -175,7 +166,6 @@ export class SectionComponent implements OnInit {
       this.router.navigate(['/course/material/',this.url, parseInt(this.page) - 1 ])
       
     }else if( parseInt(this.page) == 1 && this.url == 'whistle blower policy'){
-      console.log(this.url, (parseInt(this.page) ) )
       this.url = 'code of conduct';
       this.page = '7'
       this.router.navigate(['/course/material/',this.url, this.page ])
@@ -194,9 +184,7 @@ export class SectionComponent implements OnInit {
       this.router.navigate(['/course/material/',this.url, parseInt(this.page) ]);
     }else{
       this.router.navigate(['/course/material'])
-      console.log(this.url, (parseInt(this.page) - 1) )
-    }
-    
+    }    
   }
 
   showMenu(){

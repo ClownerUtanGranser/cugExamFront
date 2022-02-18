@@ -49,7 +49,6 @@ export class GaurdGuard implements CanActivate {
       {
         if(this.user?.roles.includes('USER') || this.user?.roles.includes('ADMIN'))
         {
-          console.log("login")
           return this.router.navigate(['/exam']);
         }
         else

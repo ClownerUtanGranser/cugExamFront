@@ -117,9 +117,6 @@
     &.XL-box
     {
         border-radius: 5%;
-        // padding: 1rem;
-        // height: 22rem;
-        // min-width: 20rem;          
     }   
 
   }
@@ -188,131 +185,22 @@
     margin-top: 2rem;
 }
 
-//  .card-container{
+@media only screen and (max-width: 600px) {
 
-//      transform-style: preserve-3d;
-//      transition: transform 1s ease-in-out;
-//      @include circle(10rem);
-//      cursor: pointer;
-//      font-family: DM Sans;
-//      margin: 2rem 1rem 1rem 1rem;
+    .flip-card-inner, .flip-card {
 
-//      &.turned .card{
-//          transform: rotateY(180deg);
-//          backface-visibility: hidden;
-//      }
-//  }
-
-//  .card{
-
-//     transition: transform 1s ease-in-out;
-//      transform-style: preserve-3d;
-     
-//      h2{
-
-//         text-align: center;
-//      }
-// }
-
-//  .front{
-//          position:absolute;
-//          background-color: $red;
-//          display: flex;
-//          justify-content: center;
-//          transform: rotateY(0deg);
-
-//         &.small-ball
-//         {
-//             @include circle(7rem);
-//             padding: 4rem 3.5rem 1rem 2rem;
-//         }
-
-//         &.medium-ball
-//         {
-//             @include circle(9rem);
-//             padding: 3rem 4rem 1rem 1rem;
-//         } 
-    
-//          &.big-ball
-//          {
-//              @include circle(10rem);
-//              text-align: center;
-//              padding: 4rem 3rem 1rem 2rem;
-             
-//          }   
-
-//          &.XL-box
-//          {
-//              border-radius: 5%;
-//              padding: 1rem;
-//              height: 22rem;
-//              min-width: 20rem;
-             
-//          }   
-//     }
-    
-//     .back{
-//         position:absolute;
-//         background-color: $yellow;
-//         transform: rotateY(180deg);
-//         text-align: center;
-        
-//         .Strong{
-//             font-weight: bold;
-//         }
-
-//         &.small-ball
-//         {
-//             @include circle(7rem);
-//             padding-top: 4rem;
-//         }
-
-//         &.medium-ball
-//         {
-//             @include circle(9rem);
-//             padding: 1rem 1.5rem 0.5rem 1.5rem;
-//         }
-
-//         &.big-ball
-//         {
-//             @include circle(10rem);
-//             padding: 1rem 1.5rem 0.5rem 1.5rem;
-//         }
-
-//         &.XL-box
-//         {
-//             border-radius: 5%;
-//             height: 22rem;
-//             min-width: 20rem;
-//             padding: 1rem;
-//             letter-spacing: 1px;
-//         }
-
-//         &.correct{
-//             background-color: $green;
-//             color: $yellow;
-//             font-weight: bold;
-//             letter-spacing: 1px;
-//         }
-                
-    // }
-
-    @media only screen and (max-width: 600px) {
-
-        .flip-card-inner, .flip-card {
-
-            &.big-ball
-            {
-                width: 330px;
-                height: 330px;
-                border-radius: 50%;
-                
-            } 
-
-        }
-
+        &.big-ball
+        {
+            width: 330px;
+            height: 330px;
+            border-radius: 50%;
+            
+        } 
 
     }
+
+
+}
     
     
 
