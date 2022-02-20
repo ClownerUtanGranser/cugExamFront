@@ -16,8 +16,14 @@
     p{
         font-size: 2rem;
         font-weight: bolder;
-        cursor: pointer;
+        cursor: pointer;        
     }
+
+    .dont-show{
+            color:transparent;
+            cursor: none;
+            transform: scale(0);
+        }
 
     &.top{
         top: 1rem;

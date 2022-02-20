@@ -8,11 +8,15 @@
 
     <div class="nav top">
         <p (click)="previousPage()"><</p>
-        <p (click)="nextPage()">></p>
+        <p 
+            [class]="undetstandCodeOfConduct()"
+            (click)="nextPage()">></p>
     </div>
     <div class="nav bottom">
         <p (click)="previousPage()"><</p>
-        <p (click)="nextPage()">></p>
+        <p 
+            [class]="undetstandCodeOfConduct()"
+            (click)="nextPage()">></p>
     </div>
     <!--Introduction-->
     <app-film
@@ -130,30 +134,49 @@
         [codeOfConduct]='code1And2'
         [lang]="lang"
         *ngIf="page == '2' && url == 'code of conduct'"
+        [underStandCodeOfCunduct1]="underStandCodeOfCunduct1"
+        [underStandCodeOfCunduct2]="underStandCodeOfCunduct2"
+        (underStandCodeOfCunduct1emit)="undertstandCodeOfConduct1($event)"
+        (underStandCodeOfCunduct2emit)="undertstandCodeOfConduct2($event)" 
+
     >
     </app-code-of-conduct>
     <app-code-of-conduct
         [codeOfConduct]='code3And4'
         [lang]="lang"
         *ngIf="page == '3' && url == 'code of conduct'"
+        [underStandCodeOfCunduct1]="underStandCodeOfCunduct1"
+        [underStandCodeOfCunduct2]="underStandCodeOfCunduct2"
+        (underStandCodeOfCunduct1emit)="undertstandCodeOfConduct1($event)"
+        (underStandCodeOfCunduct2emit)="undertstandCodeOfConduct2($event)" 
     >
     </app-code-of-conduct>
     <app-code-of-conduct
         [codeOfConduct]='code5And6'
         [lang]="lang"
         *ngIf="page == '4' && url == 'code of conduct'"
+        (underStandCodeOfCunduct1emit)="undertstandCodeOfConduct1($event)"
+        (underStandCodeOfCunduct2emit)="undertstandCodeOfConduct2($event)"
     >
     </app-code-of-conduct>
     <app-code-of-conduct
         [codeOfConduct]='code7And8'
         [lang]="lang"
         *ngIf="page == '5' && url == 'code of conduct'"
+        [underStandCodeOfCunduct1]="underStandCodeOfCunduct1"
+        [underStandCodeOfCunduct2]="underStandCodeOfCunduct2"
+        (underStandCodeOfCunduct1emit)="undertstandCodeOfConduct1($event)"
+        (underStandCodeOfCunduct2emit)="undertstandCodeOfConduct2($event)"
     >
     </app-code-of-conduct>
     <app-code-of-conduct
         [codeOfConduct]='code9And10'
         [lang]="lang"
         *ngIf="page == '6' && url == 'code of conduct'"
+        [underStandCodeOfCunduct1]="underStandCodeOfCunduct1"
+        [underStandCodeOfCunduct2]="underStandCodeOfCunduct2"
+        (underStandCodeOfCunduct1emit)="undertstandCodeOfConduct1($event)"
+        (underStandCodeOfCunduct2emit)="undertstandCodeOfConduct2($event)"
     >
     </app-code-of-conduct>
 

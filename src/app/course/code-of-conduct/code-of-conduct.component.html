@@ -12,7 +12,12 @@
         </p>
         <br>
         <label [for]="conduct.checkboxText"> {{ conduct.checkboxText }} </label>
-        <input type="checkbox" [id]="conduct.checkboxText" [name]="conduct.checkboxText" value="i">
+        <input 
+            (change)="checkBox($event)"
+            type="checkbox" 
+            [id]="conduct.checkboxText" 
+            [name]="conduct.checkboxText" 
+            [value]="i">
 
     </section>
 </div>
