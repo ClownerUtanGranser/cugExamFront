@@ -32,7 +32,7 @@ export class PhotoTextObj {
           "- What to do if you witness a suspected violation or crime against a child"
         ],
         circleText:"If you have any questions after the training you can always turn to your closest point of contact within the organisation.",
-        photoName:"photo"
+        photoName:"two-boys"
     }
 
     WELCOME_page2Sv:PhotoText = {
@@ -51,7 +51,7 @@ export class PhotoTextObj {
         "- Vad du ska göra om du blir vittne till en misstänkt kränkning eller ett brott mot barn"
       ],
       circleText:"Om du har några frågor efter utbildningen kan du alltid vända dig till din närmaste kontaktperson.",
-      photoName:"photo"
+      photoName:"two-boys"
   }
 
   WELCOME_page2Arb:PhotoText = {
@@ -70,7 +70,7 @@ export class PhotoTextObj {
       "- كيف تتصرفون وماذا تفعلون إذا شاهدتم انتهاكًا أو جريمة ضد الأطفال"
     ],
     circleText:"إذا كان لديكم أي أسئلة بعد التدريب، يمكنكم بالطبع التواصل دائمًا مع أقرب نقطة اتصال في المنظمة.",
-    photoName:"photo"
+    photoName:"two-boys"
 }
 
     //Working with children
@@ -89,7 +89,7 @@ export class PhotoTextObj {
 
       circleText: "Marwa makes a signal to her team to end the show to avoid further escalation and violence. The team withdraws from the area. Afterwards Marwa reaches out to her point of contact for further follow-up with partner organisation. ",
       
-      photoName:"photo"
+      photoName:"balancing-ball"
   }
 
   Safety_guidelines_for_large_crowdsSv:PhotoText = {
@@ -106,7 +106,7 @@ export class PhotoTextObj {
 
     circleText: "Marwa ger tecken till sitt team att avbryta föreställningen för att undvika ytterligare eskalering och våld. Teamet lämnar området. Sedan tar Marwa kontakt med sin kontaktperson för vidare uppföljning med partnerorganisationen.",
     
-    photoName:"photo"
+    photoName:"balancing-ball"
 }
 
 Safety_guidelines_for_large_crowdsArb:PhotoText = {
@@ -123,7 +123,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
 
   circleText: "تعطي مروى إشارة لفريقها لإنهاء العرض، لتجنب المزيد من التصعيد والعنف، والانسحاب من المنطقة. بعد ذلك، تتواصل مع نقطة الاتصال الخاصة بها لمزيد من المتابعة مع المنظمة الشريكة. ",
   
-  photoName:"photo"
+  photoName:"balancing-ball"
 }
 
   cwbSwedenChildProtectionPolicyEng:PhotoText = {
@@ -142,7 +142,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
           "Know their obligations and commitments as a representative of CWB"
         ],
         
-        photoName:"photo"
+        photoName:"clown-with-children none"
   }
 
   cwbSwedenChildProtectionPolicySv:PhotoText = {
@@ -161,7 +161,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
           "Känna till sina skyldigheter och åtaganden som representant för Clowner utan Gränser"
         ],
         
-        photoName:"photo"
+        photoName:"clown-with-children none"
   }
 
   cwbSwedenChildProtectionPolicyArb:PhotoText = {
@@ -180,7 +180,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
           "يعرف واجباته والتزاماته في أي مهمة للمنظمة"
         ],
         
-        photoName:"photo"
+        photoName:"clown-with-children none"
   }
 
   whatIsViolenceEng:PhotoText = {
@@ -207,7 +207,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     ],
     circleText:"We will now look at two possible scenarios from CWB activities, where you can encounter violence or harm against children.",
 
-    photoName:"photo"
+    photoName:"two-hands"
 
   }
 
@@ -235,7 +235,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     ],
     circleText:"We will now look at two possible scenarios from CWB activities, where you can encounter violence or harm against children.",
 
-    photoName:"photo"
+    photoName:"two-hands"
 
   }
 
@@ -263,7 +263,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     ],
     circleText:"سننظر الآن في سيناريوهين محتملين من أنشطة مهرجون بلا حدود، حيث يمكنك مواجهة حالات عنف أو أذى ضد الأطفال",
 
-    photoName:"photo"
+    photoName:"two-hands"
 
   }
 
@@ -282,7 +282,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       "Adults from partner organisation try to repress children in the audience by using violence",
       "Children stand up to get a better view of the show, which leads to others not being able to see well and there is a risk of fighting"
     ],
-    photoName:"photo"
+    photoName:"laughing-children none"
 
   }
 
@@ -300,7 +300,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       "– Vuxna från partnerorganisationer försöker få kontroll över barn i publiken genom att använda våld",
       "– Barn står upp för att se föreställningen bättre, vilket leder till att andra, som sitter bakom dem, inte kan se och det uppstår risk för slagsmål"
     ],
-    photoName:"photo"
+    photoName:"laughing-children none"
 
   }
 
@@ -318,7 +318,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       "-  قد يحاول بعض البالغون من المنظمات الشريكة قمع الأطفال باستخدام العنف",
       "-   قد يبدأ بعض الأطفال بالوقوف أثناء العرض لرؤية العرض بشكل أفضل، مما يؤدي إلى حجب الرؤية عن أطفال آخرين، مما يؤدي الى خطر نشوب قتال بين الأطفال انفسهم"
     ],
-    photoName:"photo"
+    photoName:"laughing-children none"
 
   }
 
@@ -344,7 +344,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     ],
     circleText:"If a suspected crime is reported, the Secretary General and the Board of CWB Sweden will launch an internal or external investigation. If the suspected violation is a criminal offence, CWB will contact the police, after making a security analysis to ensure that no further harm is done to the child. If a crime is committed by a CWB representative, it will have disciplinary consequences and, in serious cases, lead to exclusion. ",
 
-    photoName:"photo"
+    photoName:"action-plan"
 
   }
 
@@ -370,7 +370,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     ],
     circleText:"Om en misstänkt kränkning anmäls inleder CUGs generalsekreterare och styrelsen en intern eller extern utredning. Om den misstänkta överträdelsen är ett brott kommer CWB att kontakta polisen, efter att ha gjort en säkerhetsanalys för att säkerställa att barnet inte skadas ytterligare. Om ett brott begås av en representant för CUG får det disciplinära konsekvenser och kan i allvarliga fall leda till uteslutning.",
 
-    photoName:"photo"
+    photoName:"action-plan"
 
   }
 
@@ -396,7 +396,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     ],
     circleText:"إذا تم الإبلاغ عن الاشتباه بجريمة، سيبدأ الأمين العام ومجلس منظمة مهرجون بلا حدود -بالسويد تحقيقًا داخليًا أو خارجيًا. إذا كانت الجريمة المشتبه بها هي جريمة جنائية، فستقوم المنظمة بالاتصال بالشرطة، بعد إجراء تحليل أمني لضمان عدم إلحاق مزيد من الضرر بالطفل. إذا تم ارتكاب جريمة من قبل ممثل للمنظمة، فسيؤدي ذلك إلى عواقب تأديبية، وفي الحالات الخطيرة، الطرد من المنظمة.",
 
-    photoName:"photo"
+    photoName:"action-plan"
 
   }
 
@@ -412,7 +412,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       ''
     ],
     circleText: "Let's see some examples of these preventive measures",
-    photoName:"photo"
+    photoName:"crowd"
 
   }
 
@@ -427,7 +427,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       ''
     ],
     circleText: "Nu ska vi titta på några exempel på våra förebyggande åtgärder",
-    photoName:"photo"
+    photoName:"crowd"
 
   }
 
@@ -442,7 +442,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       ''
     ],
     circleText: "دعونا نرى بعض الأمثلة على ماهية هذه التدابير الوقائية",
-    photoName:"photo"
+    photoName:"crowd"
 
   }
 
@@ -460,7 +460,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       "",
       "In the next session of this course we will go through all of its 10 basic principles."
     ],
-    photoName:"photo"   
+    photoName:"the-jump"   
   }
 
   page1CodeOfConductSv:PhotoText = {
@@ -475,7 +475,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       "",
       "I nästa del av utbildningen kommer vi att gå igenom uppförandekodens 10 grundläggande principer. "
     ],
-    photoName:"photo"   
+    photoName:"the-jump"   
   }
 
   page1CodeOfConductArb:PhotoText = {
@@ -490,7 +490,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       "",
       "في الجلسة التالية من هذه الدورة، سنتناول جميع مبادئها الأساسية العشرة."
     ],
-    photoName:"photo"   
+    photoName:"the-jump"   
   }
 
   //DOCUMENTATION OF CHILDREN
@@ -512,7 +512,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       'You can read more about this in the Communication policy.'
     ],
     circleText: 'Informed consent means that the person being portrayed understands how their photos/information will be used.',
-    photoName:'photo'
+    photoName:'selfie'
   }
 
   documentationOfChildrenPage1Sv:PhotoText = {
@@ -532,7 +532,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       'Du kan läsa mer om detta i Kommunikationspolicyn.'
     ],
     circleText: 'Informerat samtycke innebär att personen förstår hur bilder/information kommer att användas.',
-    photoName:'photo'
+    photoName:'selfie'
   }
 
   documentationOfChildrenPage1Arb:PhotoText = {
@@ -552,7 +552,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       'يمكنك قراءة المزيد عن هذا في سياسة الاتصال '
     ],
     circleText: 'الموافقة المستنيرة تعني أن يفهم الشخص الذي يتم تصويره كيف سيتم استخدام صوره / معلوماته.',
-    photoName:'photo'
+    photoName:'selfie'
   }
 
 }

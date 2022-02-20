@@ -61,7 +61,10 @@
 
 
     </div>
-    <div class="img">
+    <div 
+        class="img"
+        [class]="photoText.photoName"
+        >
         <div 
             *ngIf="photoText?.circleText" 
             class="red_circle text"

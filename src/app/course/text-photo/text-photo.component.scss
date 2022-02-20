@@ -34,10 +34,47 @@
         height: 75vh;
         position: relative;
         align-self: start;
-        background: //linear-gradient(rgba($light-green,.0), rgba($light-green,0.8)),
-        url("../../../assets/img/miniature_grekland_henrik_kindgren.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
+        // background: url("../../../assets/img/two-boys-watching.jpg");
+        &.two-boys{
+            background: url("../../../assets/img/two-boys-watching.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+         }
+        &.clown-with-children{
+            background: url("../../../assets/img/clown-with-children.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        } 
+        &.two-hands{
+            background: url("../../../assets/img/two-hands.jpg") center center no-repeat;
+            background-size: 100%;
+        } 
+        &.laughing-children{
+            background: url("../../../assets/img/laughing-children.jpg") no-repeat;
+            background-size: cover;
+        } 
+        &.crowd{
+            background: url("../../../assets/img/crowd.png") no-repeat;
+            background-size: cover;
+        }
+        &.balancing-ball{           
+            background: url("../../../assets/img/balancing-ball.jpg") no-repeat;
+            background-size: cover;
+        } 
+        &.action-plan{
+            background: url("../../../assets/img/action-plan.png") center center no-repeat;
+            background-size: cover;
+        }
+        &.selfie{
+            background: url("../../../assets/img/selfie.jpg") center center no-repeat;
+            background-size: cover;
+        }
+        &.the-jump{
+            background: url("../../../assets/img/the-jump.jpg") center center no-repeat;
+            background-size: cover;
+        }    
+      
+       
 
         .red_circle{
             position: absolute;
@@ -50,8 +87,8 @@
             align-items: center;
 
             padding: 3rem;
-            min-height: 25rem;
-            min-width: 25rem;
+            height: 25rem;
+            width: 25rem;
             background-color: rgba($green, .8);
             color: $white;
             line-height: 1.7rem;
@@ -147,11 +184,34 @@
                 left: initial;
                 bottom: initial;
 
-                line-height: 1.7rem;
-                font-size: 1.2rem;
-                letter-spacing: 0.4 rem;
+                line-height: 1.4rem;
+                font-size: 1rem;
+                letter-spacing: 0.3 rem;
+
+                &.bigger{
+                    min-height: 24rem;
+                    min-width: 24rem;
+                    top: -2rem;
+                    right: 0rem;
+                    left: -3.5rem;
+                    padding: 1rem 2rem 0 3rem;
+                }
     
             }
+
+            &.none{
+                height: 0vh;
+            }
+            &.two-hands{
+                background: url("../../../assets/img/two-hands.jpg") ;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            &.balancing-ball{           
+                background: url("../../../assets/img/balancing-ball-small.png") no-repeat;
+                background-size: cover;
+            }     
+                
         }
     }
 
