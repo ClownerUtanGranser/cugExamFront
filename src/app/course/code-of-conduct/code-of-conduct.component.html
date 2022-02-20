@@ -11,12 +11,12 @@
             {{ textHtml }}
         </p>
         <br>
-        <label [for]="conduct.checkboxText"> {{ conduct.checkboxText }} </label>
+        <label for="checkbox-{{i}}"> {{ conduct.checkboxText }} </label>
         <input 
             (change)="checkBox($event)"
             type="checkbox" 
-            [id]="conduct.checkboxText" 
-            [name]="conduct.checkboxText" 
+            id="checkbox-{{i}}" 
+            name="checkbox-{{i}}" 
             [value]="i"
             [checked]="checked(i)" >
     </section>
