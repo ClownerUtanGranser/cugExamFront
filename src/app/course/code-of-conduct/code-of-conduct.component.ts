@@ -17,8 +17,16 @@ export class CodeOfConductComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
-    console.log("!")
+  ngOnInit(): void {}
+
+  checked(choosen:number):boolean
+  {
+    if(choosen == 0){
+      return this.underStandCodeOfCunduct1 > 0
+    }else if(choosen == 1){
+      return this.underStandCodeOfCunduct2 > 0
+    }
+    return false;
   }
 
   checkBox(value?){
@@ -37,5 +45,6 @@ export class CodeOfConductComponent implements OnInit {
     this.underStandCodeOfCunduct1emit.emit(this.underStandCodeOfCunduct1);
     this.underStandCodeOfCunduct2emit.emit(this.underStandCodeOfCunduct2);
   }
+
 
 }

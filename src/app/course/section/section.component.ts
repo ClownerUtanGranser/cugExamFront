@@ -63,8 +63,7 @@ export class SectionComponent implements OnInit {
   code9And10:CodeOfConduct;
   prohibitionOfAlcoholAndDrugs:FlipingCards;
 
-  underStandCodeOfCunduct1:number = -1;
-  underStandCodeOfCunduct2:number = -1;
+  understodCodeOfCunductQuestion = this.codeOfConductObj.understodCheckBox;
 
   //DOCUMENTATION OF CHILDREN
   anExampleOfAPotentialSituation:FlipingCards;
@@ -118,13 +117,9 @@ export class SectionComponent implements OnInit {
       this.router.navigate(['/course/material/',this.url, this.page ])
       
     }else if( parseInt(this.page) < 7 && this.url == 'code of conduct'){
-      this.underStandCodeOfCunduct1 = -1;
-      this.underStandCodeOfCunduct2 = -1;
       this.router.navigate(['/course/material/',this.url, parseInt(this.page) + 1 ])
       
     }else if( parseInt(this.page) > 1 && this.url == 'code of conduct'){
-      this.underStandCodeOfCunduct1 = -1;
-      this.underStandCodeOfCunduct2 = -1;
       this.url = 'whistle blower policy';
       this.page = '1'
       this.router.navigate(['/course/material/',this.url, this.page ])
@@ -165,15 +160,11 @@ export class SectionComponent implements OnInit {
       this.router.navigate(['/course/material/', this.url, parseInt(this.page) - 1 ]);
       
     }else if( parseInt(this.page) == 1 && this.url == 'code of conduct'){
-      this.underStandCodeOfCunduct1 = -1;
-      this.underStandCodeOfCunduct2 = -1;
       this.url = 'working with children';
       this.page = '13'
       this.router.navigate(['/course/material/',this.url, this.page ])
       
     }else if( parseInt(this.page) > 1 && this.url == 'code of conduct'){
-      this.underStandCodeOfCunduct1 = -1;
-      this.underStandCodeOfCunduct2 = -1;
       this.router.navigate(['/course/material/',this.url, parseInt(this.page) - 1 ])
       
     }else if( parseInt(this.page) == 1 && this.url == 'whistle blower policy'){
@@ -200,18 +191,54 @@ export class SectionComponent implements OnInit {
 
   undertstandCodeOfConduct1(eventValue)
   {
-    this.underStandCodeOfCunduct1 = eventValue; 
+    if(this.url == 'code of conduct'){
+      if(parseInt(this.page) == 2){
+        this.understodCodeOfCunductQuestion['q1'] = eventValue;
+      }else if(parseInt(this.page) == 3){
+        this.understodCodeOfCunductQuestion['q3'] = eventValue;
+      }else if(parseInt(this.page) == 4){
+        this.understodCodeOfCunductQuestion['q5'] = eventValue;
+      }else if(parseInt(this.page) == 5){
+        this.understodCodeOfCunductQuestion['q7'] = eventValue;
+      }else if(parseInt(this.page) == 6){
+        this.understodCodeOfCunductQuestion['q9'] = eventValue;
+      }      
+    }  
   }
 
   undertstandCodeOfConduct2(eventValue)
   {
-    this.underStandCodeOfCunduct2 = eventValue;   
+    if(this.url == 'code of conduct'){
+      if(parseInt(this.page) == 2){
+        this.understodCodeOfCunductQuestion['q2'] = eventValue;
+      }else if(parseInt(this.page) == 3){
+        this.understodCodeOfCunductQuestion['q4'] = eventValue;
+      }else if(parseInt(this.page) == 4){
+        this.understodCodeOfCunductQuestion['q6'] = eventValue;
+      }else if(parseInt(this.page) == 5){
+        this.understodCodeOfCunductQuestion['q8'] = eventValue;
+      }else if(parseInt(this.page) == 6){
+        this.understodCodeOfCunductQuestion['q10'] = eventValue;
+      }      
+    }     
   }
 
   undetstandCodeOfConduct():string
   {
-    if((parseInt(this.page) < 7 && parseInt(this.page) > 1 && this.url == 'code of conduct')){
-      return this.underStandCodeOfCunduct1 == 1 && this.underStandCodeOfCunduct2 == 2 ? '' : 'dont-show';
+    if(this.url == 'code of conduct'){
+      if(parseInt(this.page) == 2){
+        return this.understodCodeOfCunductQuestion['q1'] == 1 && this.understodCodeOfCunductQuestion['q2']  == 2 ? '' : 'dont-show';
+      }else if(parseInt(this.page) == 3){
+        return this.understodCodeOfCunductQuestion['q3'] == 1 && this.understodCodeOfCunductQuestion['q4']  == 2 ? '' : 'dont-show';
+      }else if(parseInt(this.page) == 4){
+        return this.understodCodeOfCunductQuestion['q5'] == 1 && this.understodCodeOfCunductQuestion['q6']  == 2 ? '' : 'dont-show';
+      }else if(parseInt(this.page) == 5){
+        return this.understodCodeOfCunductQuestion['q7'] == 1 && this.understodCodeOfCunductQuestion['q8']  == 2 ? '' : 'dont-show';
+      }else if(parseInt(this.page) == 6){
+        return this.understodCodeOfCunductQuestion['q9'] == 1 && this.understodCodeOfCunductQuestion['q10']  == 2 ? '' : 'dont-show';
+      }else{
+        return '';
+      }
     }else{
       return '';
     } 

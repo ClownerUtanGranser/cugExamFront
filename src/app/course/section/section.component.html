@@ -134,19 +134,18 @@
         [codeOfConduct]='code1And2'
         [lang]="lang"
         *ngIf="page == '2' && url == 'code of conduct'"
-        [underStandCodeOfCunduct1]="underStandCodeOfCunduct1"
-        [underStandCodeOfCunduct2]="underStandCodeOfCunduct2"
+        [underStandCodeOfCunduct1]="understodCodeOfCunductQuestion.q1"
+        [underStandCodeOfCunduct2]="understodCodeOfCunductQuestion.q2"
         (underStandCodeOfCunduct1emit)="undertstandCodeOfConduct1($event)"
         (underStandCodeOfCunduct2emit)="undertstandCodeOfConduct2($event)" 
-
     >
     </app-code-of-conduct>
     <app-code-of-conduct
         [codeOfConduct]='code3And4'
         [lang]="lang"
         *ngIf="page == '3' && url == 'code of conduct'"
-        [underStandCodeOfCunduct1]="underStandCodeOfCunduct1"
-        [underStandCodeOfCunduct2]="underStandCodeOfCunduct2"
+        [underStandCodeOfCunduct1]="understodCodeOfCunductQuestion.q3"
+        [underStandCodeOfCunduct2]="understodCodeOfCunductQuestion.q4"
         (underStandCodeOfCunduct1emit)="undertstandCodeOfConduct1($event)"
         (underStandCodeOfCunduct2emit)="undertstandCodeOfConduct2($event)" 
     >
@@ -155,6 +154,8 @@
         [codeOfConduct]='code5And6'
         [lang]="lang"
         *ngIf="page == '4' && url == 'code of conduct'"
+        [underStandCodeOfCunduct1]="understodCodeOfCunductQuestion.q5"
+        [underStandCodeOfCunduct2]="understodCodeOfCunductQuestion.q6"
         (underStandCodeOfCunduct1emit)="undertstandCodeOfConduct1($event)"
         (underStandCodeOfCunduct2emit)="undertstandCodeOfConduct2($event)"
     >
@@ -163,8 +164,8 @@
         [codeOfConduct]='code7And8'
         [lang]="lang"
         *ngIf="page == '5' && url == 'code of conduct'"
-        [underStandCodeOfCunduct1]="underStandCodeOfCunduct1"
-        [underStandCodeOfCunduct2]="underStandCodeOfCunduct2"
+        [underStandCodeOfCunduct1]="understodCodeOfCunductQuestion.q7"
+        [underStandCodeOfCunduct2]="understodCodeOfCunductQuestion.q8"
         (underStandCodeOfCunduct1emit)="undertstandCodeOfConduct1($event)"
         (underStandCodeOfCunduct2emit)="undertstandCodeOfConduct2($event)"
     >
@@ -173,8 +174,8 @@
         [codeOfConduct]='code9And10'
         [lang]="lang"
         *ngIf="page == '6' && url == 'code of conduct'"
-        [underStandCodeOfCunduct1]="underStandCodeOfCunduct1"
-        [underStandCodeOfCunduct2]="underStandCodeOfCunduct2"
+        [underStandCodeOfCunduct1]="understodCodeOfCunductQuestion.q9"
+        [underStandCodeOfCunduct2]="understodCodeOfCunductQuestion.q10"
         (underStandCodeOfCunduct1emit)="undertstandCodeOfConduct1($event)"
         (underStandCodeOfCunduct2emit)="undertstandCodeOfConduct2($event)"
     >
@@ -194,6 +195,7 @@
     >
     </app-dos-and-donts>
 
+    {{understodCodeOfCunductQuestion | json}} CASPAR
 
     
     <!--documentation of children-->
