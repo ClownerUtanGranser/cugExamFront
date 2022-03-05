@@ -24,7 +24,8 @@ export class FlipingCardsObj{
         subHeading:"The foundation of CWB Sweden’s work",
         
         paragraf:[
-            "The work of Clowns without Borders is based on the 1989 UN Convention on the Rights of the Child."
+            "The work of Clowns without Borders is based on the 1989 UN Convention on the Rights of the Child.",
+            "Click on the cards!"
         ],
         cards:[{
                     frontQuestion: "CHILD",
@@ -70,7 +71,8 @@ export class FlipingCardsObj{
         headline:"ATT ARBETA MED BARN",
         subHeading:"Grunden för Clowner utan Gränsers verksamhet",
         paragraf:[
-            "Clowner utan Gränsers arbete bygger på FN:s konvention om barnets rättigheter från 1989."
+            "Clowner utan Gränsers arbete bygger på FN:s konvention om barnets rättigheter från 1989.",
+            " Klicka på korten!"
         ],
         cards:[{
             frontQuestion: "BARN",
@@ -117,7 +119,8 @@ export class FlipingCardsObj{
         headline:"العمل مع الأطفال",
         subHeading:"أساس عمل مهرجون بلا حدود - السويد",
         paragraf:[
-            "يستند عمل منظمة مهرجون بلا حدود إلى اتفاقية الأمم المتحدة لحقوق الطفل لعام 1989"
+            "يستند عمل منظمة مهرجون بلا حدود إلى اتفاقية الأمم المتحدة لحقوق الطفل لعام 1989",
+            "اضغط على البطاقات"
         ],
         cards:[{
             frontQuestion: "الطفل",
@@ -165,7 +168,7 @@ export class FlipingCardsObj{
             headline:"CODE OF CONDUCT",
             subHeading:"Principle 6: Prohibition of alcohol and drugs",
             sectionTextHtml:[
-                '<span style="font-weight:bold; letter-spacing: .1rem;"> Now we will take a look at a situation that could occur during your assignment with Clowns without Borders. </span> </br> Jonas and his colleagues have just completed three long days of performances and workshop. The last day on mission ends with a dinner for CWB representatives and representatives of a partner organisation. The dinner takes place at a restaurant. Jonas is wearing CWB costume/ T-shirt. A person from the local community offers Jonas a typical local liquor. Jonas declines the offer. Someone at the table remarks that according to local customs it is disrespectful to decline such an offer.</br></br></br> WHAT SHOULD JONAS DO?'
+                '<span style="font-weight:bold; letter-spacing: .1rem;"> Now we will take a look at a situation that could occur during your assignment with Clowns without Borders. </span> </br> Jonas and his colleagues have just completed three long days of performances and workshop. The last day on mission ends with a dinner for CWB representatives and representatives of a partner organisation. The dinner takes place at a restaurant. Jonas is wearing CWB costume/ T-shirt. A person from the local community offers Jonas a typical local liquor. Jonas declines the offer. Someone at the table remarks that according to local customs it is disrespectful to decline such an offer.</br></br></br> WHAT SHOULD JONAS DO? </br>Click on the right answer!'
             ],
             cards:[{
                 frontQuestion: "Decline and explain that as a CWB representative he cannot drink alcohol",
@@ -222,7 +225,7 @@ export class FlipingCardsObj{
                 headline:"UPPFÖRANDEKOD",
                 subHeading:"Princip 6: Förbud mot alkohol och droger",
                 sectionTextHtml:[
-                    '<span style="font-weight:bold; letter-spacing: .1rem;">Nu ska vi ta en titt på en situation som kan uppstå under ditt uppdrag med Clowner utan Gränser. </span> </br>  Jonas och hans kollegor har precis avslutat tre långa dagar med föreställningar och workshops. Sista arbetsdagen avslutas med en middag för CUG-representanter och representanter för en partnerorganisation. Middagen äger rum på en restaurang. Jonas har kläder med CUGs logga på sig. En person från lokalsamhället erbjuder Jonas att smaka en typisk lokal spritsort. Jonas tackar nej. Någon vid bordet påpekar att det enligt lokala seder är respektlöst att tacka nej till ett sådant erbjudande.</br></br> VAD SKA JONAS GÖRA?'
+                    '<span style="font-weight:bold; letter-spacing: .1rem;">Nu ska vi ta en titt på en situation som kan uppstå under ditt uppdrag med Clowner utan Gränser. </span> </br>  Jonas och hans kollegor har precis avslutat tre långa dagar med föreställningar och workshops. Sista arbetsdagen avslutas med en middag för CUG-representanter och representanter för en partnerorganisation. Middagen äger rum på en restaurang. Jonas har kläder med CUGs logga på sig. En person från lokalsamhället erbjuder Jonas att smaka en typisk lokal spritsort. Jonas tackar nej. Någon vid bordet påpekar att det enligt lokala seder är respektlöst att tacka nej till ett sådant erbjudande.</br></br> VAD SKA JONAS GÖRA? </br> Klicka på rätta svaret!'
                 ],
                 cards:[{
                     frontQuestion: "Avböja och förklara att han som CUG-representant inte kan dricka alkohol",
@@ -279,7 +282,7 @@ export class FlipingCardsObj{
                     headline:"مدونة قواعد السلوك",
                     subHeading:"المبدأ رقم 6: حظر الكحول والمخدرات",
                     sectionTextHtml:[
-                        'الآن سوف نلقي نظرة على موقف يمكن أن ينشأ أثناء عملك في مهمة مع منظمة مهرجون بلا حدود أكمل جوناس وزملاؤه ثلاثة أيام طويلة من العروض وورش العمل. وينتهي اليوم الأخير في المهمة بعشاء مع كل من موظفي مهرجون بلا حدود والمنظمة الشريكة. جوناس يرتدي زي/ قميص المنظمة وهو في المطعم. يقدم ممثل من المجتمع المحلي مشروبات كحولية محلية لجوناس. جوناس يرفض العرض. يقول شخص من الحضور أنه وفقًا للعادات المحلية، أن رفض مثل هذا العرض يعتبر عدم احترام. <br><br> ماذا يجب أن يفعل جوناس؟ '
+                        'الآن سوف نلقي نظرة على موقف يمكن أن ينشأ أثناء عملك في مهمة مع منظمة مهرجون بلا حدود أكمل جوناس وزملاؤه ثلاثة أيام طويلة من العروض وورش العمل. وينتهي اليوم الأخير في المهمة بعشاء مع كل من موظفي مهرجون بلا حدود والمنظمة الشريكة. جوناس يرتدي زي/ قميص المنظمة وهو في المطعم. يقدم ممثل من المجتمع المحلي مشروبات كحولية محلية لجوناس. جوناس يرفض العرض. يقول شخص من الحضور أنه وفقًا للعادات المحلية، أن رفض مثل هذا العرض يعتبر عدم احترام. <br><br> ماذا يجب أن يفعل جوناس؟ </br> اضغط على الإجابة الصحيحة!'
                     ],
                     cards:[{
                         frontQuestion: " أن يصر ويشرح أنه لا يستطيع الشرب أثناء العمل مع منظمة مهرجون بلا حدود",
@@ -337,7 +340,7 @@ export class FlipingCardsObj{
                 headline:"DOCUMENTATION OF CHILDREN",
                 subHeading:"An example of a potential situation",
                 sectionTextHtml:[
-                    'You are in charge of documenting and taking photos during a CWB tour. You take a beautiful photo of a 14-year-old boy with a big smile on his face. The photo is so expressive and positive. You want to write a blog post and publish the photo on your social media account. What do you do? '
+                    'You are in charge of documenting and taking photos during a CWB tour. You take a beautiful photo of a 14-year-old boy with a big smile on his face. The photo is so expressive and positive. You want to write a blog post and publish the photo on your social media account. What do you do? </br> Click on the right answer!'
                 ],
                 paragraf:[
                     ""
@@ -396,7 +399,7 @@ export class FlipingCardsObj{
                     headline:"DOKUMENTATION AV BARN",
                     subHeading:"Ett exempel på en potentiell situation",
                     sectionTextHtml:[
-                        'Du ansvarar för att dokumentera och ta bilder under en av Clowner utan Gränsers turnéer. Du tar ett fantastiskt foto av en 14-årig pojke med ett stort leende på läpparna. Bilden är så uttrycksfull och positiv. Du vill skriva ett blogginlägg och publicera bilden på dina sociala medier.</br> Vad gör du? '
+                        'Du ansvarar för att dokumentera och ta bilder under en av Clowner utan Gränsers turnéer. Du tar ett fantastiskt foto av en 14-årig pojke med ett stort leende på läpparna. Bilden är så uttrycksfull och positiv. Du vill skriva ett blogginlägg och publicera bilden på dina sociala medier.</br> Vad gör du? </br> Klicka på rätt svar!'
                     ],
                     paragraf:[
                         ""
@@ -455,7 +458,7 @@ export class FlipingCardsObj{
                         headline:"التوثيق للأطفال",
                         subHeading:"مثال على حالة محتملة",
                         sectionTextHtml:[
-                            ' أنت مسؤول عن التوثيق والتقاط الصور أثناء الجولة، تلتقط صورة جميلة جدًا لطفل يبلغ من العمر 14 عامًا بابتسامة جميلة على وجهه. الصورة معبرة وإيجابية للغاية. تريد كتابة مدونة ونشر الصورة على وسائل التواصل الاجتماعي الخاصة بك.<br> كيف ستتصرف؟'
+                            ' أنت مسؤول عن التوثيق والتقاط الصور أثناء الجولة، تلتقط صورة جميلة جدًا لطفل يبلغ من العمر 14 عامًا بابتسامة جميلة على وجهه. الصورة معبرة وإيجابية للغاية. تريد كتابة مدونة ونشر الصورة على وسائل التواصل الاجتماعي الخاصة بك.<br> كيف ستتصرف؟</br>اضغط على الإجابة الصحيحة!'
                         ],
                         paragraf:[
                             ""

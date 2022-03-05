@@ -15,8 +15,9 @@
         </h3>
         <p
             [class]="flipingCardsCopy?.chapter"
+            *ngFor="let paragraf of flipingCardsCopy.paragraf"
         >
-            {{flipingCardsCopy.paragraf}}
+            {{paragraf}}
         </p>
         <p
             *ngFor="let textHtml of flipingCardsCopy.sectionTextHtml"
