@@ -26,7 +26,6 @@ export class HomeUserComponent implements OnInit {
 
     this.state.examUser.subscribe((user)=>{
       this.examUser = user;
-      console.log(this.examUser);
     })
   }
 
