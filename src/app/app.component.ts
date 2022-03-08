@@ -5,6 +5,7 @@ import { LoginService } from './service/auth/login.service';
 import { BaseInfoService } from './service/base-info.service';
 import { ExamService } from './service/exam.service';
 import { StateService } from './service/state.service';
+import { environment } from './../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +18,6 @@ export class AppComponent implements OnInit{
 
   openMyPageBool:boolean = false;
 
-  // questionList:QuestionList = new QuestionList();
 
   constructor(private state:StateService, 
               private baseInfoService:BaseInfoService, 

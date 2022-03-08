@@ -6,14 +6,15 @@ import { HttpHeader } from 'src/app/model/header';
 import { StateService } from '../state.service';
 import { ExamUser } from 'src/app/model/examUser';
 import { Router } from '@angular/router';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginService {
 
-  private baseUrlAuth = "https://clown-exam.herokuapp.com/v1/auth" //"http://localhost:8081/v1/auth";
-  private baseUrlUser = "https://clown-exam.herokuapp.com/v1/user" //"http://localhost:8081/v1/user";
+  private baseUrlAuth = `${environment.hostURL}auth`
+  private baseUrlUser = `${environment.hostURL}user`
 
   constructor(private http:HttpClient,
               private state:StateService,

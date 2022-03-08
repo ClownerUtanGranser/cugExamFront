@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  hostURL: 'https://clown-exam.herokuapp.com',
+  hostURL: 'http://localhost:8081/v1/',
   envName: 'heroku'
 };
 

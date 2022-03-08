@@ -4,14 +4,15 @@ import { HttpHeader } from 'src/app/model/header';
 import { HttpClient } from '@angular/common/http';
 import { Question, QuestionList } from '../model/question';
 import { QuestionBackendModel } from '../model/questionsBackendModel';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ExamService {
 
-  private baseUrlAdmin = "https://clown-exam.herokuapp.com/v1/admin" //"http://localhost:8081/v1/admin";
-  private baseUrlUser:string = "https://clown-exam.herokuapp.com/v1/user" //"http://localhost:8081/v1/user";
+  private baseUrlAdmin = `${environment.hostURL}admin` 
+  private baseUrlUser:string = `${environment.hostURL}user` 
   private header:HttpHeader;
 
   constructor(private state:StateService,
