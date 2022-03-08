@@ -1,0 +1,36 @@
+<div class="user-detail-box">
+    <section class="user-detail">
+
+        <h2>Update an account </h2>
+        <form [formGroup]="registerForm" autocomplete="off" >
+            <div class="input text">
+                
+                <input id="name" name="name" type="text" formControlName="name" placeholder="Name" autocomplete="names-only">
+            </div>
+            <div class="input text">
+                
+                <input id="country" name="country" type="text" formControlName="country" placeholder="Country" >
+            </div>
+            <div class="input text">
+                
+                <input id="email" name="email" type="text" formControlName="email" placeholder="E-mail" autocomplete="email-only" >
+            </div>
+            <div class="input password">
+                
+                <input id="password" name="password" type="text" formControlName="password" placeholder="Password" autocomplete="new-password">
+            </div>
+            <div class="input password">
+                
+                <input id="repassword" name="repassword" type="text" formControlName="rePassword" placeholder="Confirm password" autocomplete="new-password">
+            </div>
+        </form>
+        <app-loader *ngIf="loading" ></app-loader>
+        <button (click)="upDateUser()" class="btn-sign-in">Update user</button>
+        <div class="forgot-password">
+              <div *ngIf="showError" class="red_ text">
+                  Email already exsist
+              </div>      
+        </div>
+    </section>   
+</div>
+

@@ -1,23 +1,44 @@
 <div class="container">
     
     <div class="sides">
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>email</th>
-                <th>Role</th>
-                <th>Exam passed</th>
-                <th>attempts</th>
-            </tr> 
-            <tr *ngFor="let user of users">
-                <td>{{ user.name }} </td>
-                <td>{{ user.email }}</td>
-                <td>{{ user.roles }}</td>
-                <td>{{ examsPassed(user.examsTaken) }}</td>
-                <td>{{ user.examsTaken.length }}</td>
-            </tr>
-        </table>
-        <app-cug-user-detail-admin>
-        </app-cug-user-detail-admin>
+        <div class="page-box left">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>email</th>
+                        <th>Country</th>
+                        <th>Role</th>
+                        <th>Exam passed</th>
+                        <th>attempts</th>
+                    </tr> 
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users" (click)="setUser(user)">
+                        <td>{{ user.name }} </td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.country }}</td>
+                        <td>{{ user.roles }}</td>
+                        <td>{{ examsPassed(user.examsTaken) }}</td>
+                        <td>{{ user.examsTaken.length }}</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <button
+                (click)="getExcel()"
+            >Dowload</button>
+        </div>
+        <div class="page-box right">
+            <app-cug-user-detail-admin
+            [examUser]="user"
+            >
+            </app-cug-user-detail-admin>
+        </div>
     </div>
 </div>

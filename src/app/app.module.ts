@@ -35,6 +35,7 @@ import { ExamOverviewComponent } from './exam/exam-overview/exam-overview.compon
 import { FlipingCardsComponent } from './course/fliping-cards/fliping-cards.component';
 import { CodeOfConductComponent } from './course/code-of-conduct/code-of-conduct.component';
 import { WellDoneComponent } from './course/well-done/well-done.component';
+import { CugUserDetailAdminComponent } from './pages/user/admin/cug-user-detail-admin/cug-user-detail-admin.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { WellDoneComponent } from './course/well-done/well-done.component';
     ExamOverviewComponent,
     FlipingCardsComponent,
     CodeOfConductComponent,
-    WellDoneComponent
+    WellDoneComponent,
+    CugUserDetailAdminComponent
   ],
   imports: [
     BrowserModule,
