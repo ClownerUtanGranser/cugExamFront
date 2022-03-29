@@ -237,11 +237,11 @@ export class DosAndDontsObj {
       dontsText : [
         "In some CWB projects we conduct long-term pedagogical sessions that create strong bonds between participants and CWB representatives. If you are going to be involved in this kind of work it is important that you know how to prepare safely. You also need to know what to do if you witness or hear of any kind of violations of children's rights.",
         "",
-        "Nedan följer några praktiska exempel på våld mot barn och risker för deras säkerhet som du kan stöta på när du arbetar med långsiktiga pedagogiska insatser:",
-        "– Du är workshopledare och ett barn berättar att hon/han har blivit utsatt för någon form av våld",
-        "– Barn är aggressiva/utåtagerande/bråkiga",
-        "– Barn mobbar och trakasserar varandra",
-        "– Du ser en volontär eller personal från en partnerorganisation bete sig olämpligt med barn och agera i strid med CUGs riktlinjer"
+        "Below are some practical examples of violence against children and risks to their safety that you could encounter while doing long-term pedagogical sessions:",
+        "– A child confides in you (as a facilitator in a workshop) that they have been exposed to some kind of violence",
+        "– Children are aggressive/act out/fight",
+        "– Children bully and harass one another",
+        "– You witness a volunteer or staff from a partner organisation behaving inappropriately with children and acting in violation of CWB policies"
       ] 
 
     } 
