@@ -505,7 +505,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       '',
       'This means that <span style="font-weight:bold; letter-spacing: .1rem;">  informed consent </span> must be obtained from the child in question and a legal guardian or other person responsible for the child on site. ',
       '',
-      'Please note that a minor <span style="font-weight:bold; letter-spacing: .1rem;">  cannot </span> give consent! '
+      'Please note that a minor <span style="font-weight:bold; letter-spacing: .1rem;">  cannot </span> give consent without their caregivers! '
     ],
 
     endTextHtml:[
