@@ -263,7 +263,7 @@ export class QuestionList{
             questionText: "9. Vilket av följande påståenden är korrekt?",
             lang:'SV',
             answres: [
-                "Regeln om två vuxna innebär att du alltid ska försöka inkludera en kollega när du umgås med barn så att ingen vuxen som representerar Clowner utan gränser någonsin är ensam med ett barn",
+                "Regeln om två vuxna innebär att du alltid ska försöka inkludera en kollega när du umgås med barn så att ingen vuxen som representerar Clowner utan Gränser någonsin är ensam med ett barn",
                 "Regeln om två vuxna innebär att det kan vara högst två vuxna som arbetar med en grupp barn",
                 "Regeln om två vuxna betyder att det är mycket roligare när två vuxna uppträder tillsammans"
             ],
@@ -299,9 +299,9 @@ export class QuestionList{
             questionText: "12. Vilket av följande påståenden är korrekt?",
             lang:'SV',
             answres: [
-                "A. Om barnfamiljer som är involverade i Clowner utan gränsers aktiviteter vill visa sin uppskattning i form av en gåva, kan du ta emot den om värdet är symboliskt",
-                "B. Om barnfamiljer som är involverade i Clowner utan gränsers aktiviteter vill visa sin uppskattning i form av en gåva, kan du ta emot den oavsett värdet",
-                "C. Om barnfamiljer som är involverade i Clowner utan gränsers aktiviteter vill visa sin uppskattning i form av en gåva, bör du aldrig ta emot den"
+                "A. Om barnfamiljer som är involverade i Clowner utan Gränsers aktiviteter vill visa sin uppskattning i form av en gåva, kan du ta emot den om värdet är symboliskt",
+                "B. Om barnfamiljer som är involverade i Clowner utan Gränsers aktiviteter vill visa sin uppskattning i form av en gåva, kan du ta emot den oavsett värdet",
+                "C. Om barnfamiljer som är involverade i Clowner utan Gränsers aktiviteter vill visa sin uppskattning i form av en gåva, bör du aldrig ta emot den"
             ],
             selectedAnswre:undefined
         }

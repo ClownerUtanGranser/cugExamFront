@@ -7,8 +7,8 @@ export class LandingPage{
             country:"SVERIGE",
             online: "Digital utbildning – policies  & riktlinjer",
             Whom:"För artister och andra representanter för Clowner utan Gränser",
-            exam:'EXAM',
-            courseMaterial:'kursmaterial'
+            exam:'SLUTPROV',
+            courseMaterial:'KURS- MATERIAL'
         }
     }
 
@@ -20,7 +20,7 @@ export class LandingPage{
             online: "Online training – policies & guidelines",
             Whom:"For artists and other representatives of Clowns without Borders",
             exam:'EXAM',
-            courseMaterial:'Course material'
+            courseMaterial:'COURSE MATERIAL'
         }
     }
 

@@ -22,7 +22,7 @@ export class DoubleCugObj{
             direction:'L',
             text:[
                 "The course will take 45 minutes to 1 hour. You can retake the course as many times as you want. When you feel ready, you can take the final test. ",
-                "As a part of our quality assurance efforts, the course is mandatory for everyone representing CWB Sweden."
+                "As a part of our quality assurance efforts, the course is mandatory for everyone representing Clowns Without Borders Sweden."
             ]},
         {
 
@@ -31,7 +31,7 @@ export class DoubleCugObj{
             text:[
             "The purpose of this training is to provide guidance on how to act as a representative of our organisation.",
             "Specifically, we will focus on how to protect children during our work and how to recognise and respond to any risk of harm of children. ",
-            "The first part of the training contains information about CWB policies, guidelines and values. The second part is a test to make sure that you have understood the information."
+            "The first part of the training contains information about Clowns Without Borders policies, guidelines and values. The second part is a test to make sure that you have understood the information."
             ]}
         ]
 
@@ -56,7 +56,7 @@ export class DoubleCugObj{
             text:[
                 "Syftet med utbildningen är att ge vägledning i hur man är en bra representant för Clowner utan Gränser.",
                 "Vi kommer att fokusera på hur vi skyddar barn i vårt arbete och hur vi känner igen och reagerar på risker för att barn skadas.",
-                "Den första delen av utbildningen innehåller information om CUGs policies, riktlinjer och värderingar. Den andra delen är ett test för att säkerställa att du har förstått informationen."
+                "Den första delen av utbildningen innehåller information om Clowner utan Gränsers policies, riktlinjer och värderingar. Den andra delen är ett test för att säkerställa att du har förstått informationen."
             ]}
         ]
 
@@ -91,7 +91,7 @@ export class DoubleCugObj{
 
         headline: "WORKING WITH CHILDREN",
         subHeadline: "Scenario 1: Safety guidelines for large crowds",
-        ingressHtml:'<p> The guidelines below have been developed as part of CWB’s long-term work in difficult settings. These are examples, more can be found in the in the <span style="font-weight:bold; letter-spacing: .1rem;"> Artist handbook </span> and <span style="font-weight:bold; letter-spacing: .1rem;"> Security protocol. </span> If you are involved in performances, please ensure you read these resources in full. </p>',
+        ingressHtml:'<p> The guidelines below have been developed as part of Clowns Without Borders’s long-term work in difficult settings. These are examples, more can be found in the in the <span style="font-weight:bold; letter-spacing: .1rem;"> Artist handbook </span> and <span style="font-weight:bold; letter-spacing: .1rem;"> Security protocol. </span> If you are involved in performances, please ensure you read these resources in full. </p>',
         paragraph:[
             {
                 direction:'L',
@@ -111,13 +111,13 @@ export class DoubleCugObj{
             {
                 text:[],
                 direction:'L',
-                textHtml: '<span style="font-weight:bold; letter-spacing: .1rem;"> Inform partner organisation </span> staff before the performance about their role as crowd control, their responsibility to not use violence and how CWB operates.'
+                textHtml: '<span style="font-weight:bold; letter-spacing: .1rem;"> Inform partner organisation </span> staff before the performance about their role as crowd control, their responsibility to not use violence and how Clowns Without Borders operates.'
                 
             },
             {
                 text: [],
                 direction:'L',
-                textHtml: '<span style="font-weight:bold; letter-spacing: .1rem;"> Make sure you follow the instructions for safe seating of audience </span> (as found in the Artist handbook) Inform partner organisation staff before the performance about their role as crowd control, their responsibility to not use violence and how CWB operates.'
+                textHtml: '<span style="font-weight:bold; letter-spacing: .1rem;"> Make sure you follow the instructions for safe seating of audience </span> (as found in the Artist handbook) Inform partner organisation staff before the performance about their role as crowd control, their responsibility to not use violence and how Clowns Without Borders operates.'
                 
             },
             {
@@ -367,13 +367,13 @@ export class DoubleCugObj{
             },
             {
                 text:[],
-                textHtml: 'Unfortunately, in some of the countries where CWB works, violence against children is common. Thus it is important to be clear with partners – especially with those involved in crowd management – what you need support with and how. It is also important to explain beforehand that violence, such as hitting children, is not allowed during the event. ',
+                textHtml: 'Unfortunately, in some of the countries where Clowns Without Borders works, violence against children is common. Thus it is important to be clear with partners – especially with those involved in crowd management – what you need support with and how. It is also important to explain beforehand that violence, such as hitting children, is not allowed during the event. ',
    
             },
             {
                text:[],
                direction:'L',
-               textHtml: 'In most cases, the CWB Project Manager signs a contract with partners, which includes our Child Protection policy. The Project Manager informs local partners that violence against children is not accepted. Your point of contact at CWB is available to support you throughout the project period. '
+               textHtml: 'In most cases, the Clowns Without Borders Project Manager signs a contract with partners, which includes our Child Protection policy. The Project Manager informs local partners that violence against children is not accepted. Your point of contact at Clowns Without Borders is available to support you throughout the project period. '
    
             }
         ]
@@ -392,13 +392,13 @@ export class DoubleCugObj{
             },
             {
                 text:[],
-                textHtml: 'Tyvärr är våld mot barn vanligt i vissa av de länder där CUG arbetar. Därför är det viktigt att vara tydlig med partners – särskilt med dem som är involverade i publikhantering– vad du behöver stöd med och hur. Det är också viktigt att på förhand förklara att våld, exempelvis att slå barn, inte är tillåtet under CUGs aktiviteter.',
+                textHtml: 'Tyvärr är våld mot barn vanligt i vissa av de länder där Clowner utan Gränser arbetar. Därför är det viktigt att vara tydlig med partners – särskilt med dem som är involverade i publikhantering– vad du behöver stöd med och hur. Det är också viktigt att på förhand förklara att våld, exempelvis att slå barn, inte är tillåtet under Clowner utan Gränsers aktiviteter.',
    
             },
             {
                text:[],
                direction:'L',
-               textHtml: 'I de flesta fall undertecknar projektledaren ett kontrakt med partners, som inkluderar vår barnskyddspolicy. Projektledaren informerar partners om att våld mot barn inte är accepterat. Din kontaktperson på CUG finns tillhands för att stödja dig under hela projektperioden.'
+               textHtml: 'I de flesta fall undertecknar projektledaren ett kontrakt med partners, som inkluderar vår barnskyddspolicy. Projektledaren informerar partners om att våld mot barn inte är accepterat. Din kontaktperson på Clowner utan Gränser finns tillhands för att stödja dig under hela projektperioden.'
             }
         ]
    

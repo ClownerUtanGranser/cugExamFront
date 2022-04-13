@@ -21,7 +21,7 @@ export class FlipingCardsObj{
     workingWithChildrenTheFoundationOfCwbEng:FlipingCards = {
 
         headline:"WORKING WITH CHILDREN",
-        subHeading:"The foundation of CWB Sweden’s work",
+        subHeading:"The foundation of Clowns Without Borders Sweden’s work",
         
         paragraf:[
             "The work of Clowns without Borders is based on the 1989 UN Convention on the Rights of the Child.",
@@ -168,17 +168,17 @@ export class FlipingCardsObj{
             headline:"CODE OF CONDUCT",
             subHeading:"Principle 6: Prohibition of alcohol and drugs",
             sectionTextHtml:[
-                '<span style="font-weight:bold; letter-spacing: .1rem;"> Now we will take a look at a situation that could occur during your assignment with Clowns without Borders. </span> </br> Jonas and his colleagues have just completed three long days of performances and workshop. The last day on mission ends with a dinner for CWB representatives and representatives of a partner organisation. The dinner takes place at a restaurant. Jonas is wearing CWB costume/ T-shirt. A person from the local community offers Jonas a typical local liquor. Jonas declines the offer. Someone at the table remarks that according to local customs it is disrespectful to decline such an offer.</br></br></br> WHAT SHOULD JONAS DO? </br>Click on the right answer!'
+                '<span style="font-weight:bold; letter-spacing: .1rem;"> Now we will take a look at a situation that could occur during your assignment with Clowns without Borders. </span> </br> Jonas and his colleagues have just completed three long days of performances and workshop. The last day on mission ends with a dinner for Clowns Without Borders representatives and representatives of a partner organisation. The dinner takes place at a restaurant. Jonas is wearing Clowns Without Borders costume/ T-shirt. A person from the local community offers Jonas a typical local liquor. Jonas declines the offer. Someone at the table remarks that according to local customs it is disrespectful to decline such an offer.</br></br></br> WHAT SHOULD JONAS DO? </br>Click on the right answer!'
             ],
             cards:[{
-                frontQuestion: "Decline and explain that as a CWB representative he cannot drink alcohol",
+                frontQuestion: "Decline and explain that as a Clowns Without Borders representative he cannot drink alcohol",
                 cardSize:'XL',
                 turned:false,
                 correct:'correct',
                 backexplenation:[
                     " Correct ",
                     '',
-                    "It is never allowed to consume alcohol or illegal substances, or to be hungover during activities that involve Clowns without Borders’ target group, and/or when wearing clothes displaying the CWB logo in public settings. To avoid difficult situations it is important to explain that you are not allowed to consume alcohol or illegal substances. "
+                    "It is never allowed to consume alcohol or illegal substances, or to be hungover during activities that involve Clowns without Borders’ target group, and/or when wearing clothes displaying the Clowns Without Borders logo in public settings. To avoid difficult situations it is important to explain that you are not allowed to consume alcohol or illegal substances. "
                 ],
                 empWord:[
                     "Correct"
@@ -192,7 +192,7 @@ export class FlipingCardsObj{
                     backexplenation:[
                         "Wrong",
                         '',
-                        "Alcohol or illegal substances must never be consumed when wearing clothes displaying the CWB logo in public contexts. "
+                        "Alcohol or illegal substances must never be consumed when wearing clothes displaying the Clowns Without Borders logo in public contexts. "
                     ],
                     empWord:[
                         ""
@@ -207,7 +207,7 @@ export class FlipingCardsObj{
                     backexplenation:[
                         'Wrong',
                         '',
-                        "Alcohol or illegal substances must never be consumed when wearing clothes displaying the CWB logo in public contexts. "
+                        "Alcohol or illegal substances must never be consumed when wearing clothes displaying the Clowns Without Borders logo in public contexts. "
                     ],
                     empWord:[
                         "Wrong"
@@ -340,7 +340,7 @@ export class FlipingCardsObj{
                 headline:"DOCUMENTATION OF CHILDREN",
                 subHeading:"An example of a potential situation",
                 sectionTextHtml:[
-                    'You are in charge of documenting and taking photos during a CWB tour. You take a beautiful photo of a 14-year-old boy with a big smile on his face. The photo is so expressive and positive. You want to write a blog post and publish the photo on your social media account. What do you do? </br> Click on the right answer!'
+                    'You are in charge of documenting and taking photos during a Clowns Without Borders tour. You take a beautiful photo of a 14-year-old boy with a big smile on his face. The photo is so expressive and positive. You want to write a blog post and publish the photo on your social media account. What do you do? </br> Click on the right answer!'
                 ],
                 paragraf:[
                     ""

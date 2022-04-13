@@ -27,7 +27,7 @@ export class DosAndDontsObj {
         dontHeadline:'DON’Ts',
         donts:[
           "Spend long periods alone with a child",
-          "Be under the influence of alcohol or drugs during your assignment with CWB",
+          "Be under the influence of alcohol or drugs during your assignment with Clowns Without Borders",
           "Behave in a way that is offensive to children",
           "Use offensive or hateful language against children or around children",
           "Favour a child by giving gifts or promises",
@@ -95,9 +95,9 @@ export class DosAndDontsObj {
           "PREVENTION: ",
           "Working preventively is the foundation of our child protection work. By implementing clear guidelines we make sure to always provide a safe environment for children in our activities. ",
           "",
-          "CWB PREVENTIVE measures are:",
+          "Clowns Without Borders PREVENTIVE measures are:",
           " ",
-          "- Quality control of all CWB representatives working with children",
+          "- Quality control of all Clowns Without Borders representatives working with children",
           "- Policies and guidelines to protect children",
           "- Risk analysis of activities/projects",
           "- Guidelines for how to plan safe activities",
@@ -109,9 +109,9 @@ export class DosAndDontsObj {
           "REACTION",
           "By implementing clear reporting mechanisms we ensure that any suspicion of crime or violation against children is taken seriously and is acted upon.",
           " ",
-          "CWB REACTIVE measures are:",
+          "Clowns Without Borders REACTIVE measures are:",
           " ",
-          "- All representatives of CWB Sweden must know how to act in case of a suspected crime, violation or other action that risk children’s safety",
+          "- All representatives of Clowns Without Borders Sweden must know how to act in case of a suspected crime, violation or other action that risk children’s safety",
           "- An Action Plan is implemented in case of suspected crime or violation",
           "- We have a whistle blower policy for anonymous reporting of irregularities",
           "- A whistle blower policy is in place in order to ensure anonymous reporting of irregularities",
@@ -130,7 +130,7 @@ export class DosAndDontsObj {
           "",
           "Våra FÖREBYGGANDE åtgärder:",
           " ",
-          "- Kvalitetskontroll av alla CUG-representanter som arbetar med barn",
+          "- Kvalitetskontroll av alla Clowner utan Gränsers representanter som arbetar med barn",
           "- Policies och riktlinjer för att skydda barn",
           "- Riskanalys av aktiviteter/projekt",
           "- Riktlinjer för planering av säkra aktiviteter",
@@ -145,7 +145,7 @@ export class DosAndDontsObj {
           " ",
           "Våra AGERANDE åtgärder:",
           " ",
-          "- Alla företrädare för CUG ska veta hur de ska agera vid misstänkt brott, kränkning eller annan incident som riskerar barns säkerhet",
+          "- Alla företrädare för Clowner utan Gränser ska veta hur de ska agera vid misstänkt brott, kränkning eller annan incident som riskerar barns säkerhet",
           "- En handlingsplan implementeras vid misstänkt brott eller kränkning",
           "- En visselblåsarpolicy säkerställer anonym rapportering av misstänkta oegentligheter",
           "- Läs mer i Handlingsplan och Visselblåsarpolicy"
@@ -190,10 +190,10 @@ export class DosAndDontsObj {
       dosText : [
         'In the example we just looked at, Marwa’s only option is to avoid further escalation that can harm children.',
         '',
-        'Unfortunately, in some of the countries where CWB works, violence against children is common. Thus it is important to be clear with partners – especially with those involved in crowd management – what you need support with and how. It is also important to explain beforehand that violence, such as hitting children, is not allowed during the event. '
+        'Unfortunately, in some of the countries where Clowns Without Borders works, violence against children is common. Thus it is important to be clear with partners – especially with those involved in crowd management – what you need support with and how. It is also important to explain beforehand that violence, such as hitting children, is not allowed during the event. '
       ],
       dontsText : [
-        'In most cases, the CWB Project Manager signs a contract with partners, which includes our Child Protection policy. The Project Manager informs local partners that violence against children is not accepted. Your point of contact at CWB is available to support you throughout the project period. '
+        'In most cases, the Clowns Without Borders Project Manager signs a contract with partners, which includes our Child Protection policy. The Project Manager informs local partners that violence against children is not accepted. Your point of contact at Clowns Without Borders is available to support you throughout the project period. '
       ] 
 
     } 
@@ -205,10 +205,10 @@ export class DosAndDontsObj {
       dosText : [
         'I exemplet vi just tittade på är Marwas enda alternativ att undvika ytterligare eskalering av situationen och därmed risk för att barn ska skadas.',
         '',
-        'Tyvärr är våld mot barn vanligt i vissa av de länder där CUG arbetar. Därför är det viktigt att vara tydlig med partners – särskilt med dem som är involverade i publikhantering– vad du behöver stöd med och hur. Det är också viktigt att på förhand förklara att våld, exempelvis att slå barn, inte är tillåtet under CUGs aktiviteter.'
+        'Tyvärr är våld mot barn vanligt i vissa av de länder där Clowner utan Gränser arbetar. Därför är det viktigt att vara tydlig med partners – särskilt med dem som är involverade i publikhantering– vad du behöver stöd med och hur. Det är också viktigt att på förhand förklara att våld, exempelvis att slå barn, inte är tillåtet under Clowner utan Gränsers aktiviteter.'
       ],
       dontsText : [
-        'I de flesta fall undertecknar projektledaren ett kontrakt med partners, som inkluderar vår barnskyddspolicy. Projektledaren informerar partners om att våld mot barn inte är accepterat. Din kontaktperson på CUG finns tillhands för att stödja dig under hela projektperioden.'
+        'I de flesta fall undertecknar projektledaren ett kontrakt med partners, som inkluderar vår barnskyddspolicy. Projektledaren informerar partners om att våld mot barn inte är accepterat. Din kontaktperson på Clowner utan Gränser finns tillhands för att stödja dig under hela projektperioden.'
       ] 
 
     } 
@@ -235,13 +235,13 @@ export class DosAndDontsObj {
       dontHeadline: 'Scenario 2: Long-term work with children',
       dosText : [],
       dontsText : [
-        "In some CWB projects we conduct long-term pedagogical sessions that create strong bonds between participants and CWB representatives. If you are going to be involved in this kind of work it is important that you know how to prepare safely. You also need to know what to do if you witness or hear of any kind of violations of children's rights.",
+        "In some Clowns Without Borders projects we conduct long-term pedagogical sessions that create strong bonds between participants and Clowns Without Borders representatives. If you are going to be involved in this kind of work it is important that you know how to prepare safely. You also need to know what to do if you witness or hear of any kind of violations of children's rights.",
         "",
         "Below are some practical examples of violence against children and risks to their safety that you could encounter while doing long-term pedagogical sessions:",
         "– A child confides in you (as a facilitator in a workshop) that they have been exposed to some kind of violence",
         "– Children are aggressive/act out/fight",
         "– Children bully and harass one another",
-        "– You witness a volunteer or staff from a partner organisation behaving inappropriately with children and acting in violation of CWB policies"
+        "– You witness a volunteer or staff from a partner organisation behaving inappropriately with children and acting in violation of Clowns Without Borders policies"
       ] 
 
     } 
@@ -253,12 +253,12 @@ export class DosAndDontsObj {
       dontHeadline: 'Scenario 2: Långsiktigt arbete med barn',
       dosText : [ ],
       dontsText : [
-        'I vissa projekt arbetar vi med långsiktiga pedagogiska insatser som skapar starka band mellan deltagare och CUG-representanter. Om du ska arbeta med den typen av insatser är det viktigt att du vet hur du ska förbereda dig på ett säkert sätt. Du måste också veta vad du ska göra om du bevittnar eller hör talas om någon form av kränkningar mot barn och deras rättigheter.',
+        'I vissa projekt arbetar vi med långsiktiga pedagogiska insatser som skapar starka band mellan deltagare och Clowner utan Gränsers representanter. Om du ska arbeta med den typen av insatser är det viktigt att du vet hur du ska förbereda dig på ett säkert sätt. Du måste också veta vad du ska göra om du bevittnar eller hör talas om någon form av kränkningar mot barn och deras rättigheter.',
         "Nedan följer några praktiska exempel på våld mot barn och risker för deras säkerhet som du kan stöta på när du arbetar med långsiktiga pedagogiska insatser:",
         "– Du är workshopledare och ett barn berättar att hon/han har blivit utsatt för någon form av våld",
         "– Barn är aggressiva/utåtagerande/bråkiga",
         "– Barn mobbar och trakasserar varandra",
-        "– Du ser en volontär eller personal från en partnerorganisation bete sig olämpligt med barn och agera i strid med CUGs riktlinjer"
+        "– Du ser en volontär eller personal från en partnerorganisation bete sig olämpligt med barn och agera i strid med Clowner utan Gränsers riktlinjer"
       ] 
 
     } 
@@ -287,9 +287,9 @@ export class DosAndDontsObj {
       headline: 'WHISTLEBLOWER POLICY', 
       headlineText: 'It is crucial that everyone involved in Clowns without Borders abide by the same rules and conduct themselves according to the same standards, no matter their position or where they work. Hence we have a whistle-blower policy in place.',
       dosText:[
-        'If you become aware of somebody in the organisation acting in a way that contradicts CWB policies, statutes or regulations you should immediately reach out to your nearest point of contact. If you do not wish to reach out to your closest point of contact, you can contact the Secretary-General or a member of the Board of directors.',
+        'If you become aware of somebody in the organisation acting in a way that contradicts Clowns Without Borders policies, statutes or regulations you should immediately reach out to your nearest point of contact. If you do not wish to reach out to your closest point of contact, you can contact the Secretary-General or a member of the Board of directors.',
         '',
-        'Reporting is anonymous. CWB guarantees the anonymity of anyone reporting irregularities.'
+        'Reporting is anonymous. Clowns Without Borders guarantees the anonymity of anyone reporting irregularities.'
       ],
       dontHeadline:'Irregularities can be:',
       dontsText: [
@@ -299,7 +299,7 @@ export class DosAndDontsObj {
         '',
         '- mismanagement of an assignment or a position',
         '',
-        '- actions or behaviour that go against CWB’s statutes or policies'
+        '- actions or behaviour that go against Clowns Without Borders’s statutes or policies'
       ]
     }
 
@@ -307,9 +307,9 @@ export class DosAndDontsObj {
       headline: 'VISSELBLÅSARPOLICY', 
       headlineText: 'Det är av yttersta vikt att alla som är engagerade i Clowner utan Gränser följer samma regler och riktlinjer, oavsett befattning eller var de arbetar. Därför har vi en visselblåsarpolicy.',
       dosText:[
-        'Om du får reda på att någon i organisationen agerar på ett sätt som strider mot CUGs policies, stadgar eller föreskrifter bör du omedelbart berätta det för din närmaste kontaktperson. Om du inte vill meddela din närmaste kontaktperson kan du kontakta generalsekreteraren eller en styrelseledamot.',
+        'Om du får reda på att någon i organisationen agerar på ett sätt som strider mot Clowner utan Gränsers policies, stadgar eller föreskrifter bör du omedelbart berätta det för din närmaste kontaktperson. Om du inte vill meddela din närmaste kontaktperson kan du kontakta generalsekreteraren eller en styrelseledamot.',
         '',
-        'Rapporteringen är anonym. CUG garanterar att alla som rapporterar oegentligheter förblir anonyma. '
+        'Rapporteringen är anonym. Clowner utan Gränser garanterar att alla som rapporterar oegentligheter förblir anonyma. '
       ],
       dontHeadline:'Oegentligheter kan vara:',
       dontsText: [
@@ -319,7 +319,7 @@ export class DosAndDontsObj {
         '',
         '– misskötsel av ett uppdrag eller en befattning',
         '',
-        '– handlingar eller beteende som strider mot CUGs stadgar eller policies'
+        '– handlingar eller beteende som strider mot Clowner utan Gränsers stadgar eller policies'
       ]
     }
 

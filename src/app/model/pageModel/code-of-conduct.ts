@@ -25,7 +25,7 @@ export class CodeOfConductObj{
             {
                 paragrafHeadline:'2. Adhere to the values of Clowns without Borders',
                 paragrafHtml:[
-                    'Clowns without Borders is a non-partisan organisation, which does not prevent you from being affiliated with other idea-driven organisations in addition to your involvement with Clowns without Borders. However, as a representative of CWB, you cannot be involved in organisations or contexts that directly oppose the values of Clowns without Borders. '
+                    'Clowns without Borders is a non-partisan organisation, which does not prevent you from being affiliated with other idea-driven organisations in addition to your involvement with Clowns without Borders. However, as a representative of Clowns Without Borders, you cannot be involved in organisations or contexts that directly oppose the values of Clowns without Borders. '
                 ],
                 checkboxText:'I declare that I have read and understood the principle above'
             }
@@ -38,7 +38,7 @@ export class CodeOfConductObj{
             {
                 paragrafHeadline:'1. Behandla alla med respekt och värdighet',
                 paragrafHtml:[
-                    'Clowner utan Gränser har nolltolerans mot alla former av diskriminering och trakasserier. Som CUG-representant ska du alltid behandla alla människor med respekt och inte särbehandla eller diskriminera någon person eller grupp på grund av kön, etniskt ursprung eller nationalitet, religion eller annan trosuppfattning, sexuell läggning, transidentitet och uttryck, funktionsvariation, ålder, politisk åsikt eller social ställning.',
+                    'Clowner utan Gränser har nolltolerans mot alla former av diskriminering och trakasserier. Som representant för Clowner utan Gränser ska du alltid behandla alla människor med respekt och inte särbehandla eller diskriminera någon person eller grupp på grund av kön, etniskt ursprung eller nationalitet, religion eller annan trosuppfattning, sexuell läggning, transidentitet och uttryck, funktionsvariation, ålder, politisk åsikt eller social ställning.',
                     ''
                 ],
                 checkboxText:'Jag har läst och förstått principen ovan'
@@ -46,7 +46,7 @@ export class CodeOfConductObj{
             {
                 paragrafHeadline:'2. Stå upp för Clowner utan Gränsers värderingar',
                 paragrafHtml:[
-                    'Clowner utan Gränser är en partipolitiskt obunden organisation, vilket inte hindrar dig som är engagerad i CUG från att också vara kopplad till andra idéburna organisationer. Däremot kan du som representant för Clowner utan Gränser inte vara aktiv i organisationer eller sammanhang som direkt motarbetar våra värderingar.'
+                    'Clowner utan Gränser är en partipolitiskt obunden organisation, vilket inte hindrar dig som är engagerad i organisationen från att också vara kopplad till andra idéburna organisationer. Däremot kan du som representant för Clowner utan Gränser inte vara aktiv i organisationer eller sammanhang som direkt motarbetar våra värderingar.'
                 ],
                 checkboxText:'Jag har läst och förstått principen ovan'
             }
@@ -152,7 +152,7 @@ export class CodeOfConductObj{
             {
                 paragrafHeadline:'6. No use of alcohol or drugs at work',
                 paragrafHtml:[
-                    'When on assignment with Clowns without Borders, employees and volunteers shall always act as good role models and keep in mind that they represent CWB in the eyes of both the target group and partners. Consuming alcohol or illegal substances, being under the influence of alcohol or drugs, or to be hungover, is never allowed during any activity that involves our target groups. Employees and volunteers must keep in mind that they can encounter members of the target group/s also outside of organised activities and therefore, they must act as good role models throughout the assignment. Alcohol or illegal substances are never to be consumed when wearing clothes displaying the CWB logo in public contexts. Clowns without Borders never pays for alcohol. This also applies to situations of representation.'
+                    'When on assignment with Clowns without Borders, employees and volunteers shall always act as good role models and keep in mind that they represent Clowns Without Borders in the eyes of both the target group and partners. Consuming alcohol or illegal substances, being under the influence of alcohol or drugs, or to be hungover, is never allowed during any activity that involves our target groups. Employees and volunteers must keep in mind that they can encounter members of the target group/s also outside of organised activities and therefore, they must act as good role models throughout the assignment. Alcohol or illegal substances are never to be consumed when wearing clothes displaying the Clowns Without Borders logo in public contexts. Clowns without Borders never pays for alcohol. This also applies to situations of representation.'
                 ],
                 checkboxText:'I declare that I have read and understood the principle above'
             }
@@ -174,7 +174,7 @@ export class CodeOfConductObj{
             {
                 paragrafHeadline:'6. Inget nyttjande av alkohol eller droger',
                 paragrafHtml:[
-                    "Clowner utan Gränsers anställda och volontärer ska under uppdrag för organisationen alltid agera som goda förebilder och ta i beaktande att de är CUGs representanter gentemot både målgrupp och samarbetspartners. Det är därför aldrig tillåtet att konsumera alkohol eller droger, att vara påverkad eller bakfull i samband med aktiviteter som involverar Clowner utan Gränsers målgrupp. Anställda och volontärer ska ha i åtanke att de kan möta målgruppen även utanför aktiviteterna och ska även då vara goda förebilder. Alkohol/droger får därför aldrig konsumeras när man i offentliga sammanhang bär organisationens logga. Clowner utan Gränser bekostar aldrig alkohol, detta gäller även vid representation."
+                    "Clowner utan Gränsers anställda och volontärer ska under uppdrag för organisationen alltid agera som goda förebilder och ta i beaktande att de är Clowner utan Gränsers representanter gentemot både målgrupp och samarbetspartners. Det är därför aldrig tillåtet att konsumera alkohol eller droger, att vara påverkad eller bakfull i samband med aktiviteter som involverar Clowner utan Gränsers målgrupp. Anställda och volontärer ska ha i åtanke att de kan möta målgruppen även utanför aktiviteterna och ska även då vara goda förebilder. Alkohol/droger får därför aldrig konsumeras när man i offentliga sammanhang bär organisationens logga. Clowner utan Gränser bekostar aldrig alkohol, detta gäller även vid representation."
                 ],
                 checkboxText:'Jag har läst och förstått principen ovan'
             }
@@ -230,7 +230,7 @@ export class CodeOfConductObj{
             {
                 paragrafHeadline:'7. Hantera kommunikation och information',
                 paragrafHtml:[
-                    'På uppdrag för Clowner utan Gränser kan du komma i kontakt med känslig information om enskilda personer eller situationer. CUGs förhållningssätt är att alltid värna om integritet och säkerhet och inte lämna ut information som kan vara känslig. Du har som privatperson rätt att fritt uttrycka dina åsikter i olika frågor, men du får inte uttala dig i media eller i officiella sammanhang som representant för Clowner utan Gränser i frågor som ligger utanför ditt ansvarsområde. Detta för att säkerställa att rätt information förmedlas och för att inte riskera enskilda individers, gruppers eller organisationens säkerhet eller relationer. I frågor som rör Clowner utan Gränsers övergripande verksamhet ska du kontakta kommunikationsansvarig på kansliet som bedömer vem som ska uttala sig. Clowner utan Gränsers generalsekreterare är officiell talesperson för organisationen och avgör ytterst vem som ska representera CUG i olika frågor.',
+                    'På uppdrag för Clowner utan Gränser kan du komma i kontakt med känslig information om enskilda personer eller situationer. Clowner utan Gränsers förhållningssätt är att alltid värna om integritet och säkerhet och inte lämna ut information som kan vara känslig. Du har som privatperson rätt att fritt uttrycka dina åsikter i olika frågor, men du får inte uttala dig i media eller i officiella sammanhang som representant för Clowner utan Gränser i frågor som ligger utanför ditt ansvarsområde. Detta för att säkerställa att rätt information förmedlas och för att inte riskera enskilda individers, gruppers eller organisationens säkerhet eller relationer. I frågor som rör Clowner utan Gränsers övergripande verksamhet ska du kontakta kommunikationsansvarig på kansliet som bedömer vem som ska uttala sig. Clowner utan Gränsers generalsekreterare är officiell talesperson för organisationen och avgör ytterst vem som ska representera Clowner utan Gränser i olika frågor.',
                     ''
                 ],
                 checkboxText:'Jag har läst och förstått principen ovan'

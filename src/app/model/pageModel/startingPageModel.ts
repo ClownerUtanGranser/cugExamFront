@@ -14,7 +14,7 @@ export class StartingPage{
             headline : "Digital utbildning",
             secondHedline: "policies & riktlinjer",
             texts: [
-                'För artister och andra representanter för Clowner utan Gränser'
+                'För artister och andra representanter för Clowner utan Gränser Sverige'
             ],
             buttonText:'Starta'
           }
@@ -26,7 +26,7 @@ export class StartingPage{
             headline : "Online training",
             secondHedline: "policies & guidelines",
             texts: [
-                'For artists and other representatives of Clowns without Borders'
+                'For artists and other representatives of Clowns without Borders Sweden'
 
             ],
             buttonText:'Start'
@@ -39,9 +39,9 @@ export class StartingPage{
             headline : 'تدريب عبر الإنترنت',
             secondHedline: "سياسات وإرشادات",
             texts: [
-                'للفنانين والممثلين الآخرين الذين يعملون مع مهرجون بلا حدود'
+                'للفنانين والممثلين الآخرين الذين يعملون مع  مهرجون بلا حدود السويد'
             ],
-            buttonText:'يبدأ'
+            buttonText:'البدء'
           }
     }
 

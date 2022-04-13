@@ -23,10 +23,10 @@ export class PhotoTextObj {
         sectionText:[
           "As you have seen in the video, Clowns without Borders is a children’s rights organisation dedicated to sharing emotional relief, laughter and play with children and communities in crisis around the world.",
           "Protecting children is an integral part of our mission and the best interest of the child always come first. Because we work with vulnerable communities, it is key that our activities never cause harm.",
-          "Hence we have developed this training for anyone acting as a representative of CWB Sweden. Upon completing the training you will have learned:"
+          "Hence we have developed this training for anyone acting as a representative of Clowns Without Borders Sweden. Upon completing the training you will have learned:"
         ],
         points:[
-          "- How to act as a good representative of CWB Sweden",
+          "- How to act as a good representative of Clowns Without Borders Sweden",
           "- Our core values, policies and guidelines",
           "- How to work preventively to ensure the safety of children",
           "- What to do if you witness a suspected violation or crime against a child"
@@ -82,8 +82,8 @@ export class PhotoTextObj {
       
       sectionText:[
         "An example: ",
-        "Marwa is a CWB artist participating in a performance tour. She and her team have made all preparations according to the Security protocol and Artist handbook in order to ensure a safe activity.",
-        "The audience consists of around 300 excited children. Halfway into the show the children start expressing their excitement loudly and standing up. As a result, audience members further back cannot see the stage area, and children start fighting each other. Despite trying to calm the situation by using CWB methods, it escalates and there is a clear risk of harm to children. Local staff intervene by smacking and hitting children.",
+        "Marwa is a Clowns Without Borders artist participating in a performance tour. She and her team have made all preparations according to the Security protocol and Artist handbook in order to ensure a safe activity.",
+        "The audience consists of around 300 excited children. Halfway into the show the children start expressing their excitement loudly and standing up. As a result, audience members further back cannot see the stage area, and children start fighting each other. Despite trying to calm the situation by using Clowns Without Borders methods, it escalates and there is a clear risk of harm to children. Local staff intervene by smacking and hitting children.",
         "What can Marwa do?"
       ],
 
@@ -100,7 +100,7 @@ export class PhotoTextObj {
     sectionText:[
       "Ett exempel: ",
       "Marwa är en av Clowner utan Gränsers artister och deltar i en föreställningsturné. Hon och hennes team har gjort alla förberedelser i enlighet med säkerhetsprotokollet och artisthandboken.",
-      "Publiken består av cirka 300 förväntansfulla barn. Halvvägs in i föreställningen börjar barnen ge uttryck för sina känslor högt och ställer sig upp. Det leder till att publiken längre bak inte kan se föreställningen och barn börjar slåss med varandra. Trots att man försöker lugna situationen genom att använda CUGs metoder eskalerar det och det finns en klar risk för att barn ska komma till skada. Lokal personal ingriper genom att smälla till och slå barn.",
+      "Publiken består av cirka 300 förväntansfulla barn. Halvvägs in i föreställningen börjar barnen ge uttryck för sina känslor högt och ställer sig upp. Det leder till att publiken längre bak inte kan se föreställningen och barn börjar slåss med varandra. Trots att man försöker lugna situationen genom att använda Clowner utan Gränsers metoder eskalerar det och det finns en klar risk för att barn ska komma till skada. Lokal personal ingriper genom att smälla till och slå barn.",
       "Vad kan Marwa göra?"
     ],
 
@@ -128,18 +128,18 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
 
   cwbSwedenChildProtectionPolicyEng:PhotoText = {
     headline: "WORKING WITH CHILDREN",
-    headlineText:"CWB Sweden Child Protection policy",
+    headlineText:"Clowns Without Borders Sweden Child Protection policy",
         
         sectionText:[
-          "CWB Sweden works to support the emotional wellbeing of vulnerable children and communities. To ensure the safety of all children we have a Child Protection policy. The policy gives guidelines and support to anyone working with us. In short, everyone representing CWB Sweden shall:",
+          "Clowns Without Borders Sweden works to support the emotional wellbeing of vulnerable children and communities. To ensure the safety of all children we have a Child Protection policy. The policy gives guidelines and support to anyone working with us. In short, everyone representing Clowns Without Borders Sweden shall:",
           ""
         ],
         points:[
           "Understand the importance of child protection",
           "Always ensure children’s dignity and respect",
           "In all activities strive to strengthen the psychosocial wellbeing and rights of children",
-          "Ensure a safe environment for all children participating in CWB activities",
-          "Know their obligations and commitments as a representative of CWB"
+          "Ensure a safe environment for all children participating in Clowns Without Borders activities",
+          "Know their obligations and commitments as a representative of Clowns Without Borders"
         ],
         
         photoName:"clown-with-children none"
@@ -157,7 +157,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
           "Förstå vikten av barnskydd",
           "Alltid säkerställa barns värdighet och respekt",
           "I all verksamhet sträva efter att stärka barns psykosociala välbefinnande och rättigheter",
-          "Säkerställa en trygg miljö för alla barn som deltar i CUGs aktiviteter",
+          "Säkerställa en trygg miljö för alla barn som deltar i Clowner utan Gränsers aktiviteter",
           "Känna till sina skyldigheter och åtaganden som representant för Clowner utan Gränser"
         ],
         
@@ -187,7 +187,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     headline: "WORKING WITH CHILDREN",
     headlineText: "What is violence?",
 
-    sectionText: ["CWB Sweden works with vulnerable children and everyone involved in the organisation needs to be aware of the different kinds of violence that children can be exposed to.",
+    sectionText: ["Clowns Without Borders Sweden works with vulnerable children and everyone involved in the organisation needs to be aware of the different kinds of violence that children can be exposed to.",
           "",
           "Violence against children includes:"],
     points:[
@@ -203,9 +203,9 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     ],
 
     endBoldText:[
-      "If you witness, hear of or suspect an act of violence committed during CWB activities, you must report it to your contact person."
+      "If you witness, hear of or suspect an act of violence committed during Clowns Without Borders activities, you must report it to your contact person."
     ],
-    circleText:"We will now look at two possible scenarios from CWB activities, where you can encounter violence or harm against children.",
+    circleText:"We will now look at two possible scenarios from Clowns Without Borders activities, where you can encounter violence or harm against children.",
 
     photoName:"two-hands"
 
@@ -233,7 +233,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     endBoldText:[
       "Om du bevittnar, hör talas om eller misstänker att en våldshandling begåtts under Clowner utan Gränsers verksamhet ska du rapportera det till din kontaktperson."
     ],
-    circleText:"We will now look at two possible scenarios from CWB activities, where you can encounter violence or harm against children.",
+    circleText:"We will now look at two possible scenarios from Clowns Without Borders activities, where you can encounter violence or harm against children.",
 
     photoName:"two-hands"
 
@@ -273,12 +273,12 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     headline: "WORKING WITH CHILDREN",
     headlineText:"Scenario 1: Large crowds at performances",
     sectionText:[
-      "Performances are a key activity for CWB. Below are some practical examples of violence against children and risks to their safety that you may encounter when working with large crowds at performances:",
+      "Performances are a key activity for Clowns Without Borders. Below are some practical examples of violence against children and risks to their safety that you may encounter when working with large crowds at performances:",
       ""
     ],
     points:[
-      "Children are over-excited and start grabbing, pushing and playing rough, either with each other or with CWB artists",
-      "Children want to help CWB artists with collecting items after the show and start fighting over these items",
+      "Children are over-excited and start grabbing, pushing and playing rough, either with each other or with Clowns Without Borders artists",
+      "Children want to help Clowns Without Borders artists with collecting items after the show and start fighting over these items",
       "Adults from partner organisation try to repress children in the audience by using violence",
       "Children stand up to get a better view of the show, which leads to others not being able to see well and there is a risk of fighting"
     ],
@@ -334,15 +334,15 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       '<span style="font-weight:bold; letter-spacing: .1rem;"> Listen openly </span> to what the child says',
       'Allow the child to <span style="font-weight:bold; letter-spacing: .1rem;"> speak freely </span> and only ask questions to establish basic facts',
       '<span style="font-weight:bold; letter-spacing: .1rem;"> Assure </span> the child that he/she did the right thing by speaking about what happened ',
-      '<span style="font-weight:bold; letter-spacing: .1rem;"> Explain </span> to the child that you must report the incident to CWB',
-      '<span style="font-weight:bold; letter-spacing: .1rem;"> Make an incident report </span> by using the CWB form or by reaching out to your point of contact ',
-      '<span style="font-weight:bold; letter-spacing: .1rem;"> Assist CWB </span> in taking the matter further with partners or authorities',
+      '<span style="font-weight:bold; letter-spacing: .1rem;"> Explain </span> to the child that you must report the incident to Clowns Without Borders',
+      '<span style="font-weight:bold; letter-spacing: .1rem;"> Make an incident report </span> by using the Clowns Without Borders form or by reaching out to your point of contact ',
+      '<span style="font-weight:bold; letter-spacing: .1rem;"> Assist Clowns Without Borders </span> in taking the matter further with partners or authorities',
       '<span style="font-weight:bold; letter-spacing: .1rem;"> Cooperate  </span>in any ensuing investigation'
     ],
     endTextHtml:[
       'All the steps above are included in the <span style="font-weight:bold; letter-spacing: .1rem;">ACTION PLAN IN CASE OF SUSPECTED CRIME </span>'
     ],
-    circleText:"If a suspected crime is reported, the Secretary General and the Board of CWB Sweden will launch an internal or external investigation. If the suspected violation is a criminal offence, CWB will contact the police, after making a security analysis to ensure that no further harm is done to the child. If a crime is committed by a CWB representative, it will have disciplinary consequences and, in serious cases, lead to exclusion. ",
+    circleText:"If a suspected crime is reported, the Secretary General and the Board of Clowns Without Borders Sweden will launch an internal or external investigation. If the suspected violation is a criminal offence, Clowns Without Borders will contact the police, after making a security analysis to ensure that no further harm is done to the child. If a crime is committed by a Clowns Without Borders representative, it will have disciplinary consequences and, in serious cases, lead to exclusion. ",
 
     photoName:"action-plan"
 
@@ -360,15 +360,15 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       '– Lyssna öppet på vad barnet säger',
       '– Låta barnet tala fritt och bara ställa frågor för att fastställa grundläggande fakta',
       '– Försäkra barnet om att hon/han gjorde rätt i att berätta vad som hänt',
-      '– Förklara för barnet att du måste rapportera händelsen till CUG',
+      '– Förklara för barnet att du måste rapportera händelsen till Clowner utan Gränser',
       '– Göra en incidentrapport genom att använda vårt formulär eller genom att kontakta din kontaktperson',
-      '– Bistå CUG i att ta ärendet vidare med partners eller myndigheter',
+      '– Bistå Clowner utan Gränser i att ta ärendet vidare med partners eller myndigheter',
       '– Samarbeta i en eventuell utredning'
     ],
     endTextHtml:[
       'Alla steg ovan ingår i dokumentet <span style="font-weight:bold; letter-spacing: .1rem;">HANDLINGSPLAN VID MISSTÄNKT BROTT  </span>'
     ],
-    circleText:"Om en misstänkt kränkning anmäls inleder CUGs generalsekreterare och styrelsen en intern eller extern utredning. Om den misstänkta överträdelsen är ett brott kommer CWB att kontakta polisen, efter att ha gjort en säkerhetsanalys för att säkerställa att barnet inte skadas ytterligare. Om ett brott begås av en representant för CUG får det disciplinära konsekvenser och kan i allvarliga fall leda till uteslutning.",
+    circleText:"Om en misstänkt kränkning anmäls inleder Clowner utan Gränsers generalsekreterare och styrelsen en intern eller extern utredning. Om den misstänkta överträdelsen är ett brott kommer Clowns Without Borders att kontakta polisen, efter att ha gjort en säkerhetsanalys för att säkerställa att barnet inte skadas ytterligare. Om ett brott begås av en representant för Clowner utan Gränser får det disciplinära konsekvenser och kan i allvarliga fall leda till uteslutning.",
 
     photoName:"action-plan"
 
@@ -406,9 +406,9 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     headline: "WORKING WITH CHILDREN",
     headlineText:"Scenario 1: Preventing risks when working with large crowds",
     sectionTextHtml:[
-      '<span style="font-weight:bold; letter-spacing: .1rem;"> The importance of prevention in CWB’s work with children  </span>',
+      '<span style="font-weight:bold; letter-spacing: .1rem;"> The importance of prevention in Clowns Without Borders’s work with children  </span>',
       '',
-      'As mentioned earlier, prevention is an important part of our work. CWB works in difficult settings and often with large crowds consisting of both children and adults. In order to prevent risks to the safety of children, CWB has outlined preventive measures to be implemented when we encounter large crowds.',
+      'As mentioned earlier, prevention is an important part of our work. Clowns Without Borders works in difficult settings and often with large crowds consisting of both children and adults. In order to prevent risks to the safety of children, Clowns Without Borders has outlined preventive measures to be implemented when we encounter large crowds.',
       ''
     ],
     circleText: "Let's see some examples of these preventive measures",
@@ -423,7 +423,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     sectionTextHtml:[
       '<span style="font-weight:bold; letter-spacing: .1rem;"> Vikten av förebyggande arbete i Clowner utan Gränsers verksamhet med barn  </span>',
       '',
-      'Som tidigare nämnts är prevention en viktig del av vårt arbete. CUG arbetar i svåra miljöer och ofta med stora grupper av både barn och vuxna. För att förebygga risker för barns säkerhet har CUG tagit fram förebyggande åtgärder för situationer där vi möter stora folkmassor.',
+      'Som tidigare nämnts är prevention en viktig del av vårt arbete. Clowner utan Gränser arbetar i svåra miljöer och ofta med stora grupper av både barn och vuxna. För att förebygga risker för barns säkerhet har Clowner utan Gränser tagit fram förebyggande åtgärder för situationer där vi möter stora folkmassor.',
       ''
     ],
     circleText: "Nu ska vi titta på några exempel på våra förebyggande åtgärder",
@@ -454,7 +454,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     headline: "CODE OF CONDUCT",
     headlineText:"",
     sectionTextHtml:[
-      'The Code of Conduct is one of the most important documents and forms the basis for a good representative of CWB Sweden.',
+      'The Code of Conduct is one of the most important documents and forms the basis for a good representative of Clowns Without Borders Sweden.',
        "",
       "As a representative, it is your duty to understand and abide by the the Code of Conduct. ",
       "",
@@ -471,7 +471,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     sectionTextHtml:[
       'Uppförandekoden är ett av våra viktigaste dokument och utgör grunden för en god representant för Clowner utan Gränser.',
        "",
-      "Som CUG-representant är det din skyldighet att förstå och följa uppförandekoden.",
+      "Som Clowner utan Gränser-representant är det din skyldighet att förstå och följa uppförandekoden.",
       "",
       "I nästa del av utbildningen kommer vi att gå igenom uppförandekodens 10 grundläggande principer. "
     ],
@@ -499,9 +499,9 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
 
     headline: 'DOCUMENTATION OF CHILDREN',
     sectionTextHtml:[
-      'Children’s integrity and privacy is important to CWB Sweden. Artists must never, in social media or otherwise, publish photos of children that can be identified. Furthermore, CWB Sweden is obliged to follow the European GDPR law which states that no personal information about children (such as photos, videos, audio files or personal data) can be shared unless we have <span style="font-weight:bold; letter-spacing: .1rem;">  informed consent </span> from the child and their legal guardian.',
+      'Children’s integrity and privacy is important to Clowns Without Borders Sweden. Artists must never, in social media or otherwise, publish photos of children that can be identified. Furthermore, Clowns Without Borders Sweden is obliged to follow the European GDPR law which states that no personal information about children (such as photos, videos, audio files or personal data) can be shared unless we have <span style="font-weight:bold; letter-spacing: .1rem;">  informed consent </span> from the child and their legal guardian.',
       '',
-      'If you are in charge of documenting activities or any other work of CWB Sweden you must make sure that all documentation respects children’s rights to privacy.',
+      'If you are in charge of documenting activities or any other work of Clowns Without Borders Sweden you must make sure that all documentation respects children’s rights to privacy.',
       '',
       'This means that <span style="font-weight:bold; letter-spacing: .1rem;">  informed consent </span> must be obtained from the child in question and a legal guardian or other person responsible for the child on site. ',
       '',
@@ -521,7 +521,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     sectionTextHtml:[
       'Barns integritet är viktig för Clowner utan Gränser. Artister får aldrig, i sociala medier eller på annat sätt, publicera foton på barn som kan identifieras. Clowner utan Gränser är också skyldig att följa den europeiska GDPR-lagen som anger att ingen personlig information om barn (såsom bilder, videor, ljudfiler eller personuppgifter) får spridas om vi inte har informerat samtycke från barnet och dess vårdnadshavare.',
       '',
-      'Om du ansvarar för att dokumentera aktiviteter eller något annat arbete inom CUG måste du se till att all dokumentation respekterar barns rätt till integritet.',
+      'Om du ansvarar för att dokumentera aktiviteter eller något annat arbete inom Clowner utan Gränser måste du se till att all dokumentation respekterar barns rätt till integritet.',
       '',
       'Det innebär att informerat samtycke ska inhämtas från barnet och en vårdnadshavare eller annan ansvarig för barnet på plats.',
       '',
