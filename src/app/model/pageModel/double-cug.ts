@@ -363,7 +363,7 @@ export class DoubleCugObj{
             {
                text:[],
                direction:'L',
-               textHtml: 'In the example we just looked at, Marwa’s only option is to avoid further escalation that can harm children.'
+               textHtml: 'In the example we just looked at, Marwa’s only option is to stop the show to avoid further escalation that can harm children.'
             },
             {
                 text:[],
@@ -388,7 +388,7 @@ export class DoubleCugObj{
             {
                text:[],
                direction:'L',
-               textHtml: 'I exemplet vi just tittade på är Marwas enda alternativ att undvika ytterligare eskalering av situationen och därmed risk för att barn ska skadas.'
+               textHtml: 'I exemplet vi just tittade på är Marwas enda alternativ är att avbryta föreställningen för att undvika ytterligare eskalering av situationen och därmed risk för att barn ska skadas.'
             },
             {
                 text:[],
@@ -412,7 +412,7 @@ export class DoubleCugObj{
      paragraph:[
          {
             text:[],
-            textHtml:'في الحالة التي رأيناها من قبل، الشيء الوحيد الذي تستطيع مروى فعله هو تجنب المزيد من التصعيد الذي يمكن أن يضر بالأطفال.'
+            textHtml:'في الحالة التي رأيناها من قبل، الشيء الوحيد الذي تستطيع مروى فعله هو وقف العرض لتجنب المزيد من التصعيد الذي يمكن أن يضر بالأطفال.'
          },
          {
              text:[],

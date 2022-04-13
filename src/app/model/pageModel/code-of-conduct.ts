@@ -144,7 +144,7 @@ export class CodeOfConductObj{
             {
                 paragrafHeadline:'5. Counteract corruption and bias',
                 paragrafHtml:[
-                    'n all contexts, Clowns without Borders shall act to counter corruption, bias, bribery and exploitation of positions. Clear rules, administrative routines and transparent decision-making processes form the basis of our actions. As a representative of Clowns without Borders, you may not give or receive gifts or benefits to or from individuals or groups in exchange for services or collaborations. If people or groups want to show you appreciation (in the form of, for example, flowers, chocolate or other small token gifts), the value must not exceed SEK 200. You are never allowed to receive gifts in cash.',
+                    'In all contexts, Clowns without Borders shall act to counter corruption, bias, bribery and exploitation of positions. Clear rules, administrative routines and transparent decision-making processes form the basis of our actions. As a representative of Clowns without Borders, you may not give or receive gifts or benefits to or from individuals or groups in exchange for services or collaborations. If people or groups want to show you appreciation (in the form of, for example, flowers, chocolate or other small token gifts), the value must not exceed SEK 200. You are never allowed to receive gifts in cash.',
                     ''
                 ],
                 checkboxText:'I declare that I have read and understood the principle above'
