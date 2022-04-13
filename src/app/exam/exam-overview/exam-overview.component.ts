@@ -60,7 +60,7 @@ export class ExamOverviewComponent implements OnInit, OnChanges{
       this.notAnswered = "Not answered";
     
     }else if(lang == 'SV'){
-      this.buttonText = "Start sidan"
+      this.buttonText = "Startsidan"
       this.buttonTryAgainText = "Nytt försök"
       this.numberOfQuestionsText = "antal frågor: ";
       this.correctResponsesText = "Rätta svar: ";
