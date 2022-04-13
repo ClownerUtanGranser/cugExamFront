@@ -18,11 +18,10 @@ export class ResourcesObj {
             'Action Plan in case of suspicious crime',
             'Communication policy',
             'Whistleblower policy',
-            'Diversity policy',
             'Artist handbook'
         ],
         links:{
-        linkText: 'Link to the documents' , url:''
+        linkText: 'Link to the documents' , url:'https://clownerutangranser.se/information-for-clowns-without-borders-artists'
         }
 
     }
@@ -35,11 +34,10 @@ export class ResourcesObj {
             'Handlingsplan vid misstänkt brott',
             'Kommunikationspolicy',
             'Visselblåsarpolicy',
-            'Mångfaldspolicy',
             'Artisthandbok'
         ],
         links:{
-        linkText: 'Länk till dokument' , url:''
+        linkText: 'Länk till dokument' , url:'https://clownerutangranser.se/artister-internt'
         }
         
     }
@@ -52,11 +50,10 @@ export class ResourcesObj {
             'خطة العمل في حالة الاشتباه بجريمة',
             'سياسة الاتصال',
             'سياسة الإبلاغ عن المخالفات',
-            'سياسة التنوع',
             'كتيب دليل الفنان'
         ],
         links:{
-        linkText: 'Link to the documents' , url:''
+        linkText: 'رابط للمستندات' , url:'https://clownerutangranser.se/information-for-clowns-without-borders-artists'
         }
         
     }
