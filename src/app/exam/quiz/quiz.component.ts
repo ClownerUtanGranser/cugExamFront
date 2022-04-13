@@ -11,9 +11,13 @@ export class QuizComponent implements OnInit, OnChanges {
   @Input() question:Question;
   @Output() answerEmit = new EventEmitter();
   @Output() submitExamEmit = new EventEmitter();
+  @Output() previousEmit = new EventEmitter();
+  @Output() nextEmit = new EventEmitter();
 
   selectedAnswer:number = null;
 
+  buttonNext:string = 'Next >';
+  buttonPrevious:string = '< Previous';
   buttonText:string = "Submit exam"
 
   constructor() { }
@@ -28,17 +32,35 @@ export class QuizComponent implements OnInit, OnChanges {
   changeLang(lang:string){
     if(this.lang == 'AR')
     {
-      this.buttonText = "تقديم الامتحان"
+      this.buttonText = "تسليم الامتحان"
+      this.buttonNext = '>' 
+      this.buttonPrevious = '<'
+
     }else if(this.lang == 'ENG'){
       this.buttonText = "Submit exam"
+      this.buttonNext = 'Next >'
+      this.buttonPrevious = '< Previous'
     }else{
       this.buttonText = "Lämna in"
+      this.buttonNext = 'Nästa >'
+      this.buttonPrevious = '< Föregående'
+
     }
   }
 
   select(index:number)
   {
     this.answerEmit.emit(index);
+  }
+
+  nextQuestion()
+  {
+    this.nextEmit.emit()
+  }
+
+  previousQuestion()
+  {
+    this.previousEmit.emit();
   }
 
   submitExam()

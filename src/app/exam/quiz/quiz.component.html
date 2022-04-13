@@ -17,7 +17,11 @@
         <span *ngIf="lang !='AR'">{{ i + 1 }}. </span> {{ answre }}
         <!-- A. 	Discuss with a colleague on what is the next step to take -->
     </p>
-    <button (click)="submitExam()" class="btn-update">{{ buttonText }}</button>
+    <div class="btn-box">
+        <button (click)="nextQuestion()" class="btn-update nav"> {{ buttonPrevious }} </button>
+        <button (click)="previousQuestion()" class="btn-update nav"> {{buttonNext}} </button>
+        <button (click)="submitExam()" class="btn-update">{{ buttonText }}</button>
+    </div>
 </div>
 
     

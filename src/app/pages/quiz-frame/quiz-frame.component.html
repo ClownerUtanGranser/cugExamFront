@@ -28,7 +28,8 @@
             [lang]="lang"
             (answerEmit) = "answeredQuestion($event)"
             (submitExamEmit) = "submitExam($event)"
-            
+            (previousEmit) = "nextQuestion()"
+            (nextEmit) = "previousQuestion()"
         >
         </app-quiz>
     <nav 
