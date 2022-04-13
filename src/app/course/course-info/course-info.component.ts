@@ -20,24 +20,21 @@ export class CourseInfoComponent implements OnInit {
       'WORKING WITH CHILDREN',
       'CODE OF CONDUCT',
       'WHISTLE BLOWER POLICY',
-      'DOCUMENTATION OF CHILDREN',
-      'CONCLUSION'
+      'DOCUMENTATION OF CHILDREN'
     ],
     chaptersSv:[
       'INTRODUKTION',
       'ATT ARBETA MED BARN',
       'UPPFÖRANDEKOD',
       'VISSELBLÅSARPOLICY',
-      'DOKUMENTATION AV BARN',
-      'SAMMANFATTNING'
+      'DOKUMENTATION AV BARN'
     ],
     chaptersArb:[
       'مقدمة',
       'العمل مع الأطفال',
       'مدونة السلوك',
       'سياسة حماية المبلغين',
-      'التوثيق للأطفال',
-      'ختام'
+      'التوثيق للأطفال'
     ]
   }
 
