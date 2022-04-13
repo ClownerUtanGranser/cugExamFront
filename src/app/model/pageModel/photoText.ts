@@ -233,7 +233,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     endBoldText:[
       "Om du bevittnar, hör talas om eller misstänker att en våldshandling begåtts under Clowner utan Gränsers verksamhet ska du rapportera det till din kontaktperson."
     ],
-    circleText:"We will now look at two possible scenarios from Clowns Without Borders activities, where you can encounter violence or harm against children.",
+    circleText:"Vi ska nu titta på två möjliga situationer i Clowners utan Gränsers arbete, där våld eller skada mot barn kan förekomma.",
 
     photoName:"two-hands"
 
@@ -525,7 +525,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       '',
       'Det innebär att informerat samtycke ska inhämtas från barnet och en vårdnadshavare eller annan ansvarig för barnet på plats.',
       '',
-      'Observera att en <span style="font-weight:bold; letter-spacing: .1rem;"> minderårig inte kan ge sitt samtycke </span>!'
+      'Observera att en <span style="font-weight:bold; letter-spacing: .1rem;"> minderårig inte kan ge sitt samtycke utan vårdnadshavare!</span>'
     ],
 
     endTextHtml:[
