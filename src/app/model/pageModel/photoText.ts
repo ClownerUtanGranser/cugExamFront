@@ -333,7 +333,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     pointsHtml:[
       '<span style="font-weight:bold; letter-spacing: .1rem;"> Listen openly </span> to what the child says',
       'Allow the child to <span style="font-weight:bold; letter-spacing: .1rem;"> speak freely </span> and only ask questions to establish basic facts',
-      '<span style="font-weight:bold; letter-spacing: .1rem;"> Assure </span> the child that he/she did the right thing by speaking about what happened ',
+      '<span style="font-weight:bold; letter-spacing: .1rem;"> Assure </span> the child that they did the right thing by speaking about what happened ',
       '<span style="font-weight:bold; letter-spacing: .1rem;"> Explain </span> to the child that you must report the incident to Clowns Without Borders',
       '<span style="font-weight:bold; letter-spacing: .1rem;"> Make an incident report </span> by using the Clowns Without Borders form or by reaching out to your point of contact ',
       '<span style="font-weight:bold; letter-spacing: .1rem;"> Assist Clowns Without Borders </span> in taking the matter further with partners or authorities',

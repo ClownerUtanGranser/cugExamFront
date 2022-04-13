@@ -128,7 +128,7 @@ export class QuestionList{
             lang:'ENG',
             answres: [
                 "Explain to your colleague that they cannot behave like that and leave it there",
-                "Pretend that you have not seen anything; after all you know your colleague to be a good person and he/she is your friend.",
+                "Pretend that you have not seen anything; after all you know your colleague to be a good person and they are your friend.",
                 "Immediately report the incident to your closest point of contact."
             ],
             selectedAnswre:undefined
@@ -141,7 +141,7 @@ export class QuestionList{
             answres: [
                 "As a representative of Clowns Without Borders you should never spend much time alone with a child",
                 "As a representative of Clowns Without Borders it’s ok to occasionally and for shorter times play alone in a closed room with a child.",
-                "As a representative of Clowns Without Borders i's ok to spend a long time in a closed room playing with a child if he/she explicitly asks for it"
+                "As a representative of Clowns Without Borders i's ok to spend a long time in a closed room playing with a child if they explicitly asks for it"
             ],
             selectedAnswre:undefined
         },
@@ -188,7 +188,7 @@ export class QuestionList{
         {
             id:1003,
             questionNumber: 3,
-            questionText: "3. Om ett barn berättar för dig att hon eller han har blivit utsatt för våld ska du:",
+            questionText: "3. Om ett barn berättar för dig att hen har blivit utsatt för våld ska du:",
             lang:'SV',
             answres: [
                 "A. Inte göra någonting, eftersom det inte är mitt ansvar",
@@ -203,7 +203,7 @@ export class QuestionList{
             questionText: "4. En vuxen från en samarbetsorganisation slår ett barn för att barnet är högljutt och inte kan sitta still under en workshop. Vad gör du?",
             lang:'SV',
             answres: [
-                "A. Skriker åt personen att hon eller han inte får slå barn",
+                "A. Skriker åt personen att hen inte får slå barn",
                 "B. Berättar på ett lugnt sätt för personen att du har kontroll över situationen och att det är okej att barnet är högljutt och aktivt, samt följer upp med din närmaste kontaktperson efter aktiviteten",
                 "C. Låtsas som om ingenting har hänt"
             ],
