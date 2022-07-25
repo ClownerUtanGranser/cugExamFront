@@ -5,12 +5,12 @@
     padding-top: 3rem;
     min-height: calc(100vh - 3rem);
     width: 100%;
-    color: $yellow; 
+    color: $white; 
     background: $green;
     @include column-align-center();
 
     h1{
-        color: $yellow;
+        color: $white;
     }
 
     ul{
@@ -31,14 +31,14 @@
             
 
             a:hover > .strong, a:hover > .headline-text{
-                color: $white;
+                color: $yellow;
                 transition: .5s color;
             }
             
         }
 
         .headline-text, .strong{
-            color: $yellow;
+            color: $white;
             
             
         }

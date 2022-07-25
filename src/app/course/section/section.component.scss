@@ -10,11 +10,12 @@
     right: 1rem;
     display: flex;
     justify-content: space-between;
-    color: $yellow;
+    color: darken( $white, 1);
     z-index: 2;
 
     p{
-        font-size: 2rem;
+        font-size: 2.2rem;
+        text-shadow: -1px -1px 0 #444, 1px -1px 0 #444, -1px 1px 0 #444, 1px 1px 0 #444;
         font-weight: bolder;
         cursor: pointer;        
     }
@@ -40,7 +41,7 @@
     z-index: 4;
     left:47%;
     background-color: $yellow;
-    padding:.1rem 1rem 0.1rem 1rem;
+    padding:.2rem 1.2rem 0.2rem 1.2rem;
     border-bottom-left-radius: 5rem;
     border-bottom-right-radius: 5rem;
     cursor: pointer;
@@ -49,6 +50,7 @@
     font-weight: bold;
     letter-spacing: 2px;
     border-bottom: 0px solid $white;
+    text-shadow: -1px -1px 0 #999, 1px -1px 0 #999, -1px 1px 0 #999, 1px 1px 0 #999;
     transition: border .5s;
 
     &:hover{

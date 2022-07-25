@@ -40,7 +40,7 @@ export class PhotoTextObj {
       
       sectionText:[
         "Som du såg i videon är Clowner utan Gränser en barnrättsorganisation med uppdrag är att sprida skratt, hopp och drömmar till barn och samhällen i kris runtom i världen.",
-        "Att skydda barn är en central del av vårt uppdrag och barnets bästa kommer alltid först. Vi arbetar med utsatta människor och det är av yttersta vikt att vår verksamhet aldrig orsakar skada.",
+        "Att skydda barn är en central del av vårt uppdrag och barnets bästa kommer alltid först. Vi arbetar med människor som lever i utsatthet och det är av yttersta vikt att vår verksamhet aldrig orsakar skada.",
         "Därför har vi utvecklat den här utbildningen för alla som representerar Clowner utan Gränser Sverige.",
         "När du har avslutat kursen kommer du att känna till:"
       ],
@@ -117,7 +117,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
   sectionText:[
     "مثال: ",
     "مروى فنانة من منظمة مهرجون بلا حدود، تشارك في جولة عروض. قامت هي وفريقها بجميع الاستعدادات، وفقًا لبروتوكول الأمان، وكتيب دليل الفنان، لضمان نشاط آمن.",
-    "يتكون الجمهور من حوالي 300 طفل مشارك. وفي منتصف العرض، يبدأ الأطفال في التعبير عن حماستهم من خلال الصخب والوقوف. نتيجة لذلك، لا يستطيع الأطفال الذين يقفون في الخلف رؤية منطقة العرض، ويبدأ الأطفال في القتال فيما بينهم. على الرغم من محاولة تهدئة الموقف باستخدام أساليب منظمة مهرجون بلا حدود، إلا أن الموقف يتصاعد ويصبح هناك خطر واضح بتعرض الأطفال للأذى. يتدخل الموظفون المحليون من خلال صفع الأطفال وضربهم.",
+    "يتكون الجمهور من حوالي 300 طفل مشارك. وفي منتصف العرض، يبدأ الأطفال في التعبير عن حماسهم من خلال الصخب والوقوف. نتيجة لذلك، لا يستطيع الأطفال الذين يقفون في الخلف رؤية منطقة العرض، ويبدأ الأطفال في القتال فيما بينهم. على الرغم من محاولة تهدئة الموقف باستخدام أساليب منظمة مهرجون بلا حدود، إلا أن الموقف يتصاعد ويصبح هناك خطر واضح بتعرض الأطفال للأذى. يتدخل الموظفون المحليون من خلال صفع الأطفال وضربهم.",
     "ماذا بوسع مروى أن تفعل؟"
   ],
 
@@ -173,7 +173,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
           "لضمان سلامة جميع الأطفال، لدينا سياسة خاصة لحماية الطفل. تهدف هذه السياسة إلى تقديم إرشادات ودعم لأي شخص يعمل معنا. باختصار، يجب على كل شخص يعمل مع مهرجون بلا حدود – السويد أن:"
         ],
         points:[
-          " يفهم أهمية حماية الطفل",
+          " يراعي مصلحة الطفل الفضلى",
           "يحرص دائمًا على احترام كرامة الأطفال",
           "يسعى جاهدا في جميع الأنشطة لتعزيز الرفاه النفسي الاجتماعي وحقوق الأطفال ",
           "يضمن بيئة آمنة لجميع الأطفال المشاركين في أنشطة منظمة مهرجون بلا حدود",
@@ -243,14 +243,14 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     headline: "العمل مع الأطفال",
     headlineText: "ما هو العنف؟",
 
-    sectionText: ["بما أن منظمة مهرجون بلا حدود - السويد  تعمل مع الأطفال المعرضين للخط ، فمن المهم أن يدرك كل من يعمل في المنظمة أن هناك أنواعًا مختلفة من العنف التي يمكن أن يتعرض لها الأطفال، ويرفضونها.",
+    sectionText: ["بما أن منظمة مهرجون بلا حدود - السويد  تعمل مع الأطفال المعرضين للخطر ، فمن المهم أن يدرك كل من يعمل في المنظمة أن هناك أنواعًا مختلفة من العنف التي يمكن أن يتعرض لها الأطفال، ويرفضونها.",
           "",
           "يمكن أن يشمل العنف ضد الأطفال ما يلي:"],
     points:[
       "العنف الجسدي",
       "العنف الجنسي",
       "العنف النفسي",
-      "العنف الذي يرتكب باسم الشرف"
+      "العنف القائم على النوع الاجتماعي (عنف باسم الشرف)"
     ],
 
     secondSectionText: [
@@ -259,9 +259,9 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     ],
 
     endBoldText:[
-      "إذا رأيت أو سمعت أو اشتبهت في أي عمل عنيف تم ارتكابه أثناء أنشطتنا، فيجب عليك إبلاغ نقطة الاتصال الخاصة بك بذلك"
+      "إذا رأيت أو سمعت أو اشتبهت في أي انتهاك متعلق بالعنف أثناء أنشطتنا، فيجب عليك إبلاغ نقطة الاتصال الخاصة بك بذلك"
     ],
-    circleText:"سننظر الآن في سيناريوهين محتملين من أنشطة مهرجون بلا حدود، حيث يمكنك مواجهة حالات عنف أو أذى ضد الأطفال",
+    circleText:"سننظر الآن في حالتين محتملين من أنشطة مهرجون بلا حدود، حيث يمكنك مواجهة حالات عنف أو أذى ضد الأطفال",
 
     photoName:"two-hands"
 
@@ -291,7 +291,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     headline: "ATT ARBETA MED BARN",
     headlineText:"Scenario 1: Stor publik vid föreställningar",
     sectionTextHtml:[
-      "Föreställningar är en av våra nyckelaktiviteter. Nedan följer några praktiska exempel på våld mot barn och risker för barn säkerhet som du kan stöta på när du arbetar med stora folkmassor vid föreställningar:",
+      "Föreställningar är en av våra nyckelaktiviteter. Nedan följer några praktiska exempel på våld mot barn och risker för barns säkerhet som du kan stöta på när du arbetar med stora folkmassor vid föreställningar:",
       ""
     ],
     points:[
@@ -377,7 +377,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
   actionPlanInCaseOfSuspectedCrimeAgainstChildrenArb:PhotoText = {
 
     headline: "العمل مع الأطفال",
-    headlineText:"خطة العمل في حالة الاشتباه بجرائم ضد الأطفال",
+    headlineText:"خطة العمل في حالة الاشتباه بانتهاك ضد الأطفال",
     sectionTextHtml:[
       '<span style="font-weight:bold; letter-spacing: .1rem;"> إذا كنت تشك أو تسمع أو تشاهد طفلًا يتعرض لجريمة ضد سياسة حماية الطفل الخاصة بنا، فمن واجبك الإبلاغ عنها. وذلك لحماية الأطفال، ولضمان حصولك كممثل للمنظمة على الدعم المناسب. </span> ',
       " وفقًا لخطة العمل، يجب عليك القيام بما يلي:"
@@ -392,9 +392,9 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
       '- تعاون مع التحقيق'
     ],
     endTextHtml:[
-      ' تم تضمين جميع الخطوات المذكورة أعلاه في <span style="font-weight:bold; letter-spacing: .1rem;">خطة العمل في حال الاشتباه بوقوع جريمة </span>'
+      ' تم تضمين جميع الخطوات المذكورة أعلاه في <span style="font-weight:bold; letter-spacing: .1rem;">خطة العمل في حال الاشتباه بوقوع انتهاك </span>'
     ],
-    circleText:"إذا تم الإبلاغ عن الاشتباه بجريمة، سيبدأ الأمين العام ومجلس منظمة مهرجون بلا حدود -بالسويد تحقيقًا داخليًا أو خارجيًا. إذا كانت الجريمة المشتبه بها هي جريمة جنائية، فستقوم المنظمة بالاتصال بالشرطة، بعد إجراء تحليل أمني لضمان عدم إلحاق مزيد من الضرر بالطفل. إذا تم ارتكاب جريمة من قبل ممثل للمنظمة، فسيؤدي ذلك إلى عواقب تأديبية، وفي الحالات الخطيرة، الطرد من المنظمة.",
+    circleText:"إذا تم الإبلاغ عن الاشتباه بانتهاك، سيبدأ الأمين العام ومجلس منظمة مهرجون بلا حدود -بالسويد تحقيقًا داخليًا أو خارجيًا. إذا كان الانتهاك المشتبه به هو جريمة جنائية، فستقوم المنظمة بالاتصال بالشرطة، بعد إجراء تحليل أمني لضمان عدم إلحاق مزيد من الضرر بالطفل. إذا تم ارتكاب جريمة من قبل ممثل للمنظمة، فسيؤدي ذلك إلى عواقب تأديبية، وفي الحالات الخطيرة، الطرد من المنظمة.",
 
     photoName:"action-plan"
 
@@ -438,10 +438,10 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
     sectionTextHtml:[
       '<span style="font-weight:bold; letter-spacing: .1rem;"> أهمية الوقاية في عمل المنظمة مع الأطفال  </span>',
       '',
-      'كما ذكرنا من قبل، تعتبر الوقاية جزءًا مهمًا من عمل منظمة مهرجون بلا حدود. فالمنظمة تعمل في بيئات صعبة، وغالبًا مع حشود كبيرة تتكون من الأطفال والبالغين. ومن أجل منع المخاطر على سلامة الأطفال، لدينا تدابير وقائية يجب اتباعها في حالة العمل مع الحشود الكبيرة. ',
+      'كما ذكرنا من قبل، تعتبر الوقاية جزءًا مهمًا من عمل منظمة مهرجون بلا حدود. فالمنظمة تعمل في بيئات صعبة، وغالبًا مع حشود كبيرة تتكون من الأطفال والبالغين. ومن أجل منع وقوع المخاطر على سلامة الأطفال، لدينا تدابير وقائية يجب اتباعها في حالة العمل مع الحشود الكبيرة. ',
       ''
     ],
-    circleText: "دعونا نرى بعض الأمثلة على ماهية هذه التدابير الوقائية",
+    circleText: "دعونا نرى بعض الأمثلة على هذه التدابير الوقائية",
     photoName:"crowd"
 
   }

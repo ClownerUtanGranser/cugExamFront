@@ -144,7 +144,7 @@ export class CodeOfConductObj{
             {
                 paragrafHeadline:'5. Counteract corruption and bias',
                 paragrafHtml:[
-                    'In all contexts, Clowns without Borders shall act to counter corruption, bias, bribery and exploitation of positions. Clear rules, administrative routines and transparent decision-making processes form the basis of our actions. As a representative of Clowns without Borders, you may not give or receive gifts or benefits to or from individuals or groups in exchange for services or collaborations. If people or groups want to show you appreciation (in the form of, for example, flowers, chocolate or other small token gifts), the value must not exceed SEK 200. You are never allowed to receive gifts in cash.',
+                    'In all contexts, Clowns without Borders shall act to counter corruption, bias, bribery and exploitation of positions. Clear rules, administrative routines and transparent decision-making processes form the basis of our actions. As a representative of Clowns without Borders, you may not give or receive gifts or benefits to or from individuals or groups in exchange for services or collaborations. If people or groups want to show you appreciation (in the form of, for example, flowers, chocolate or other small token gifts), the value must be symbolic. You are never allowed to receive gifts in cash.',
                     ''
                 ],
                 checkboxText:'I declare that I have read and understood the principle above'
@@ -187,7 +187,7 @@ export class CodeOfConductObj{
             {
                 paragrafHeadline:'5. مكافحة الفساد والتحيز',
                 paragrafHtml:[
-                    'في جميع السياقات، تعمل منظمة مهرجون بلا حدود على مكافحة الفساد والتحيز والرشوة واستغلال المناصب. تشكل القواعد الواضحة والإجراءات الإدارية وعمليات صنع القرار الشفافة الأساس لأعمالنا. بصفتك ممثلاً للمنظمة، لا يجوز لك تقديم أو تلقي هدايا أو مزايا من أو إلى أفراد أو مجموعات في مقابل الخدمات أو التعاون. إذا أراد الأشخاص أو المجموعات إظهار تقديرهم لك (على شكل، زهور أو شوكولاتة أو أي رمز صغير آخر، مثلا) يجب ألا تتجاوز القيمة 200 كرونة سويدية. ويجب عدم تلقي الهدايا النقدية مطلقا. لتجنب التحيز، لا يشارك المتطوعون والموظفون وأعضاء مجلس الإدارة مطلقًا في اتخاذ قرارات بشأن الأمور التي يمكن أن تفيدهم شخصيًا و/ أو الشركات أو المنظمات التي يمثلونها. أنت ملزم دائمًا بإبلاغ مجلس الإدارة أو الأمين العام إذا كنت تشك في وجود فساد أو سوء سلوك أو ما شابه ذلك.',
+                    'في جميع السياقات، تعمل منظمة مهرجون بلا حدود على مكافحة الفساد والتحيز والرشوة واستغلال المناصب. تشكل القواعد الواضحة والإجراءات الإدارية وعمليات صنع القرار الشفافة الأساس لأعمالنا. بصفتك ممثلاً للمنظمة، لا يجوز لك تقديم أو تلقي هدايا أو مزايا من أو إلى أفراد أو مجموعات في مقابل الخدمات أو التعاون. إذا أراد الأشخاص أو المجموعات إظهار تقديرهم لك (على شكل، زهور أو شوكولاتة أو أي رمز صغير آخر، مثلا) يجب أن تكون القيمة رمزية. ويجب عدم تلقي الهدايا النقدية مطلقا. لتجنب التحيز، لا يشارك المتطوعون والموظفون وأعضاء مجلس الإدارة مطلقًا في اتخاذ قرارات بشأن الأمور التي يمكن أن تفيدهم شخصيًا و/ أو الشركات أو المنظمات التي يمثلونها. أنت ملزم دائمًا بإبلاغ مجلس الإدارة أو الأمين العام إذا كنت تشك في وجود فساد أو سوء سلوك أو ما شابه ذلك.',
                     ''
                 ],
                 checkboxText:'أقر بأنني قد قرأت وفهمت المبدأ أعلاه'

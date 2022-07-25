@@ -1,6 +1,6 @@
 <div class="container" [class]="lang">
 
-     <h2>{{doubleCug.headline }}</h2>
+     <!-- <h2>{{doubleCug.headline }}</h2> -->
      <h3>{{ doubleCug.subHeadline }}</h3>
      <p 
         *ngIf="doubleCug?.ingressHtml" 
@@ -11,11 +11,17 @@
     <div 
         *ngFor="let paragraph of doubleCug.paragraph; let i = index;"
         class="heading"
-        [class]=" paragraph.direction == 'L' ? 'left':'right' "
+        [class]=" lang == 'AR' ? 'left':'right' "
         >
-        <h2 *ngIf="paragraph?.subTitle" >{{paragraph.subTitle}}</h2>
-        <p *ngFor="let text of paragraph.text; let i = index" >{{ text }}</p>
-        <p *ngIf="paragraph.textHtml" [innerHTML]="this.bulltes[i].safeHtml"></p>
+        <h2 *ngIf="paragraph?.subTitle" >{{paragraph.subTitle}} </h2>
+        <p 
+            *ngFor="let text of paragraph.text; let i = index" 
+            [class]="lang"
+            >{{ text }}</p>
+        <p 
+            *ngIf="paragraph.textHtml" [innerHTML]="this.bulltes[i].safeHtml"
+            [class]="lang"
+            ></p>
     </div>
     <!-- <div class="heading right">
         <h2>{{doubleCug.paragraph[1].subTitle}}</h2>

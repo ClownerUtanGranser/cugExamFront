@@ -5,14 +5,15 @@
         <h2>{{ setLang(lang).online }}</h2>
         <h3> {{ setLang(lang).Whom }} </h3>
     </div>
+    
     <div class="red-circle-box">
-        <div class="red-circle">
-            <a [routerLink]="'course'">
+        <a [routerLink]="'course'">
+            <div class="red-circle">
                 <h3>
                     {{ setLang(lang).courseMaterial }}  
                 </h3>
-            </a>
-        </div>
+            </div>
+        </a>
         <div [routerLink]="'exam'" class="red-circle">
             <h3>
                 {{ setLang(lang).exam }}  

@@ -2,7 +2,8 @@
 
 .container
 {
-    background-color: $purple;
+    background-repeat:no-repeat; 
+    background: linear-gradient(to left, $light-purple 30%, $grey 65%, $light-purple 10%, $grey 10%);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -10,6 +11,18 @@
 
     min-height: calc(100vh - 3rem);
 }
+
+.red_headline_wide{
+    width: 100%;
+    padding: 1.5rem 4rem 1.5rem 0.5rem;
+    text-align: center;
+    background-color: transparent;
+    h1,h2, h3{
+        color:$red;
+    }
+    
+}
+
 
 .red-circle-box
 {
@@ -28,8 +41,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 10rem;
-    width: 10rem;
+    height: 15rem;
+    width: 15rem;
+    cursor: pointer;
 
     &:nth-child(2n)
     {
@@ -50,13 +64,11 @@
         margin-bottom: 1rem;
     }
 
-    .red_headline_wide{
-        width: 100%;
-        border-top-right-radius: 20rem;
-        border-bottom-right-radius: 20rem;
-        padding: 1.5rem 4rem 1.5rem 0.5rem;
-        text-align: left;
-    }
+    // .red_headline_wide{
+    //     width: 100%;
+    //     padding: 1.5rem 4rem 1.5rem 0.5rem;
+    //     text-align: left;
+    // }
 
     .red-circle-box{
         width:95%;

@@ -27,7 +27,7 @@ export class DoubleCugObj{
         {
 
             subTitle:"Purpose",
-            direction:'R',
+            direction:'L',
             text:[
             "The purpose of this training is to provide guidance on how to act as a representative of our organisation.",
             "Specifically, we will focus on how to protect children during our work and how to recognise and respond to any risk of harm of children. ",
@@ -52,7 +52,7 @@ export class DoubleCugObj{
         {
 
             subTitle:"Syfte",
-            direction:'R',
+            direction:'L',
             text:[
                 "Syftet med utbildningen är att ge vägledning i hur man är en bra representant för Clowner utan Gränser.",
                 "Vi kommer att fokusera på hur vi skyddar barn i vårt arbete och hur vi känner igen och reagerar på risker för att barn skadas.",
@@ -69,7 +69,7 @@ export class DoubleCugObj{
         paragraph:[
             {
             subTitle:"المدة",
-            direction:'L',
+            direction:'R',
             text:[
                 "المدة المقدرة للدورة تتراوح من 45 دقيقة الى ساعة تقريبا. يمكنك إعادة أخذ الدورة أكثر من مرة كما تريد. وعندما تشعر أنك أصبحت جاهزا، يمكنك التقدم لإجراء الاختبار النهائي.",
                 "كجزء من ضمان ضبط الجودة لدينا، فإن هذه الدورة إلزامية للعمل مع مهرجون بلا حدود - السويد."
@@ -199,7 +199,7 @@ export class DoubleCugObj{
 
         headline: "العمل مع الأطفال",
         subHeadline: "السيناريو 1: إرشادات السلامة للحشود الكبيرة",
-        ingressHtml:'تم تطوير الإرشادات الواردة أدناه كجزء من عمل منظمة مهرجون بلا حدود طويل المدى مع العروض في البيئات الصعبة. وهذه مجرد أمثلة فقط، ويمكن العثور على المزيد من الارشادات في <span style="font-weight:bolder; letter-spacing: .1rem;"> دليل الفنان </span> و <span style="font-weight:bold; letter-spacing: .1rem;"> بروتوكول الأمان </span>. إذا كنت تقوم بالعروض، فيرجى التأكد من قراءة هذه المصادر كاملة.',
+        ingressHtml:'تم تطوير الإرشادات الواردة أدناه كجزء من عمل منظمة مهرجون بلا حدود مع العروض في البيئات الصعبة. وهذه مجرد أمثلة فقط عن الوقاية، ويمكن العثور على المزيد من الارشادات في <span style="font-weight:bolder; letter-spacing: .1rem;"> دليل الفنان </span> و <span style="font-weight:bold; letter-spacing: .1rem;"> بروتوكول الأمان </span>. إذا كنت تقوم بالعروض، فيرجى التأكد من قراءة هذه المصادر كاملة.',
         paragraph:[
             {
                 direction:'L',
@@ -330,16 +330,16 @@ export class DoubleCugObj{
             },
             {
                 text:[],
-                textHtml:' . ضع قواعد للجلسات توافق المجموعة على اتباعها، وذكّر المجموعة بها باستمرار'
+                textHtml:'  ضع قواعد للجلسات توافق المجموعة على اتباعها، وذكّر المجموعة بها باستمرار'
                 
             },
             {
                 text:[],
-                textHtml:' . استخدم ألعاب وتمارين تشمل الجميع لتجنب التنمر'
+                textHtml:' استخدم ألعاب وتمارين تشمل الجميع لتجنب التنمر'
             },
             {
                 text:[],
-                textHtml:'ضع بين يديك<span style="font-weight:bold; letter-spacing: .1rem;">    قائمة بالمنظمات المتخصصة </span>      التي تعمل في مجال حماية الطفل، وتقديم والدعم النفسي والاجتماعي'
+                textHtml:'ضع بين يديك<span style="font-weight:bold; letter-spacing: .1rem;"> قائمة بالمنظمات المتخصصة </span> التي تعمل في مجال حماية الطفل، وتقديم الدعم النفسي والاجتماعي. كن على إطّلاع بالمعلومات القانونية الأساسية بما يتعلق بالقوانين حول العنف أو الطفل. '
             },
             {
                 text:[],
