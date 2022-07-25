@@ -14,7 +14,7 @@
 
 .red_headline_wide{
     width: 100%;
-    padding: 1.5rem 4rem 1.5rem 0.5rem;
+    // padding: 1.5rem 4rem 1.5rem 0.5rem;
     text-align: center;
     background-color: transparent;
     h1,h2, h3{
@@ -43,7 +43,6 @@
     justify-content: center;
     height: 15rem;
     width: 15rem;
-    cursor: pointer;
 
     &:nth-child(2n)
     {
@@ -64,13 +63,30 @@
         margin-bottom: 1rem;
     }
 
-    // .red_headline_wide{
-    //     width: 100%;
-    //     padding: 1.5rem 4rem 1.5rem 0.5rem;
-    //     text-align: left;
-    // }
+    .red_headline_wide {
+        margin-bottom: .5rem;
+        padding-bottom: 0;
+    }
 
     .red-circle-box{
-        width:95%;
+        width:100%;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+            font-size: 1.5rem;
+        }
     }
+
+    .red-circle{
+        margin-bottom: .5rem;
+    
+        &:nth-child(2n)
+        {
+            background-color: $green;
+        }
+    
+        
+    }
+
+    
 }
