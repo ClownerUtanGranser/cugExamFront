@@ -43,8 +43,9 @@
     justify-content: center;
     height: 15rem;
     width: 15rem;
+    cursor: pointer;
 
-    &:nth-child(2n)
+    &:nth-child(2)
     {
         background-color: $green;
     }
@@ -80,7 +81,7 @@
     .red-circle{
         margin-bottom: .5rem;
     
-        &:nth-child(2n)
+        &:nth-child(2)
         {
             background-color: $green;
         }
