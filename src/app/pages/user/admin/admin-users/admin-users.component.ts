@@ -3,6 +3,7 @@ import { ExamUser } from 'src/app/model/examUser';
 import { StateService } from 'src/app/service/state.service';
 import { UserService } from 'src/app/service/user.service';
 import {saveAs} from 'file-saver';
+import { UpdateExamUser } from 'src/app/model/UpdateExamUser';
 
 @Component({
   selector: 'app-admin-users',
@@ -30,6 +31,18 @@ export class AdminUsersComponent implements OnInit {
     this.userService.getAllUsers(user.jwt).subscribe((users) => {
       this.users = users
     });  
+  }
+
+  updateExamUser(user){
+    console.log(user, this.user);
+    const updateUser = new UpdateExamUser(user.email, user.name, user.country, this.user.roles);
+    
+    this.userService.updateExamUser(updateUser ,this.user.jwt).subscribe((users) => {
+      console.log(users);
+      
+      this.users = users
+    });
+    
   }
 
   setUser(examUser:ExamUser){

@@ -20,7 +20,7 @@ export class FilmPage{
     
       movieObjArb:{headline:string, movieText:string[], movieUrl:SafeResourceUrl} = {
         headline: 'أهلا بكم!', movieText:[
-          "يسرنا أن نرحب بكم في أسرة مهرجون بلا حدود – السويد.", 
+          "يسرنا أن نرحب بكم في أسرة مهرجون بلا حدود – السويد", 
           "ما هو الفرق بين الفنون الأدائية في السياق الفني والفنون الأدائية في السياق الإنساني؟",
           "وقبل أن نبدأ التدريب عبر الانترنت نريد منكم الجلوس والاستمتاع بمشاهدة هذا الفيديو القصير"
         ], movieUrl:this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/kb8-_x3OmHE")

@@ -378,11 +378,27 @@ export class FlipingCardsObj{
                         frontQuestion: "Ask the boy and the boy’s caregiver for permission and sign a consent form or possibly give oral consent.  ",
                         cardSize:'XL',
                         turned:false,
+                        correct:'wrong',
+                        backexplenation:[
+                            'Wrong',
+                            '',
+                            "Consent must be obtained from the child in question and a legal guardian or another person responsible for the child on siteif you are responsible for documentation. BUT artists must never, in private social media or otherwise, publish photos of children that can be identified. You an share the organisations posts as they follow all guidlines.  "
+                        ],
+                        empWord:[
+                            "Wrong"
+                        ],
+                        chart: ""
+            
+                    },
+                    {
+                        frontQuestion: "I must never publish photos of children that can be identified.  ",
+                        cardSize:'XL',
+                        turned:false,
                         correct:'correct',
                         backexplenation:[
                             'Correct',
                             '',
-                            "When working directly with children you must make sure that photos, videos, audio files and personal data respects children’s rights to privacy. This means that consent must be obtained from the child in question and a legal guardian or another person responsible for the child on site.  "
+                            "Artists must never, in social media or otherwise, publish photos of children that can be identified. You can choose another photo in which you cannot identify the child and publish it with your blogg or post on social media."
                         ],
                         empWord:[
                             "Correct"
@@ -437,11 +453,27 @@ export class FlipingCardsObj{
                             frontQuestion: "Be pojken och hans vårdnadshavare om lov och underteckna en samtyckesblankett eller eventuellt ge muntligt samtycke. ",
                             cardSize:'XL',
                             turned:false,
+                            correct:'wrong',
+                            backexplenation:[
+                                'FEL',
+                                '',
+                                "Samtycket ska inhämtas från barnet och en vårdnadshavare eller annan ansvarig för barnet på plats om du är ansvarig för dokumentation. MEN Artister får aldrig, i privata sociala medier eller på annat sätt, publicera foton på barn som kan identifieras. Det går däremot bra att dela organisationens inlägg som följer riktlinjerna."
+                            ],
+                            empWord:[
+                                "FEL"
+                            ],
+                            chart: ""
+                
+                        },
+                        {
+                            frontQuestion: "Jag får inte publicera foto på barn som kan identifieras.",
+                            cardSize:'XL',
+                            turned:false,
                             correct:'correct',
                             backexplenation:[
                                 'RÄTT',
                                 '',
-                                "När du arbetar med barn måste du se till att foton, videor, ljudfiler och personuppgifter respekterar barns rätt till integritet. Det innebär att samtycke ska inhämtas från barnet och en vårdnadshavare eller annan ansvarig för barnet på plats."
+                                "Artister får aldrig, i privata sociala medier eller på annat sätt, publicera foton på barn som kan identifieras. Du får välja en annan bild där det inte går att identifiera något barn och publicera den med ditt blogginlägg."
                             ],
                             empWord:[
                                 "RÄTT"
@@ -496,6 +528,22 @@ export class FlipingCardsObj{
                                 frontQuestion: "أطلب من الفتى ومقدم الرعاية له تأكيد استخدام الصورة والتوقيع على استمارة الموافقة",
                                 cardSize:'XL',
                                 turned:false,
+                                correct:'wrong',
+                                backexplenation:[
+                                    'خطأ',
+                                    '',
+                                    ""
+                                ],
+                                empWord:[
+                                    "صحيح"
+                                ],
+                                chart: "يجب الحصول على الموافقة من الطفل المعني ومن الوصي القانوني أو أي شخص آخر مسؤول عن الطفل في الموقع إذا كنت مسؤولاً عن التوثيق. يجب ألا ينشر الفنانون أبدًا ، في وسائل التواصل الاجتماعي الخاصة أو غير ذلك ، صورًا لأطفال يمكن التعرف عليهم. يمكنك مشاركة منشورات المنظمات لأنها تتبع جميع الإرشادات."
+                    
+                            },
+                            {
+                                frontQuestion: "يجب ألا أنشر صورًا لأطفال يمكن التعرف عليهم.",
+                                cardSize:'XL',
+                                turned:false,
                                 correct:'correct',
                                 backexplenation:[
                                     'صحيح',
@@ -505,7 +553,7 @@ export class FlipingCardsObj{
                                 empWord:[
                                     "صحيح"
                                 ],
-                                chart: "عند العمل بشكل مباشر مع الأطفال، يجب التأكد من أن الصور ومقاطع الفيديو والملفات الصوتية والبيانات الشخصية تحترم حقوق الأطفال في الخصوصية. هذا يعني أنه يجب الحصول على الموافقة من الطفل المعني ومن الوصي القانوني أو أي شخص آخر مسؤول عن الطفل في الموقع."
+                                chart: "لا يجوز للفنانين مطلقًا ، في وسائل التواصل الاجتماعي الخاصة أو غير ذلك ، نشر صور للأطفال يمكن التعرف عليهم. يمكنك اختيار صورة أخرى لا يمكنك تحديد هوية الطفل فيها ونشرها في مدونتك أو النشر على وسائل التواصل الاجتماعي."
                     
                             }
                         

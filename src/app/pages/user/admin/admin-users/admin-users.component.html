@@ -37,6 +37,7 @@
         <div class="page-box right">
             <app-cug-user-detail-admin
             [examUser]="user"
+            (updateExamUserEmit) = updateExamUser($event)
             >
             </app-cug-user-detail-admin>
         </div>

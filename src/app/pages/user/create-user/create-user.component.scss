@@ -17,7 +17,7 @@
     align-items: center;
 
     h2, h3{
-        color:$yellow;
+        color:$white;;
         text-align: center;
     }
 }
@@ -57,7 +57,7 @@
     border-bottom: solid 2px $yellow;
 
     input::-webkit-input-placeholder {
-        color: $yellow;
+        color: $white;
         background-color: $green;
         background: $green;
     }
@@ -67,12 +67,12 @@
         outline: none;
         height: 2rem;
         font-size: 1.2rem;
-        color: $yellow;
+        color: $white;
         background-color: $green;
 
         &:focus{ 
             border-bottom: solid 1px $yellow;
-            color:$yellow;
+            color:$white;
         }
     
 
@@ -89,7 +89,7 @@
             letter-spacing: 1px;
             padding: 0  0 1rem 0;
             font-weight: bold;
-            color: $yellow;
+            color: $white;
             transition: color 1s;
 
             &:hover{

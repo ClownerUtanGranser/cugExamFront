@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { ExamUser } from 'src/app/model/examUser';
 
@@ -9,6 +9,7 @@ import { ExamUser } from 'src/app/model/examUser';
 })
 export class CugUserDetailAdminComponent implements OnInit, OnChanges {
   @Input() examUser:ExamUser;
+  @Output() updateExamUserEmit = new EventEmitter();
 
   registerForm = this.fb.group({
 
@@ -39,7 +40,8 @@ export class CugUserDetailAdminComponent implements OnInit, OnChanges {
   }
 
   upDateUser(){
-    console.log("Hej");
+ 
+    this.updateExamUserEmit.emit(this.registerForm.value);
   }
 
 }

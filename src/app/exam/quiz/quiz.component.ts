@@ -9,6 +9,7 @@ import { Question } from 'src/app/model/question';
 export class QuizComponent implements OnInit, OnChanges {
   @Input() lang:string;
   @Input() question:Question;
+  @Input() showQuestionIndex:number;
   @Output() answerEmit = new EventEmitter();
   @Output() submitExamEmit = new EventEmitter();
   @Output() previousEmit = new EventEmitter();

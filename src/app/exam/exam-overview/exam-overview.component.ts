@@ -28,6 +28,7 @@ export class ExamOverviewComponent implements OnInit, OnChanges{
   numberOfQuestionsText:string = "Number of questions:";
   correctResponsesText:string = "Correct responses:";
   notAnswered:string = "Not answered";
+  congratulationText:string = "Congratulations! You are now ready to start with your project!";
 
   constructor(private state:StateService,
               private examService: ExamService,
@@ -58,6 +59,7 @@ export class ExamOverviewComponent implements OnInit, OnChanges{
       this.numberOfQuestionsText = "Number of questions:";
       this.correctResponsesText = "Correct responses:";
       this.notAnswered = "Not answered";
+      this.congratulationText = "Congratulations! You are now ready to start with your project!"
     
     }else if(lang == 'SV'){
       this.buttonText = "Startsidan"
@@ -65,6 +67,7 @@ export class ExamOverviewComponent implements OnInit, OnChanges{
       this.numberOfQuestionsText = "antal frågor: ";
       this.correctResponsesText = "Rätta svar: ";
       this.notAnswered = "Inget svar";
+      this.congratulationText = "Grattis Du är nu redo att sätta igång med ditt projekt!"
 
     }else{
       this.buttonText = "الصفحة الرئيسية"
@@ -72,6 +75,7 @@ export class ExamOverviewComponent implements OnInit, OnChanges{
       this.numberOfQuestionsText = "عدد الأسئلة:";
       this.correctResponsesText = "الاستجابات الصحيحة:";
       this.notAnswered = "بلا جواب";
+      this.congratulationText = " تهانينا! انت الآن جاهز لبدء العمل في البرنامج! "
 
     }
 

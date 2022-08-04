@@ -499,7 +499,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
 
     headline: 'DOCUMENTATION OF CHILDREN',
     sectionTextHtml:[
-      'Children’s integrity and privacy is important to Clowns Without Borders Sweden. Artists must never, in social media or otherwise, publish photos of children that can be identified. Furthermore, Clowns Without Borders Sweden is obliged to follow the European GDPR law which states that no personal information about children (such as photos, videos, audio files or personal data) can be shared unless we have <span style="font-weight:bold; letter-spacing: .1rem;">  informed consent </span> from the child and their legal guardian.',
+      'Children’s integrity and privacy is important to Clowns Without Borders Sweden. <span style="font-weight:bold; letter-spacing: .1rem;"> Artists must never, in social media or otherwise, publish photos of children that can be identified. </span> Furthermore, Clowns Without Borders Sweden is obliged to follow the European GDPR law which states that no personal information about children (such as photos, videos, audio files or personal data) can be shared unless we have <span style="font-weight:bold; letter-spacing: .1rem;">  informed consent </span> from the child and their legal guardian.',
       '',
       'If you are in charge of documenting activities or any other work of Clowns Without Borders Sweden you must make sure that all documentation respects children’s rights to privacy.',
       '',
@@ -519,7 +519,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
 
     headline: 'DOKUMENTATION AV BARN',
     sectionTextHtml:[
-      'Barns integritet är viktig för Clowner utan Gränser. Artister får aldrig, i sociala medier eller på annat sätt, publicera foton på barn som kan identifieras. Clowner utan Gränser är också skyldig att följa den europeiska GDPR-lagen som anger att ingen personlig information om barn (såsom bilder, videor, ljudfiler eller personuppgifter) får spridas om vi inte har informerat samtycke från barnet och dess vårdnadshavare.',
+      'Barns integritet är viktig för Clowner utan Gränser. <span style="font-weight:bold; letter-spacing: .1rem;"> Artister får aldrig, i sociala medier eller på annat sätt, publicera foton på barn som kan identifieras. </span> Clowner utan Gränser är också skyldig att följa den europeiska GDPR-lagen som anger att ingen personlig information om barn (såsom bilder, videor, ljudfiler eller personuppgifter) får spridas om vi inte har informerat samtycke från barnet och dess vårdnadshavare.',
       '',
       'Om du ansvarar för att dokumentera aktiviteter eller något annat arbete inom Clowner utan Gränser måste du se till att all dokumentation respekterar barns rätt till integritet.',
       '',
@@ -539,7 +539,7 @@ Safety_guidelines_for_large_crowdsArb:PhotoText = {
 
     headline: 'التوثيق للأطفال',
     sectionTextHtml:[
-      'إن كرامة وخصوصية الأطفال أمران مهمان في مهرجون بلا حدود - السويد. لضمان ذلك، لدينا قاعدة تقضي بعدم تمكن الفنانين مطلقًا من نشر صور الأطفال التي يمكن التعرف عليها على وسائل التواصل الاجتماعي. علاوة على ذلك، تلتزم منظمة مهرجون بلا حدود – السويد باتباع قانون حماية المعلومات الأوروبي الذي ينص على أنه لا يمكن مشاركة المعلومات الشخصية للأطفال (مثل الصور ومقاطع الفيديو والملفات الصوتية والبيانات الشخصية) إلا إذا حصلنا على موافقة مستنيرة.',
+      'إن كرامة وخصوصية الأطفال أمران مهمان في مهرجون بلا حدود - السويد. لضمان ذلك، <span style="font-weight:bold; letter-spacing: .1rem;"> لدينا قاعدة تقضي بعدم تمكن الفنانين مطلقًا من نشر صور الأطفال التي يمكن التعرف عليها على وسائل التواصل الاجتماعي </span> علاوة على ذلك، تلتزم منظمة مهرجون بلا حدود – السويد باتباع قانون حماية المعلومات الأوروبي الذي ينص على أنه لا يمكن مشاركة المعلومات الشخصية للأطفال (مثل الصور ومقاطع الفيديو والملفات الصوتية والبيانات الشخصية) إلا إذا حصلنا على موافقة مستنيرة.',
       '',
       'إذا كنت مسؤولاً عن توثيق عملك مع المنظمة، فيجب عليك التأكد من أن جميع الوثائق تحترم حقوق الأطفال في الخصوصية.',
       '',

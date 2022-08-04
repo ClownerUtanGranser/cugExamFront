@@ -42,31 +42,35 @@
 
     &:hover, &.selected{
         color: $light-yellow;
-        font-size: 1.5rem;
+        cursor:pointer;
+        // font-size: 1.5rem;
         
     }
 }
 
 .btn-box{
     direction: ltr;
-    align-self: flex-end;
-    width: 50%;
-    margin:0rem 10% 1rem 10rem;
+    align-self: center;
+    width: 90%;
+
 }
 
 .btn-update{
 
     
-    width: 100%;
+    width: 90%;
     
     padding: 0.5rem;
     border: none;
     border-radius: 5px; 
     background-color: $green;
+    cursor:pointer;
 
     font-weight: bold;
     font-size: 1.2rem;
     color: $white;
+
+    margin: 5px 5% 0 5%;
 
     transition: border .5s ease-in-out;
 
@@ -90,9 +94,10 @@
             width: 100%; 
         }
     }
-.btn-update{
-    margin:0rem 10% 1rem 40%;
+    .btn-update{
+        align-self: center;
+        justify-self: center;
 
-}  
+    }  
 
 }

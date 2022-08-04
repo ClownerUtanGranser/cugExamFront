@@ -6,6 +6,7 @@ import { HttpHeader } from '../model/header';
 import { StateService } from './state.service';
 import { environment } from '../../environments/environment';
 import {saveAs} from 'file-saver';
+import { UpdateExamUser } from '../model/UpdateExamUser';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +14,7 @@ import {saveAs} from 'file-saver';
 export class UserService {
 
   private baseUrlAdmin = `${environment.hostURL}admin`
+  private baseUrlUser = `${environment.hostURL}user`;
   private header:HttpHeader;
 
   constructor(
@@ -43,5 +45,12 @@ export class UserService {
         () => {
           console.log("POST observable is now completed.");
         });;
+  }
+
+  updateExamUser(examUser: UpdateExamUser, jwt: string):Observable<ExamUser[]>
+  { 
+
+    console.log('UPDATE: ', examUser, jwt, `url: ${this.baseUrlUser}/update`);
+    return this.http.post<ExamUser[]>(`${this.baseUrlUser}/update`, examUser, new HttpHeader(jwt).getHeader());
   }
 }

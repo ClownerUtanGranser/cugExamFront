@@ -199,7 +199,7 @@ export class DoubleCugObj{
 
         headline: "العمل مع الأطفال",
         subHeadline: "السيناريو 1: إرشادات السلامة للحشود الكبيرة",
-        ingressHtml:'تم تطوير الإرشادات الواردة أدناه كجزء من عمل منظمة مهرجون بلا حدود مع العروض في البيئات الصعبة. وهذه مجرد أمثلة فقط عن الوقاية، ويمكن العثور على المزيد من الارشادات في <span style="font-weight:bolder; letter-spacing: .1rem;"> دليل الفنان </span> و <span style="font-weight:bold; letter-spacing: .1rem;"> بروتوكول الأمان </span>. إذا كنت تقوم بالعروض، فيرجى التأكد من قراءة هذه المصادر كاملة.',
+        ingressHtml:'تم تطوير الإرشادات الواردة أدناه كجزء من عمل منظمة مهرجون بلا حدود مع العروض في البيئات الصعبة. وهذه مجرد أمثلة فقط عن الوقاية، ويمكن العثور على المزيد من الارشادات في <span style="font-weight:bolder; letter-spacing: .1rem;"> دليل الفنان </span> و <span style="font-weight:bold; letter-spacing: .1rem;"> بروتوكول الأمان </span> .إذا كنت تقوم بالعروض، فيرجى التأكد من قراءة هذه المصادر كاملة.',
         paragraph:[
             {
                 direction:'L',

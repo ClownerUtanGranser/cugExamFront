@@ -1,5 +1,7 @@
 <div class="container-overlay" 
-    [class]="openOverLay ? 'open ' + lang : lang">
+    [class]="openOverLay ? 'open ' + lang : lang"
+    [lang]="lang == 'AR' ? 'ar' : 'eng'"
+    >
     <div *ngIf="correctResponses<9" class="red_circle big result">
         <h3>{{numberOfQuestionsText}} {{ numberOfQuestions }}</h3>
         <h3>{{correctResponsesText}} {{ correctResponses }}</h3> 
@@ -7,6 +9,11 @@
     <div *ngIf="correctResponses>=9" class="green_circle big result">
         <h3>{{numberOfQuestionsText}} {{ numberOfQuestions }}</h3>
         <h3>{{correctResponsesText}} {{ correctResponses }}</h3> 
+    <br/>
+        <h3>{{congratulationText}}</h3>
+    </div>
+    <div>
+        
     </div>
     <ul>
         <li *ngFor="let question of questionsCopy">

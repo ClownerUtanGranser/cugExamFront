@@ -47,7 +47,9 @@ export class QuizFrameComponent implements OnInit {
       
       this.showQuestionIndex = parseInt(param.questionNumber)
       this.showQuestion(this.showQuestionIndex);
-      if(this.showQuestionIndex < 1  || !this.showQuestionIndex) this.router.navigate(['/exam/question/1'])
+      if(this.showQuestionIndex == 0){
+        this.router.navigate([`/exam/question/${12}`]);
+      }else if(this.showQuestionIndex < -1  || !this.showQuestionIndex) this.router.navigate(['/exam/question/1'])
     } )
   }
 
@@ -103,9 +105,11 @@ export class QuizFrameComponent implements OnInit {
     {
       this.showQuestion(this.showQuestionIndex +1)
     }
-    else if(this.showQuestionIndex > this.questions.length + 1)
+    else if(this.showQuestionIndex >= this.questions.length)
     {
-      this.router.navigate(['../'])
+  
+      this.showQuestion(1)
+
     }
     else
     {
@@ -115,10 +119,15 @@ export class QuizFrameComponent implements OnInit {
 
   previousQuestion()
   {
-    
+  
     if( this.showQuestionIndex  > 0 )
     {
       this.showQuestion(this.showQuestionIndex -1)
+    }
+    else if(this.showQuestionIndex  === 0 )
+    {
+      this.showQuestion(12)
+      
     }
     else
     {

@@ -9,5 +9,5 @@ export class ExamUser {
     exp?:number
     iat?:number
 
-    constructor(name?:string, country?:string, email?:string, roles?:string, jwt?:string){}
+    constructor(name?:string, country?:string, email?:string){}
 }
