@@ -64,6 +64,25 @@
 
 }
 
+.btn-excel
+{
+    width: 100%;
+    margin:2rem 0 1rem 0;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px; 
+    background-color: $green;
+
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: $white;
+    transition: border-width 0.2s linear;
+
+    &:hover{
+        border: solid 3px $yellow;
+    }
+}
+
 @media only screen and (max-width: 800px) {
 
     .sides{
